@@ -521,6 +521,25 @@ for (const f of ["CHANGELOG.md", "LICENSE"]) {
 }
 
 
+// ------------------------------- packages/go/data/*.json --
+// Go embeds the JSON at compile time with //go:embed, so the binary carries the
+// dataset and there is no file to find at runtime. encoding/json is in the
+// standard library, so the module has no dependencies.
+//
+// //go:embed cannot reference a parent directory, which is why this is copied
+// in rather than read from ../../data.
+const GO_DATA = join(OUT, "packages/go/data")
+for (const f of ["allergens.json", "declarations.json", "codes.json", "icons.json"]) {
+  writeFileSync(ensureDir(join(GO_DATA, f)), readFileSync(join(DATA, f), "utf8"), "utf8")
+}
+for (const l of LOCALES) {
+  writeFileSync(
+    ensureDir(join(GO_DATA, "bundles", `${l}.json`)),
+    readFileSync(join(OUT, `data/bundles/${l}.json`), "utf8"),
+    "utf8",
+  )
+}
+
 // -------------------- packages/swift/**/Resources/*.json --
 // Swift reads the JSON from its resource bundle: Foundation has JSONDecoder, so
 // there is nothing to generate and no dependency to take. Copied in rather than

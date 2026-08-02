@@ -10,6 +10,18 @@ Pin to a major version in production:
 
 ---
 
+## [1.2.0]
+
+### Added
+
+- **Go module support** — `github.com/menuella/food-safety/packages/go`.
+  - `GetDisclosures`, `GetIcon`, `IconToSVG`, `GetCodes`, `LoadDataset`, plus `Locales`, `AllergenKeys`, `DeclarationKeys`, `IconNames`, `CodeScheme` and the `IsLocale` / `IsAllergenKey` / `IsDeclarationKey` guards. Errors wrap `ErrUnsupportedLocale` and `ErrUnknownIcon`, so callers can branch with `errors.Is`.
+  - The dataset is embedded with `//go:embed`, so the binary is self-contained and there is nothing to find on disk at runtime. `encoding/json` is in the standard library, so the module has **no dependencies**.
+  - Like Swift, there is no registry: the git tag is the release.
+  - Because the module is **nested**, the Go proxy only sees a tag carrying its directory prefix — `packages/go/v1.2.0`, not `v1.2.0`. A workflow derives that tag from the plain one on push, so it cannot be forgotten; without it, six registries would publish and Go would silently stay behind.
+
+---
+
 ## [1.1.0]
 
 ### Added

@@ -10,14 +10,14 @@ Kotlin, JVM 17+, **no dependencies beyond `kotlin-stdlib`**, and nothing parsed 
 
 ```kotlin
 // build.gradle.kts
-implementation("com.menuella:food-safety:1.1.0")
+implementation("com.menuella:food-safety:1.2.0")
 ```
 
 ```xml
 <dependency>
   <groupId>com.menuella</groupId>
   <artifactId>food-safety</artifactId>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
 </dependency>
 ```
 

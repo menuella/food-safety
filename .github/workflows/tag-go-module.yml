@@ -1,0 +1,50 @@
+name: Tag (Go module)
+
+# The Go module is NESTED, so the Go proxy only sees a release tagged with its
+# directory prefix — `packages/go/v1.2.0`, not `v1.2.0`. Creating that by hand
+# every release is a step that gets forgotten, and the failure is silent: the
+# other six registries publish, and Go simply stays on the previous version.
+#
+# So the prefixed tag is derived from the plain one, on push, automatically.
+
+on:
+  push:
+    tags: ["v[0-9]+.[0-9]+.[0-9]+"]
+
+permissions:
+  contents: write
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Create the module-prefixed tag on the same commit
+        run: |
+          prefixed="packages/go/${GITHUB_REF_NAME}"
+          if git ls-remote --exit-code --tags origin "refs/tags/${prefixed}" >/dev/null 2>&1; then
+            echo "::notice::${prefixed} already exists — nothing to do"
+            exit 0
+          fi
+          git tag "$prefixed" "${GITHUB_SHA}"
+          git push origin "$prefixed"
+          echo "::notice::created ${prefixed}"
+
+      # Asking the proxy for the version is what makes it fetch and cache the
+      # module; pkg.go.dev then picks it up from there. Without this the first
+      # `go get` is the thing that triggers indexing, so the package page sits
+      # empty until someone happens to install it.
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+
+      - name: Ask the Go proxy to index it
+        run: |
+          version="${GITHUB_REF_NAME}"
+          GOPROXY=https://proxy.golang.org GONOSUMDB="" \
+            go list -m "github.com/menuella/food-safety/packages/go@${version}" || \
+            echo "::notice::proxy has not seen the tag yet; it will index on first fetch"

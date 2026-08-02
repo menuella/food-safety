@@ -21,3 +21,6 @@ composer.lock
 .build/
 .swiftpm/
 Package.resolved
+
+# Go
+packages/go/*.test

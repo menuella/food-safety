@@ -151,3 +151,25 @@ jobs:
       # so a release built without running the generator fails here rather than
       # shipping stale data with everything else green.
       - run: swift test
+
+  go:
+    name: Go module
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: packages/go
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+          cache-dependency-path: packages/go/go.sum
+
+      - run: test -z "$(gofmt -l .)" || { gofmt -l .; exit 1; }
+      - run: go vet ./...
+
+      # The tests compare the EMBEDDED dataset against the canonical data/, so
+      # a release built without running the generator fails here rather than
+      # shipping stale data with everything else green.
+      - run: go test ./...
