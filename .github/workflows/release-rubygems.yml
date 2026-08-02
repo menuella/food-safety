@@ -3,6 +3,17 @@ name: Release (RubyGems)
 # Its own workflow, like npm, NuGet, pub.dev, PyPI and crates.io. One tag ships
 # them all, but the OIDC exchanges are independent — a policy problem on one
 # registry must not take the others down with it.
+#
+# RubyGems supports PENDING trusted publishers, so — unlike crates.io, which can
+# only bind a publisher to a crate that already exists — this workflow creates
+# the gem itself on its first successful run. There is no manual first push, and
+# no long-lived API key is ever issued. The pending publisher becomes a normal
+# one at that point, and the configuring account becomes an owner.
+#
+# The `environment:` name below is part of the OIDC claim RubyGems checks. It
+# must match the Environment field on the trusted publisher exactly, or the
+# exchange is rejected — the failure reads like a permissions problem rather
+# than a typo, so it is worth getting right the first time.
 
 on:
   push:
@@ -58,6 +69,11 @@ jobs:
       - run: bundle exec rake test
       - run: gem build menuella-food_safety.gemspec
 
+      # The primitive rather than the `rubygems/release-gem` wrapper, which
+      # builds and pushes for you. Doing it in steps keeps the tag check and the
+      # already-published probe below, and keeps the job at `contents: read` —
+      # the wrapper wants `contents: write` so it can push a git tag, which this
+      # workflow does not need because the tag is what triggered it.
       - uses: rubygems/configure-rubygems-credentials@v1
 
       # `gem push` fails on a version already on RubyGems, which makes a re-run
