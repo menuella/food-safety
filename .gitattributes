@@ -1,2 +1,32 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Keep the Composer dist to what a PHP consumer actually needs.
+#
+# Packagist requires composer.json at the repository ROOT, so `composer require`
+# downloads an archive of this whole repo — including four language bindings a
+# PHP project will never load. `export-ignore` trims them from `git archive`,
+# which is what GitHub serves as the dist zipball.
+#
+# This affects archive downloads only. Every other registry publishes its own
+# artifact built from a checkout, so none of them is touched by this file.
+/packages/dart      export-ignore
+/packages/dotnet    export-ignore
+/packages/java      export-ignore
+/packages/python    export-ignore
+/.github            export-ignore
+/scripts            export-ignore
+/docs               export-ignore
+/index.js           export-ignore
+/index.d.ts         export-ignore
+/icons.js           export-ignore
+/icons.d.ts         export-ignore
+/package.json       export-ignore
+/package-lock.json  export-ignore
+/.gitattributes     export-ignore
+# packages/php/data is a byte-identical copy of this, placed by the generator so
+# the package works however it is installed. Shipping both duplicates ~100 kB.
+/data               export-ignore
+
+# Line endings: the Gradle wrapper script must stay CRLF on Windows, and the
+# generated data must not be rewritten by a checkout on any platform.
+*.bat               text eol=crlf
+*.json              text eol=lf
+*.svg               text eol=lf

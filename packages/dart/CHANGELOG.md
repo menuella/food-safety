@@ -10,6 +10,22 @@ Pin to a major version in production:
 
 ---
 
+## [1.0.1]
+
+### Added
+
+- **`menuella/food-safety` on Packagist** — the same dataset for PHP.
+  - `FoodSafety::getDisclosures($locale)`, `getIcon($name)`, `iconToSvg($name, …)`, `loadDataset()`, plus `LOCALES`, `allergenKeys()`, `declarationKeys()`, `iconNames()`, `codeScheme()` and the `isLocale` / `isAllergenKey` / `isDeclarationKey` guards.
+  - PHP 8.2+, **no dependencies** beyond `ext-json`, and every returned object is `readonly` — the dataset is a process-wide singleton, so one caller must not be able to corrupt it for another.
+  - Reads the canonical JSON at runtime: `json_decode` is in core, so there is nothing to generate and nothing to depend on.
+
+### Changed
+
+- `composer.json` sits at the **repository root**, because Packagist reads it from there and has no monorepo support. Its PSR-4 autoload points into `packages/php/src/`.
+- A `.gitattributes` marks the other bindings `export-ignore`, so `composer require` downloads the PHP package rather than an archive of all six. This affects git archives only — every other registry publishes an artifact built from a checkout.
+
+---
+
 ## [1.0.0]
 
 The vocabulary is stable, and this release commits to it.

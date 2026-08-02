@@ -1,0 +1,112 @@
+[
+  {
+    "key": "COLORING",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "PRESERVATIVES",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "ANTIOXIDANTS",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "NITRITE_CURING_SALT",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "NITRATE",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "NITRITE_CURING_SALT_AND_NITRATE",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "FLAVOR_ENHANCERS",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "PHOSPHATE",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "SULPHURED",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "BLACKENED",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "WAXED",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "SWEETENERS",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "PHENYLALANINE",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "LAXATIVE_WARNING",
+    "category": "ADDITIVE",
+    "icon": "declarations"
+  },
+  {
+    "key": "CAFFEINE",
+    "category": "BEVERAGE",
+    "icon": "declarations"
+  },
+  {
+    "key": "QUININE",
+    "category": "BEVERAGE",
+    "icon": "declarations"
+  },
+  {
+    "key": "CHILD_ATTENTION_WARNING",
+    "category": "WARNING",
+    "icon": "declarations"
+  },
+  {
+    "key": "MILK_PROTEIN",
+    "category": "PRODUCT",
+    "icon": "declarations"
+  },
+  {
+    "key": "SURIMI",
+    "category": "PRODUCT",
+    "icon": "declarations"
+  },
+  {
+    "key": "RECONSTITUTED_MEAT",
+    "category": "PRODUCT",
+    "icon": "declarations"
+  },
+  {
+    "key": "RECONSTITUTED_FISH",
+    "category": "PRODUCT",
+    "icon": "declarations"
+  },
+  {
+    "key": "DEFROSTED",
+    "category": "PRODUCT",
+    "icon": "declarations"
+  }
+]

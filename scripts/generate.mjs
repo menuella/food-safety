@@ -521,6 +521,22 @@ for (const f of ["CHANGELOG.md", "LICENSE"]) {
 }
 
 
+// ------------------------------ packages/php/data/*.json --
+// PHP reads the JSON at runtime: json_decode is in core, so there is nothing to
+// generate and nothing to depend on. Copied into the package rather than read
+// from ../../data, so the path holds however the package is installed.
+const PHP_DATA = join(OUT, "packages/php/data")
+for (const f of ["allergens.json", "declarations.json", "codes.json", "icons.json"]) {
+  writeFileSync(ensureDir(join(PHP_DATA, f)), readFileSync(join(DATA, f), "utf8"), "utf8")
+}
+for (const l of LOCALES) {
+  writeFileSync(
+    ensureDir(join(PHP_DATA, "bundles", `${l}.json`)),
+    readFileSync(join(OUT, `data/bundles/${l}.json`), "utf8"),
+    "utf8",
+  )
+}
+
 // ------------------------------- packages/java/**/kotlin/**/Generated*.kt --
 // Kotlin gets GENERATED SOURCE, for the same reason Dart does and a different
 // one besides. The JVM has no JSON parser in its standard library, so reading
