@@ -1,0 +1,39 @@
+{
+  "name": "menuella/food-safety",
+  "description": "Open allergen and additive vocabulary for restaurant menus: 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, icons and six languages.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://www.menuella.com/food-safety",
+  "keywords": ["food-safety", "allergens", "restaurant", "menu", "lmiv", "i18n"],
+  "authors": [
+    {
+      "name": "Menuella",
+      "email": "developers@menuella.com",
+      "homepage": "https://www.menuella.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/menuella/food-safety/issues",
+    "source": "https://github.com/menuella/food-safety"
+  },
+  "require": {
+    "php": "^8.2",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Menuella\\FoodSafety\\": "packages/php/src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Menuella\\FoodSafety\\Tests\\": "packages/php/tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}

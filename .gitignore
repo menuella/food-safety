@@ -13,3 +13,8 @@ build/
 [Bb]in/
 [Oo]bj/
 artifacts/
+
+# Composer
+/vendor/
+composer.lock
+.phpunit.result.cache

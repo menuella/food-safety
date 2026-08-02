@@ -114,3 +114,24 @@ jobs:
       # The POM is what Central validates hardest. Generating it in CI means a
       # missing licence, developer or scm block is caught on the PR.
       - run: ./gradlew generatePomFileForMavenPublication --console=plain
+
+  php:
+    name: PHP package
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          extensions: json
+          coverage: none
+
+      # --strict catches metadata Packagist would accept but render poorly.
+      - run: composer validate --strict --no-check-all
+      - run: composer install --no-interaction --no-progress
+
+      # The tests that matter here compare the PACKAGED copy of the dataset
+      # against the canonical data/. A release built without running the
+      # generator would otherwise ship stale data and pass everything else.
+      - run: ./vendor/bin/phpunit -c packages/php/phpunit.xml
