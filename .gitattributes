@@ -8,6 +8,7 @@
 # This affects archive downloads only. Every other registry publishes its own
 # artifact built from a checkout, so none of them is touched by this file.
 /packages/dart      export-ignore
+/packages/swift     export-ignore
 /packages/dotnet    export-ignore
 /packages/java      export-ignore
 /packages/python    export-ignore

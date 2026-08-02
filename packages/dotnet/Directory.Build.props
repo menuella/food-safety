@@ -3,7 +3,7 @@
     <!-- One version for the whole dataset, npm and NuGet alike: they are the
          same data released from the same tag, so a mismatch would be a lie
          about which vocabulary you have. Kept in sync by scripts/verify.mjs. -->
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
