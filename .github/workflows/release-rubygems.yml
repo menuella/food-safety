@@ -74,7 +74,10 @@ jobs:
       # already-published probe below, and keeps the job at `contents: read` —
       # the wrapper wants `contents: write` so it can push a git tag, which this
       # workflow does not need because the tag is what triggered it.
-      - uses: rubygems/configure-rubygems-credentials@v1
+      # Pinned to an exact version because this action publishes no floating
+      # major tag — `@v1` and `@v2` do not resolve, which is how the first
+      # v1.3.0 attempt failed. Bump deliberately.
+      - uses: rubygems/configure-rubygems-credentials@v2.1.0
 
       # `gem push` fails on a version already on RubyGems, which makes a re-run
       # of an otherwise-finished release go red. Ask first — the registry is the
