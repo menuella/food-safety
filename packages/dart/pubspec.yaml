@@ -3,7 +3,7 @@ description: >-
   Open allergen and additive vocabulary for restaurant menus: 28 allergen keys
   from EU Reg. 1169/2011, 22 declarations, icons and six languages. Semantic
   keys, not numbers.
-version: 0.3.5
+version: 0.3.6
 repository: https://github.com/menuella/food-safety
 homepage: https://www.menuella.com/food-safety
 issue_tracker: https://github.com/menuella/food-safety/issues
