@@ -70,15 +70,16 @@ jobs:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
           GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
 
-      - name: Where to finish the release
+      - name: Where it lands
         run: |
           {
-            echo "### Uploaded to the Central Portal"
+            echo "### Published to Maven Central"
             echo
-            echo "The deployment is **validated but not released** — \`publicationType\` is"
-            echo "\`USER_MANAGED\` on purpose, because Maven Central has no unpublish."
+            echo "Central validates and then releases automatically. It appears on"
+            echo "\`repo1.maven.org\` within about 15-30 minutes and becomes searchable"
+            echo "a few hours later."
             echo
-            echo "Release it at <https://central.sonatype.com/publishing/deployments>."
+            echo "Progress: <https://central.sonatype.com/publishing/deployments>"
           } >> "$GITHUB_STEP_SUMMARY"
 
   # Without this, a skipped publish looks identical to no publish at all.

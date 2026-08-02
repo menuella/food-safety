@@ -103,10 +103,15 @@ One binding of a shared dataset. The vocabulary, the keys and the icons are iden
 
 | | |
 | --- | --- |
-| PyPI | `menuella-food-safety` |
+| PyPI | this package |
 | npm | [`@menuella/food-safety`](https://www.npmjs.com/package/@menuella/food-safety) |
 | NuGet | [`Menuella.FoodSafety`](https://www.nuget.org/packages/Menuella.FoodSafety) |
 | pub.dev | [`menuella_food_safety`](https://pub.dev/packages/menuella_food_safety) |
+| Packagist | [`menuella/food-safety`](https://packagist.org/packages/menuella/food-safety) |
+| crates.io | [`menuella-food-safety`](https://crates.io/crates/menuella-food-safety) |
+| Go | [`github.com/menuella/food-safety/packages/go`](https://pkg.go.dev/github.com/menuella/food-safety/packages/go) |
+| Swift | `MenuellaFoodSafety` |
+| Maven Central | `com.menuella:food-safety` |
 
 ## Not legal advice
 

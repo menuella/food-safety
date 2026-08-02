@@ -21,3 +21,12 @@ composer.lock
 .build/
 .swiftpm/
 Package.resolved
+
+# Go
+packages/go/*.test
+
+# Rust. Cargo.lock is not committed: this is a library, so the lockfile that
+# matters is the consuming binary's, and committing ours would only pin the
+# dev-dependency used by the tests.
+packages/rust/target/
+packages/rust/Cargo.lock

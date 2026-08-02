@@ -1,0 +1,44 @@
+[package]
+name = "menuella-food-safety"
+version = "1.2.0"
+edition = "2021"
+# 1.74 is what the `[lints]` table below needs, not what the code needs — the
+# crate itself is plain data and compiles far further back.
+rust-version = "1.74"
+description = "Open allergen and additive vocabulary for restaurant menus: 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, icons and six languages."
+license = "MIT"
+repository = "https://github.com/menuella/food-safety"
+homepage = "https://www.menuella.com/food-safety"
+documentation = "https://docs.rs/menuella-food-safety"
+readme = "README.md"
+keywords = ["allergens", "food-safety", "restaurant", "menu", "i18n"]
+categories = ["data-structures", "internationalization"]
+# Everything the crate needs and nothing else. Without this the packaged crate
+# would carry whatever happens to sit in the directory.
+#
+# The tests are included on purpose: this crate carries a copy of a dataset that
+# lives elsewhere, so the ability to download it and re-run the drift checks is
+# part of what makes the copy trustworthy.
+include = ["src/**/*.rs", "tests/**/*.rs", "Cargo.toml", "README.md", "LICENSE"]
+
+[features]
+default = []
+# Opt-in derives. Serialization is a consumer concern, and forcing serde on
+# every user of a read-only dataset would be a dependency they did not ask for.
+serde = ["dep:serde"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"], optional = true }
+
+# The crate has no runtime JSON parser by design. The tests need one, because
+# the only way to prove the generated source still matches the canonical dataset
+# is to read that dataset. A dev-dependency costs a consumer nothing.
+[dev-dependencies]
+serde_json = "1"
+
+[lints.rust]
+missing_docs = "deny"
+
+[lints.clippy]
+all = { level = "deny", priority = -1 }
+pedantic = { level = "warn", priority = -1 }

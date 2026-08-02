@@ -66,6 +66,7 @@ An icon means *"contains wheat"*. Render it **alongside** the declaration text, 
 | pub.dev | [`menuella_food_safety`](https://pub.dev/packages/menuella_food_safety) |
 | PyPI | [`menuella-food-safety`](https://pypi.org/project/menuella-food-safety/) |
 | Maven Central | `com.menuella:food-safety` |
+| crates.io | [`menuella-food-safety`](https://crates.io/crates/menuella-food-safety) |
 
 ## Not legal advice
 

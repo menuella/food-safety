@@ -101,9 +101,19 @@ nmcp {
     publishAllPublications {
         username.set(providers.environmentVariable("MAVEN_CENTRAL_USERNAME"))
         password.set(providers.environmentVariable("MAVEN_CENTRAL_PASSWORD"))
-        // Central holds the upload for a human to release. Automatic would
-        // publish irreversibly the moment validation passes, and Maven Central
-        // has no unpublish.
-        publicationType.set("USER_MANAGED")
+        // Publishes as soon as Central finishes validating, like every other
+        // registry here.
+        //
+        // USER_MANAGED was the earlier setting, on the reasoning that Central
+        // has no unpublish. That reasoning does not survive contact with the
+        // rest of this repository: pub.dev and NuGet cannot unpublish either,
+        // and both publish automatically. What the manual gate actually bought
+        // was a step to forget — two releases sat validated and unreleased
+        // while the other six registries had shipped.
+        //
+        // The deliberate act is the tag. Tests run before the upload, and a
+        // version number is checked against the tag, so by the time Central has
+        // the bundle there is nothing left for a human to decide.
+        publicationType.set("AUTOMATIC")
     }
 }

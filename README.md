@@ -18,6 +18,12 @@ One dataset, one version, released from one tag.
 | **npm** | `npm i @menuella/food-safety` |
 | **NuGet** | `dotnet add package Menuella.FoodSafety` |
 | **Dart** | `dart pub add menuella_food_safety` |
+| **Python** | `pip install menuella-food-safety` |
+| **PHP** | `composer require menuella/food-safety` |
+| **Rust** | `cargo add menuella-food-safety` |
+| **Go** | `go get github.com/menuella/food-safety/packages/go` |
+| **Swift** | `.package(url: "https://github.com/menuella/food-safety", from: "1.2.0")` |
+| **Gradle** | `implementation("com.menuella:food-safety:1.2.0")` |
 
 ```js
 import { getDisclosures } from "@menuella/food-safety"
@@ -205,5 +211,5 @@ the dataset.
 ## Links
 
 - 🔎 Explorer — [menuella.com/food-safety](https://www.menuella.com/food-safety)
-- 📦 [npm](https://www.npmjs.com/package/@menuella/food-safety) · [NuGet](https://www.nuget.org/packages/Menuella.FoodSafety) · [pub.dev](https://pub.dev/packages/menuella_food_safety)
+- 📦 [npm](https://www.npmjs.com/package/@menuella/food-safety) · [NuGet](https://www.nuget.org/packages/Menuella.FoodSafety) · [pub.dev](https://pub.dev/packages/menuella_food_safety) · [PyPI](https://pypi.org/project/menuella-food-safety/) · [Packagist](https://packagist.org/packages/menuella/food-safety) · [crates.io](https://crates.io/crates/menuella-food-safety) · [pkg.go.dev](https://pkg.go.dev/github.com/menuella/food-safety/packages/go)
 - 🧑‍💻 [github.com/menuella/food-safety](https://github.com/menuella/food-safety)

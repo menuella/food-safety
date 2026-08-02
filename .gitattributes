@@ -9,9 +9,11 @@
 # artifact built from a checkout, so none of them is touched by this file.
 /packages/dart      export-ignore
 /packages/swift     export-ignore
+/packages/go        export-ignore
 /packages/dotnet    export-ignore
 /packages/java      export-ignore
 /packages/python    export-ignore
+/packages/rust      export-ignore
 /.github            export-ignore
 /scripts            export-ignore
 /docs               export-ignore

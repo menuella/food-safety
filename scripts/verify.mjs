@@ -141,6 +141,8 @@ section("generated files in sync with sources")
 // files it is checking — otherwise a bad source silently corrupts the tree.
 let hasDart = true
 try { execFileSync("dart", ["--version"], { stdio: "pipe" }) } catch { hasDart = false }
+let hasRustfmt = true
+try { execFileSync("rustfmt", ["--version"], { stdio: "pipe" }) } catch { hasRustfmt = false }
 const tmp = mkdtempSync(join(tmpdir(), "food-safety-verify-"))
 execFileSync(process.execPath, [join(ROOT, "scripts/generate.mjs"), "--out", tmp], { stdio: "pipe" })
 // Every artifact the generator writes. A binding missing from this list ships
@@ -157,6 +159,10 @@ const generated = ["index.js", "index.d.ts", "data/icons.json", "data/icons.js",
   "packages/dart/CHANGELOG.md", "packages/dart/LICENSE",
   "packages/python/CHANGELOG.md", "packages/python/LICENSE",
   "packages/java/CHANGELOG.md", "packages/java/LICENSE",
+  "packages/rust/LICENSE",
+  "packages/go/data/allergens.json", "packages/go/data/declarations.json",
+  "packages/go/data/codes.json", "packages/go/data/icons.json",
+  ...locales.map((l) => `packages/go/data/bundles/${l}.json`),
   "packages/swift/Sources/MenuellaFoodSafety/Resources/allergens.json",
   "packages/swift/Sources/MenuellaFoodSafety/Resources/declarations.json",
   "packages/swift/Sources/MenuellaFoodSafety/Resources/codes.json",
@@ -174,6 +180,10 @@ const generated = ["index.js", "index.d.ts", "data/icons.json", "data/icons.js",
   "packages/python/src/menuella_food_safety/data/icons.json",
   ...locales.map((l) => `packages/python/src/menuella_food_safety/data/bundles/${l}.json`),
   ...(hasDart ? ["packages/dart/lib/src/data.g.dart", "packages/dart/lib/src/icons.g.dart"] : []),
+  // Same caveat as Dart: generate.mjs runs rustfmt over its Rust output, so
+  // without rustfmt the temp build is unformatted and would diff against a
+  // committed file that is perfectly in sync.
+  ...(hasRustfmt ? ["packages/rust/src/generated.rs"] : []),
   ...locales.flatMap((l) => [`data/bundles/${l}.json`, `data/bundles/${l}.js`])]
 const stale = generated.filter(
   (f) => readFileSync(join(ROOT, f), "utf8") !== readFileSync(join(tmp, f), "utf8"),
@@ -239,17 +249,38 @@ if (existsSync(gradleProps)) {
   console.log("  SKIP  no JVM binding in this checkout")
 }
 
-// The JVM README is the only one carrying a literal version — Gradle and Maven
-// coordinates include it, where `npm i` and `pip install` do not. A stale one
-// tells readers to install a version that is not current.
-const jvmReadme = join(ROOT, "packages/java/README.md")
-if (existsSync(jvmReadme)) {
+const cargoToml = join(ROOT, "packages/rust/Cargo.toml")
+if (existsSync(cargoToml)) {
+  const rustVersion = /^version = "([^"]+)"/m.exec(readFileSync(cargoToml, "utf8"))?.[1]
   const npmVersion = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")).version
-  const stale = [...readFileSync(jvmReadme, "utf8").matchAll(/com\.menuella:food-safety:([\d.]+)|<version>([\d.]+)<\/version>/g)]
-    .map((m) => m[1] ?? m[2])
+  check(
+    `npm and crates.io versions agree (${npmVersion})`,
+    rustVersion === npmVersion,
+    rustVersion === npmVersion ? "" : `Cargo.toml says ${rustVersion}`,
+  )
+} else {
+  console.log("  SKIP  no Rust binding in this checkout")
+}
+
+// Most install snippets carry no version — `npm i` and `pip install` resolve
+// the latest on their own. Gradle, Maven and SwiftPM coordinates do not, so a
+// stale literal there tells readers to install a version that is not current.
+//
+// Only these two files are scanned, because they are the only ones that spell a
+// version out. If a third grows one, add it here rather than leaving it to rot.
+const npmVersion = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")).version
+const versionedSnippet = /com\.menuella:food-safety:([\d.]+)|<version>([\d.]+)<\/version>|from:\s*"([\d.]+)"/g
+for (const [label, file] of [
+  ["JVM README", "packages/java/README.md"],
+  ["root README", "README.md"],
+]) {
+  const path = join(ROOT, file)
+  if (!existsSync(path)) continue
+  const stale = [...readFileSync(path, "utf8").matchAll(versionedSnippet)]
+    .map((m) => m[1] ?? m[2] ?? m[3])
     .filter((v) => v !== npmVersion)
   check(
-    `JVM README install snippets say ${npmVersion}`,
+    `${label} install snippets say ${npmVersion}`,
     stale.length === 0,
     stale.length ? `found ${[...new Set(stale)].join(", ")}` : "",
   )

@@ -151,3 +151,62 @@ jobs:
       # so a release built without running the generator fails here rather than
       # shipping stale data with everything else green.
       - run: swift test
+
+  go:
+    name: Go module
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: packages/go
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+          cache-dependency-path: packages/go/go.sum
+
+      - run: test -z "$(gofmt -l .)" || { gofmt -l .; exit 1; }
+      - run: go vet ./...
+
+      # The tests compare the EMBEDDED dataset against the canonical data/, so
+      # a release built without running the generator fails here rather than
+      # shipping stale data with everything else green.
+      - run: go test ./...
+
+  rust:
+    name: Rust crate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: packages/rust
+    steps:
+      - uses: actions/checkout@v5
+      - run: rustup toolchain install stable --profile minimal --component rustfmt,clippy
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: packages/rust
+
+      # src/generated.rs is emitted by scripts/generate.mjs and formatted by it,
+      # so a diff here means the generator's output and the committed file have
+      # parted ways.
+      - run: cargo fmt --check
+
+      # The manifest denies all of clippy::all and warns on pedantic. --all-targets
+      # covers the tests too, and -D warnings makes pedantic fail the build.
+      - run: cargo clippy --all-targets --all-features -- -D warnings
+
+      # Both feature configurations: `serde` adds derives to every public type,
+      # and default-off is what most consumers get.
+      #
+      # The tests compare the GENERATED SOURCE against the canonical data/, so a
+      # release cut without running the generator fails here rather than shipping
+      # stale disclosures with everything else green.
+      - run: cargo test --no-default-features
+      - run: cargo test --all-features
+
+      # Builds the exact tarball `cargo publish` would upload, so an `include`
+      # list that omits something the crate needs fails here rather than at
+      # release time — when crates.io has no unpublish.
+      - run: cargo package
