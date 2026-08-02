@@ -10,6 +10,14 @@ Pin to a major version in production:
 
 ---
 
+## [0.3.6]
+
+### Changed
+
+- Repository presentation only — no change to the dataset, the APIs or any generated artifact. 0.3.5 and 0.3.6 are the same vocabulary.
+
+---
+
 ## [0.3.5]
 
 ### Added
