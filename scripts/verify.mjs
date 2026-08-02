@@ -231,5 +231,21 @@ if (existsSync(gradleProps)) {
   console.log("  SKIP  no JVM binding in this checkout")
 }
 
+// The JVM README is the only one carrying a literal version — Gradle and Maven
+// coordinates include it, where `npm i` and `pip install` do not. A stale one
+// tells readers to install a version that is not current.
+const jvmReadme = join(ROOT, "packages/java/README.md")
+if (existsSync(jvmReadme)) {
+  const npmVersion = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")).version
+  const stale = [...readFileSync(jvmReadme, "utf8").matchAll(/com\.menuella:food-safety:([\d.]+)|<version>([\d.]+)<\/version>/g)]
+    .map((m) => m[1] ?? m[2])
+    .filter((v) => v !== npmVersion)
+  check(
+    `JVM README install snippets say ${npmVersion}`,
+    stale.length === 0,
+    stale.length ? `found ${[...new Set(stale)].join(", ")}` : "",
+  )
+}
+
 console.log(failed ? `\n${failed} CHECK(S) FAILED` : "\nALL CHECKS PASSED")
 process.exit(failed ? 1 : 0)

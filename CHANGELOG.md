@@ -10,6 +10,33 @@ Pin to a major version in production:
 
 ---
 
+## [1.0.0]
+
+The vocabulary is stable, and this release commits to it.
+
+Nothing changes in the data or the APIs — 0.3.6 and 1.0.0 are the same dataset.
+What changes is the promise: from here, **keys, exports and data shapes will not
+break without a major version**.
+
+That is a promise worth making because the hard part is not ours to change. The
+28 allergen keys follow Annex II of EU Reg. 1169/2011, the 22 declarations are a
+settled vocabulary, and both are addressed by semantic keys rather than
+region-specific codes — so new languages, new icons and new declarations are all
+additive.
+
+### What stability covers
+
+- Allergen and declaration **keys**, and the group each allergen belongs to
+- The **shape** of what each binding returns
+- Every binding's **public API**
+- The `MENUELLA` **code scheme**
+
+New locales, new declarations, corrected translations and redrawn icons remain
+minor or patch changes. A key is never renamed or repurposed; if one is ever
+retired, its guard starts returning false and the key stays reserved.
+
+---
+
 ## [0.3.6]
 
 ### Changed
