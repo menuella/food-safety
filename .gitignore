@@ -30,3 +30,10 @@ packages/go/*.test
 # dev-dependency used by the tests.
 packages/rust/target/
 packages/rust/Cargo.lock
+
+# Ruby. Gemfile.lock is not committed for the same reason as Cargo.lock: this
+# is a library, so the lockfile that matters is the consuming application's.
+packages/ruby/*.gem
+packages/ruby/Gemfile.lock
+packages/ruby/.bundle/
+packages/ruby/pkg/

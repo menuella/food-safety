@@ -1,0 +1,75 @@
+name: Release (RubyGems)
+
+# Its own workflow, like npm, NuGet, pub.dev, PyPI and crates.io. One tag ships
+# them all, but the OIDC exchanges are independent — a policy problem on one
+# registry must not take the others down with it.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+concurrency:
+  group: release-rubygems
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: rubygems
+      url: https://rubygems.org/gems/menuella-food_safety
+    permissions:
+      contents: read
+      # Trusted Publishing: RubyGems.org exchanges this OIDC token for a
+      # short-lived API key. No RUBYGEMS_API_KEY exists anywhere.
+      id-token: write
+    defaults:
+      run:
+        working-directory: packages/ruby
+
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+          bundler-cache: true
+          working-directory: packages/ruby
+
+      # The tag is the source of truth. A mismatch means someone tagged without
+      # bumping, and the published version would lie about which data it holds.
+      #
+      # Checked before the credential is minted: RubyGems only allows a yank
+      # within 72 hours of a push, and a yanked version's number can never be
+      # reused.
+      - name: Check tag matches the gem version
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          gem_version="$(ruby -r ./lib/menuella/food_safety/version -e 'print Menuella::FoodSafety::VERSION')"
+          if [ "$tag" != "$gem_version" ]; then
+            echo "::error::tag v$tag does not match the gem version $gem_version"
+            exit 1
+          fi
+
+      # Everything the verify workflow runs, once more against the exact commit
+      # being published. Cheap next to an unpublishable mistake.
+      - run: bundle exec rake test
+      - run: gem build menuella-food_safety.gemspec
+
+      - uses: rubygems/configure-rubygems-credentials@v1
+
+      # `gem push` fails on a version already on RubyGems, which makes a re-run
+      # of an otherwise-finished release go red. Ask first — the registry is the
+      # authority on what has shipped, not the workflow's memory of it.
+      - name: Publish
+        run: |
+          version="$(ruby -r ./lib/menuella/food_safety/version -e 'print Menuella::FoodSafety::VERSION')"
+          status="$(curl -sS -o /dev/null -w '%{http_code}' \
+            "https://rubygems.org/api/v2/rubygems/menuella-food_safety/versions/${version}.json" || true)"
+          if [ "$status" = "200" ]; then
+            echo "menuella-food_safety $version is already on RubyGems — nothing to do"
+            exit 0
+          fi
+          gem push "menuella-food_safety-${version}.gem"

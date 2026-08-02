@@ -10,7 +10,7 @@ Pure Swift, **no dependencies**, `Sendable` throughout, Swift 6 language mode.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/menuella/food-safety.git", from: "1.2.0")
+    .package(url: "https://github.com/menuella/food-safety.git", from: "1.3.0")
 ]
 ```
 
@@ -89,6 +89,7 @@ They are decorative by default: `iconToSVG` emits `aria-hidden` unless you pass 
 | Packagist | [`menuella/food-safety`](https://packagist.org/packages/menuella/food-safety) |
 | Maven Central | `com.menuella:food-safety` |
 | crates.io | [`menuella-food-safety`](https://crates.io/crates/menuella-food-safety) |
+| RubyGems | [`menuella-food_safety`](https://rubygems.org/gems/menuella-food_safety) |
 
 ## Not legal advice
 

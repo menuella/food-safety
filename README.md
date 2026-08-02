@@ -21,9 +21,10 @@ One dataset, one version, released from one tag.
 | **Python** | `pip install menuella-food-safety` |
 | **PHP** | `composer require menuella/food-safety` |
 | **Rust** | `cargo add menuella-food-safety` |
+| **Ruby** | `bundle add menuella-food_safety` |
 | **Go** | `go get github.com/menuella/food-safety/packages/go` |
-| **Swift** | `.package(url: "https://github.com/menuella/food-safety", from: "1.2.0")` |
-| **Gradle** | `implementation("com.menuella:food-safety:1.2.0")` |
+| **Swift** | `.package(url: "https://github.com/menuella/food-safety", from: "1.3.0")` |
+| **Gradle** | `implementation("com.menuella:food-safety:1.3.0")` |
 
 ```js
 import { getDisclosures } from "@menuella/food-safety"
@@ -211,5 +212,5 @@ the dataset.
 ## Links
 
 - 🔎 Explorer — [menuella.com/food-safety](https://www.menuella.com/food-safety)
-- 📦 [npm](https://www.npmjs.com/package/@menuella/food-safety) · [NuGet](https://www.nuget.org/packages/Menuella.FoodSafety) · [pub.dev](https://pub.dev/packages/menuella_food_safety) · [PyPI](https://pypi.org/project/menuella-food-safety/) · [Packagist](https://packagist.org/packages/menuella/food-safety) · [crates.io](https://crates.io/crates/menuella-food-safety) · [pkg.go.dev](https://pkg.go.dev/github.com/menuella/food-safety/packages/go)
+- 📦 [npm](https://www.npmjs.com/package/@menuella/food-safety) · [NuGet](https://www.nuget.org/packages/Menuella.FoodSafety) · [pub.dev](https://pub.dev/packages/menuella_food_safety) · [PyPI](https://pypi.org/project/menuella-food-safety/) · [Packagist](https://packagist.org/packages/menuella/food-safety) · [crates.io](https://crates.io/crates/menuella-food-safety) · [RubyGems](https://rubygems.org/gems/menuella-food_safety) · [pkg.go.dev](https://pkg.go.dev/github.com/menuella/food-safety/packages/go)
 - 🧑‍💻 [github.com/menuella/food-safety](https://github.com/menuella/food-safety)
