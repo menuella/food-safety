@@ -160,6 +160,12 @@ const generated = ["index.js", "index.d.ts", "data/icons.json", "data/icons.js",
   "packages/python/CHANGELOG.md", "packages/python/LICENSE",
   "packages/java/CHANGELOG.md", "packages/java/LICENSE",
   "packages/rust/LICENSE",
+  "packages/ruby/CHANGELOG.md", "packages/ruby/LICENSE",
+  "packages/ruby/lib/menuella/food_safety/data/allergens.json",
+  "packages/ruby/lib/menuella/food_safety/data/declarations.json",
+  "packages/ruby/lib/menuella/food_safety/data/codes.json",
+  "packages/ruby/lib/menuella/food_safety/data/icons.json",
+  ...locales.map((l) => `packages/ruby/lib/menuella/food_safety/data/bundles/${l}.json`),
   "packages/go/data/allergens.json", "packages/go/data/declarations.json",
   "packages/go/data/codes.json", "packages/go/data/icons.json",
   ...locales.map((l) => `packages/go/data/bundles/${l}.json`),
@@ -262,22 +268,39 @@ if (existsSync(cargoToml)) {
   console.log("  SKIP  no Rust binding in this checkout")
 }
 
+const gemVersionFile = join(ROOT, "packages/ruby/lib/menuella/food_safety/version.rb")
+if (existsSync(gemVersionFile)) {
+  const gemVersion = /VERSION = "([^"]+)"/.exec(readFileSync(gemVersionFile, "utf8"))?.[1]
+  const npmVersion = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")).version
+  check(
+    `npm and RubyGems versions agree (${npmVersion})`,
+    gemVersion === npmVersion,
+    gemVersion === npmVersion ? "" : `version.rb says ${gemVersion}`,
+  )
+} else {
+  console.log("  SKIP  no Ruby binding in this checkout")
+}
+
 // Most install snippets carry no version — `npm i` and `pip install` resolve
 // the latest on their own. Gradle, Maven and SwiftPM coordinates do not, so a
 // stale literal there tells readers to install a version that is not current.
 //
-// Only these two files are scanned, because they are the only ones that spell a
-// version out. If a third grows one, add it here rather than leaving it to rot.
+// Only the files that actually spell a version out are scanned. If another
+// grows one, add it here rather than leaving it to rot — the Swift and Go
+// READMEs were each a release behind before this list included them.
 const npmVersion = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")).version
-const versionedSnippet = /com\.menuella:food-safety:([\d.]+)|<version>([\d.]+)<\/version>|from:\s*"([\d.]+)"/g
+const versionedSnippet =
+  /com\.menuella:food-safety:([\d.]+)|<version>([\d.]+)<\/version>|from:\s*"([\d.]+)"|packages\/go\/v([\d.]+)|\bv([\d.]+)`/g
 for (const [label, file] of [
   ["JVM README", "packages/java/README.md"],
   ["root README", "README.md"],
+  ["Swift README", "packages/swift/README.md"],
+  ["Go README", "packages/go/README.md"],
 ]) {
   const path = join(ROOT, file)
   if (!existsSync(path)) continue
   const stale = [...readFileSync(path, "utf8").matchAll(versionedSnippet)]
-    .map((m) => m[1] ?? m[2] ?? m[3])
+    .map((m) => m.slice(1).find(Boolean))
     .filter((v) => v !== npmVersion)
   check(
     `${label} install snippets say ${npmVersion}`,

@@ -210,3 +210,36 @@ jobs:
       # list that omits something the crate needs fails here rather than at
       # release time — when crates.io has no unpublish.
       - run: cargo package
+
+  ruby:
+    name: Ruby gem
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: packages/ruby
+    strategy:
+      fail-fast: false
+      matrix:
+        # The oldest and the newest the gemspec claims to support. Without the
+        # lower bound, `required_ruby_version >= 3.2` would be an assertion
+        # nobody had tested.
+        ruby: ["3.2", "3.4"]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+          working-directory: packages/ruby
+
+      # The tests that matter here compare the PACKAGED copy of the dataset
+      # against the canonical data/. A gem built without running the generator
+      # would otherwise ship stale data and pass everything else. Warnings are
+      # on, so Ruby's own diagnostics surface too.
+      - run: bundle exec rake test
+
+      # Builds the exact .gem `gem push` would upload, so a `files` list that
+      # omits something the gem needs fails here rather than at release time —
+      # when RubyGems has no unpublish beyond a 72-hour window.
+      - run: gem build menuella-food_safety.gemspec

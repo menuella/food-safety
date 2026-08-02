@@ -1,7 +1,7 @@
 name: Tag (Go module)
 
 # The Go module is NESTED, so the Go proxy only sees a release tagged with its
-# directory prefix — `packages/go/v1.2.0`, not `v1.2.0`. Creating that by hand
+# directory prefix — `packages/go/v<version>`, not `v<version>`. Creating that by hand
 # every release is a step that gets forgotten, and the failure is silent: the
 # other six registries publish, and Go simply stays on the previous version.
 #

@@ -677,6 +677,25 @@ for (const l of LOCALES) {
   )
 }
 
+// ---------------------- packages/ruby/lib/**/food_safety/data/*.json --
+// Ruby reads the JSON at runtime: `json` is a default gem, so there is nothing
+// to generate and nothing to depend on.
+//
+// Placed under lib/ rather than at the package root, so the files sit on the
+// load path and one `__dir__`-relative join finds them whether the gem is
+// installed, vendored, or run straight out of a checkout.
+const RUBY_DATA = join(OUT, "packages/ruby/lib/menuella/food_safety/data")
+for (const f of ["allergens.json", "declarations.json", "codes.json", "icons.json"]) {
+  writeFileSync(ensureDir(join(RUBY_DATA, f)), readFileSync(join(DATA, f), "utf8"), "utf8")
+}
+for (const l of LOCALES) {
+  writeFileSync(
+    ensureDir(join(RUBY_DATA, "bundles", `${l}.json`)),
+    readFileSync(join(OUT, `data/bundles/${l}.json`), "utf8"),
+    "utf8",
+  )
+}
+
 // ------------------------------- packages/java/**/kotlin/**/Generated*.kt --
 // Kotlin gets GENERATED SOURCE, for the same reason Dart does and a different
 // one besides. The JVM has no JSON parser in its standard library, so reading
@@ -758,6 +777,12 @@ ${icon.nodes.map(([tag, attrs]) => {
 
 for (const f of ["CHANGELOG.md", "LICENSE"]) {
   writeFileSync(ensureDir(join(OUT, "packages/java", f)), readFileSync(join(ROOT, f), "utf8"), "utf8")
+}
+
+// RubyGems uploads a built .gem rather than reading the repository, and the
+// gemspec lists both files, so both have to exist inside the package.
+for (const f of ["CHANGELOG.md", "LICENSE"]) {
+  writeFileSync(ensureDir(join(OUT, "packages/ruby", f)), readFileSync(join(ROOT, f), "utf8"), "utf8")
 }
 
 // crates.io uploads a tarball rather than reading the repository, so the crate

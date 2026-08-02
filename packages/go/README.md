@@ -83,10 +83,10 @@ An icon means *"contains wheat"*. Render it **alongside** the declaration text, 
 This is a **nested module**, so its releases carry the directory prefix:
 
 ```
-packages/go/v1.2.0
+packages/go/v1.3.0
 ```
 
-A workflow derives that tag from the repository's plain `v1.2.0` on push, so both always point at the same commit.
+A workflow derives that tag from the repository's plain `v1.3.0` on push, so both always point at the same commit.
 
 ## Same data, other ecosystems
 
@@ -101,6 +101,7 @@ A workflow derives that tag from the repository's plain `v1.2.0` on push, so bot
 | Swift | `MenuellaFoodSafety` |
 | Maven Central | `com.menuella:food-safety` |
 | crates.io | [`menuella-food-safety`](https://crates.io/crates/menuella-food-safety) |
+| RubyGems | [`menuella-food_safety`](https://rubygems.org/gems/menuella-food_safety) |
 
 ## Not legal advice
 

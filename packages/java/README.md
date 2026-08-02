@@ -10,14 +10,14 @@ Kotlin, JVM 17+, **no dependencies beyond `kotlin-stdlib`**, and nothing parsed 
 
 ```kotlin
 // build.gradle.kts
-implementation("com.menuella:food-safety:1.2.0")
+implementation("com.menuella:food-safety:1.3.0")
 ```
 
 ```xml
 <dependency>
   <groupId>com.menuella</groupId>
   <artifactId>food-safety</artifactId>
-  <version>1.2.0</version>
+  <version>1.3.0</version>
 </dependency>
 ```
 
@@ -99,6 +99,7 @@ One binding of a shared dataset — identical vocabulary, keys and icons, releas
 | --- | --- |
 | Maven Central | `com.menuella:food-safety` |
 | crates.io | [`menuella-food-safety`](https://crates.io/crates/menuella-food-safety) |
+| RubyGems | [`menuella-food_safety`](https://rubygems.org/gems/menuella-food_safety) |
 | npm | [`@menuella/food-safety`](https://www.npmjs.com/package/@menuella/food-safety) |
 | NuGet | [`Menuella.FoodSafety`](https://www.nuget.org/packages/Menuella.FoodSafety) |
 | pub.dev | [`menuella_food_safety`](https://pub.dev/packages/menuella_food_safety) |

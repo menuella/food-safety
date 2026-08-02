@@ -1,0 +1,415 @@
+{
+  "locale": "tr",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Çavdar",
+      "declaration": "Tahıl ve gluten içeren ürünler içerir",
+      "description": "Çavdar ve çavdar ürünleri"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Arpa",
+      "declaration": "Tahıl ve gluten içeren ürünler içerir",
+      "description": "Arpa ve arpa ürünleri"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Emmer",
+      "declaration": "Tahıl ve gluten içeren ürünler içerir",
+      "description": "Emmer ve emmer ürünleri"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Siyez",
+      "declaration": "Tahıl ve gluten içeren ürünler içerir",
+      "description": "Siyez ve siyez ürünleri"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Kızıl buğday",
+      "declaration": "Tahıl ve gluten içeren ürünler içerir",
+      "description": "Kızıl buğday ve kızıl buğday ürünleri"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Buğday",
+      "declaration": "Tahıl ve gluten içeren ürünler içerir",
+      "description": "Buğday ve buğday ürünleri"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Yulaf",
+      "declaration": "Tahıl ve gluten içeren ürünler içerir",
+      "description": "Yulaf ve yulaf ürünleri"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Khorasan/Kamut",
+      "declaration": "Tahıl ve gluten içeren ürünler içerir",
+      "description": "Khorasan/Kamut ve ürünleri"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Kabuklular",
+      "declaration": "Kabuklu deniz hayvanları ve ürünlerini içerir",
+      "description": "Karides, yengeç gibi kabukluları içerir"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Yumurta",
+      "declaration": "Yumurta ve yumurta ürünleri içerir",
+      "description": "Yumurta ve yumurta ürünlerini içerir"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Balık",
+      "declaration": "Balık ve balık ürünleri içerir",
+      "description": "Balık ve balık ürünlerini içerir"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Fıstık",
+      "declaration": "Yer fıstığı ve yer fıstığı ürünleri içerir",
+      "description": "Fıstık ve fıstık ürünlerini içerir"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Soya fasulyesi",
+      "declaration": "Soya ve soya ürünleri içerir",
+      "description": "Soya fasulyesi ve soya ürünlerini içerir"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Süt (laktaz dahil)",
+      "declaration": "Süt ve süt ürünleri (laktoz dâhil) içerir",
+      "description": "Süt ve laktoz ürünlerini içerir"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Makadamya Fındığı",
+      "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+      "description": "Makadamya Fındığı ve ürünleri"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Bademler",
+      "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+      "description": "Bademler ve badem ürünleri"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Brezilya Fındığı",
+      "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+      "description": "Brezilya Fındığı ve ürünleri"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pekan Cevizi",
+      "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+      "description": "Pekan Cevizi ve ürünleri"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Fıstık",
+      "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+      "description": "Fıstık ve ürünleri"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Cevizler",
+      "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+      "description": "Cevizler ve ceviz ürünleri"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Kaju fıstığı",
+      "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+      "description": "Kaju fıstığı ve ürünleri"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Fındık",
+      "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+      "description": "Fındık ve ürünleri"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Kereviz",
+      "declaration": "Kereviz ve kereviz ürünleri içerir",
+      "description": "Kereviz ve kereviz ürünlerini içerir"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Hardal",
+      "declaration": "Hardal ve hardal ürünleri içerir",
+      "description": "Hardal ve hardal ürünlerini içerir"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Susam tohumu",
+      "declaration": "Susam ve susam ürünleri içerir",
+      "description": "Susam tohumu ve susam tohumu ürünleri dahil"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Kükürtdioksit ve sülfürler",
+      "declaration": "Kükürt dioksit ve sülfitler içerir",
+      "description": "Kükürtdioksit ve sülfürleri içerir"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Lupinler",
+      "declaration": "Acı bakla (lupin) ve ürünlerini içerir",
+      "description": "Lupinler ve lupin ürünlerini içerir"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Yumuşakçalar",
+      "declaration": "Yumuşakçalar ve ürünlerini içerir",
+      "description": "Yumuşakçalar, örneğin sümüklüböcekler, midyeler vb. içerir"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Renklendirici ile",
+      "description": "Renklendirici içerir"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Koruyucu maddelerle",
+      "description": "Koruyucu madde içerir"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Antioksidan içerir",
+      "description": "Antioksidan içerir"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Nitritli tuz ile",
+      "description": "Nitritli tuz içerir"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Nitrat ile",
+      "description": "Nitrat içerir (koruyucu)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Nitritli kürleme tuzu ve nitrat ile",
+      "description": "Nitritli kürleme tuzu ve nitrat içerir"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Lezzet arttırıcı içerir",
+      "description": "Lezzet arttırıcıları içerir"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Fosfatlı",
+      "description": "Fosfat içerir"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Kükürtlenmiş",
+      "description": "Kükürtdioksit veya sülfür içerir"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Kararmış",
+      "description": "Görsel efekt için kararmış"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Cilalı",
+      "description": "Koruma için cilalanmış yüzey"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Tatlandırıcılarla",
+      "description": "Tatlandırıcı içerir"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Fenilalanin kaynağı içerir",
+      "description": "Fenilalanin kaynağı içerir"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Aşırı tüketildiğinde laksatif etkisi olabilir",
+      "description": "Aşırı tüketildiğinde laksatif etkisi olabilir"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "Kafein içerir",
+      "description": "Kafein içerir"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "Kinin içerir",
+      "description": "Kinin içerir"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "Çocuklarda aktivite ve dikkati etkileyebilir",
+      "description": "Çocuklarda aktivite ve dikkati etkileyebilir"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "Süt proteini içerir",
+      "description": "Süt proteini içerir"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "Surimi içerir",
+      "description": "Surimi içerir"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "Yeniden yapılandırılmış etten yapılmıştır",
+      "description": "Yeniden yapılandırılmış etten yapılmıştır"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "Yeniden yapılandırılmış balıktan yapılmıştır",
+      "description": "Yeniden yapılandırılmış balıktan yapılmıştır"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "Çözdürülmüş",
+      "description": "Dondurulmuş üründen çözdürülerek hazırlanmıştır"
+    }
+  ],
+  "fallbacks": []
+}

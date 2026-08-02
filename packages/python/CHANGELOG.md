@@ -10,6 +10,19 @@ Pin to a major version in production:
 
 ---
 
+## [1.3.0]
+
+### Added
+
+- **Ruby gem** — [`menuella-food_safety`](https://rubygems.org/gems/menuella-food_safety).
+  - `disclosures`, `codes`, `icon`, `icon_to_svg`, `dataset`, plus `locales`, `allergen_keys`, `declaration_keys`, `icon_names`, `code_scheme` and the `locale?` / `allergen_key?` / `declaration_key?` guards. `UnsupportedLocaleError` and `UnknownIconError` both descend from `Menuella::FoodSafety::Error`, so a caller can rescue the whole surface at once.
+  - The gem ships the canonical JSON and reads it at runtime — `json` is a default gem, so there is **no runtime dependency** and nothing to generate.
+  - Value objects are `Data`, and everything returned is **frozen**. The dataset is shared state; a caller able to push onto an allergen list would be editing every other caller's copy in the same process.
+  - Named `menuella-food_safety`, not `menuella-food-safety`: in Ruby a dash separates the namespace and an underscore joins words inside it, so this is `Menuella::FoodSafety`. The all-dash form would claim to be `Menuella::Food::Safety`.
+  - Published by Trusted Publishing, so no RubyGems API key exists anywhere.
+
+---
+
 ## [1.2.0]
 
 ### Added

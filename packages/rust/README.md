@@ -91,6 +91,7 @@ Adds `Serialize` to every data type — enough to hand a bundle to an API respon
 | | |
 | --- | --- |
 | crates.io | this crate |
+| RubyGems | [`menuella-food_safety`](https://rubygems.org/gems/menuella-food_safety) |
 | npm | [`@menuella/food-safety`](https://www.npmjs.com/package/@menuella/food-safety) |
 | NuGet | [`Menuella.FoodSafety`](https://www.nuget.org/packages/Menuella.FoodSafety) |
 | pub.dev | [`menuella_food_safety`](https://pub.dev/packages/menuella_food_safety) |

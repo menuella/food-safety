@@ -14,6 +14,7 @@
 /packages/java      export-ignore
 /packages/python    export-ignore
 /packages/rust      export-ignore
+/packages/ruby      export-ignore
 /.github            export-ignore
 /scripts            export-ignore
 /docs               export-ignore
