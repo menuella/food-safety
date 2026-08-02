@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://menuella.github.io/food-safety/schemas/code.schema.json",
+  "title": "Menuella Footnote Codes",
+  "description": "The short code printed next to a disclosure in a menu legend, mapped from the semantic key. One scheme, valid in any region. The allergen letters (A1–R) follow long-established EU menu practice so guests recognise them; the declaration numbers are Menuella's own contiguous 1–22, because national legends are not standardized and the same number means different things on different menus. A code is a RENDERING convention, never an identity: store the key, render the code, and when reading someone else's menu resolve it against that menu's own legend first.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "scheme",
+    "convention",
+    "allergens",
+    "declarations"
+  ],
+  "properties": {
+    "scheme": {
+      "const": "MENUELLA",
+      "description": "Identifies the numbering scheme, so a consumer can tell these codes apart from a national legend it may also handle."
+    },
+    "convention": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Plain-English note on what the numbering is and the limits of trusting it."
+    },
+    "allergens": {
+      "$ref": "#/definitions/codeMap",
+      "description": "Allergen key from data/allergens.json → printed code."
+    },
+    "declarations": {
+      "$ref": "#/definitions/codeMap",
+      "description": "Declaration key from data/declarations.json → printed code."
+    }
+  },
+  "definitions": {
+    "codeMap": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[A-Z][A-Z_]*$"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[A-Z][0-9]?$|^[0-9]{1,2}$",
+        "description": "The printed footnote code, as a string — a letter (A6, G) or a number (11). A string rather than a number so both kinds share one type."
+      }
+    }
+  }
+}

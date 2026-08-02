@@ -1,0 +1,38 @@
+name: Release (pub.dev)
+
+# Its own workflow, like the npm and NuGet ones. All three ship the same dataset
+# from the same tag, but their OIDC exchanges are independent — a policy problem
+# on one registry must not take the others down with it.
+
+on:
+  push:
+    # pub.dev ONLY accepts automated publishing from a tag push, and rejects a
+    # run triggered any other way. So there is no workflow_dispatch here: it
+    # would look like an escape hatch and fail every time it was used.
+    #
+    # Must stay in step with the tag pattern configured on pub.dev
+    # (`v{{version}}`), or the workflow simply never fires.
+    tags: ["v[0-9]+.[0-9]+.[0-9]+"]
+
+concurrency:
+  group: release-pub
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    permissions:
+      # pub.dev exchanges this for a short-lived token. No pub credential exists
+      # anywhere in the repository.
+      id-token: write
+
+    # The reusable workflow maintained by the Dart team. Using it is what lets
+    # pub.dev report *how* a version was published, and means the publishing
+    # logic is theirs to keep correct rather than ours.
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      working-directory: packages/dart
+      # Matches "Require GitHub Actions environment" on pub.dev. This is the
+      # real protection: the environment is baked into the signed OIDC token, so
+      # someone who can push to the repo cannot bypass the environment's rules
+      # by editing this file — the token would simply not match.
+      environment: pub.dev

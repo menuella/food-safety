@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://menuella.github.io/food-safety/schemas/declaration-translation.schema.json",
+  "title": "Additive & Disclosure Labels (per language)",
+  "description": "Shape of every data/translations/declarations/<lang>.json file: an object keyed by the disclosure `key` from data/additives.json, so a lookup is O(1) with no join step. A locale may cover fewer keys than the structural file; consumers should fall back to another locale for anything absent.",
+  "type": "object",
+  "propertyNames": {
+    "enum": [
+      "COLORING", "PRESERVATIVES", "ANTIOXIDANTS", "NITRITE_CURING_SALT", "NITRATE",
+      "NITRITE_CURING_SALT_AND_NITRATE", "FLAVOR_ENHANCERS", "PHOSPHATE", "SULPHURED",
+      "BLACKENED", "WAXED", "SWEETENERS", "PHENYLALANINE", "LAXATIVE_WARNING",
+      "CAFFEINE", "QUININE", "CHILD_ATTENTION_WARNING",
+      "MILK_PROTEIN", "SURIMI", "RECONSTITUTED_MEAT", "RECONSTITUTED_FISH", "DEFROSTED"
+    ]
+  },
+  "additionalProperties": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["name", "description"],
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Short display label as printed on a menu, e.g. 'mit Farbstoff'."
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Longer explanation, e.g. 'Enthält Farbstoffe'."
+      }
+    }
+  }
+}

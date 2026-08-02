@@ -1,0 +1,97 @@
+name: Release (Maven Central)
+
+# Its own workflow, like the other four. One tag ships them all, but each
+# registry's auth is independent — a problem with one must not take the rest
+# down with it.
+#
+# This is the one registry that still needs stored secrets. Maven Central has no
+# OIDC trusted-publishing equivalent, so it takes a Portal token and an OpenPGP
+# key. Every other binding publishes with nothing stored at all.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+concurrency:
+  group: release-maven
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    # Skipped until the Portal token and signing key exist, so a missing config
+    # does not paint a release run red. Not silent, though — see announce-skip.
+    if: vars.MAVEN_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: maven-central
+      url: https://central.sonatype.com/artifact/com.menuella/food-safety
+    defaults:
+      run:
+        working-directory: packages/java
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      # The tag is the source of truth. A mismatch means someone tagged without
+      # bumping, and Maven Central has NO unpublish — a wrong version there is
+      # permanent in a way npm and PyPI are not.
+      - name: Check tag matches the package version
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          pkg="$(grep -oE '^version=(.+)$' gradle.properties | cut -d= -f2)"
+          if [ "$tag" != "$pkg" ]; then
+            echo "::error::tag v$tag does not match gradle.properties version $pkg"
+            exit 1
+          fi
+
+      - name: Test
+        run: ./gradlew test --console=plain
+
+      # Signs the POM, the main JAR, the sources JAR and the javadoc JAR. Maven
+      # Central rejects the bundle without an .asc for every one of them.
+      - name: Publish to the Central Portal
+        run: ./gradlew publishAllPublicationsToCentralPortal --console=plain
+        env:
+          MAVEN_CENTRAL_USERNAME: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
+          MAVEN_CENTRAL_PASSWORD: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+
+      - name: Where to finish the release
+        run: |
+          {
+            echo "### Uploaded to the Central Portal"
+            echo
+            echo "The deployment is **validated but not released** — \`publicationType\` is"
+            echo "\`USER_MANAGED\` on purpose, because Maven Central has no unpublish."
+            echo
+            echo "Release it at <https://central.sonatype.com/publishing/deployments>."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  # Without this, a skipped publish looks identical to no publish at all.
+  announce-skip:
+    if: needs.publish.result == 'skipped'
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          {
+            echo "### Maven Central publish skipped"
+            echo
+            echo "\`MAVEN_ENABLED\` is not set to \`true\`. Add the secrets"
+            echo "\`MAVEN_CENTRAL_USERNAME\`, \`MAVEN_CENTRAL_PASSWORD\`,"
+            echo "\`GPG_PRIVATE_KEY\` and \`GPG_PASSPHRASE\`, then set the variable."
+          } >> "$GITHUB_STEP_SUMMARY"

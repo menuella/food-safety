@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Rye",
+    "declaration": "Contains cereals and gluten-containing products",
+    "description": "Rye and rye products"
+  },
+  "BARLEY": {
+    "name": "Barley",
+    "declaration": "Contains cereals and gluten-containing products",
+    "description": "Barley and barley products"
+  },
+  "EMMER": {
+    "name": "Emmer",
+    "declaration": "Contains cereals and gluten-containing products",
+    "description": "Emmer and emmer products"
+  },
+  "EINKORN": {
+    "name": "Einkorn",
+    "declaration": "Contains cereals and gluten-containing products",
+    "description": "Einkorn and einkorn products"
+  },
+  "SPELT": {
+    "name": "Spelt",
+    "declaration": "Contains cereals and gluten-containing products",
+    "description": "Spelt and spelt products"
+  },
+  "WHEAT": {
+    "name": "Wheat",
+    "declaration": "Contains cereals and gluten-containing products",
+    "description": "Wheat and wheat products"
+  },
+  "OATS": {
+    "name": "Oats",
+    "declaration": "Contains cereals and gluten-containing products",
+    "description": "Oats and oat products"
+  },
+  "KHORASAN": {
+    "name": "Khorasan/Kamut",
+    "declaration": "Contains cereals and gluten-containing products",
+    "description": "Khorasan/Kamut and products"
+  },
+  "CRUSTACEANS": {
+    "name": "Crustaceans",
+    "declaration": "Contains crustaceans and crustacean products",
+    "description": "Includes crustaceans like shrimp, crab, etc."
+  },
+  "EGGS": {
+    "name": "Egg",
+    "declaration": "Contains eggs and egg products",
+    "description": "Includes eggs and egg products"
+  },
+  "FISH": {
+    "name": "Fish",
+    "declaration": "Contains fish and fish products",
+    "description": "Includes fish and fish products"
+  },
+  "PEANUTS": {
+    "name": "Peanuts",
+    "declaration": "Contains peanuts and peanut products",
+    "description": "Includes peanuts and peanut products"
+  },
+  "SOY": {
+    "name": "Soybeans",
+    "declaration": "Contains soybeans and soybean products",
+    "description": "Includes soybeans and soybean products"
+  },
+  "MILK": {
+    "name": "Milk (including Lactose)",
+    "declaration": "Contains milk and milk products (including lactose)",
+    "description": "Includes milk and lactose products"
+  },
+  "MACADAMIA": {
+    "name": "Macadamia Nuts",
+    "declaration": "Contains tree nuts and tree-nut products",
+    "description": "Macadamia nuts and products"
+  },
+  "ALMONDS": {
+    "name": "Almonds",
+    "declaration": "Contains tree nuts and tree-nut products",
+    "description": "Almonds and almond products"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Brazil Nuts",
+    "declaration": "Contains tree nuts and tree-nut products",
+    "description": "Brazil nuts and products"
+  },
+  "PECANS": {
+    "name": "Pecan Nuts",
+    "declaration": "Contains tree nuts and tree-nut products",
+    "description": "Pecan nuts and products"
+  },
+  "PISTACHIOS": {
+    "name": "Pistachios",
+    "declaration": "Contains tree nuts and tree-nut products",
+    "description": "Pistachios and products"
+  },
+  "WALNUTS": {
+    "name": "Walnuts",
+    "declaration": "Contains tree nuts and tree-nut products",
+    "description": "Walnuts and walnut products"
+  },
+  "CASHEWS": {
+    "name": "Cashew Nuts",
+    "declaration": "Contains tree nuts and tree-nut products",
+    "description": "Cashew nuts and products"
+  },
+  "HAZELNUTS": {
+    "name": "Hazelnuts",
+    "declaration": "Contains tree nuts and tree-nut products",
+    "description": "Hazelnuts and products"
+  },
+  "CELERY": {
+    "name": "Celery",
+    "declaration": "Contains celery and celery products",
+    "description": "Includes celery and celery products"
+  },
+  "MUSTARD": {
+    "name": "Mustard",
+    "declaration": "Contains mustard and mustard products",
+    "description": "Includes mustard and mustard products"
+  },
+  "SESAME": {
+    "name": "Sesame Seeds",
+    "declaration": "Contains sesame seeds and sesame products",
+    "description": "Includes sesame seeds and sesame seed products"
+  },
+  "SULPHITES": {
+    "name": "Sulfur Dioxide and Sulfites",
+    "declaration": "Contains sulphur dioxide and sulphites",
+    "description": "Includes sulfur dioxide and sulfites"
+  },
+  "LUPINS": {
+    "name": "Lupins",
+    "declaration": "Contains lupin and lupin products",
+    "description": "Includes lupins and lupin products"
+  },
+  "MOLLUSCS": {
+    "name": "Molluscs",
+    "declaration": "Contains molluscs and mollusc products",
+    "description": "Includes molluscs like snails, clams, etc."
+  }
+}

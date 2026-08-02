@@ -1,0 +1,88 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+# Releases must never run concurrently — two tags publishing at once is how a
+# registry ends up with a version nobody meant to ship.
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  # Required twice over:
+  #   1. Trusted Publishing — npm exchanges this OIDC token for publish rights,
+  #      so no NPM_TOKEN needs to exist at all.
+  #   2. Provenance — the signed attestation tying the tarball to this workflow
+  #      run and commit.
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: npm
+      url: https://www.npmjs.com/package/@menuella/food-safety
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          registry-url: https://registry.npmjs.org
+
+      # Trusted Publishing needs a newer npm than Node 22 ships with.
+      - run: npm install -g npm@latest
+
+      - run: npm ci
+
+      # Never publish a dataset that does not validate.
+      - run: npm run verify
+      - run: npm test
+
+      # The tag is the source of truth for the version — a mismatch means
+      # someone tagged without bumping, and the published version would lie.
+      - name: Check tag matches package version
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          pkg="$(node -p "require('./package.json').version")"
+          if [ "$tag" != "$pkg" ]; then
+            echo "::error::tag v$tag does not match package.json version $pkg"
+            exit 1
+          fi
+
+      # Two ways in, and the workflow does not care which:
+      #
+      #   Trusted Publishing (preferred) — configure this repo + workflow as a
+      #     trusted publisher on npmjs.com, delete the NPM_TOKEN secret, and
+      #     publish rights come from the OIDC token above. Nothing to rotate.
+      #
+      #   NPM_TOKEN (bootstrap only) — a trusted publisher cannot be configured
+      #     for a package that does not exist yet, so the FIRST release needs a
+      #     granular token with write access to the @menuella scope. Set it to
+      #     expire in days, not months, and delete it once Trusted Publishing
+      #     is switched on.
+      #
+      # `--provenance` is explicit here; Trusted Publishing would produce an
+      # attestation anyway, but stating it means a token-based run is signed too.
+      # Idempotent on purpose: the first release is published by hand (so no
+      # token ever has to exist) and the tag pushed afterwards. Without this the
+      # workflow would try to republish an existing version and fail.
+      - name: Publish
+        run: |
+          version="$(node -p "require('./package.json').version")"
+          if npm view "@menuella/food-safety@$version" version >/dev/null 2>&1; then
+            echo "::notice::$version is already on npm — skipping publish"
+          else
+            npm publish --provenance --access public
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create GitHub release
+        run: gh release create "$GITHUB_REF_NAME" --generate-notes --verify-tag
+        env:
+          GH_TOKEN: ${{ github.token }}

@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "mit Farbstoff",
+    "description": "Enthält Farbstoffe"
+  },
+  "PRESERVATIVES": {
+    "name": "mit Konservierungsstoff",
+    "description": "Enthält Konservierungsstoffe"
+  },
+  "ANTIOXIDANTS": {
+    "name": "mit Antioxidationsmittel",
+    "description": "Enthält Antioxidationsmittel"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "mit Nitritpökelsalz",
+    "description": "Enthält Nitritpökelsalz"
+  },
+  "NITRATE": {
+    "name": "mit Nitrat",
+    "description": "Mit Nitrat (Konservierung)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "mit Nitritpökelsalz und Nitrat",
+    "description": "Mit Nitritpökelsalz und Nitrat"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "mit Geschmacksverstärker",
+    "description": "Enthält Geschmacksverstärker"
+  },
+  "PHOSPHATE": {
+    "name": "mit Phosphat",
+    "description": "Enthält Phosphat"
+  },
+  "SULPHURED": {
+    "name": "geschwefelt",
+    "description": "Enthält Schwefeldioxid oder Sulfite"
+  },
+  "BLACKENED": {
+    "name": "geschwärzt",
+    "description": "Geschwärzt für den optischen Effekt"
+  },
+  "WAXED": {
+    "name": "gewachst",
+    "description": "Gewachste Oberfläche zur Konservierung"
+  },
+  "SWEETENERS": {
+    "name": "mit Süßungsmitteln",
+    "description": "Enthält Süßungsmittel"
+  },
+  "PHENYLALANINE": {
+    "name": "enthält eine Phenylalaninquelle",
+    "description": "Enthält eine Phenylalaninquelle"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "kann bei übermäßigem Verzehr abführend wirken",
+    "description": "Kann bei übermäßigem Verzehr abführend wirken"
+  },
+  "CAFFEINE": {
+    "name": "koffeinhaltig",
+    "description": "Enthält Koffein"
+  },
+  "QUININE": {
+    "name": "chininhaltig",
+    "description": "Enthält Chinin"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "kann Aktivität und Aufmerksamkeit bei Kindern beeinträchtigen",
+    "description": "Kann die Aktivität und Aufmerksamkeit bei Kindern beeinträchtigen"
+  },
+  "MILK_PROTEIN": {
+    "name": "mit Milcheiweiß",
+    "description": "Enthält Milcheiweiß"
+  },
+  "SURIMI": {
+    "name": "mit Surimi",
+    "description": "Enthält Surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "aus Fleischstücken zusammengefügt",
+    "description": "Aus Fleischstücken zusammengefügt"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "aus Fischstücken zusammengefügt",
+    "description": "Aus Fischstücken zusammengefügt"
+  },
+  "DEFROSTED": {
+    "name": "aufgetaut",
+    "description": "Aus tiefgefrorenem Zustand aufgetaut"
+  }
+}

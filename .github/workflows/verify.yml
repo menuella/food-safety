@@ -1,0 +1,116 @@
+name: Verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Least privilege: these jobs only ever read the checkout.
+permissions:
+  contents: read
+
+# A newer push supersedes an in-flight run on the same ref.
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  dataset:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Schemas, key integrity, icon coverage, footnote codes, and that the
+      # generated files still match their sources.
+      - run: npm run verify
+
+      # Runtime behaviour of the published entry point: immutability, guards,
+      # error contracts.
+      - run: npm test
+
+      # A dependency with a known high-severity advisory should not reach a
+      # release. One devDependency today, so this is cheap insurance.
+      - run: npm audit --audit-level=high
+
+  dart:
+    name: Dart package
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: packages/dart
+    steps:
+      - uses: actions/checkout@v5
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+
+      - run: dart pub get
+
+      # `dart analyze` at default severity: the package sets strict-casts,
+      # strict-inference and public_member_api_docs, so an undocumented public
+      # member fails here rather than silently costing pub.dev score points.
+      - run: dart analyze --fatal-infos
+      - run: dart format --output=none --set-exit-if-changed .
+      - run: dart test
+
+      # Catches the mistake that would otherwise reach pub.dev: a package that
+      # builds locally but is missing a file, or trips a publish-time check.
+      - run: dart pub publish --dry-run
+
+  python:
+    name: Python package
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: packages/python
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - run: |
+          python -m pip install --upgrade pip build pytest jsonschema twine
+          python -m pip install -e .
+
+      # The tests that matter here compare the PACKAGED copy of the dataset
+      # against the canonical data/ at the repo root. A wheel built without
+      # running the generator would otherwise ship stale data and pass
+      # everything else.
+      - run: python -m pytest -q
+
+      - run: python -m build
+      - run: python -m twine check dist/*
+
+  jvm:
+    name: JVM package
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: packages/java
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v4
+
+      # `build` covers compile, explicitApi, tests, and the sources and javadoc
+      # jars Maven Central requires — so a missing artifact fails here rather
+      # than at upload, where Central has no unpublish to fall back on.
+      - run: ./gradlew build --console=plain
+
+      # The POM is what Central validates hardest. Generating it in CI means a
+      # missing licence, developer or scm block is caught on the PR.
+      - run: ./gradlew generatePomFileForMavenPublication --console=plain

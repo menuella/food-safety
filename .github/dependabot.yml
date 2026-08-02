@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # The dataset itself has one devDependency; the explorer has a real tree.
+  - package-ecosystem: npm
+    directory: /
+    schedule: { interval: monthly }
+    commit-message: { prefix: "chore(deps)" }
+
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: monthly }
+    commit-message: { prefix: "chore(ci)" }

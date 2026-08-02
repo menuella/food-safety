@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "Con Colorante",
+    "description": "Contiene colorantes"
+  },
+  "PRESERVATIVES": {
+    "name": "Con conservante",
+    "description": "Contiene conservantes"
+  },
+  "ANTIOXIDANTS": {
+    "name": "Con antioxidante",
+    "description": "Contiene antioxidantes"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "Con sal de curado con nitrito",
+    "description": "Contiene sal de curado con nitrito"
+  },
+  "NITRATE": {
+    "name": "Con nitrato",
+    "description": "Contiene nitrato (conservante)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "Con sal de curado con nitrito y nitrato",
+    "description": "Contiene sal de curado con nitrito y nitrato"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "Con potenciador de sabor",
+    "description": "Contiene potenciadores de sabor"
+  },
+  "PHOSPHATE": {
+    "name": "Con fosfato",
+    "description": "Contiene fosfato"
+  },
+  "SULPHURED": {
+    "name": "Sulfitado",
+    "description": "Contiene dióxido de azufre o sulfitos"
+  },
+  "BLACKENED": {
+    "name": "Negro",
+    "description": "Negro para efecto visual"
+  },
+  "WAXED": {
+    "name": "Encerado",
+    "description": "Superficie encerada para conservación"
+  },
+  "SWEETENERS": {
+    "name": "Con edulcorantes",
+    "description": "Contiene edulcorantes"
+  },
+  "PHENYLALANINE": {
+    "name": "Contiene una fuente de fenilalanina",
+    "description": "Contiene fuente de fenilalanina"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "Puede tener un efecto laxante si se consume en exceso",
+    "description": "Puede tener un efecto laxante si se consume en exceso"
+  },
+  "CAFFEINE": {
+    "name": "Contiene cafeína",
+    "description": "Contiene cafeína"
+  },
+  "QUININE": {
+    "name": "Contiene quinina",
+    "description": "Contiene quinina"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "Puede afectar la actividad y la atención en los niños",
+    "description": "Puede afectar la actividad y la atención en los niños"
+  },
+  "MILK_PROTEIN": {
+    "name": "Contiene proteína de leche",
+    "description": "Contiene proteína de leche"
+  },
+  "SURIMI": {
+    "name": "Contiene surimi",
+    "description": "Contiene surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "Hecho de carne reconstruida",
+    "description": "Hecho de carne reconstruida"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "Hecho de pescado reconstruido",
+    "description": "Hecho de pescado reconstruido"
+  },
+  "DEFROSTED": {
+    "name": "Descongelado",
+    "description": "Descongelado a partir de producto congelado"
+  }
+}

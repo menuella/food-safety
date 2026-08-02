@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://menuella.github.io/food-safety/schemas/allergen-translation.schema.json",
+  "title": "Allergen Labels (per language)",
+  "description": "Shape of every data/translations/allergens/<lang>.json file: an object keyed by the allergen `key` from data/allergens.json, so a lookup is O(1) with no join step. `declaration` is present in de, en, es, fr, it and tr; locales that do not yet carry the legal sentence omit the field rather than guess it, and consumers should fall back to another locale.",
+  "type": "object",
+  "propertyNames": {
+    "enum": [
+      "RYE", "BARLEY", "EMMER", "EINKORN", "SPELT", "WHEAT", "OATS", "KHORASAN",
+      "CRUSTACEANS", "EGGS", "FISH", "PEANUTS", "SOY", "MILK",
+      "MACADAMIA", "ALMONDS", "BRAZIL_NUTS", "PECANS", "PISTACHIOS", "WALNUTS",
+      "CASHEWS", "HAZELNUTS",
+      "CELERY", "MUSTARD", "SESAME", "SULPHITES", "LUPINS", "MOLLUSCS"
+    ]
+  },
+  "additionalProperties": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["name", "description"],
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Short display label, e.g. 'Weizen'."
+      },
+      "declaration": {
+        "type": "string",
+        "minLength": 1,
+        "description": "The legal group declaration sentence, identical for every member of a group, e.g. 'Enthält Getreide und glutenhaltige Erzeugnisse'. Render once per group, not once per member."
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Longer explanation, e.g. 'Weizen und Weizenprodukte'."
+      }
+    }
+  }
+}

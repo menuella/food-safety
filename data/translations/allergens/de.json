@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Roggen",
+    "declaration": "Enthält Getreide und glutenhaltige Erzeugnisse",
+    "description": "Roggen und Roggenprodukte"
+  },
+  "BARLEY": {
+    "name": "Gerste",
+    "declaration": "Enthält Getreide und glutenhaltige Erzeugnisse",
+    "description": "Gerste und Gersteprodukte"
+  },
+  "EMMER": {
+    "name": "Emmer",
+    "declaration": "Enthält Getreide und glutenhaltige Erzeugnisse",
+    "description": "Emmer und Emmerprodukte"
+  },
+  "EINKORN": {
+    "name": "Einkorn",
+    "declaration": "Enthält Getreide und glutenhaltige Erzeugnisse",
+    "description": "Einkorn und Einkornprodukte"
+  },
+  "SPELT": {
+    "name": "Dinkel",
+    "declaration": "Enthält Getreide und glutenhaltige Erzeugnisse",
+    "description": "Dinkel und Dinkelprodukte"
+  },
+  "WHEAT": {
+    "name": "Weizen",
+    "declaration": "Enthält Getreide und glutenhaltige Erzeugnisse",
+    "description": "Weizen und Weizenprodukte"
+  },
+  "OATS": {
+    "name": "Hafer",
+    "declaration": "Enthält Getreide und glutenhaltige Erzeugnisse",
+    "description": "Hafer und Haferprodukte"
+  },
+  "KHORASAN": {
+    "name": "Khorasan/Kamut",
+    "declaration": "Enthält Getreide und glutenhaltige Erzeugnisse",
+    "description": "Khorasan/Kamut und Produkte"
+  },
+  "CRUSTACEANS": {
+    "name": "Krebstiere",
+    "declaration": "Enthält Krebstiere und Krebstiererzeugnisse",
+    "description": "Einschließlich Krebstiere wie Garnelen, Krabben usw."
+  },
+  "EGGS": {
+    "name": "Ei",
+    "declaration": "Enthält Eier und Eierzeugnisse",
+    "description": "Einschließlich Eier und Eiprodukte"
+  },
+  "FISH": {
+    "name": "Fisch",
+    "declaration": "Enthält Fisch und Fischerzeugnisse",
+    "description": "Einschließlich Fisch und Fischprodukte"
+  },
+  "PEANUTS": {
+    "name": "Erdnuss",
+    "declaration": "Enthält Erdnüsse und Erdnusserzeugnisse",
+    "description": "Einschließlich Erdnüsse und Erdnussprodukte"
+  },
+  "SOY": {
+    "name": "Soja",
+    "declaration": "Enthält Sojabohnen und Sojaerzeugnisse",
+    "description": "Einschließlich Sojabohnen und Sojaprodukte"
+  },
+  "MILK": {
+    "name": "Milch (einschließlich Laktose)",
+    "declaration": "Enthält Milch und Milcherzeugnisse (einschließlich Laktose)",
+    "description": "Einschließlich Milch und Laktoseprodukte"
+  },
+  "MACADAMIA": {
+    "name": "Macadamianüsse",
+    "declaration": "Enthält Schalenfrüchte und Schalenfruchterzeugnisse",
+    "description": "Macadamianüsse und Produkte"
+  },
+  "ALMONDS": {
+    "name": "Mandeln",
+    "declaration": "Enthält Schalenfrüchte und Schalenfruchterzeugnisse",
+    "description": "Mandeln und Mandelprodukte"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Paranüsse",
+    "declaration": "Enthält Schalenfrüchte und Schalenfruchterzeugnisse",
+    "description": "Paranüsse und Produkte"
+  },
+  "PECANS": {
+    "name": "Pekannuss",
+    "declaration": "Enthält Schalenfrüchte und Schalenfruchterzeugnisse",
+    "description": "Pekannüsse und Produkte"
+  },
+  "PISTACHIOS": {
+    "name": "Pistazien",
+    "declaration": "Enthält Schalenfrüchte und Schalenfruchterzeugnisse",
+    "description": "Pistazien und Produkte"
+  },
+  "WALNUTS": {
+    "name": "Walnüsse",
+    "declaration": "Enthält Schalenfrüchte und Schalenfruchterzeugnisse",
+    "description": "Walnüsse und Produkte"
+  },
+  "CASHEWS": {
+    "name": "Cashewnüsse",
+    "declaration": "Enthält Schalenfrüchte und Schalenfruchterzeugnisse",
+    "description": "Cashewnüsse und Produkte"
+  },
+  "HAZELNUTS": {
+    "name": "Haselnüsse",
+    "declaration": "Enthält Schalenfrüchte und Schalenfruchterzeugnisse",
+    "description": "Haselnüsse und Produkte"
+  },
+  "CELERY": {
+    "name": "Sellerie",
+    "declaration": "Enthält Sellerie und Sellerieerzeugnisse",
+    "description": "Einschließlich Sellerie und Sellerieprodukte"
+  },
+  "MUSTARD": {
+    "name": "Senf",
+    "declaration": "Enthält Senf und Senferzeugnisse",
+    "description": "Einschließlich Senf und Senfprodukte"
+  },
+  "SESAME": {
+    "name": "Sesamsamen",
+    "declaration": "Enthält Sesamsamen und Sesamerzeugnisse",
+    "description": "Einschließlich Sesamsamen und Sesamsamenprodukte"
+  },
+  "SULPHITES": {
+    "name": "Schwefeldioxid und Sulfite",
+    "declaration": "Enthält Schwefeldioxid und Sulfite",
+    "description": "Einschließlich Schwefeldioxid und Sulfite"
+  },
+  "LUPINS": {
+    "name": "Lupine",
+    "declaration": "Enthält Lupinen und Lupinenerzeugnisse",
+    "description": "Einschließlich Lupinen und Lupinenprodukte"
+  },
+  "MOLLUSCS": {
+    "name": "Weichtiere",
+    "declaration": "Enthält Weichtiere und Weichtiererzeugnisse",
+    "description": "Einschließlich Weichtiere wie Schnecken, Muscheln usw."
+  }
+}

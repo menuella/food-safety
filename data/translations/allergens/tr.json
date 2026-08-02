@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Çavdar",
+    "declaration": "Tahıl ve gluten içeren ürünler içerir",
+    "description": "Çavdar ve çavdar ürünleri"
+  },
+  "BARLEY": {
+    "name": "Arpa",
+    "declaration": "Tahıl ve gluten içeren ürünler içerir",
+    "description": "Arpa ve arpa ürünleri"
+  },
+  "EMMER": {
+    "name": "Emmer",
+    "declaration": "Tahıl ve gluten içeren ürünler içerir",
+    "description": "Emmer ve emmer ürünleri"
+  },
+  "EINKORN": {
+    "name": "Siyez",
+    "declaration": "Tahıl ve gluten içeren ürünler içerir",
+    "description": "Siyez ve siyez ürünleri"
+  },
+  "SPELT": {
+    "name": "Kızıl buğday",
+    "declaration": "Tahıl ve gluten içeren ürünler içerir",
+    "description": "Kızıl buğday ve kızıl buğday ürünleri"
+  },
+  "WHEAT": {
+    "name": "Buğday",
+    "declaration": "Tahıl ve gluten içeren ürünler içerir",
+    "description": "Buğday ve buğday ürünleri"
+  },
+  "OATS": {
+    "name": "Yulaf",
+    "declaration": "Tahıl ve gluten içeren ürünler içerir",
+    "description": "Yulaf ve yulaf ürünleri"
+  },
+  "KHORASAN": {
+    "name": "Khorasan/Kamut",
+    "declaration": "Tahıl ve gluten içeren ürünler içerir",
+    "description": "Khorasan/Kamut ve ürünleri"
+  },
+  "CRUSTACEANS": {
+    "name": "Kabuklular",
+    "declaration": "Kabuklu deniz hayvanları ve ürünlerini içerir",
+    "description": "Karides, yengeç gibi kabukluları içerir"
+  },
+  "EGGS": {
+    "name": "Yumurta",
+    "declaration": "Yumurta ve yumurta ürünleri içerir",
+    "description": "Yumurta ve yumurta ürünlerini içerir"
+  },
+  "FISH": {
+    "name": "Balık",
+    "declaration": "Balık ve balık ürünleri içerir",
+    "description": "Balık ve balık ürünlerini içerir"
+  },
+  "PEANUTS": {
+    "name": "Fıstık",
+    "declaration": "Yer fıstığı ve yer fıstığı ürünleri içerir",
+    "description": "Fıstık ve fıstık ürünlerini içerir"
+  },
+  "SOY": {
+    "name": "Soya fasulyesi",
+    "declaration": "Soya ve soya ürünleri içerir",
+    "description": "Soya fasulyesi ve soya ürünlerini içerir"
+  },
+  "MILK": {
+    "name": "Süt (laktaz dahil)",
+    "declaration": "Süt ve süt ürünleri (laktoz dâhil) içerir",
+    "description": "Süt ve laktoz ürünlerini içerir"
+  },
+  "MACADAMIA": {
+    "name": "Makadamya Fındığı",
+    "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+    "description": "Makadamya Fındığı ve ürünleri"
+  },
+  "ALMONDS": {
+    "name": "Bademler",
+    "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+    "description": "Bademler ve badem ürünleri"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Brezilya Fındığı",
+    "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+    "description": "Brezilya Fındığı ve ürünleri"
+  },
+  "PECANS": {
+    "name": "Pekan Cevizi",
+    "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+    "description": "Pekan Cevizi ve ürünleri"
+  },
+  "PISTACHIOS": {
+    "name": "Fıstık",
+    "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+    "description": "Fıstık ve ürünleri"
+  },
+  "WALNUTS": {
+    "name": "Cevizler",
+    "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+    "description": "Cevizler ve ceviz ürünleri"
+  },
+  "CASHEWS": {
+    "name": "Kaju fıstığı",
+    "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+    "description": "Kaju fıstığı ve ürünleri"
+  },
+  "HAZELNUTS": {
+    "name": "Fındık",
+    "declaration": "Sert kabuklu yemişler ve ürünlerini içerir",
+    "description": "Fındık ve ürünleri"
+  },
+  "CELERY": {
+    "name": "Kereviz",
+    "declaration": "Kereviz ve kereviz ürünleri içerir",
+    "description": "Kereviz ve kereviz ürünlerini içerir"
+  },
+  "MUSTARD": {
+    "name": "Hardal",
+    "declaration": "Hardal ve hardal ürünleri içerir",
+    "description": "Hardal ve hardal ürünlerini içerir"
+  },
+  "SESAME": {
+    "name": "Susam tohumu",
+    "declaration": "Susam ve susam ürünleri içerir",
+    "description": "Susam tohumu ve susam tohumu ürünleri dahil"
+  },
+  "SULPHITES": {
+    "name": "Kükürtdioksit ve sülfürler",
+    "declaration": "Kükürt dioksit ve sülfitler içerir",
+    "description": "Kükürtdioksit ve sülfürleri içerir"
+  },
+  "LUPINS": {
+    "name": "Lupinler",
+    "declaration": "Acı bakla (lupin) ve ürünlerini içerir",
+    "description": "Lupinler ve lupin ürünlerini içerir"
+  },
+  "MOLLUSCS": {
+    "name": "Yumuşakçalar",
+    "declaration": "Yumuşakçalar ve ürünlerini içerir",
+    "description": "Yumuşakçalar, örneğin sümüklüböcekler, midyeler vb. içerir"
+  }
+}

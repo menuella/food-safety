@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Segale",
+    "declaration": "Contiene cereali e prodotti contenenti glutine",
+    "description": "Segale e prodotti a base di segale"
+  },
+  "BARLEY": {
+    "name": "Orzo",
+    "declaration": "Contiene cereali e prodotti contenenti glutine",
+    "description": "Orzo e prodotti a base di orzo"
+  },
+  "EMMER": {
+    "name": "Farro dicocco",
+    "declaration": "Contiene cereali e prodotti contenenti glutine",
+    "description": "Farro dicocco e prodotti a base di farro dicocco"
+  },
+  "EINKORN": {
+    "name": "Farro monococco",
+    "declaration": "Contiene cereali e prodotti contenenti glutine",
+    "description": "Farro monococco e prodotti a base di farro monococco"
+  },
+  "SPELT": {
+    "name": "Farro spelta",
+    "declaration": "Contiene cereali e prodotti contenenti glutine",
+    "description": "Farro spelta e prodotti a base di farro spelta"
+  },
+  "WHEAT": {
+    "name": "Grano",
+    "declaration": "Contiene cereali e prodotti contenenti glutine",
+    "description": "Grano e prodotti a base di grano"
+  },
+  "OATS": {
+    "name": "Avena",
+    "declaration": "Contiene cereali e prodotti contenenti glutine",
+    "description": "Avena e prodotti a base di avena"
+  },
+  "KHORASAN": {
+    "name": "Khorasan/Kamut",
+    "declaration": "Contiene cereali e prodotti contenenti glutine",
+    "description": "Khorasan/Kamut e prodotti"
+  },
+  "CRUSTACEANS": {
+    "name": "Crostacei",
+    "declaration": "Contiene crostacei e prodotti a base di crostacei",
+    "description": "Include crostacei come gamberetti, granchi, ecc."
+  },
+  "EGGS": {
+    "name": "Uovo",
+    "declaration": "Contiene uova e prodotti a base di uova",
+    "description": "Include uova e prodotti a base di uova"
+  },
+  "FISH": {
+    "name": "Pesce",
+    "declaration": "Contiene pesce e prodotti a base di pesce",
+    "description": "Include pesce e prodotti a base di pesce"
+  },
+  "PEANUTS": {
+    "name": "Arachidi",
+    "declaration": "Contiene arachidi e prodotti a base di arachidi",
+    "description": "Include arachidi e prodotti a base di arachidi"
+  },
+  "SOY": {
+    "name": "Soia",
+    "declaration": "Contiene soia e prodotti a base di soia",
+    "description": "Include fagioli di soia e prodotti a base di soia"
+  },
+  "MILK": {
+    "name": "Latte (incluso lattosio)",
+    "declaration": "Contiene latte e prodotti a base di latte (incluso il lattosio)",
+    "description": "Include latte e prodotti a base di lattosio"
+  },
+  "MACADAMIA": {
+    "name": "Noci di macadamia",
+    "declaration": "Contiene frutta a guscio e prodotti derivati",
+    "description": "Noci di macadamia e prodotti"
+  },
+  "ALMONDS": {
+    "name": "Mandorle",
+    "declaration": "Contiene frutta a guscio e prodotti derivati",
+    "description": "Mandorle e prodotti a base di mandorle"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Noci del Brasile",
+    "declaration": "Contiene frutta a guscio e prodotti derivati",
+    "description": "Noci del Brasile e prodotti"
+  },
+  "PECANS": {
+    "name": "Noci di pecan",
+    "declaration": "Contiene frutta a guscio e prodotti derivati",
+    "description": "Noci di pecan e prodotti"
+  },
+  "PISTACHIOS": {
+    "name": "Pistacchi",
+    "declaration": "Contiene frutta a guscio e prodotti derivati",
+    "description": "Pistacchi e prodotti"
+  },
+  "WALNUTS": {
+    "name": "Noci",
+    "declaration": "Contiene frutta a guscio e prodotti derivati",
+    "description": "Noci e prodotti a base di noci"
+  },
+  "CASHEWS": {
+    "name": "Anacardi",
+    "declaration": "Contiene frutta a guscio e prodotti derivati",
+    "description": "Anacardi e prodotti"
+  },
+  "HAZELNUTS": {
+    "name": "Nocciole",
+    "declaration": "Contiene frutta a guscio e prodotti derivati",
+    "description": "Nocciole e prodotti"
+  },
+  "CELERY": {
+    "name": "Sedano",
+    "declaration": "Contiene sedano e prodotti a base di sedano",
+    "description": "Include sedano e prodotti a base di sedano"
+  },
+  "MUSTARD": {
+    "name": "Senape",
+    "declaration": "Contiene senape e prodotti a base di senape",
+    "description": "Include senape e prodotti a base di senape"
+  },
+  "SESAME": {
+    "name": "Semi di sesamo",
+    "declaration": "Contiene semi di sesamo e prodotti a base di sesamo",
+    "description": "Compresi semi di sesamo e prodotti a base di semi di sesamo"
+  },
+  "SULPHITES": {
+    "name": "Anidride solforosa e solfiti",
+    "declaration": "Contiene anidride solforosa e solfiti",
+    "description": "Include anidride solforosa e solfiti"
+  },
+  "LUPINS": {
+    "name": "Lupini",
+    "declaration": "Contiene lupini e prodotti a base di lupini",
+    "description": "Include lupini e prodotti a base di lupino"
+  },
+  "MOLLUSCS": {
+    "name": "Molluschi",
+    "declaration": "Contiene molluschi e prodotti a base di molluschi",
+    "description": "Include molluschi come lumache, vongole, ecc."
+  }
+}

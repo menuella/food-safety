@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "Renklendirici ile",
+    "description": "Renklendirici içerir"
+  },
+  "PRESERVATIVES": {
+    "name": "Koruyucu maddelerle",
+    "description": "Koruyucu madde içerir"
+  },
+  "ANTIOXIDANTS": {
+    "name": "Antioksidan içerir",
+    "description": "Antioksidan içerir"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "Nitritli tuz ile",
+    "description": "Nitritli tuz içerir"
+  },
+  "NITRATE": {
+    "name": "Nitrat ile",
+    "description": "Nitrat içerir (koruyucu)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "Nitritli kürleme tuzu ve nitrat ile",
+    "description": "Nitritli kürleme tuzu ve nitrat içerir"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "Lezzet arttırıcı içerir",
+    "description": "Lezzet arttırıcıları içerir"
+  },
+  "PHOSPHATE": {
+    "name": "Fosfatlı",
+    "description": "Fosfat içerir"
+  },
+  "SULPHURED": {
+    "name": "Kükürtlenmiş",
+    "description": "Kükürtdioksit veya sülfür içerir"
+  },
+  "BLACKENED": {
+    "name": "Kararmış",
+    "description": "Görsel efekt için kararmış"
+  },
+  "WAXED": {
+    "name": "Cilalı",
+    "description": "Koruma için cilalanmış yüzey"
+  },
+  "SWEETENERS": {
+    "name": "Tatlandırıcılarla",
+    "description": "Tatlandırıcı içerir"
+  },
+  "PHENYLALANINE": {
+    "name": "Fenilalanin kaynağı içerir",
+    "description": "Fenilalanin kaynağı içerir"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "Aşırı tüketildiğinde laksatif etkisi olabilir",
+    "description": "Aşırı tüketildiğinde laksatif etkisi olabilir"
+  },
+  "CAFFEINE": {
+    "name": "Kafein içerir",
+    "description": "Kafein içerir"
+  },
+  "QUININE": {
+    "name": "Kinin içerir",
+    "description": "Kinin içerir"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "Çocuklarda aktivite ve dikkati etkileyebilir",
+    "description": "Çocuklarda aktivite ve dikkati etkileyebilir"
+  },
+  "MILK_PROTEIN": {
+    "name": "Süt proteini içerir",
+    "description": "Süt proteini içerir"
+  },
+  "SURIMI": {
+    "name": "Surimi içerir",
+    "description": "Surimi içerir"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "Yeniden yapılandırılmış etten yapılmıştır",
+    "description": "Yeniden yapılandırılmış etten yapılmıştır"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "Yeniden yapılandırılmış balıktan yapılmıştır",
+    "description": "Yeniden yapılandırılmış balıktan yapılmıştır"
+  },
+  "DEFROSTED": {
+    "name": "Çözdürülmüş",
+    "description": "Dondurulmuş üründen çözdürülerek hazırlanmıştır"
+  }
+}

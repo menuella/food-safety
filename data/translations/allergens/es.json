@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Centeno",
+    "declaration": "Contiene cereales y productos con gluten",
+    "description": "Centeno y productos de centeno"
+  },
+  "BARLEY": {
+    "name": "Cebada",
+    "declaration": "Contiene cereales y productos con gluten",
+    "description": "Cebada y productos de cebada"
+  },
+  "EMMER": {
+    "name": "Emmer",
+    "declaration": "Contiene cereales y productos con gluten",
+    "description": "Emmer y productos de emmer"
+  },
+  "EINKORN": {
+    "name": "Einkorn",
+    "declaration": "Contiene cereales y productos con gluten",
+    "description": "Einkorn y productos de einkorn"
+  },
+  "SPELT": {
+    "name": "Espelta",
+    "declaration": "Contiene cereales y productos con gluten",
+    "description": "Espelta y productos de espelta"
+  },
+  "WHEAT": {
+    "name": "Trigo",
+    "declaration": "Contiene cereales y productos con gluten",
+    "description": "Trigo y productos de trigo"
+  },
+  "OATS": {
+    "name": "Avena",
+    "declaration": "Contiene cereales y productos con gluten",
+    "description": "Avena y productos de avena"
+  },
+  "KHORASAN": {
+    "name": "Khorasan/Kamut",
+    "declaration": "Contiene cereales y productos con gluten",
+    "description": "Khorasan/Kamut y productos"
+  },
+  "CRUSTACEANS": {
+    "name": "Mariscos",
+    "declaration": "Contiene crustáceos y productos a base de crustáceos",
+    "description": "Incluye mariscos como camarones, cangrejos, etc."
+  },
+  "EGGS": {
+    "name": "Huevo",
+    "declaration": "Contiene huevos y productos a base de huevo",
+    "description": "Incluye huevos y productos de huevo"
+  },
+  "FISH": {
+    "name": "Pescado",
+    "declaration": "Contiene pescado y productos a base de pescado",
+    "description": "Incluye pescado y productos de pescado"
+  },
+  "PEANUTS": {
+    "name": "Cacahuetes",
+    "declaration": "Contiene cacahuetes y productos a base de cacahuete",
+    "description": "Incluye cacahuetes y productos de cacahuetes"
+  },
+  "SOY": {
+    "name": "Soja",
+    "declaration": "Contiene soja y productos a base de soja",
+    "description": "Incluye soja y productos de soja"
+  },
+  "MILK": {
+    "name": "Leche (incluido lactosa)",
+    "declaration": "Contiene leche y productos lácteos (incluida la lactosa)",
+    "description": "Incluye leche y productos lácteos con lactosa"
+  },
+  "MACADAMIA": {
+    "name": "Nueces de macadamia",
+    "declaration": "Contiene frutos de cáscara y productos derivados",
+    "description": "Nueces de macadamia y productos"
+  },
+  "ALMONDS": {
+    "name": "Almendras",
+    "declaration": "Contiene frutos de cáscara y productos derivados",
+    "description": "Almendras y productos de almendra"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Nueces de Brasil",
+    "declaration": "Contiene frutos de cáscara y productos derivados",
+    "description": "Nueces de Brasil y productos"
+  },
+  "PECANS": {
+    "name": "Nueces de pecán",
+    "declaration": "Contiene frutos de cáscara y productos derivados",
+    "description": "Nueces de pecán y productos"
+  },
+  "PISTACHIOS": {
+    "name": "Pistachos",
+    "declaration": "Contiene frutos de cáscara y productos derivados",
+    "description": "Pistachos y productos"
+  },
+  "WALNUTS": {
+    "name": "Nueces",
+    "declaration": "Contiene frutos de cáscara y productos derivados",
+    "description": "Nueces y productos de nueces"
+  },
+  "CASHEWS": {
+    "name": "Anacardos",
+    "declaration": "Contiene frutos de cáscara y productos derivados",
+    "description": "Anacardos y productos"
+  },
+  "HAZELNUTS": {
+    "name": "Avellanas",
+    "declaration": "Contiene frutos de cáscara y productos derivados",
+    "description": "Avellanas y productos"
+  },
+  "CELERY": {
+    "name": "Apio",
+    "declaration": "Contiene apio y productos derivados",
+    "description": "Incluye apio y productos de apio"
+  },
+  "MUSTARD": {
+    "name": "Mostaza",
+    "declaration": "Contiene mostaza y productos derivados",
+    "description": "Incluye mostaza y productos de mostaza"
+  },
+  "SESAME": {
+    "name": "Semillas de sésamo",
+    "declaration": "Contiene granos de sésamo y productos a base de sésamo",
+    "description": "Incluyendo semillas de sésamo y productos de semillas de sésamo"
+  },
+  "SULPHITES": {
+    "name": "Dióxido de azufre y sulfitos",
+    "declaration": "Contiene dióxido de azufre y sulfitos",
+    "description": "Incluye dióxido de azufre y sulfitos"
+  },
+  "LUPINS": {
+    "name": "Altramuces",
+    "declaration": "Contiene altramuces y productos a base de altramuces",
+    "description": "Incluye altramuces y productos de altramuz"
+  },
+  "MOLLUSCS": {
+    "name": "Moluscos",
+    "declaration": "Contiene moluscos y productos a base de moluscos",
+    "description": "Incluye moluscos como caracoles, almejas, etc."
+  }
+}

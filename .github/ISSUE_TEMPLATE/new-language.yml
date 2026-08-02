@@ -1,0 +1,35 @@
+name: New language
+description: Add or complete a language
+labels: ["translation", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A language is two files: `data/translations/allergens/<lang>.json` and
+        `data/translations/additives/<lang>.json`, each keyed by the semantic key.
+        Nothing structural changes.
+  - type: input
+    id: locale
+    attributes:
+      label: Language
+      description: ISO 639-1 two-letter code.
+      placeholder: pt
+    validations:
+      required: true
+  - type: dropdown
+    id: who
+    attributes:
+      label: Who is translating?
+      options:
+        - I am a native or fluent speaker
+        - A native speaker is reviewing my work
+        - Machine translation, needs a reviewer
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        **On machine translation:** it is fine as a starting point for names and
+        descriptions, but the `declaration` field is legal wording shown to
+        guests. We would rather ship a language without declarations than ship
+        translated ones nobody has checked.

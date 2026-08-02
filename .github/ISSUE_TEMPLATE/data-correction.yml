@@ -1,0 +1,65 @@
+name: Data correction
+description: An allergen, declaration, translation or code is wrong
+labels: ["data", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for this — data corrections are the most valuable contribution
+        to this project. Please cite a source; for anything legal we cannot
+        merge a change on an assertion alone.
+  - type: input
+    id: key
+    attributes:
+      label: Key
+      description: The semantic key affected, e.g. `WHEAT` or `NITRITE_CURING_SALT`.
+      placeholder: WHEAT
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: What is wrong?
+      options:
+        - Label or description (translation)
+        - Legal declaration sentence
+        - Which group or category it belongs to
+        - Footnote code
+        - Ingredient → allergen mapping
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: locale
+    attributes:
+      label: Language
+      description: Two-letter code, if this is a translation issue.
+      placeholder: de
+  - type: textarea
+    id: current
+    attributes:
+      label: What it says now
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What it should say
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: |
+        A regulation with article or annex, an official guidance document, or —
+        for wording — who confirmed it and on what basis.
+      placeholder: "Reg. (EU) 1169/2011 Annex II, point 1(a)"
+    validations:
+      required: true
+  - type: checkboxes
+    id: urgency
+    attributes:
+      label: Urgency
+      options:
+        - label: This error could cause an allergen to be under-declared on a live menu

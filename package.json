@@ -1,0 +1,85 @@
+{
+  "name": "@menuella/food-safety",
+  "version": "0.3.5",
+  "description": "Open dataset of restaurant menu disclosures \u2014 the 14 EU allergen groups, Menuella Declarations, and an ingredient lexicon \u2014 in 6 languages, keyed by stable semantic keys.",
+  "license": "MIT",
+  "author": "Menuella",
+  "homepage": "https://www.menuella.com/food-safety",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menuella/food-safety.git"
+  },
+  "bugs": {
+    "url": "https://github.com/menuella/food-safety/issues"
+  },
+  "keywords": [
+    "food",
+    "food-safety",
+    "allergens",
+    "additives",
+    "declarations",
+    "menuella-declarations",
+    "ingredients",
+    "lexicon",
+    "menu",
+    "restaurant",
+    "eu",
+    "lmiv",
+    "lmzdv",
+    "1169-2011",
+    "compliance",
+    "dataset",
+    "open-data",
+    "menuella"
+  ],
+  "type": "module",
+  "types": "./index.d.ts",
+  "module": "./index.js",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./bundles/*": "./data/bundles/*",
+    "./package.json": "./package.json",
+    "./data/*": "./data/*",
+    "./schemas/*": "./schemas/*",
+    "./icons": {
+      "types": "./icons.d.ts",
+      "default": "./icons.js"
+    },
+    "./icons/*": "./icons/*",
+    "./docs/*": "./docs/*"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "icons.d.ts",
+    "icons.js",
+    "data",
+    "schemas",
+    "icons",
+    "docs",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "verify": "node scripts/verify.mjs",
+    "test": "node --test \"scripts/**/*.test.mjs\"",
+    "check": "npm run verify && npm test",
+    "preversion": "npm run check",
+    "prepublishOnly": "npm run verify && npm test"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false
+}

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Menuella.FoodSafety.Tests/Menuella.FoodSafety.Tests.csproj" />
+  <Project Path="Menuella.FoodSafety/Menuella.FoodSafety.csproj" />
+</Solution>

@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "With Coloring Agent",
+    "description": "Contains coloring agents"
+  },
+  "PRESERVATIVES": {
+    "name": "With Preservative",
+    "description": "Contains preservatives"
+  },
+  "ANTIOXIDANTS": {
+    "name": "With Antioxidant",
+    "description": "Contains antioxidants"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "With Nitrite Curing Salt",
+    "description": "Contains nitrite curing salt"
+  },
+  "NITRATE": {
+    "name": "With nitrate",
+    "description": "Contains nitrate (preservative)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "With nitrite curing salt and nitrate",
+    "description": "Contains nitrite curing salt and nitrate"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "With Flavor Enhancer",
+    "description": "Contains flavor enhancers"
+  },
+  "PHOSPHATE": {
+    "name": "With Phosphate",
+    "description": "Contains phosphate"
+  },
+  "SULPHURED": {
+    "name": "Sulphured",
+    "description": "Contains sulphur dioxide or sulfites"
+  },
+  "BLACKENED": {
+    "name": "Blackened",
+    "description": "Blackened for visual effect"
+  },
+  "WAXED": {
+    "name": "Waxed",
+    "description": "Waxed surface for preservation"
+  },
+  "SWEETENERS": {
+    "name": "With Sweeteners",
+    "description": "Contains sweeteners"
+  },
+  "PHENYLALANINE": {
+    "name": "Contains a Source of Phenylalanine",
+    "description": "Contains phenylalanine source"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "May Have a Laxative Effect if Consumed in Excess",
+    "description": "May have a laxative effect if consumed in excess"
+  },
+  "CAFFEINE": {
+    "name": "Contains Caffeine",
+    "description": "Contains caffeine"
+  },
+  "QUININE": {
+    "name": "Contains Quinine",
+    "description": "Contains quinine"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "May Affect Activity and Attention in Children",
+    "description": "May affect activity and attention in children"
+  },
+  "MILK_PROTEIN": {
+    "name": "Contains Milk Protein",
+    "description": "Contains milk protein"
+  },
+  "SURIMI": {
+    "name": "Contains Surimi",
+    "description": "Contains surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "Made from Reconstituted Meat",
+    "description": "Made from reconstituted meat"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "Made from Reconstituted Fish",
+    "description": "Made from reconstituted fish"
+  },
+  "DEFROSTED": {
+    "name": "Defrosted",
+    "description": "Thawed from frozen"
+  }
+}

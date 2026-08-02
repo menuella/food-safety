@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "Avec Colorant",
+    "description": "Contient des colorants"
+  },
+  "PRESERVATIVES": {
+    "name": "Avec conservateur",
+    "description": "Contient des conservateurs"
+  },
+  "ANTIOXIDANTS": {
+    "name": "Avec antioxydant",
+    "description": "Contient des antioxydants"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "Avec sel de salaison nitrité",
+    "description": "Contient du sel de salaison nitrité"
+  },
+  "NITRATE": {
+    "name": "Avec nitrate",
+    "description": "Contient du nitrate (conservateur)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "Avec sel nitrité et nitrate",
+    "description": "Contient du sel nitrité et du nitrate"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "Avec exhausteur de goût",
+    "description": "Contient des exhausteurs de goût"
+  },
+  "PHOSPHATE": {
+    "name": "Avec phosphate",
+    "description": "Contient du phosphate"
+  },
+  "SULPHURED": {
+    "name": "Sulfité",
+    "description": "Contient du dioxyde de soufre ou des sulfites"
+  },
+  "BLACKENED": {
+    "name": "Noirci",
+    "description": "Noirci pour un effet visuel"
+  },
+  "WAXED": {
+    "name": "Ciré",
+    "description": "Surface cirée pour la conservation"
+  },
+  "SWEETENERS": {
+    "name": "Avec édulcorants",
+    "description": "Contient des édulcorants"
+  },
+  "PHENYLALANINE": {
+    "name": "Contient une source de phénylalanine",
+    "description": "Contient une source de phénylalanine"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "Peut avoir un effet laxatif en cas de consommation excessive",
+    "description": "Peut avoir un effet laxatif en cas de consommation excessive"
+  },
+  "CAFFEINE": {
+    "name": "Contient de la caféine",
+    "description": "Contient de la caféine"
+  },
+  "QUININE": {
+    "name": "Contient de la quinine",
+    "description": "Contient de la quinine"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "Peut affecter l'activité et l'attention des enfants",
+    "description": "Peut affecter l'activité et l'attention des enfants"
+  },
+  "MILK_PROTEIN": {
+    "name": "Contient des protéines de lait",
+    "description": "Contient des protéines de lait"
+  },
+  "SURIMI": {
+    "name": "Contient du surimi",
+    "description": "Contient du surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "Fabriqué à partir de morceaux de viande reconstitués",
+    "description": "Fabriqué à partir de morceaux de viande reconstitués"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "Fabriqué à partir de morceaux de poisson reconstitués",
+    "description": "Fabriqué à partir de morceaux de poisson reconstitués"
+  },
+  "DEFROSTED": {
+    "name": "Décongelé",
+    "description": "Décongelé à partir d'un produit surgelé"
+  }
+}

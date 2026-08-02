@@ -1,0 +1,15 @@
+node_modules/
+.DS_Store
+*.log
+.env
+.env.local
+dist/
+build/
+.cache/
+.vscode/
+.idea/
+
+# .NET build output
+[Bb]in/
+[Oo]bj/
+artifacts/

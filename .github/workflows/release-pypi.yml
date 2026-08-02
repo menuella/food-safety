@@ -1,0 +1,89 @@
+name: Release (PyPI)
+
+# Its own workflow, like npm, NuGet and pub.dev. One tag ships all four, but the
+# OIDC exchanges are independent — a policy problem on one registry must not
+# take the others down with it.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+concurrency:
+  group: release-pypi
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: packages/python
+
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      # The tag is the source of truth. A mismatch means someone tagged without
+      # bumping, and the published version would lie about which data it holds.
+      - name: Check tag matches the package version
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          pkg="$(python -c "import tomllib,pathlib; print(tomllib.loads(pathlib.Path('pyproject.toml').read_text())['project']['version'])")"
+          if [ "$tag" != "$pkg" ]; then
+            echo "::error::tag v$tag does not match pyproject.toml version $pkg"
+            exit 1
+          fi
+
+      - name: Test
+        run: |
+          python -m pip install --upgrade pip build pytest jsonschema
+          python -m pip install -e .
+          python -m pytest -q
+
+      - name: Build
+        run: python -m build
+
+      # Twine's check catches metadata that builds fine but renders badly on
+      # PyPI — a broken README is not something to discover on the live page.
+      - name: Check the artifacts
+        run: |
+          python -m pip install twine
+          python -m twine check dist/*
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: packages/python/dist/
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: pypi
+      url: https://pypi.org/project/menuella-food-safety/
+    permissions:
+      # Trusted Publishing: PyPI exchanges this OIDC token for a short-lived
+      # credential. No PYPI_API_TOKEN exists anywhere.
+      id-token: write
+
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+      # Building and publishing are separate JOBS on purpose. The publish job
+      # needs `id-token: write`, and keeping it to a job that only downloads a
+      # prebuilt artifact means no test, build or dependency-install step ever
+      # runs while a publishable token is in scope.
+      - uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          # Idempotent: re-running a release for a version already on PyPI is a
+          # no-op rather than a red build.
+          skip-existing: true

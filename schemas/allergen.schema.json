@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://menuella.github.io/food-safety/schemas/allergen.schema.json",
+  "title": "EU Allergen Disclosures (structural)",
+  "description": "The 28 selectable allergen disclosures covering the 14 EU/LMIV groups of Regulation 1169/2011 Annex II. Gluten-containing cereals and tree nuts are expanded into their specific members, because LMIV requires naming the exact cereal or nut — the group itself is never selectable, it only appears as `group`. Keys are semantic and stable; German flyer codes (A6, 11) are a render-time projection and are deliberately absent. Labels live in data/translations/allergens/<lang>.json.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "key",
+      "group",
+      "isMember",
+      "icon"
+    ],
+    "properties": {
+      "key": {
+        "type": "string",
+        "description": "Stable semantic identifier, and the join key with the translation files. Never renamed or reused.",
+        "enum": [
+          "RYE",
+          "BARLEY",
+          "EMMER",
+          "EINKORN",
+          "SPELT",
+          "WHEAT",
+          "OATS",
+          "KHORASAN",
+          "CRUSTACEANS",
+          "EGGS",
+          "FISH",
+          "PEANUTS",
+          "SOY",
+          "MILK",
+          "MACADAMIA",
+          "ALMONDS",
+          "BRAZIL_NUTS",
+          "PECANS",
+          "PISTACHIOS",
+          "WALNUTS",
+          "CASHEWS",
+          "HAZELNUTS",
+          "CELERY",
+          "MUSTARD",
+          "SESAME",
+          "SULPHITES",
+          "LUPINS",
+          "MOLLUSCS"
+        ]
+      },
+      "group": {
+        "type": "string",
+        "description": "The EU/LMIV group this entry declares under. Display-layer grouping — not itself a selectable disclosure.",
+        "enum": [
+          "CEREALS",
+          "CRUSTACEANS",
+          "EGGS",
+          "FISH",
+          "PEANUTS",
+          "SOY",
+          "MILK",
+          "TREE_NUTS",
+          "CELERY",
+          "MUSTARD",
+          "SESAME",
+          "SULPHITES",
+          "LUPINS",
+          "MOLLUSCS"
+        ]
+      },
+      "isMember": {
+        "type": "boolean",
+        "description": "true when the entry is a specific member of a multi-member group (each cereal, each tree nut), false when the entry is the whole group."
+      },
+      "icon": {
+        "type": "string",
+        "enum": [
+          "celery",
+          "cereals",
+          "crustaceans",
+          "declarations",
+          "eggs",
+          "fish",
+          "lupins",
+          "milk",
+          "molluscs",
+          "mustard",
+          "peanuts",
+          "sesame",
+          "soy",
+          "sulphites",
+          "tree-nuts"
+        ],
+        "description": "Basename of an SVG in icons/ — e.g. \"cereals\" is icons/cereals.svg. Named after the group, not after what it depicts, so the drawing can change without the contract changing."
+      }
+    }
+  }
+}

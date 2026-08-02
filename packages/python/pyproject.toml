@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "menuella-food-safety"
+version = "0.3.5"
+description = "Open allergen and additive vocabulary for restaurant menus: EU Reg. 1169/2011 allergens, declarations, codes, icons and six languages."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Menuella", email = "developers@menuella.com" }]
+keywords = ["allergens", "food-safety", "restaurant", "menu", "eu", "lmiv", "i18n"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Internationalization",
+  "Typing :: Typed",
+]
+
+# Deliberately none. The dataset is JSON read through importlib.resources, and
+# "no dependencies" is a property of this package worth protecting on every
+# registry it reaches.
+dependencies = []
+
+[project.urls]
+Homepage = "https://www.menuella.com/food-safety"
+Repository = "https://github.com/menuella/food-safety"
+Changelog = "https://github.com/menuella/food-safety/blob/main/CHANGELOG.md"
+Issues = "https://github.com/menuella/food-safety/issues"
+
+[dependency-groups]
+dev = ["pytest>=8", "jsonschema>=4"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/menuella_food_safety"]
+
+[tool.hatch.build.targets.sdist]
+# The sdist carries the tests too, so a downstream packager can run them.
+include = ["src/", "tests/", "README.md", "LICENSE", "CHANGELOG.md", "pyproject.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

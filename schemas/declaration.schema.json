@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://menuella.github.io/food-safety/schemas/declaration.schema.json",
+  "title": "Menuella Declarations (structural)",
+  "description": "Menuella Declarations — Menuella's standardized menu disclosure vocabulary: 22 keys covering additive declarations plus beverage declarations, mandatory warnings and other product-specific indications, distinguished by `category`. Designed for portability and consistency across supported regions; NOT intended to represent any country's official legal terminology. The vocabulary was inspired by common German restaurant menu practice, then generalized — packaging-only entries (protective atmosphere, iodised salt, cocoa fat glaze, taurine, GMO, oxygen colour stabilisation, elevated-caffeine package warnings) are excluded as unsuitable for a menu. Keys are semantic and stable; printed numbering is a render-time projection, see data/codes.json. The property name `additives` is retained for compatibility with consuming systems. Labels live in data/translations/declarations/<lang>.json.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "key",
+      "category",
+      "icon"
+    ],
+    "properties": {
+      "key": {
+        "type": "string",
+        "description": "Stable semantic identifier, and the join key with the translation files. Never renamed or reused.",
+        "enum": [
+          "COLORING",
+          "PRESERVATIVES",
+          "ANTIOXIDANTS",
+          "NITRITE_CURING_SALT",
+          "NITRATE",
+          "NITRITE_CURING_SALT_AND_NITRATE",
+          "FLAVOR_ENHANCERS",
+          "PHOSPHATE",
+          "SULPHURED",
+          "BLACKENED",
+          "WAXED",
+          "SWEETENERS",
+          "PHENYLALANINE",
+          "LAXATIVE_WARNING",
+          "CAFFEINE",
+          "QUININE",
+          "CHILD_ATTENTION_WARNING",
+          "MILK_PROTEIN",
+          "SURIMI",
+          "RECONSTITUTED_MEAT",
+          "RECONSTITUTED_FISH",
+          "DEFROSTED"
+        ]
+      },
+      "category": {
+        "type": "string",
+        "description": "What kind of declaration this is. ADDITIVE = LMZDV additive declaration; BEVERAGE = beverage-specific declaration; WARNING = mandatory warning; PRODUCT = other product-specific indication.",
+        "enum": [
+          "ADDITIVE",
+          "BEVERAGE",
+          "WARNING",
+          "PRODUCT"
+        ]
+      },
+      "icon": {
+        "type": "string",
+        "enum": [
+          "celery",
+          "cereals",
+          "crustaceans",
+          "declarations",
+          "eggs",
+          "fish",
+          "lupins",
+          "milk",
+          "molluscs",
+          "mustard",
+          "peanuts",
+          "sesame",
+          "soy",
+          "sulphites",
+          "tree-nuts"
+        ],
+        "description": "Basename of an SVG in icons/ — e.g. \"cereals\" is icons/cereals.svg. Named after the group, not after what it depicts, so the drawing can change without the contract changing."
+      }
+    }
+  }
+}

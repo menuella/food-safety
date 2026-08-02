@@ -1,0 +1,31 @@
+name: menuella_food_safety
+description: >-
+  Open allergen and additive vocabulary for restaurant menus: 28 allergen keys
+  from EU Reg. 1169/2011, 22 declarations, icons and six languages. Semantic
+  keys, not numbers.
+version: 0.3.5
+repository: https://github.com/menuella/food-safety
+homepage: https://www.menuella.com/food-safety
+issue_tracker: https://github.com/menuella/food-safety/issues
+documentation: https://www.menuella.com/food-safety
+
+topics:
+  - allergens
+  - food
+  - restaurant
+  - i18n
+  - accessibility
+
+environment:
+  # No upper bound: this package is pure Dart with no dependencies, so there is
+  # nothing here for a new SDK to break.
+  sdk: ^3.6.0
+
+# Deliberately none. The dataset is generated Dart source, so there is nothing
+# to parse at runtime and nothing to pull in — and it works on the web, where
+# dart:io does not exist and a package that reads JSON from disk cannot run.
+dependencies:
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.0

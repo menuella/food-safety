@@ -1,0 +1,101 @@
+name: Release (NuGet)
+
+# Separate from release.yml on purpose. npm and NuGet ship the SAME dataset from
+# the SAME tag, but a failure in one must not block or half-publish the other —
+# and npm's Trusted Publishing exchange and NuGet's are independent, so a policy
+# problem on one registry would otherwise take both down.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+concurrency:
+  group: release-nuget
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  # Trusted Publishing: nuget.org exchanges this OIDC token for a short-lived
+  # API key. No NUGET_API_KEY exists anywhere, so there is nothing to rotate or
+  # leak. The key is valid for one hour, so it is requested immediately before
+  # the push rather than at the top of the job.
+  id-token: write
+
+jobs:
+  publish:
+    # Skipped until nuget.org publishing is configured. A missing config should
+    # not paint a release run red — but it must not be silent either, so the
+    # skip is announced in the summary below.
+    #
+    # A repository VARIABLE, not a secret: the `secrets` context is not
+    # available in a job-level `if`, so testing NUGET_USER here would silently
+    # never match. Set NUGET_ENABLED=true once the trusted publisher exists.
+    if: vars.NUGET_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: nuget
+      url: https://www.nuget.org/packages/Menuella.FoodSafety
+    defaults:
+      run:
+        working-directory: packages/dotnet
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      # Never publish a dataset that does not validate. These are the SAME
+      # checks the npm release runs, because it is the same data.
+      - name: Verify the dataset
+        working-directory: .
+        run: |
+          npm ci
+          npm run verify
+
+      - name: Test
+        run: dotnet test -c Release --nologo
+
+      # The tag is the source of truth. A mismatch means someone tagged without
+      # bumping, and the published version would lie about which data it holds.
+      - name: Check tag matches the package version
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          pkg="$(grep -oE '<Version>[^<]+' Directory.Build.props | cut -d'>' -f2)"
+          if [ "$tag" != "$pkg" ]; then
+            echo "::error::tag v$tag does not match Directory.Build.props <Version>$pkg"
+            exit 1
+          fi
+
+      - name: Pack
+        run: dotnet pack Menuella.FoodSafety/Menuella.FoodSafety.csproj -c Release -o ./artifacts --nologo
+
+      # Requested here, not earlier: the key expires after an hour, and a slow
+      # test run before it would burn that window.
+      - name: NuGet login (OIDC to a short-lived key)
+        uses: NuGet/login@v1
+        id: login
+        with:
+          user: ${{ secrets.NUGET_USER }}
+
+      # Idempotent on purpose: --skip-duplicate means re-running a release for a
+      # version already on nuget.org is a no-op rather than a red build.
+      - name: Push
+        run: |
+          dotnet nuget push "./artifacts/*.nupkg" \
+            --api-key "${{ steps.login.outputs.NUGET_API_KEY }}" \
+            --source https://api.nuget.org/v3/index.json \
+            --skip-duplicate
+
+  # Without this, a skipped publish looks identical to no publish at all.
+  announce-skip:
+    if: needs.publish.result == 'skipped'
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "::notice::NuGet publish skipped — NUGET_USER is not configured." >> "$GITHUB_STEP_SUMMARY"
+          echo "Add the nuget.org trusted publisher (repo \`food-safety\`, workflow \`release-nuget.yml\`, environment \`nuget\`) and the NUGET_USER secret, then re-run this workflow." >> "$GITHUB_STEP_SUMMARY"

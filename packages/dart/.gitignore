@@ -1,0 +1,3 @@
+.dart_tool/
+# A library must not pin its own resolution — the app that depends on it does.
+pubspec.lock

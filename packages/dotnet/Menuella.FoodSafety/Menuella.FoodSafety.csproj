@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- System.Text.Json is in-box from net10.0, so the package keeps ZERO
+         PackageReferences. On netstandard2.0 it would need System.Text.Json as a
+         dependency, and "no dependencies" is a property of this dataset worth
+         protecting on every registry it reaches. -->
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+
+    <!-- Trimming and AOT are safe because every payload is read through the
+         source-generated JSON context in DisclosureJsonContext — no reflection
+         over types the linker cannot see. -->
+    <IsTrimmable>true</IsTrimmable>
+    <IsAotCompatible>true</IsAotCompatible>
+
+    <PackageId>Menuella.FoodSafety</PackageId>
+    <Title>Menuella Food Safety</Title>
+    <Authors>Menuella</Authors>
+    <Company>Menuella</Company>
+    <Description>The open allergen and additive vocabulary behind every Menuella menu: 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, icons, and six languages. Semantic keys, not country-specific numbers.</Description>
+    <PackageTags>allergens;food-safety;lmiv;eu-1169-2011;restaurant;menu;i18n;gastronomy</PackageTags>
+    <Copyright>Copyright (c) Menuella 2026</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <!-- 128x128 with a transparent background, which is what nuget.org scales
+         best from. The deprecated IconUrl form is deliberately not used: it
+         resolves at display time, so changing the target would retroactively
+         change the icon on every past version. -->
+    <PackageIcon>icon.png</PackageIcon>
+    <!-- A link rather than inline notes: the changelog is maintained once, and
+         inline notes in the csproj would be a second copy to forget. -->
+    <PackageReleaseNotes>https://github.com/menuella/food-safety/blob/main/CHANGELOG.md</PackageReleaseNotes>
+    <PackageProjectUrl>https://www.menuella.com/food-safety</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/menuella/food-safety</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <!-- Provenance: ties the .nupkg to the commit that produced it. -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- The SAME JSON the npm package ships. Embedded rather than copied into
+         C# source: one source of truth, and no generator to drift from it. -->
+    <EmbeddedResource Include="../../../data/bundles/*.json" LogicalName="bundles.%(Filename).json" />
+    <EmbeddedResource Include="../../../data/icons.json" LogicalName="icons.json" />
+    <EmbeddedResource Include="../../../data/codes.json" LogicalName="codes.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="/" />
+    <None Include="../../../README.md" Pack="true" PackagePath="/" />
+    <None Include="../../../LICENSE" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+</Project>
