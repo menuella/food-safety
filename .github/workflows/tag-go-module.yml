@@ -20,18 +20,34 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
 
+      # Created through the REST API rather than `git push`, which GitHub
+      # rejects:
+      #
+      #   refusing to allow a GitHub App to create or update workflow
+      #   `.github/workflows/tag-go-module.yml` without `workflows` permission
+      #
+      # Pushing a NEW ref makes every workflow file under it reachable, which
+      # GitHub treats as creating them — and `workflows: write` cannot be
+      # granted through a job's `permissions:` block at all. Only a PAT or a
+      # GitHub App can hold it, and storing one here would put a long-lived
+      # credential in a repository that otherwise has none.
+      #
+      # The API sidesteps it honestly rather than by escalation: the commit is
+      # already on the remote, so pointing a ref at it uploads no objects and
+      # the check never applies. `contents: write` is enough.
       - name: Create the module-prefixed tag on the same commit
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           prefixed="packages/go/${GITHUB_REF_NAME}"
-          if git ls-remote --exit-code --tags origin "refs/tags/${prefixed}" >/dev/null 2>&1; then
+          if gh api "repos/${GITHUB_REPOSITORY}/git/ref/tags/${prefixed}" >/dev/null 2>&1; then
             echo "::notice::${prefixed} already exists — nothing to do"
             exit 0
           fi
-          git tag "$prefixed" "${GITHUB_SHA}"
-          git push origin "$prefixed"
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/git/refs" \
+            -f ref="refs/tags/${prefixed}" \
+            -f sha="${GITHUB_SHA}" >/dev/null
           echo "::notice::created ${prefixed}"
 
       # Asking the proxy for the version is what makes it fetch and cache the
