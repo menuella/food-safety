@@ -1,0 +1,76 @@
+name: Release (crates.io)
+
+# Its own workflow, like npm, NuGet, pub.dev and PyPI. One tag ships them all,
+# but the OIDC exchanges are independent — a policy problem on one registry must
+# not take the others down with it.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+concurrency:
+  group: release-crates
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: crates-io
+      url: https://crates.io/crates/menuella-food-safety
+    permissions:
+      contents: read
+      # Trusted Publishing: crates.io exchanges this OIDC token for a token that
+      # lives about half an hour. No CARGO_REGISTRY_TOKEN exists anywhere.
+      id-token: write
+    defaults:
+      run:
+        working-directory: packages/rust
+
+    steps:
+      - uses: actions/checkout@v5
+      - run: rustup toolchain install stable --profile minimal
+
+      # The tag is the source of truth. A mismatch means someone tagged without
+      # bumping, and the published version would lie about which data it holds.
+      #
+      # Checked before the token is minted, because crates.io has no unpublish:
+      # a wrong version is permanent, and yanking only hides it from resolution.
+      - name: Check tag matches the crate version
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          crate="$(grep -m1 '^version = ' Cargo.toml | cut -d'"' -f2)"
+          if [ "$tag" != "$crate" ]; then
+            echo "::error::tag v$tag does not match Cargo.toml version $crate"
+            exit 1
+          fi
+
+      # Everything the verify workflow runs, once more against the exact commit
+      # being published. Cheap next to an unpublishable mistake.
+      - run: cargo test --no-default-features
+      - run: cargo test --all-features
+      - run: cargo package
+
+      - uses: rust-lang/crates-io-auth-action@v1
+        id: auth
+
+      # `cargo publish` fails on a version already on crates.io, which makes a
+      # re-run of an otherwise-finished release go red. Ask first — the registry
+      # is the authority on what has shipped, not the workflow's memory of it.
+      - name: Publish
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ steps.auth.outputs.token }}
+        run: |
+          version="$(grep -m1 '^version = ' Cargo.toml | cut -d'"' -f2)"
+          published="$(curl -sSf \
+            -H 'User-Agent: menuella-food-safety-release (hello@menuella.com)' \
+            "https://crates.io/api/v1/crates/menuella-food-safety/$version" \
+            -o /dev/null -w '%{http_code}' || true)"
+          if [ "$published" = "200" ]; then
+            echo "menuella-food-safety $version is already on crates.io — nothing to do"
+            exit 0
+          fi
+          cargo publish

@@ -88,6 +88,7 @@ They are decorative by default: `iconToSVG` emits `aria-hidden` unless you pass 
 | PyPI | [`menuella-food-safety`](https://pypi.org/project/menuella-food-safety/) |
 | Packagist | [`menuella/food-safety`](https://packagist.org/packages/menuella/food-safety) |
 | Maven Central | `com.menuella:food-safety` |
+| crates.io | [`menuella-food-safety`](https://crates.io/crates/menuella-food-safety) |
 
 ## Not legal advice
 

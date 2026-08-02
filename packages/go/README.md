@@ -100,6 +100,7 @@ A workflow derives that tag from the repository's plain `v1.2.0` on push, so bot
 | Packagist | [`menuella/food-safety`](https://packagist.org/packages/menuella/food-safety) |
 | Swift | `MenuellaFoodSafety` |
 | Maven Central | `com.menuella:food-safety` |
+| crates.io | [`menuella-food-safety`](https://crates.io/crates/menuella-food-safety) |
 
 ## Not legal advice
 

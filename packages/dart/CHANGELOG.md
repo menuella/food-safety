@@ -14,6 +14,13 @@ Pin to a major version in production:
 
 ### Added
 
+- **Rust crate** — [`menuella-food-safety`](https://crates.io/crates/menuella-food-safety).
+  - `disclosures`, `icon`, `icon_to_svg`, `allergen_code`, `declaration_code`, the `LOCALES` / `ALLERGEN_KEYS` / `DECLARATION_KEYS` / `ICON_NAMES` / `CODES` tables, and the `is_locale` / `is_allergen_key` / `is_declaration_key` guards. Two error types, `UnsupportedLocale` and `UnknownIcon`.
+  - The dataset is **generated Rust source**, not JSON read at runtime: the standard library has no JSON parser, so shipping the data as `&'static str` keeps the crate at **zero dependencies** where the alternative was forcing `serde_json` on every consumer. Nothing is parsed at startup and nothing is allocated to read it.
+  - Because it is all `const`, `disclosures_const` binds a whole bundle at compile time.
+  - `serde` is an **opt-in feature** adding `Serialize`. `Deserialize` is deliberately absent — every field borrows from the binary's static data, so there is nothing to deserialize into.
+  - Published by Trusted Publishing, so no crates.io token exists anywhere.
+
 - **Go module support** — `github.com/menuella/food-safety/packages/go`.
   - `GetDisclosures`, `GetIcon`, `IconToSVG`, `GetCodes`, `LoadDataset`, plus `Locales`, `AllergenKeys`, `DeclarationKeys`, `IconNames`, `CodeScheme` and the `IsLocale` / `IsAllergenKey` / `IsDeclarationKey` guards. Errors wrap `ErrUnsupportedLocale` and `ErrUnknownIcon`, so callers can branch with `errors.Is`.
   - The dataset is embedded with `//go:embed`, so the binary is self-contained and there is nothing to find on disk at runtime. `encoding/json` is in the standard library, so the module has **no dependencies**.

@@ -98,6 +98,7 @@ One binding of a shared dataset — identical vocabulary, keys and icons, releas
 | | |
 | --- | --- |
 | Maven Central | `com.menuella:food-safety` |
+| crates.io | [`menuella-food-safety`](https://crates.io/crates/menuella-food-safety) |
 | npm | [`@menuella/food-safety`](https://www.npmjs.com/package/@menuella/food-safety) |
 | NuGet | [`Menuella.FoodSafety`](https://www.nuget.org/packages/Menuella.FoodSafety) |
 | pub.dev | [`menuella_food_safety`](https://pub.dev/packages/menuella_food_safety) |
