@@ -20,6 +20,10 @@ Pin to a major version in production:
   - Like Swift, there is no registry: the git tag is the release.
   - Because the module is **nested**, the Go proxy only sees a tag carrying its directory prefix — `packages/go/v1.2.0`, not `v1.2.0`. A workflow derives that tag from the plain one on push, so it cannot be forgotten; without it, six registries would publish and Go would silently stay behind.
 
+### Changed
+
+- **Maven Central now publishes automatically** rather than holding each upload for a manual release. The earlier setting reasoned that Central has no unpublish — but pub.dev and NuGet cannot unpublish either and publish automatically, so the gate was inconsistent rather than principled, and in practice it was a step that got skipped. The deliberate act is the tag; tests and a tag/version check both run before the upload.
+
 ---
 
 ## [1.1.0]
