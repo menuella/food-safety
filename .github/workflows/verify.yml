@@ -135,3 +135,19 @@ jobs:
       # against the canonical data/. A release built without running the
       # generator would otherwise ship stale data and pass everything else.
       - run: ./vendor/bin/phpunit -c packages/php/phpunit.xml
+
+  swift:
+    name: Swift package
+    # macOS, not ubuntu: the package declares Apple platforms, and Bundle.module
+    # resource lookup is what these tests exercise.
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - run: swift --version
+      - run: swift build --configuration release
+
+      # The tests compare the packaged resources against the canonical data/,
+      # so a release built without running the generator fails here rather than
+      # shipping stale data with everything else green.
+      - run: swift test

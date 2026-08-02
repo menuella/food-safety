@@ -1,0 +1,170 @@
+[
+  {
+    "key": "RYE",
+    "group": "CEREALS",
+    "isMember": true,
+    "icon": "cereals"
+  },
+  {
+    "key": "BARLEY",
+    "group": "CEREALS",
+    "isMember": true,
+    "icon": "cereals"
+  },
+  {
+    "key": "EMMER",
+    "group": "CEREALS",
+    "isMember": true,
+    "icon": "cereals"
+  },
+  {
+    "key": "EINKORN",
+    "group": "CEREALS",
+    "isMember": true,
+    "icon": "cereals"
+  },
+  {
+    "key": "SPELT",
+    "group": "CEREALS",
+    "isMember": true,
+    "icon": "cereals"
+  },
+  {
+    "key": "WHEAT",
+    "group": "CEREALS",
+    "isMember": true,
+    "icon": "cereals"
+  },
+  {
+    "key": "OATS",
+    "group": "CEREALS",
+    "isMember": true,
+    "icon": "cereals"
+  },
+  {
+    "key": "KHORASAN",
+    "group": "CEREALS",
+    "isMember": true,
+    "icon": "cereals"
+  },
+  {
+    "key": "CRUSTACEANS",
+    "group": "CRUSTACEANS",
+    "isMember": false,
+    "icon": "crustaceans"
+  },
+  {
+    "key": "EGGS",
+    "group": "EGGS",
+    "isMember": false,
+    "icon": "eggs"
+  },
+  {
+    "key": "FISH",
+    "group": "FISH",
+    "isMember": false,
+    "icon": "fish"
+  },
+  {
+    "key": "PEANUTS",
+    "group": "PEANUTS",
+    "isMember": false,
+    "icon": "peanuts"
+  },
+  {
+    "key": "SOY",
+    "group": "SOY",
+    "isMember": false,
+    "icon": "soy"
+  },
+  {
+    "key": "MILK",
+    "group": "MILK",
+    "isMember": false,
+    "icon": "milk"
+  },
+  {
+    "key": "MACADAMIA",
+    "group": "TREE_NUTS",
+    "isMember": true,
+    "icon": "tree-nuts"
+  },
+  {
+    "key": "ALMONDS",
+    "group": "TREE_NUTS",
+    "isMember": true,
+    "icon": "tree-nuts"
+  },
+  {
+    "key": "BRAZIL_NUTS",
+    "group": "TREE_NUTS",
+    "isMember": true,
+    "icon": "tree-nuts"
+  },
+  {
+    "key": "PECANS",
+    "group": "TREE_NUTS",
+    "isMember": true,
+    "icon": "tree-nuts"
+  },
+  {
+    "key": "PISTACHIOS",
+    "group": "TREE_NUTS",
+    "isMember": true,
+    "icon": "tree-nuts"
+  },
+  {
+    "key": "WALNUTS",
+    "group": "TREE_NUTS",
+    "isMember": true,
+    "icon": "tree-nuts"
+  },
+  {
+    "key": "CASHEWS",
+    "group": "TREE_NUTS",
+    "isMember": true,
+    "icon": "tree-nuts"
+  },
+  {
+    "key": "HAZELNUTS",
+    "group": "TREE_NUTS",
+    "isMember": true,
+    "icon": "tree-nuts"
+  },
+  {
+    "key": "CELERY",
+    "group": "CELERY",
+    "isMember": false,
+    "icon": "celery"
+  },
+  {
+    "key": "MUSTARD",
+    "group": "MUSTARD",
+    "isMember": false,
+    "icon": "mustard"
+  },
+  {
+    "key": "SESAME",
+    "group": "SESAME",
+    "isMember": false,
+    "icon": "sesame"
+  },
+  {
+    "key": "SULPHITES",
+    "group": "SULPHITES",
+    "isMember": false,
+    "icon": "sulphites"
+  },
+  {
+    "key": "LUPINS",
+    "group": "LUPINS",
+    "isMember": false,
+    "icon": "lupins"
+  },
+  {
+    "key": "MOLLUSCS",
+    "group": "MOLLUSCS",
+    "isMember": false,
+    "icon": "molluscs"
+  }
+]

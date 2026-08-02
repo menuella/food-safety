@@ -10,6 +10,22 @@ Pin to a major version in production:
 
 ---
 
+## [1.1.0]
+
+### Added
+
+- **Swift Package Manager support** — the same dataset for iOS, macOS, tvOS, watchOS and visionOS.
+  - `FoodSafety.disclosures(locale:)`, `codes()`, `icon(named:)`, `iconToSVG(named:size:cssClass:title:)`, plus `locales`, `allergenKeys()`, `declarationKeys()`, `iconNames()` and the `isLocale` / `isAllergenKey` / `isDeclarationKey` guards.
+  - Swift 6 language mode, `Sendable` throughout, **no dependencies**.
+  - Reads the canonical JSON from its resource bundle: `JSONDecoder` is in Foundation, so there is nothing to generate.
+  - There is no registry to publish to — SwiftPM resolves straight from the git tag, so `v1.1.0` is the release.
+
+### Changed
+
+- `Package.swift` sits at the **repository root**, because SwiftPM resolves the manifest from there and has no monorepo support — the same constraint Packagist imposes. Its target paths point into `packages/swift/`.
+
+---
+
 ## [1.0.1]
 
 ### Added

@@ -1,0 +1,415 @@
+{
+  "locale": "en",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Rye",
+      "declaration": "Contains cereals and gluten-containing products",
+      "description": "Rye and rye products"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Barley",
+      "declaration": "Contains cereals and gluten-containing products",
+      "description": "Barley and barley products"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Emmer",
+      "declaration": "Contains cereals and gluten-containing products",
+      "description": "Emmer and emmer products"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Einkorn",
+      "declaration": "Contains cereals and gluten-containing products",
+      "description": "Einkorn and einkorn products"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Spelt",
+      "declaration": "Contains cereals and gluten-containing products",
+      "description": "Spelt and spelt products"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Wheat",
+      "declaration": "Contains cereals and gluten-containing products",
+      "description": "Wheat and wheat products"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Oats",
+      "declaration": "Contains cereals and gluten-containing products",
+      "description": "Oats and oat products"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Khorasan/Kamut",
+      "declaration": "Contains cereals and gluten-containing products",
+      "description": "Khorasan/Kamut and products"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Crustaceans",
+      "declaration": "Contains crustaceans and crustacean products",
+      "description": "Includes crustaceans like shrimp, crab, etc."
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Egg",
+      "declaration": "Contains eggs and egg products",
+      "description": "Includes eggs and egg products"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Fish",
+      "declaration": "Contains fish and fish products",
+      "description": "Includes fish and fish products"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Peanuts",
+      "declaration": "Contains peanuts and peanut products",
+      "description": "Includes peanuts and peanut products"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Soybeans",
+      "declaration": "Contains soybeans and soybean products",
+      "description": "Includes soybeans and soybean products"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Milk (including Lactose)",
+      "declaration": "Contains milk and milk products (including lactose)",
+      "description": "Includes milk and lactose products"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Macadamia Nuts",
+      "declaration": "Contains tree nuts and tree-nut products",
+      "description": "Macadamia nuts and products"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Almonds",
+      "declaration": "Contains tree nuts and tree-nut products",
+      "description": "Almonds and almond products"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Brazil Nuts",
+      "declaration": "Contains tree nuts and tree-nut products",
+      "description": "Brazil nuts and products"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pecan Nuts",
+      "declaration": "Contains tree nuts and tree-nut products",
+      "description": "Pecan nuts and products"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pistachios",
+      "declaration": "Contains tree nuts and tree-nut products",
+      "description": "Pistachios and products"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Walnuts",
+      "declaration": "Contains tree nuts and tree-nut products",
+      "description": "Walnuts and walnut products"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Cashew Nuts",
+      "declaration": "Contains tree nuts and tree-nut products",
+      "description": "Cashew nuts and products"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Hazelnuts",
+      "declaration": "Contains tree nuts and tree-nut products",
+      "description": "Hazelnuts and products"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Celery",
+      "declaration": "Contains celery and celery products",
+      "description": "Includes celery and celery products"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Mustard",
+      "declaration": "Contains mustard and mustard products",
+      "description": "Includes mustard and mustard products"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Sesame Seeds",
+      "declaration": "Contains sesame seeds and sesame products",
+      "description": "Includes sesame seeds and sesame seed products"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Sulfur Dioxide and Sulfites",
+      "declaration": "Contains sulphur dioxide and sulphites",
+      "description": "Includes sulfur dioxide and sulfites"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Lupins",
+      "declaration": "Contains lupin and lupin products",
+      "description": "Includes lupins and lupin products"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Molluscs",
+      "declaration": "Contains molluscs and mollusc products",
+      "description": "Includes molluscs like snails, clams, etc."
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "With Coloring Agent",
+      "description": "Contains coloring agents"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "With Preservative",
+      "description": "Contains preservatives"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "With Antioxidant",
+      "description": "Contains antioxidants"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "With Nitrite Curing Salt",
+      "description": "Contains nitrite curing salt"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "With nitrate",
+      "description": "Contains nitrate (preservative)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "With nitrite curing salt and nitrate",
+      "description": "Contains nitrite curing salt and nitrate"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "With Flavor Enhancer",
+      "description": "Contains flavor enhancers"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "With Phosphate",
+      "description": "Contains phosphate"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Sulphured",
+      "description": "Contains sulphur dioxide or sulfites"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Blackened",
+      "description": "Blackened for visual effect"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Waxed",
+      "description": "Waxed surface for preservation"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "With Sweeteners",
+      "description": "Contains sweeteners"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "Contains a Source of Phenylalanine",
+      "description": "Contains phenylalanine source"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "May Have a Laxative Effect if Consumed in Excess",
+      "description": "May have a laxative effect if consumed in excess"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "Contains Caffeine",
+      "description": "Contains caffeine"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "Contains Quinine",
+      "description": "Contains quinine"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "May Affect Activity and Attention in Children",
+      "description": "May affect activity and attention in children"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "Contains Milk Protein",
+      "description": "Contains milk protein"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "Contains Surimi",
+      "description": "Contains surimi"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "Made from Reconstituted Meat",
+      "description": "Made from reconstituted meat"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "Made from Reconstituted Fish",
+      "description": "Made from reconstituted fish"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "Defrosted",
+      "description": "Thawed from frozen"
+    }
+  ],
+  "fallbacks": []
+}

@@ -521,6 +521,22 @@ for (const f of ["CHANGELOG.md", "LICENSE"]) {
 }
 
 
+// -------------------- packages/swift/**/Resources/*.json --
+// Swift reads the JSON from its resource bundle: Foundation has JSONDecoder, so
+// there is nothing to generate and no dependency to take. Copied in rather than
+// read from ../../data, because SwiftPM resources must live inside the target.
+const SWIFT_RES = join(OUT, "packages/swift/Sources/MenuellaFoodSafety/Resources")
+for (const f of ["allergens.json", "declarations.json", "codes.json", "icons.json"]) {
+  writeFileSync(ensureDir(join(SWIFT_RES, f)), readFileSync(join(DATA, f), "utf8"), "utf8")
+}
+for (const l of LOCALES) {
+  writeFileSync(
+    ensureDir(join(SWIFT_RES, "bundles", `${l}.json`)),
+    readFileSync(join(OUT, `data/bundles/${l}.json`), "utf8"),
+    "utf8",
+  )
+}
+
 // ------------------------------ packages/php/data/*.json --
 // PHP reads the JSON at runtime: json_decode is in core, so there is nothing to
 // generate and nothing to depend on. Copied into the package rather than read
