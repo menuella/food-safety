@@ -42,7 +42,7 @@ jobs:
           distribution: temurin
           java-version: "21"
 
-      - uses: gradle/actions/setup-gradle@v6
+      - uses: gradle/actions/setup-gradle@v6.2.0
 
       # The tag is the source of truth. A mismatch means someone tagged without
       # bumping, and Maven Central has NO unpublish — a wrong version there is
