@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
 
       # Created through the REST API rather than `git push`, which GitHub
       # rejects:
@@ -54,7 +54,7 @@ jobs:
       # module; pkg.go.dev then picks it up from there. Without this the first
       # `go get` is the thing that triggers indexing, so the package page sits
       # empty until someone happens to install it.
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version: "1.24"
 
