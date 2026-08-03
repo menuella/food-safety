@@ -5,9 +5,29 @@ updates:
     directory: /
     schedule: { interval: monthly }
     commit-message: { prefix: "chore(deps)" }
-
+    groups:
+      npm:
+        patterns: ["*"]
 
   - package-ecosystem: github-actions
     directory: /
     schedule: { interval: monthly }
     commit-message: { prefix: "chore(ci)" }
+
+    # One pull request for every action, not one per action.
+    #
+    # Ungrouped, this repository got a branch per bump — and Dependabot's
+    # default cap of five open PRs meant four further actions were silently
+    # left un-bumped behind the five it had already raised. A queue that hides
+    # its own tail is worse than a long queue.
+    #
+    # The real hazard is worse than noise. actions/upload-artifact and
+    # actions/download-artifact are a PAIR, used in two jobs of one release
+    # workflow. A PR bumping only the download side leaves a mismatched pair in
+    # a workflow that `verify.yml` never runs — so it reviews clean, merges
+    # green, and fails at the next release instead. Grouping is what puts that
+    # combination in front of a human at the same time.
+    groups:
+      actions:
+        patterns: ["*"]
+    open-pull-requests-limit: 3

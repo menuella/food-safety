@@ -30,7 +30,7 @@ jobs:
         working-directory: packages/rust
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
       - run: rustup toolchain install stable --profile minimal
 
       # The tag is the source of truth. A mismatch means someone tagged without
