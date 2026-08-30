@@ -257,9 +257,11 @@ jobs:
         with:
           dotnet-version: "10.0.x"
 
-      # The one binding that had no gate: release-nuget.yml is behind
-      # `vars.NUGET_ENABLED`, which is unset, so until now the C# never compiled
-      # in CI at all. Directory.Build.props sets TreatWarningsAsErrors, so this
+      # The one binding with no PRE-MERGE gate. release-nuget.yml does compile
+      # and test it, but only on a `v*` tag — which is after the decision to
+      # ship, and after the point where nuget.org's lack of an unpublish starts
+      # to matter. Nothing on a pull request or a push to main touched the C#
+      # until this job. Directory.Build.props sets TreatWarningsAsErrors, so it
       # covers nullability and code style as well as the tests — and those tests
       # are the ones that read data/ from the repo root, catching an embedded
       # resource that has gone stale against the canonical JSON.
