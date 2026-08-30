@@ -25,6 +25,15 @@
 /package.json       export-ignore
 /package-lock.json  export-ignore
 /.gitattributes     export-ignore
+# The root Gradle build exists only so CodeQL's Java autobuilder finds a build
+# in the checkout root; it delegates to packages/java, which is export-ignored
+# in the list above. A PHP consumer has even less use for it than for the
+# binding it points at.
+/settings.gradle.kts export-ignore
+/build.gradle.kts   export-ignore
+/gradle             export-ignore
+/gradlew            export-ignore
+/gradlew.bat        export-ignore
 # packages/php/data is a byte-identical copy of this, placed by the generator so
 # the package works however it is installed. Shipping both duplicates ~100 kB.
 /data               export-ignore
