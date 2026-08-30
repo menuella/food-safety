@@ -19,10 +19,21 @@ import menuella_food_safety as fs
 
 def repo_root() -> Path:
     """Walk up until the canonical dataset is visible."""
-    for directory in Path(__file__).resolve().parents:
-        if (directory / "data" / "allergens.json").is_file():
-            return directory
-    pytest.skip("canonical data/ not present — running from an installed wheel")
+    # One exit. `pytest.skip` raises, but nothing at the call site says so, so
+    # the earlier shape — `return directory` inside the loop, a bare `skip()`
+    # after it — read as a function that can also fall off the end and return
+    # None, which its `-> Path` annotation says it never does.
+    found = next(
+        (
+            directory
+            for directory in Path(__file__).resolve().parents
+            if (directory / "data" / "allergens.json").is_file()
+        ),
+        None,
+    )
+    if found is None:
+        pytest.skip("canonical data/ not present — running from an installed wheel")
+    return found
 
 
 def canonical(*parts: str):

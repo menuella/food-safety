@@ -255,6 +255,28 @@ if (existsSync(gradleProps)) {
   console.log("  SKIP  no JVM binding in this checkout")
 }
 
+// Two Gradle wrappers exist and nothing in Gradle forces them to agree: the JVM
+// package's own, and the root one that only exists so CodeQL's Java autobuilder
+// finds a build in the checkout root. If the root wrapper drifts onto a
+// different Gradle, code scanning compiles the Kotlin with a toolchain the
+// release never uses — which is exactly the kind of difference a scanner is
+// there to not have.
+const wrappers = ["gradle", "packages/java/gradle"].map((dir) =>
+  join(ROOT, dir, "wrapper/gradle-wrapper.properties"),
+)
+if (wrappers.every((w) => existsSync(w))) {
+  const urls = wrappers.map(
+    (w) => /^distributionUrl=(.+)$/m.exec(readFileSync(w, "utf8"))?.[1]?.trim(),
+  )
+  check(
+    "root and JVM Gradle wrappers are the same distribution",
+    urls[0] !== undefined && urls[0] === urls[1],
+    urls[0] === urls[1] ? "" : `root ${urls[0]} vs package ${urls[1]}`,
+  )
+} else {
+  console.log("  SKIP  no Gradle wrapper pair in this checkout")
+}
+
 const cargoToml = join(ROOT, "packages/rust/Cargo.toml")
 if (existsSync(cargoToml)) {
   const rustVersion = /^version = "([^"]+)"/m.exec(readFileSync(cargoToml, "utf8"))?.[1]

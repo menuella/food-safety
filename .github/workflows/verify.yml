@@ -243,3 +243,29 @@ jobs:
       # omits something the gem needs fails here rather than at release time —
       # when RubyGems has no unpublish beyond a 72-hour window.
       - run: gem build menuella-food_safety.gemspec
+
+  dotnet:
+    name: .NET package
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: packages/dotnet
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: "10.0.x"
+
+      # The one binding that had no gate: release-nuget.yml is behind
+      # `vars.NUGET_ENABLED`, which is unset, so until now the C# never compiled
+      # in CI at all. Directory.Build.props sets TreatWarningsAsErrors, so this
+      # covers nullability and code style as well as the tests — and those tests
+      # are the ones that read data/ from the repo root, catching an embedded
+      # resource that has gone stale against the canonical JSON.
+      - run: dotnet test -c Release --nologo
+
+      # Builds the exact .nupkg `dotnet nuget push` would upload, so a missing
+      # README, icon or embedded data file fails here rather than at release
+      # time — nuget.org has no unpublish, only unlist.
+      - run: dotnet pack -c Release --nologo -o "${RUNNER_TEMP}/nupkg"

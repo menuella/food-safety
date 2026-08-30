@@ -13,6 +13,12 @@ concurrency:
   group: release-pypi
   cancel-in-progress: false
 
+# Least privilege by default. `publish` overrides this wholesale with the one
+# scope it needs — a job-level block REPLACES this one rather than merging with
+# it, so `build` is the only job that reads the checkout with the workflow token.
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest

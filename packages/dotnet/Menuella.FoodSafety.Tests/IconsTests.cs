@@ -12,9 +12,8 @@ public class IconsTests
             .Concat(Disclosures.Get("en").Declarations.Select(d => d.Icon))
             .Distinct();
 
-        foreach (var name in referenced)
+        foreach (var icon in referenced.Select(Icons.Get))
         {
-            var icon = Icons.Get(name);
             Assert.Equal("0 0 24 24", icon.ViewBox);
             Assert.NotEmpty(icon.Nodes);
         }
@@ -44,7 +43,7 @@ public class IconsTests
     {
         // Same reasoning as the key-count test: catches the embedded resource
         // silently going stale against data/icons.json.
-        var path = Path.Combine(DisclosuresTests.FindRepoRoot(), "data", "icons.json");
+        var path = Path.Join(DisclosuresTests.FindRepoRoot(), "data", "icons.json");
         using var doc = JsonDocument.Parse(File.ReadAllText(path));
 
         foreach (var icon in doc.RootElement.EnumerateObject())

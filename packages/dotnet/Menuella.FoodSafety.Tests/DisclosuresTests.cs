@@ -64,7 +64,7 @@ public class DisclosuresTests
         // would still pass. Reading the file directly is the only way to catch
         // that from inside the test suite.
         var repoRoot = FindRepoRoot();
-        using var doc = JsonDocument.Parse(File.ReadAllText(Path.Combine(repoRoot, "data", "allergens.json")));
+        using var doc = JsonDocument.Parse(File.ReadAllText(Path.Join(repoRoot, "data", "allergens.json")));
         var onDisk = doc.RootElement.GetArrayLength();
 
         Assert.Equal(onDisk, Disclosures.AllergenKeys.Count);
@@ -92,7 +92,7 @@ public class DisclosuresTests
     internal static string FindRepoRoot()
     {
         var dir = new DirectoryInfo(AppContext.BaseDirectory);
-        while (dir is not null && !File.Exists(Path.Combine(dir.FullName, "data", "allergens.json")))
+        while (dir is not null && !File.Exists(Path.Join(dir.FullName, "data", "allergens.json")))
         {
             dir = dir.Parent;
         }

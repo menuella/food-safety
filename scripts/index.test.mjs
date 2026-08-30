@@ -208,9 +208,26 @@ test("a title turns the glyph into its own accessible element", () => {
 })
 
 test("a caller-supplied title cannot inject markup", () => {
-  const svg = getIconSvg("milk", { title: '</title><script>alert(1)</script>' })
-  assert.doesNotMatch(svg, /<script>/)
-  assert.match(svg, /&lt;script&gt;/)
+  const svg = getIconSvg("milk", { title: "</title><script>alert(1)</script>" })
+
+  // Asserted as a string, not as a /<script>/ regex. A tag-shaped regex only
+  // ever proves the one spelling it happens to spell: `<SCRIPT>`, `<script >`
+  // and `</script foo="bar">` are all accepted by browsers and would walk
+  // straight past it. The whole hostile title has to survive as ONE text node
+  // with every bracket escaped, and that is an exact string.
+  assert.ok(
+    svg.includes(
+      "<title>&lt;/title&gt;&lt;script&gt;alert(1)&lt;/script&gt;</title>",
+    ),
+    svg,
+  )
+
+  // The stronger statement the escaping makes: none of the caller's four angle
+  // brackets opened a tag, so the markup has exactly as many `<` as the same
+  // glyph rendered with a harmless title. Counting brackets needs no notion of
+  // what a tag looks like, so nothing here can be spelled around.
+  const benign = getIconSvg("milk", { title: "Milk" })
+  assert.equal(svg.split("<").length, benign.split("<").length)
 })
 
 test("getIconSvg emits hyphenated SVG attribute names, not the React spelling", () => {
