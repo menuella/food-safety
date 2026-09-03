@@ -28,7 +28,7 @@ jobs:
     # The reusable workflow maintained by the Dart team. Using it is what lets
     # pub.dev report *how* a version was published, and means the publishing
     # logic is theirs to keep correct rather than ours.
-    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@6afc89df92d6eb3834022f73cd65adc8cdfcb92d # v1.8.1
     with:
       working-directory: packages/dart
       # Matches "Require GitHub Actions environment" on pub.dev. This is the
