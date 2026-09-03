@@ -10,6 +10,24 @@ Pin to a major version in production:
 
 ---
 
+## [1.3.1]
+
+### Fixed
+
+- **Swift package — the resource bundle now signs.** `MenuellaFoodSafety` declared `resources: [.copy("Resources")]`, and `.copy` preserves a directory name verbatim, so the built `MenuellaFoodSafety_MenuellaFoodSafety.bundle` had `Info.plist` + `Resources/` at its top level. `codesign` reads that shape as macOS bundle layout and rejects the bundle outright:
+
+  ```
+  MenuellaFoodSafety_MenuellaFoodSafety.bundle: bundle format unrecognized, invalid, or unsuitable
+  ```
+
+  Any code-signed iOS or macOS app depending on the package therefore failed at its `CodeSign` step. The directory is now `Data/`, and the bundle signs. It is the *name* that matters, not the nesting — any name outside the reserved one is fine, and `.copy` is still required because the loader reads a nested `bundles/` directory that `.process` would flatten.
+
+  **No API change.** The three `Bundle.module` lookups this moves are internal, so `disclosures`, `icon`, `iconToSVG` and `codes` are untouched — a consumer only bumps the version.
+
+  Easy to miss, and worth noting for anyone testing a package that ships resources: `codesign` never runs under `CODE_SIGNING_ALLOWED=NO`, which is what most local build scripts and CI matrices use. `swift build` and `swift test` cannot surface this at all.
+
+---
+
 ## [1.3.0]
 
 ### Added

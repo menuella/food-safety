@@ -23,9 +23,16 @@ let package = Package(
             name: "MenuellaFoodSafety",
             path: "packages/swift/Sources/MenuellaFoodSafety",
             // .copy, not .process: the loader looks resources up by
-            // subdirectory ("Resources/bundles"), and .process is free to
-            // flatten the tree. .copy preserves it verbatim.
-            resources: [.copy("Resources")],
+            // subdirectory ("Data/bundles"), and .process is free to flatten
+            // the tree. .copy preserves it verbatim.
+            //
+            // The directory is "Data", NOT "Resources", and that name is
+            // load-bearing: a top-level `Resources/` inside the built bundle is
+            // read by codesign as macOS bundle layout, and it rejects the whole
+            // bundle with "bundle format unrecognized, invalid, or unsuitable".
+            // Every code-signed consumer build fails. It is the NAME, not the
+            // nesting — sibling SPM bundles are flat and sign fine.
+            resources: [.copy("Data")],
             swiftSettings: [.swiftLanguageMode(.v6)]
         ),
         .testTarget(

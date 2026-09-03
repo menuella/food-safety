@@ -645,17 +645,22 @@ for (const l of LOCALES) {
   )
 }
 
-// -------------------- packages/swift/**/Resources/*.json --
+// -------------------- packages/swift/**/Data/*.json --
 // Swift reads the JSON from its resource bundle: Foundation has JSONDecoder, so
 // there is nothing to generate and no dependency to take. Copied in rather than
 // read from ../../data, because SwiftPM resources must live inside the target.
-const SWIFT_RES = join(OUT, "packages/swift/Sources/MenuellaFoodSafety/Resources")
+//
+// The directory is "Data", not "Resources": `.copy` preserves the name verbatim,
+// and a built bundle whose top level is Info.plist + Resources/ is read by
+// codesign as macOS bundle layout and rejected ("bundle format unrecognized").
+// Keep it out of that reserved name — any other name signs fine.
+const SWIFT_DATA = join(OUT, "packages/swift/Sources/MenuellaFoodSafety/Data")
 for (const f of ["allergens.json", "declarations.json", "codes.json", "icons.json"]) {
-  writeFileSync(ensureDir(join(SWIFT_RES, f)), readFileSync(join(DATA, f), "utf8"), "utf8")
+  writeFileSync(ensureDir(join(SWIFT_DATA, f)), readFileSync(join(DATA, f), "utf8"), "utf8")
 }
 for (const l of LOCALES) {
   writeFileSync(
-    ensureDir(join(SWIFT_RES, "bundles", `${l}.json`)),
+    ensureDir(join(SWIFT_DATA, "bundles", `${l}.json`)),
     readFileSync(join(OUT, `data/bundles/${l}.json`), "utf8"),
     "utf8",
   )
