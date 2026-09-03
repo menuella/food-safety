@@ -23,8 +23,8 @@ One dataset, one version, released from one tag.
 | **Rust** | `cargo add menuella-food-safety` |
 | **Ruby** | `bundle add menuella-food_safety` |
 | **Go** | `go get github.com/menuella/food-safety/packages/go` |
-| **Swift** | `.package(url: "https://github.com/menuella/food-safety", from: "1.3.0")` |
-| **Gradle** | `implementation("com.menuella:food-safety:1.3.0")` |
+| **Swift** | `.package(url: "https://github.com/menuella/food-safety", from: "1.3.1")` |
+| **Gradle** | `implementation("com.menuella:food-safety:1.3.1")` |
 
 ```js
 import { getDisclosures } from "@menuella/food-safety"

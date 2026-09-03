@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "menuella-food-safety"
-version = "1.3.0"
+version = "1.3.1"
 description = "Open allergen and additive vocabulary for restaurant menus: EU Reg. 1169/2011 allergens, declarations, codes, icons and six languages."
 readme = "README.md"
 license = "MIT"

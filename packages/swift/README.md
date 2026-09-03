@@ -10,7 +10,7 @@ Pure Swift, **no dependencies**, `Sendable` throughout, Swift 6 language mode.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/menuella/food-safety.git", from: "1.3.0")
+    .package(url: "https://github.com/menuella/food-safety.git", from: "1.3.1")
 ]
 ```
 

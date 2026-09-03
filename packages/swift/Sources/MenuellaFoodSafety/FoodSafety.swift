@@ -102,13 +102,13 @@ public enum FoodSafety {
             throw FoodSafetyError.unsupportedLocale(locale)
         }
         return try cache.bundle(locale) {
-            try decode(Disclosures.self, named: locale, in: "Resources/bundles")
+            try decode(Disclosures.self, named: locale, in: "Data/bundles")
         }
     }
 
     /// The footnote-code scheme: letters for allergens, numbers for declarations.
     public static func codes() throws -> Codes {
-        try cache.allCodes { try decode(Codes.self, named: "codes", in: "Resources") }
+        try cache.allCodes { try decode(Codes.self, named: "codes", in: "Data") }
     }
 
     /// The scheme these codes belong to.
@@ -214,7 +214,7 @@ public enum FoodSafety {
             // Decoded by hand rather than through Codable: a node is
             // ["path", { … }] — a heterogeneous array whose first element is a
             // string and second an object — which Codable models badly.
-            let raw = try decode([String: RawIcon].self, named: "icons", in: "Resources")
+            let raw = try decode([String: RawIcon].self, named: "icons", in: "Data")
             return raw.mapValues { icon in
                 Icon(
                     viewBox: icon.viewBox,
