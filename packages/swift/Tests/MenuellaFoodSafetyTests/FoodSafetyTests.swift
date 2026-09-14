@@ -51,9 +51,26 @@ private func canonicalCount(_ file: String) throws -> Int? {
     #expect(wheat?.icon == "cereals")
 }
 
+/// Returns a two-letter code this package does not ship a bundle for. Sweeps
+/// every "aa"…"zz" and returns the first that isn't in `FoodSafety.locales`,
+/// so this file does not need editing when a new locale is added — it will
+/// only stop working once we somehow ship all 676 two-letter codes.
+private func pickNegativeLocale() -> String {
+    let shipped = Set(FoodSafety.locales)
+    let alphabet = Array("abcdefghijklmnopqrstuvwxyz")
+    for a in alphabet {
+        for b in alphabet {
+            let candidate = String([a, b])
+            if !shipped.contains(candidate) { return candidate }
+        }
+    }
+    preconditionFailure("every two-letter code is a shipped locale")
+}
+
 @Test func anUnsupportedLocaleThrowsRatherThanFallingBack() {
-    #expect(throws: FoodSafetyError.unsupportedLocale("nl")) {
-        try FoodSafety.disclosures(locale: "nl")
+    let sample = pickNegativeLocale()
+    #expect(throws: FoodSafetyError.unsupportedLocale(sample)) {
+        try FoodSafety.disclosures(locale: sample)
     }
 }
 
@@ -65,7 +82,8 @@ private func canonicalCount(_ file: String) throws -> Int? {
     #expect(try FoodSafety.isDeclarationKey("COLORING"))
     #expect(try !FoodSafety.isDeclarationKey("WHEAT"))
     #expect(FoodSafety.isLocale("de"))
-    #expect(!FoodSafety.isLocale("nl"))
+    let sample = pickNegativeLocale()
+    #expect(!FoodSafety.isLocale(sample))
 }
 
 @Test func noDuplicateOrOverlappingKeys() throws {

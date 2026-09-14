@@ -1,6 +1,6 @@
 # com.menuella:food-safety
 
-> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and six languages.
+> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and ten languages.
 
 Semantic keys instead of country-specific numbers. **Store the key, render the code — never the other way round.**
 
@@ -10,14 +10,14 @@ Kotlin, JVM 17+, **no dependencies beyond `kotlin-stdlib`**, and nothing parsed 
 
 ```kotlin
 // build.gradle.kts
-implementation("com.menuella:food-safety:1.3.1")
+implementation("com.menuella:food-safety:1.4.0")
 ```
 
 ```xml
 <dependency>
   <groupId>com.menuella</groupId>
   <artifactId>food-safety</artifactId>
-  <version>1.3.1</version>
+  <version>1.4.0</version>
 </dependency>
 ```
 

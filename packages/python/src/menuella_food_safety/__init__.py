@@ -23,6 +23,7 @@ from .loaders import (
     load_allergens,
     load_bundle,
     load_codes,
+    load_locales,
     load_dataset,
     load_declarations,
     load_icons,
@@ -57,8 +58,8 @@ try:  # pragma: no cover - trivial
 except Exception:  # pragma: no cover - running from a source tree
     __version__ = "0.0.0+unknown"
 
-LOCALES: tuple[str, ...] = ("de", "en", "es", "fr", "it", "tr")
-"""Locales with a prebuilt bundle."""
+LOCALES: tuple[str, ...] = load_locales()
+"""Locales with a prebuilt bundle. Derived from the shipped ``bundles/``."""
 
 FALLBACK_LOCALE = "en"
 """The locale a bundle falls back to for anything it does not itself carry."""

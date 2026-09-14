@@ -25,8 +25,19 @@ public static class Disclosures
 {
     private static readonly ConcurrentDictionary<string, DisclosureSet> Cache = new(StringComparer.OrdinalIgnoreCase);
 
-    /// <summary>Locales with a prebuilt bundle.</summary>
-    public static IReadOnlyList<string> Locales { get; } = ["de", "en", "es", "fr", "it", "tr"];
+    /// <summary>
+    /// Locales with a prebuilt bundle. Derived from the embedded
+    /// <c>bundles.*.json</c> resources at type-init time, so adding a new
+    /// locale is a matter of dropping <c>bundles/xx.json</c> in — no source
+    /// list to keep in step.
+    /// </summary>
+    public static IReadOnlyList<string> Locales { get; } = typeof(Disclosures).Assembly
+        .GetManifestResourceNames()
+        .Where(n => n.StartsWith("bundles.", StringComparison.Ordinal)
+                    && n.EndsWith(".json", StringComparison.Ordinal))
+        .Select(n => n.Substring("bundles.".Length, n.Length - "bundles.".Length - ".json".Length))
+        .OrderBy(l => l, StringComparer.Ordinal)
+        .ToArray();
 
     /// <summary>The locale a bundle falls back to for anything it does not itself carry.</summary>
     public const string FallbackLocale = "en";

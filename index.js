@@ -12,12 +12,16 @@ import enBundle from "./data/bundles/en.js"
 import esBundle from "./data/bundles/es.js"
 import frBundle from "./data/bundles/fr.js"
 import itBundle from "./data/bundles/it.js"
+import nlBundle from "./data/bundles/nl.js"
+import ptBundle from "./data/bundles/pt.js"
 import trBundle from "./data/bundles/tr.js"
+import viBundle from "./data/bundles/vi.js"
+import zhBundle from "./data/bundles/zh.js"
 
 /** Locales with a prebuilt bundle. */
-export const LOCALES = Object.freeze(["de", "en", "es", "fr", "it", "tr"])
+export const LOCALES = Object.freeze(["de", "en", "es", "fr", "it", "nl", "pt", "tr", "vi", "zh"])
 
-const BUNDLES = /* @__PURE__ */ { de: deBundle, en: enBundle, es: esBundle, fr: frBundle, it: itBundle, tr: trBundle }
+const BUNDLES = /* @__PURE__ */ { de: deBundle, en: enBundle, es: esBundle, fr: frBundle, it: itBundle, nl: nlBundle, pt: ptBundle, tr: trBundle, vi: viBundle, zh: zhBundle }
 
 /** The locale a bundle falls back to for anything it does not itself carry. */
 export const FALLBACK_LOCALE = "en"

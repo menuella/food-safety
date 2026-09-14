@@ -10,6 +10,24 @@ Pin to a major version in production:
 
 ---
 
+## [1.4.0] – 2026-09-14
+
+### Added
+
+- **Four new languages — Dutch (`nl`), Portuguese (`pt`), Chinese (`zh`) and Vietnamese (`vi`) — bringing the set to ten.** These are the four largest restaurant-language communities the six-locale build did not already cover in mainland Europe: Dutch and Portuguese for the EU expansion (Netherlands, Belgium's Flemish north, Portugal, Luxembourg), and Chinese and Vietnamese for the diaspora restaurant sector that dominates casual dining in a lot of German cities in particular. Every one of the new locales carries the full triple — `name`, `description` and the group `declaration` sentence — for all 28 allergen keys, and `name` + `description` for all 22 Menuella Declarations. Nothing is stubbed, `disclosures.fallbacks` stays empty on every field.
+
+  The `declaration` sentence is a translation of the LMIV group text, not a jurisdictional legal claim: a Chinese-speaking or Vietnamese-speaking guest in an EU restaurant should read the same disclosure their neighbour reads in Dutch or Portuguese, in their own language. Dutch follows the standard LMIV wording a Netherlands restaurant inspector would recognise verbatim (`Bevat granen die gluten bevatten`, `Bevat noten en producten daarvan`, `Bevat schaaldieren en producten daarvan`, …); Portuguese follows the EU regulation's own pt text (`Contém cereais que contêm glúten`, `Contém frutos de casca rija e produtos à base`, …); Chinese renders the same group-level sentences (`含有含麸质的谷物及其制品`, `含有坚果及其制品`, …); Vietnamese does the same (`Chứa ngũ cốc có gluten và các sản phẩm từ chúng`, `Chứa các loại hạt cứng và các sản phẩm từ chúng`, …).
+
+  A few translation choices were made deliberately and are worth calling out for future reviewers: Chinese uses `含亚硝酸盐（腌肉盐）` for `NITRITE_CURING_SALT` rather than a literal calque of the German "Nitritpökelsalz", because GB 2760 talks about nitrite content and Chinese kitchen labels do the same. Vietnamese uses `Hạt pecan` for `PECANS` rather than `Hạt hồ đào`, because `hồ đào` is ambiguous in Vietnamese between walnut and pecan, and `Quả óc chó` is already the walnut key. Portuguese picks the pt-PT variants (`Sementes de sésamo`, `Dióxido de enxofre e sulfitos`) — the file name stays `pt.json`; a Brazilian variant would ship as `pt-BR.json` if and when contributed.
+
+- **All ten SDK bindings** — Dart, .NET, Go, Java/Kotlin, PHP, Python, Ruby, Rust, Swift and JS — pick up the new locales without any hand-editing. `scripts/generate.mjs` enumerates locales from the filesystem (`data/translations/allergens/`), so dropping a new JSON file in adds it to every binding's bundle table, the generated `Locale` type union, the enumeration guards, and each language's package resources. Bundles at `data/bundles/{nl,pt,vi,zh}.{json,js}`, and each SDK now carries all ten bundles in its published artifact.
+
+### Compatibility
+
+No breaking changes. Existing consumers get the same `getDisclosures("de" | "en" | "es" | "fr" | "it" | "tr")` results as `1.3.1`; only the set of accepted locales grows. `LOCALES`, the `Locale` type, and the equivalent constants in every binding widen to include `"nl" | "pt" | "vi" | "zh"` — code that hard-coded the six-locale union will type-fail against the new tables, which is the intended behaviour (a locale you were not shipping will not accidentally satisfy your `switch (l)` without a compile-time nudge).
+
+---
+
 ## [1.3.1]
 
 ### Fixed

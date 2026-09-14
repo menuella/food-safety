@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "chứa phẩm màu",
+    "description": "Chứa phẩm màu thực phẩm"
+  },
+  "PRESERVATIVES": {
+    "name": "chứa chất bảo quản",
+    "description": "Chứa chất bảo quản"
+  },
+  "ANTIOXIDANTS": {
+    "name": "chứa chất chống oxy hóa",
+    "description": "Chứa chất chống oxy hóa"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "chứa muối nitrit ướp",
+    "description": "Chứa muối nitrit dùng để ướp"
+  },
+  "NITRATE": {
+    "name": "chứa nitrat",
+    "description": "Chứa nitrat (bảo quản)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "chứa muối nitrit ướp và nitrat",
+    "description": "Chứa muối nitrit ướp và nitrat"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "chứa chất điều vị",
+    "description": "Chứa chất điều vị"
+  },
+  "PHOSPHATE": {
+    "name": "chứa phosphate",
+    "description": "Chứa phosphate"
+  },
+  "SULPHURED": {
+    "name": "đã xử lý lưu huỳnh",
+    "description": "Chứa lưu huỳnh dioxide hoặc sulphite"
+  },
+  "BLACKENED": {
+    "name": "đã nhuộm đen",
+    "description": "Nhuộm đen để tạo hiệu ứng thị giác"
+  },
+  "WAXED": {
+    "name": "đã phủ sáp",
+    "description": "Bề mặt phủ sáp để bảo quản"
+  },
+  "SWEETENERS": {
+    "name": "chứa chất tạo ngọt",
+    "description": "Chứa chất tạo ngọt"
+  },
+  "PHENYLALANINE": {
+    "name": "chứa phenylalanine",
+    "description": "Chứa phenylalanine"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "có thể gây nhuận tràng nếu dùng quá liều",
+    "description": "Có thể gây nhuận tràng nếu tiêu thụ quá mức"
+  },
+  "CAFFEINE": {
+    "name": "chứa caffeine",
+    "description": "Chứa caffeine"
+  },
+  "QUININE": {
+    "name": "chứa quinine",
+    "description": "Chứa quinine"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "có thể ảnh hưởng đến hoạt động và sự tập trung của trẻ em",
+    "description": "Có thể ảnh hưởng đến hoạt động và sự tập trung của trẻ em"
+  },
+  "MILK_PROTEIN": {
+    "name": "chứa protein sữa",
+    "description": "Chứa protein sữa"
+  },
+  "SURIMI": {
+    "name": "chứa surimi",
+    "description": "Chứa surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "ghép từ các miếng thịt",
+    "description": "Được ghép từ các miếng thịt"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "ghép từ các miếng cá",
+    "description": "Được ghép từ các miếng cá"
+  },
+  "DEFROSTED": {
+    "name": "đã rã đông",
+    "description": "Rã đông từ trạng thái đông lạnh"
+  }
+}

@@ -1,6 +1,6 @@
 # MenuellaFoodSafety
 
-> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and six languages.
+> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and ten languages.
 
 Semantic keys instead of country-specific numbers. **Store the key, render the code — never the other way round.**
 
@@ -10,7 +10,7 @@ Pure Swift, **no dependencies**, `Sendable` throughout, Swift 6 language mode.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/menuella/food-safety.git", from: "1.3.1")
+    .package(url: "https://github.com/menuella/food-safety.git", from: "1.4.0")
 ]
 ```
 

@@ -41,6 +41,18 @@ def load_bundle(locale: str) -> dict[str, Any]:
 
 
 @lru_cache(maxsize=1)
+def load_locales() -> tuple[str, ...]:
+    """Locales with a prebuilt bundle, enumerated from the shipped ``bundles/``.
+
+    Derived at runtime rather than hand-listed: adding a new locale is a matter
+    of dropping ``bundles/xx.json`` in — no source file to keep in step.
+    """
+    bundles = _DATA.joinpath("bundles")
+    names = (p.name for p in bundles.iterdir() if p.name.endswith(".json"))
+    return tuple(sorted(name[: -len(".json")] for name in names))
+
+
+@lru_cache(maxsize=1)
 def load_allergens() -> list[dict[str, Any]]:
     """The structural allergen file: keys, groups, icons — no labels."""
     return _read("allergens.json")

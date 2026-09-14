@@ -1,6 +1,6 @@
 # @menuella/food-safety
 
-> Open dataset of **restaurant menu disclosures** — the 14 EU allergen groups and **Menuella Declarations**, with codes, icons and labels in 6 languages, keyed by stable semantic keys.
+> Open dataset of **restaurant menu disclosures** — the 14 EU allergen groups and **Menuella Declarations**, with codes, icons and labels in 10 languages, keyed by stable semantic keys.
 
 [![Verify](https://github.com/menuella/food-safety/actions/workflows/verify.yml/badge.svg)](https://github.com/menuella/food-safety/actions/workflows/verify.yml)
 [![npm](https://img.shields.io/npm/v/@menuella/food-safety.svg)](https://www.npmjs.com/package/@menuella/food-safety)
@@ -23,8 +23,8 @@ One dataset, one version, released from one tag.
 | **Rust** | `cargo add menuella-food-safety` |
 | **Ruby** | `bundle add menuella-food_safety` |
 | **Go** | `go get github.com/menuella/food-safety/packages/go` |
-| **Swift** | `.package(url: "https://github.com/menuella/food-safety", from: "1.3.1")` |
-| **Gradle** | `implementation("com.menuella:food-safety:1.3.1")` |
+| **Swift** | `.package(url: "https://github.com/menuella/food-safety", from: "1.4.0")` |
+| **Gradle** | `implementation("com.menuella:food-safety:1.4.0")` |
 
 ```js
 import { getDisclosures } from "@menuella/food-safety"
@@ -46,7 +46,7 @@ Five pieces, one vocabulary, every region:
 | **Menuella Declarations** | 22 keys for additives, beverage declarations, warnings and product indications |
 | **Menuella Codes** | the short codes printed in a menu legend — `WHEAT` → `A6` |
 | **Menuella Icons** | 15 solid glyphs, one per group |
-| **Menuella Translations** | localized labels in 6 languages |
+| **Menuella Translations** | localized labels in 10 languages |
 
 **Menuella Declarations are a standardized restaurant menu disclosure vocabulary developed by Menuella for consistent rendering across applications and regions.** They are built for portability, not to reproduce any country's official legal terminology — see [`docs/regions.md`](docs/regions.md).
 
@@ -121,7 +121,11 @@ declarations = NITRITE_CURING_SALT (sucuk)  = ["NITRITE_CURING_SALT"]
 | `es` | Spanish | 28 ✅ + declarations | 22 ✅ |
 | `fr` | French | 28 ✅ + declarations | 22 ✅ |
 | `it` | Italian | 28 ✅ + declarations | 22 ✅ |
+| `nl` | Dutch | 28 ✅ + declarations | 22 ✅ |
+| `pt` | Portuguese | 28 ✅ + declarations | 22 ✅ |
 | `tr` | Turkish | 28 ✅ + declarations | 22 ✅ |
+| `vi` | Vietnamese | 28 ✅ + declarations | 22 ✅ |
+| `zh` | Chinese | 28 ✅ + declarations | 22 ✅ |
 
 Every language is complete: all 28 allergens and 22 declarations carry a name, description and — for allergens — the group declaration sentence.
 

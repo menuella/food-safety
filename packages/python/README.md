@@ -1,6 +1,6 @@
 # menuella-food-safety
 
-> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and six languages.
+> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and ten languages.
 
 Semantic keys instead of country-specific numbers. **Store the key, render the code — never the other way round.**
 

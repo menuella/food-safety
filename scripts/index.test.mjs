@@ -39,15 +39,31 @@ test("labels actually differ between locales", () => {
   assert.equal(new Set(names).size, names.length, `duplicate labels: ${names}`)
 })
 
+// Pick a two-letter code this package does not ship. Sweeps every "aa"…"zz" and
+// returns the first that isn't in LOCALES, so this test does not need editing
+// when a new locale is added — it will only stop working once we somehow ship
+// all 676 two-letter codes, at which point a hard-coded fallback would be worse.
+const pickNegativeLocale = () => {
+  const shipped = new Set(LOCALES)
+  for (let i = 0; i < 26; i++) {
+    for (let j = 0; j < 26; j++) {
+      const c = String.fromCharCode(97 + i) + String.fromCharCode(97 + j)
+      if (!shipped.has(c)) return c
+    }
+  }
+  throw new Error("every two-letter code is a shipped locale")
+}
+
 test("an unsupported locale throws, and says what exists", () => {
+  const sample = pickNegativeLocale()
   let err
   try {
-    getDisclosures("pt")
+    getDisclosures(sample)
   } catch (caught) {
     err = caught
   }
-  assert.ok(err, "expected getDisclosures('pt') to throw")
-  assert.match(err.message, /No disclosures for locale "pt"/)
+  assert.ok(err, `expected getDisclosures(${JSON.stringify(sample)}) to throw`)
+  assert.match(err.message, new RegExp(`No disclosures for locale "${sample}"`))
   assert.equal(err.code, "ERR_UNSUPPORTED_LOCALE")
   // The message must name every locale that does work, or it is not actionable.
   for (const locale of LOCALES) assert.match(err.message, new RegExp(locale))
@@ -112,7 +128,7 @@ test("key guards reject non-strings and near-misses without throwing", () => {
 
 test("locale guard matches the shipped bundles exactly", () => {
   for (const locale of LOCALES) assert.ok(isLocale(locale))
-  for (const locale of ["pt", "nl", "pl", "ru", "de-DE", "DE"]) assert.equal(isLocale(locale), false)
+  assert.equal(isLocale(pickNegativeLocale()), false)
 })
 
 test("every entry references a real icon, group and category", () => {

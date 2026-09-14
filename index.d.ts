@@ -7,7 +7,11 @@ export type Locale =
   | "es"
   | "fr"
   | "it"
+  | "nl"
+  | "pt"
   | "tr"
+  | "vi"
+  | "zh"
 
 /** One of the 28 selectable allergen disclosures. */
 export type AllergenKey =

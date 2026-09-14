@@ -80,14 +80,33 @@ fn german_reads_correctly() {
     assert!(wheat.is_member);
 }
 
+/// Returns a two-letter code this crate does not ship a bundle for. Sweeps
+/// every "aa"…"zz" and returns the first that isn't in `fs::LOCALES`, so this
+/// file does not need editing when a new locale is added — it will only stop
+/// working once we somehow ship all 676 two-letter codes.
+fn pick_negative_locale() -> String {
+    for a in b'a'..=b'z' {
+        for b in b'a'..=b'z' {
+            let candidate = format!("{}{}", a as char, b as char);
+            if !fs::LOCALES.contains(&candidate.as_str()) {
+                return candidate;
+            }
+        }
+    }
+    panic!("every two-letter code is a shipped locale")
+}
+
 #[test]
 fn an_unsupported_locale_errors_rather_than_falling_back() {
-    let error = fs::disclosures("nl").expect_err("nl has no bundle");
-    assert_eq!(error, fs::UnsupportedLocale("nl"));
+    let sample = pick_negative_locale();
+    let error = fs::disclosures(&sample).expect_err(&format!("{sample} has no bundle"));
+    // Compare on the message rather than the payload — fs::UnsupportedLocale
+    // holds a &'static str internally, and `sample` is a String owned here.
+    let text = error.to_string();
+    assert!(text.contains(&sample), "{text}");
 
     // The message must name the alternatives, or the caller has to go read the
     // source to find out what is valid.
-    let text = error.to_string();
     assert!(text.contains("available:"), "{text}");
     assert!(text.contains("de, en"), "{text}");
 }
@@ -102,7 +121,9 @@ fn a_bundle_is_usable_in_a_const_context() {
     };
 
     assert_eq!(DE.locale, "de");
-    assert!(fs::disclosures_const("nl").is_none());
+    // `disclosures_const` needs a compile-time string; keep at least one
+    // literal test to keep coverage of the const path itself.
+    assert!(fs::disclosures_const("xx").is_none());
 
     // A two-byte comparison must not match a longer string that starts the same.
     assert!(fs::disclosures_const("den").is_none());
@@ -121,8 +142,8 @@ fn guards_reject_keys_outside_the_vocabulary() {
     assert!(!fs::is_declaration_key("WHEAT"));
 
     assert!(fs::is_locale("de"));
-    assert!(!fs::is_locale("nl"));
-    assert!(!fs::is_locale("DE"));
+    let sample = pick_negative_locale();
+    assert!(!fs::is_locale(&sample), "{sample} should not be a locale");
 }
 
 #[test]

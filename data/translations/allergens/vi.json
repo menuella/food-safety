@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Lúa mạch đen",
+    "declaration": "Chứa ngũ cốc có gluten và các sản phẩm từ chúng",
+    "description": "Lúa mạch đen và các sản phẩm từ lúa mạch đen"
+  },
+  "BARLEY": {
+    "name": "Lúa mạch",
+    "declaration": "Chứa ngũ cốc có gluten và các sản phẩm từ chúng",
+    "description": "Lúa mạch và các sản phẩm từ lúa mạch"
+  },
+  "EMMER": {
+    "name": "Lúa mì Emmer",
+    "declaration": "Chứa ngũ cốc có gluten và các sản phẩm từ chúng",
+    "description": "Lúa mì Emmer và các sản phẩm từ đó"
+  },
+  "EINKORN": {
+    "name": "Lúa mì Einkorn",
+    "declaration": "Chứa ngũ cốc có gluten và các sản phẩm từ chúng",
+    "description": "Lúa mì Einkorn và các sản phẩm từ đó"
+  },
+  "SPELT": {
+    "name": "Lúa mì Spelt",
+    "declaration": "Chứa ngũ cốc có gluten và các sản phẩm từ chúng",
+    "description": "Lúa mì Spelt và các sản phẩm từ đó"
+  },
+  "WHEAT": {
+    "name": "Lúa mì",
+    "declaration": "Chứa ngũ cốc có gluten và các sản phẩm từ chúng",
+    "description": "Lúa mì và các sản phẩm từ lúa mì"
+  },
+  "OATS": {
+    "name": "Yến mạch",
+    "declaration": "Chứa ngũ cốc có gluten và các sản phẩm từ chúng",
+    "description": "Yến mạch và các sản phẩm từ yến mạch"
+  },
+  "KHORASAN": {
+    "name": "Lúa mì Khorasan/Kamut",
+    "declaration": "Chứa ngũ cốc có gluten và các sản phẩm từ chúng",
+    "description": "Lúa mì Khorasan/Kamut và các sản phẩm từ đó"
+  },
+  "CRUSTACEANS": {
+    "name": "Động vật giáp xác",
+    "declaration": "Chứa động vật giáp xác và các sản phẩm từ chúng",
+    "description": "Bao gồm tôm, cua và các loài giáp xác khác"
+  },
+  "EGGS": {
+    "name": "Trứng",
+    "declaration": "Chứa trứng và các sản phẩm từ trứng",
+    "description": "Bao gồm trứng và các sản phẩm từ trứng"
+  },
+  "FISH": {
+    "name": "Cá",
+    "declaration": "Chứa cá và các sản phẩm từ cá",
+    "description": "Bao gồm cá và các sản phẩm từ cá"
+  },
+  "PEANUTS": {
+    "name": "Đậu phộng",
+    "declaration": "Chứa đậu phộng và các sản phẩm từ đậu phộng",
+    "description": "Bao gồm đậu phộng và các sản phẩm từ đậu phộng"
+  },
+  "SOY": {
+    "name": "Đậu nành",
+    "declaration": "Chứa đậu nành và các sản phẩm từ đậu nành",
+    "description": "Bao gồm đậu nành và các sản phẩm từ đậu nành"
+  },
+  "MILK": {
+    "name": "Sữa (bao gồm lactose)",
+    "declaration": "Chứa sữa và các sản phẩm từ sữa (bao gồm lactose)",
+    "description": "Bao gồm sữa và các sản phẩm chứa lactose"
+  },
+  "MACADAMIA": {
+    "name": "Hạt macadamia",
+    "declaration": "Chứa các loại hạt cứng và các sản phẩm từ chúng",
+    "description": "Hạt macadamia và các sản phẩm từ hạt macadamia"
+  },
+  "ALMONDS": {
+    "name": "Hạnh nhân",
+    "declaration": "Chứa các loại hạt cứng và các sản phẩm từ chúng",
+    "description": "Hạnh nhân và các sản phẩm từ hạnh nhân"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Hạt Brazil",
+    "declaration": "Chứa các loại hạt cứng và các sản phẩm từ chúng",
+    "description": "Hạt Brazil và các sản phẩm từ hạt Brazil"
+  },
+  "PECANS": {
+    "name": "Hạt pecan",
+    "declaration": "Chứa các loại hạt cứng và các sản phẩm từ chúng",
+    "description": "Hạt pecan (hồ đào Mỹ) và các sản phẩm từ đó"
+  },
+  "PISTACHIOS": {
+    "name": "Hạt dẻ cười",
+    "declaration": "Chứa các loại hạt cứng và các sản phẩm từ chúng",
+    "description": "Hạt dẻ cười và các sản phẩm từ đó"
+  },
+  "WALNUTS": {
+    "name": "Quả óc chó",
+    "declaration": "Chứa các loại hạt cứng và các sản phẩm từ chúng",
+    "description": "Quả óc chó và các sản phẩm từ óc chó"
+  },
+  "CASHEWS": {
+    "name": "Hạt điều",
+    "declaration": "Chứa các loại hạt cứng và các sản phẩm từ chúng",
+    "description": "Hạt điều và các sản phẩm từ hạt điều"
+  },
+  "HAZELNUTS": {
+    "name": "Quả phỉ",
+    "declaration": "Chứa các loại hạt cứng và các sản phẩm từ chúng",
+    "description": "Quả phỉ và các sản phẩm từ quả phỉ"
+  },
+  "CELERY": {
+    "name": "Cần tây",
+    "declaration": "Chứa cần tây và các sản phẩm từ cần tây",
+    "description": "Bao gồm cần tây và các sản phẩm từ cần tây"
+  },
+  "MUSTARD": {
+    "name": "Mù tạt",
+    "declaration": "Chứa mù tạt và các sản phẩm từ mù tạt",
+    "description": "Bao gồm mù tạt và các sản phẩm từ mù tạt"
+  },
+  "SESAME": {
+    "name": "Hạt vừng",
+    "declaration": "Chứa hạt vừng và các sản phẩm từ hạt vừng",
+    "description": "Bao gồm hạt vừng và các sản phẩm từ hạt vừng"
+  },
+  "SULPHITES": {
+    "name": "Lưu huỳnh dioxide và sulphite",
+    "declaration": "Chứa lưu huỳnh dioxide và sulphite",
+    "description": "Bao gồm lưu huỳnh dioxide và sulphite"
+  },
+  "LUPINS": {
+    "name": "Đậu lupin",
+    "declaration": "Chứa đậu lupin và các sản phẩm từ đậu lupin",
+    "description": "Bao gồm đậu lupin và các sản phẩm từ đậu lupin"
+  },
+  "MOLLUSCS": {
+    "name": "Động vật thân mềm",
+    "declaration": "Chứa động vật thân mềm và các sản phẩm từ chúng",
+    "description": "Bao gồm ốc, trai và các loài thân mềm khác"
+  }
+}
