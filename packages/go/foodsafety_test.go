@@ -76,10 +76,33 @@ func TestGermanReadsCorrectly(t *testing.T) {
 	t.Fatal("WHEAT not found")
 }
 
+// pickNegativeLocale returns a two-letter code this package does not ship a
+// bundle for. Sweeps every "aa"..."zz" and returns the first that isn't in
+// Locales(), so this file does not need editing when a new locale is added —
+// it will only stop working once we somehow ship all 676 two-letter codes.
+func pickNegativeLocale(t *testing.T) string {
+	t.Helper()
+	shipped := make(map[string]struct{}, len(Locales()))
+	for _, l := range Locales() {
+		shipped[l] = struct{}{}
+	}
+	for a := 'a'; a <= 'z'; a++ {
+		for b := 'a'; b <= 'z'; b++ {
+			c := string([]rune{a, b})
+			if _, ok := shipped[c]; !ok {
+				return c
+			}
+		}
+	}
+	t.Fatal("every two-letter code is a shipped locale")
+	return ""
+}
+
 func TestAnUnsupportedLocaleErrorsRatherThanFallingBack(t *testing.T) {
-	_, err := GetDisclosures("nl")
+	sample := pickNegativeLocale(t)
+	_, err := GetDisclosures(sample)
 	if !errors.Is(err, ErrUnsupportedLocale) {
-		t.Fatalf("want ErrUnsupportedLocale, got %v", err)
+		t.Fatalf("want ErrUnsupportedLocale for %q, got %v", sample, err)
 	}
 	// The message must name the alternatives, or the caller has to go read the
 	// source to find out what is valid.
@@ -117,8 +140,9 @@ func TestGuardsRejectKeysOutsideTheVocabulary(t *testing.T) {
 	if !IsDeclarationKey("COLORING") || IsDeclarationKey("WHEAT") {
 		t.Error("declaration guard wrong")
 	}
-	if !IsLocale("de") || IsLocale("nl") {
-		t.Error("locale guard wrong")
+	sample := pickNegativeLocale(t)
+	if !IsLocale("de") || IsLocale(sample) {
+		t.Errorf("locale guard wrong for %q", sample)
 	}
 }
 

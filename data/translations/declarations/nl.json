@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "met kleurstof",
+    "description": "Bevat kleurstoffen"
+  },
+  "PRESERVATIVES": {
+    "name": "met conserveermiddel",
+    "description": "Bevat conserveermiddelen"
+  },
+  "ANTIOXIDANTS": {
+    "name": "met antioxidant",
+    "description": "Bevat antioxidanten"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "met nitrietpekelzout",
+    "description": "Bevat nitrietpekelzout"
+  },
+  "NITRATE": {
+    "name": "met nitraat",
+    "description": "Met nitraat (conservering)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "met nitrietpekelzout en nitraat",
+    "description": "Met nitrietpekelzout en nitraat"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "met smaakversterker",
+    "description": "Bevat smaakversterkers"
+  },
+  "PHOSPHATE": {
+    "name": "met fosfaat",
+    "description": "Bevat fosfaat"
+  },
+  "SULPHURED": {
+    "name": "gezwaveld",
+    "description": "Bevat zwaveldioxide of sulfieten"
+  },
+  "BLACKENED": {
+    "name": "zwart gekleurd",
+    "description": "Zwart gekleurd voor visueel effect"
+  },
+  "WAXED": {
+    "name": "gewaxt",
+    "description": "Gewaxt oppervlak ter conservering"
+  },
+  "SWEETENERS": {
+    "name": "met zoetstoffen",
+    "description": "Bevat zoetstoffen"
+  },
+  "PHENYLALANINE": {
+    "name": "bevat een bron van fenylalanine",
+    "description": "Bevat een bron van fenylalanine"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "kan bij overmatig gebruik laxerend werken",
+    "description": "Kan bij overmatig gebruik laxerend werken"
+  },
+  "CAFFEINE": {
+    "name": "met cafeïne",
+    "description": "Bevat cafeïne"
+  },
+  "QUININE": {
+    "name": "met kinine",
+    "description": "Bevat kinine"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "kan de activiteit en aandacht bij kinderen nadelig beïnvloeden",
+    "description": "Kan de activiteit en aandacht bij kinderen nadelig beïnvloeden"
+  },
+  "MILK_PROTEIN": {
+    "name": "met melkeiwit",
+    "description": "Bevat melkeiwit"
+  },
+  "SURIMI": {
+    "name": "met surimi",
+    "description": "Bevat surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "uit stukjes vlees samengesteld",
+    "description": "Uit stukjes vlees samengesteld"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "uit stukjes vis samengesteld",
+    "description": "Uit stukjes vis samengesteld"
+  },
+  "DEFROSTED": {
+    "name": "ontdooid",
+    "description": "Ontdooid uit bevroren toestand"
+  }
+}

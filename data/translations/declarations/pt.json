@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "com corante",
+    "description": "Contém corantes"
+  },
+  "PRESERVATIVES": {
+    "name": "com conservante",
+    "description": "Contém conservantes"
+  },
+  "ANTIOXIDANTS": {
+    "name": "com antioxidante",
+    "description": "Contém antioxidantes"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "com sal nitritado de cura",
+    "description": "Contém sal nitritado de cura"
+  },
+  "NITRATE": {
+    "name": "com nitrato",
+    "description": "Com nitrato (conservação)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "com sal nitritado de cura e nitrato",
+    "description": "Com sal nitritado de cura e nitrato"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "com intensificador de sabor",
+    "description": "Contém intensificadores de sabor"
+  },
+  "PHOSPHATE": {
+    "name": "com fosfato",
+    "description": "Contém fosfato"
+  },
+  "SULPHURED": {
+    "name": "sulfitado",
+    "description": "Contém dióxido de enxofre ou sulfitos"
+  },
+  "BLACKENED": {
+    "name": "enegrecido",
+    "description": "Enegrecido para efeito visual"
+  },
+  "WAXED": {
+    "name": "encerado",
+    "description": "Superfície encerada para conservação"
+  },
+  "SWEETENERS": {
+    "name": "com edulcorantes",
+    "description": "Contém edulcorantes"
+  },
+  "PHENYLALANINE": {
+    "name": "contém uma fonte de fenilalanina",
+    "description": "Contém uma fonte de fenilalanina"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "pode ter efeito laxante se consumido em excesso",
+    "description": "Pode ter efeito laxante se consumido em excesso"
+  },
+  "CAFFEINE": {
+    "name": "com cafeína",
+    "description": "Contém cafeína"
+  },
+  "QUININE": {
+    "name": "com quinino",
+    "description": "Contém quinino"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "pode afetar a atividade e a atenção das crianças",
+    "description": "Pode afetar a atividade e a atenção das crianças"
+  },
+  "MILK_PROTEIN": {
+    "name": "com proteína do leite",
+    "description": "Contém proteína do leite"
+  },
+  "SURIMI": {
+    "name": "com surimi",
+    "description": "Contém surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "composto por pedaços de carne agregados",
+    "description": "Composto por pedaços de carne agregados"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "composto por pedaços de peixe agregados",
+    "description": "Composto por pedaços de peixe agregados"
+  },
+  "DEFROSTED": {
+    "name": "descongelado",
+    "description": "Descongelado de um estado ultracongelado"
+  }
+}

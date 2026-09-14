@@ -130,7 +130,24 @@ func Locales() []string {
 	return append([]string(nil), locales...)
 }
 
-var locales = []string{"de", "en", "es", "fr", "it", "tr"}
+// Populated by init() from the embedded data/bundles/ directory, so adding a
+// new locale is a matter of dropping bundles/xx.json in — no source list to
+// keep in step.
+var locales []string
+
+func init() {
+	entries, err := dataFS.ReadDir("data/bundles")
+	if err != nil {
+		panic(fmt.Errorf("foodsafety: cannot enumerate bundles: %w", err))
+	}
+	for _, entry := range entries {
+		name := entry.Name()
+		if strings.HasSuffix(name, ".json") {
+			locales = append(locales, strings.TrimSuffix(name, ".json"))
+		}
+	}
+	sort.Strings(locales)
+}
 
 // FallbackLocale is the locale a bundle falls back to for anything it does not
 // itself carry.

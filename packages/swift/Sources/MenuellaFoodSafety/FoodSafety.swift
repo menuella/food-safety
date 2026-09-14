@@ -45,8 +45,20 @@ public enum FoodSafetyError: Error, LocalizedError, Sendable, Equatable {
 /// resolved; it will not sniff, negotiate, or quietly fall back.
 public enum FoodSafety {
 
-    /// Locales with a prebuilt bundle.
-    public static let locales: [String] = ["de", "en", "es", "fr", "it", "tr"]
+    /// Locales with a prebuilt bundle. Derived from the shipped
+    /// ``Data/bundles`` resources, so adding a new locale is a matter of
+    /// dropping ``bundles/xx.json`` in — no source list to keep in step.
+    public static let locales: [String] = {
+        guard let urls = Bundle.module.urls(
+            forResourcesWithExtension: "json",
+            subdirectory: "Data/bundles"
+        ) else {
+            return []
+        }
+        return urls
+            .map { $0.deletingPathExtension().lastPathComponent }
+            .sorted()
+    }()
 
     /// The locale a bundle falls back to for anything it does not itself carry.
     public static let fallbackLocale = "en"

@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Rogge",
+    "declaration": "Bevat granen die gluten bevatten",
+    "description": "Rogge en producten daarvan"
+  },
+  "BARLEY": {
+    "name": "Gerst",
+    "declaration": "Bevat granen die gluten bevatten",
+    "description": "Gerst en producten daarvan"
+  },
+  "EMMER": {
+    "name": "Emmer",
+    "declaration": "Bevat granen die gluten bevatten",
+    "description": "Emmer en producten daarvan"
+  },
+  "EINKORN": {
+    "name": "Eenkoren",
+    "declaration": "Bevat granen die gluten bevatten",
+    "description": "Eenkoren en producten daarvan"
+  },
+  "SPELT": {
+    "name": "Spelt",
+    "declaration": "Bevat granen die gluten bevatten",
+    "description": "Spelt en producten daarvan"
+  },
+  "WHEAT": {
+    "name": "Tarwe",
+    "declaration": "Bevat granen die gluten bevatten",
+    "description": "Tarwe en producten daarvan"
+  },
+  "OATS": {
+    "name": "Haver",
+    "declaration": "Bevat granen die gluten bevatten",
+    "description": "Haver en producten daarvan"
+  },
+  "KHORASAN": {
+    "name": "Khorasan/Kamut",
+    "declaration": "Bevat granen die gluten bevatten",
+    "description": "Khorasan/Kamut en producten daarvan"
+  },
+  "CRUSTACEANS": {
+    "name": "Schaaldieren",
+    "declaration": "Bevat schaaldieren en producten daarvan",
+    "description": "Inclusief schaaldieren zoals garnalen, krabben enz."
+  },
+  "EGGS": {
+    "name": "Ei",
+    "declaration": "Bevat eieren en producten daarvan",
+    "description": "Inclusief eieren en eiproducten"
+  },
+  "FISH": {
+    "name": "Vis",
+    "declaration": "Bevat vis en producten daarvan",
+    "description": "Inclusief vis en visproducten"
+  },
+  "PEANUTS": {
+    "name": "Pinda",
+    "declaration": "Bevat pinda's en producten daarvan",
+    "description": "Inclusief pinda's en pindaproducten"
+  },
+  "SOY": {
+    "name": "Soja",
+    "declaration": "Bevat soja en producten daarvan",
+    "description": "Inclusief sojabonen en sojaproducten"
+  },
+  "MILK": {
+    "name": "Melk (inclusief lactose)",
+    "declaration": "Bevat melk en producten daarvan (inclusief lactose)",
+    "description": "Inclusief melk en lactoseproducten"
+  },
+  "MACADAMIA": {
+    "name": "Macadamianoten",
+    "declaration": "Bevat noten en producten daarvan",
+    "description": "Macadamianoten en producten daarvan"
+  },
+  "ALMONDS": {
+    "name": "Amandelen",
+    "declaration": "Bevat noten en producten daarvan",
+    "description": "Amandelen en producten daarvan"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Paranoten",
+    "declaration": "Bevat noten en producten daarvan",
+    "description": "Paranoten en producten daarvan"
+  },
+  "PECANS": {
+    "name": "Pecannoten",
+    "declaration": "Bevat noten en producten daarvan",
+    "description": "Pecannoten en producten daarvan"
+  },
+  "PISTACHIOS": {
+    "name": "Pistachenoten",
+    "declaration": "Bevat noten en producten daarvan",
+    "description": "Pistachenoten en producten daarvan"
+  },
+  "WALNUTS": {
+    "name": "Walnoten",
+    "declaration": "Bevat noten en producten daarvan",
+    "description": "Walnoten en producten daarvan"
+  },
+  "CASHEWS": {
+    "name": "Cashewnoten",
+    "declaration": "Bevat noten en producten daarvan",
+    "description": "Cashewnoten en producten daarvan"
+  },
+  "HAZELNUTS": {
+    "name": "Hazelnoten",
+    "declaration": "Bevat noten en producten daarvan",
+    "description": "Hazelnoten en producten daarvan"
+  },
+  "CELERY": {
+    "name": "Selderij",
+    "declaration": "Bevat selderij en producten daarvan",
+    "description": "Inclusief selderij en selderijproducten"
+  },
+  "MUSTARD": {
+    "name": "Mosterd",
+    "declaration": "Bevat mosterd en producten daarvan",
+    "description": "Inclusief mosterd en mosterdproducten"
+  },
+  "SESAME": {
+    "name": "Sesamzaad",
+    "declaration": "Bevat sesamzaad en producten daarvan",
+    "description": "Inclusief sesamzaad en sesamproducten"
+  },
+  "SULPHITES": {
+    "name": "Zwaveldioxide en sulfieten",
+    "declaration": "Bevat zwaveldioxide en sulfieten",
+    "description": "Inclusief zwaveldioxide en sulfieten"
+  },
+  "LUPINS": {
+    "name": "Lupine",
+    "declaration": "Bevat lupine en producten daarvan",
+    "description": "Inclusief lupine en lupineproducten"
+  },
+  "MOLLUSCS": {
+    "name": "Weekdieren",
+    "declaration": "Bevat weekdieren en producten daarvan",
+    "description": "Inclusief weekdieren zoals mosselen, inktvis, oesters enz."
+  }
+}
