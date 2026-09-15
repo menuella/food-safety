@@ -10,6 +10,31 @@ Pin to a major version in production:
 
 ---
 
+## [1.5.0] – 2026-09-15
+
+### Added
+
+- **Five new languages — Japanese (`ja`), Korean (`ko`), Russian (`ru`), Arabic (`ar`) and Hebrew (`he`) — bringing the set to fifteen.** Every one of the new locales carries the full triple on allergens — `name`, `description` and the group `declaration` sentence — for all 28 allergen keys, and `name` + `description` for all 22 Menuella Declarations. Nothing is stubbed; `disclosures.fallbacks` stays empty on every field.
+
+  The `declaration` sentence keeps behaving as a translation of the LMIV group text and not a jurisdictional legal claim, so a Japanese-, Korean-, Russian-, Arabic- or Hebrew-speaking guest in an EU restaurant reads the same disclosure everybody else does, in their own language: `グルテンを含む穀物を含みます` (ja), `글루텐 함유 곡물 및 그 제품이 포함되어 있습니다` (ko), `Содержит злаки, содержащие глютен, и продукты из них` (ru), `يحتوي على حبوب تحتوي على الغلوتين ومنتجاتها` (ar), `מכיל דגנים המכילים גלוטן ומוצריהם` (he).
+
+  Arabic and Hebrew are right-to-left. The data is UTF-8 with no embedded direction control characters — direction is a rendering concern, not a payload concern. Consumers wrap the disclosure in a container with `dir="rtl"` (or the equivalent for their framework) when rendering these two locales, exactly as they already do for any other Arabic or Hebrew text in the same UI. Nothing in the API or bundle shape changes.
+
+  A few translation choices worth flagging for future reviewers:
+  - Japanese uses `落花生` for `PEANUTS` rather than the loanword `ピーナッツ`, because the LMIV-style disclosure register is closer to Japanese food-labelling regulation and consumers in that context read that word without effort.
+  - Korean uses `달걀` for `EGGS` rather than `계란`; both are in daily use, but `달걀` is the term Korean food-labelling regulation itself uses and is the safer choice on a disclosure.
+  - Russian keeps `Пекан` for `PECANS` even though `Пекан` is a loanword rather than the older `американский орех`; the loanword is what actually appears on Russian retail packaging today.
+  - Arabic uses `الحليب` for `MILK` rather than `اللبن`; both are in wide use, but `اللبن` frequently means "yoghurt" in the Levant and the disambiguation costs no legibility elsewhere.
+  - Hebrew uses `אגוזי מלך` for `WALNUTS` (the standard packaging term) rather than the everyday `אגוזים`, which by itself is generic-nut and would collide with the `TREE_NUTS` group.
+
+- **All ten SDK bindings pick up the five new locales without any hand-editing.** The generator continues to enumerate locales from `data/translations/allergens/` and each SDK either reads them from its shipped `bundles/` directory (JS, Python, Go, Swift, .NET, PHP, Ruby) or has generated tables refreshed in place (Rust, Kotlin/Java, Dart). The tests still sweep `aa..zz` for an unshipped code, so this bump touched no test file either.
+
+### Compatibility
+
+No breaking changes. Existing consumers get the same results they did on `1.4.0`; only the set of accepted locales grows. `LOCALES`, the `Locale` type, and the equivalent constants in every binding widen to include `"ja" | "ko" | "ru" | "ar" | "he"` — code that hard-coded the ten-locale union will type-fail against the new tables, which is the intended behaviour (a locale you were not shipping will not accidentally satisfy your `switch (l)` without a compile-time nudge).
+
+---
+
 ## [1.4.0] – 2026-09-14
 
 ### Added

@@ -1,0 +1,415 @@
+{
+  "locale": "ja",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ライ麦",
+      "declaration": "グルテンを含む穀物を含みます",
+      "description": "ライ麦およびライ麦製品"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "大麦",
+      "declaration": "グルテンを含む穀物を含みます",
+      "description": "大麦および大麦製品"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "エンマー小麦",
+      "declaration": "グルテンを含む穀物を含みます",
+      "description": "エンマー小麦およびその製品"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "アインコルン小麦",
+      "declaration": "グルテンを含む穀物を含みます",
+      "description": "アインコルン小麦およびその製品"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "スペルト小麦",
+      "declaration": "グルテンを含む穀物を含みます",
+      "description": "スペルト小麦およびその製品"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "小麦",
+      "declaration": "グルテンを含む穀物を含みます",
+      "description": "小麦および小麦製品"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "オーツ麦",
+      "declaration": "グルテンを含む穀物を含みます",
+      "description": "オーツ麦およびオーツ麦製品"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ホラーサン小麦（カムット）",
+      "declaration": "グルテンを含む穀物を含みます",
+      "description": "ホラーサン小麦およびその製品"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "甲殻類",
+      "declaration": "甲殻類および甲殻類製品を含みます",
+      "description": "エビ、カニなどの甲殻類を含みます"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "卵",
+      "declaration": "卵および卵製品を含みます",
+      "description": "卵および卵製品を含みます"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "魚",
+      "declaration": "魚および魚製品を含みます",
+      "description": "魚および魚製品を含みます"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "落花生",
+      "declaration": "落花生および落花生製品を含みます",
+      "description": "落花生および落花生製品を含みます"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "大豆",
+      "declaration": "大豆および大豆製品を含みます",
+      "description": "大豆および大豆製品を含みます"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "乳（乳糖を含む）",
+      "declaration": "乳および乳製品（乳糖を含む）を含みます",
+      "description": "乳および乳糖含有製品を含みます"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "マカダミアナッツ",
+      "declaration": "木の実類を含みます",
+      "description": "マカダミアナッツおよびその製品"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "アーモンド",
+      "declaration": "木の実類を含みます",
+      "description": "アーモンドおよびその製品"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "ブラジルナッツ",
+      "declaration": "木の実類を含みます",
+      "description": "ブラジルナッツおよびその製品"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "ピーカンナッツ",
+      "declaration": "木の実類を含みます",
+      "description": "ピーカンナッツおよびその製品"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "ピスタチオ",
+      "declaration": "木の実類を含みます",
+      "description": "ピスタチオおよびその製品"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "クルミ",
+      "declaration": "木の実類を含みます",
+      "description": "クルミおよびその製品"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "カシューナッツ",
+      "declaration": "木の実類を含みます",
+      "description": "カシューナッツおよびその製品"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "ヘーゼルナッツ",
+      "declaration": "木の実類を含みます",
+      "description": "ヘーゼルナッツおよびその製品"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "セロリ",
+      "declaration": "セロリおよびセロリ製品を含みます",
+      "description": "セロリおよびセロリ製品を含みます"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "マスタード",
+      "declaration": "マスタードおよびマスタード製品を含みます",
+      "description": "マスタードおよびマスタード製品を含みます"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "ごま",
+      "declaration": "ごま種子およびごま製品を含みます",
+      "description": "ごま種子およびごま製品を含みます"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "二酸化硫黄および亜硫酸塩",
+      "declaration": "二酸化硫黄および亜硫酸塩を含みます",
+      "description": "二酸化硫黄および亜硫酸塩を含みます"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "ルピナス",
+      "declaration": "ルピナスおよびルピナス製品を含みます",
+      "description": "ルピナスおよびルピナス製品を含みます"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "軟体動物",
+      "declaration": "軟体動物および軟体動物製品を含みます",
+      "description": "カタツムリ、貝類などの軟体動物を含みます"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "着色料入り",
+      "description": "食用着色料を含みます"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "保存料入り",
+      "description": "保存料を含みます"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "酸化防止剤入り",
+      "description": "酸化防止剤を含みます"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "亜硝酸塩漬け塩使用",
+      "description": "亜硝酸塩漬け塩を含みます"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "硝酸塩入り",
+      "description": "硝酸塩を含みます（保存用）"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "亜硝酸塩漬け塩および硝酸塩入り",
+      "description": "亜硝酸塩漬け塩および硝酸塩を含みます"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "うま味調味料入り",
+      "description": "うま味調味料を含みます"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "リン酸塩入り",
+      "description": "リン酸塩を含みます"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "硫黄処理済み",
+      "description": "二酸化硫黄または亜硫酸塩を含みます"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "着色処理により黒化",
+      "description": "見た目の効果のために黒く着色されています"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ワックス処理済み",
+      "description": "保存のためにワックス処理された表面"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "甘味料入り",
+      "description": "甘味料を含みます"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "フェニルアラニン源を含む",
+      "description": "フェニルアラニン源を含みます"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "過剰摂取により緩下作用の可能性あり",
+      "description": "過剰に摂取すると緩下作用を引き起こすことがあります"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "カフェイン含有",
+      "description": "カフェインを含みます"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "キニーネ含有",
+      "description": "キニーネを含みます"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "小児の活動および注意力に影響する可能性あり",
+      "description": "小児の活動および注意力に影響することがあります"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "乳タンパク質入り",
+      "description": "乳タンパク質を含みます"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "すり身入り",
+      "description": "すり身を含みます"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "肉片から再構成",
+      "description": "肉片から再構成されています"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "魚片から再構成",
+      "description": "魚片から再構成されています"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "解凍済み",
+      "description": "冷凍状態から解凍されています"
+    }
+  ],
+  "fallbacks": []
+}

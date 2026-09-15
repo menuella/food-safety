@@ -2,13 +2,18 @@
 
 /** A locale with a prebuilt bundle under `bundles/`. */
 export type Locale =
+  | "ar"
   | "de"
   | "en"
   | "es"
   | "fr"
+  | "he"
   | "it"
+  | "ja"
+  | "ko"
   | "nl"
   | "pt"
+  | "ru"
   | "tr"
   | "vi"
   | "zh"

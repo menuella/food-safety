@@ -1,0 +1,415 @@
+{
+  "locale": "ar",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "الجاودار",
+      "declaration": "يحتوي على حبوب تحتوي على الغلوتين ومنتجاتها",
+      "description": "الجاودار ومنتجات الجاودار"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "الشعير",
+      "declaration": "يحتوي على حبوب تحتوي على الغلوتين ومنتجاتها",
+      "description": "الشعير ومنتجات الشعير"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "قمح إمر",
+      "declaration": "يحتوي على حبوب تحتوي على الغلوتين ومنتجاتها",
+      "description": "قمح إمر ومنتجاته"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "قمح آينكورن",
+      "declaration": "يحتوي على حبوب تحتوي على الغلوتين ومنتجاتها",
+      "description": "قمح آينكورن ومنتجاته"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "قمح سبلت",
+      "declaration": "يحتوي على حبوب تحتوي على الغلوتين ومنتجاتها",
+      "description": "قمح سبلت ومنتجاته"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "القمح",
+      "declaration": "يحتوي على حبوب تحتوي على الغلوتين ومنتجاتها",
+      "description": "القمح ومنتجات القمح"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "الشوفان",
+      "declaration": "يحتوي على حبوب تحتوي على الغلوتين ومنتجاتها",
+      "description": "الشوفان ومنتجات الشوفان"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "قمح خراسان (كاموت)",
+      "declaration": "يحتوي على حبوب تحتوي على الغلوتين ومنتجاتها",
+      "description": "قمح خراسان ومنتجاته"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "القشريات",
+      "declaration": "يحتوي على القشريات ومنتجاتها",
+      "description": "يشمل القشريات مثل الجمبري وسرطان البحر وما شابه"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "البيض",
+      "declaration": "يحتوي على البيض ومنتجاته",
+      "description": "يشمل البيض ومنتجات البيض"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "الأسماك",
+      "declaration": "يحتوي على الأسماك ومنتجاتها",
+      "description": "يشمل الأسماك ومنتجات الأسماك"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "الفول السوداني",
+      "declaration": "يحتوي على الفول السوداني ومنتجاته",
+      "description": "يشمل الفول السوداني ومنتجاته"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "فول الصويا",
+      "declaration": "يحتوي على فول الصويا ومنتجاته",
+      "description": "يشمل فول الصويا ومنتجاته"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "الحليب (يشمل اللاكتوز)",
+      "declaration": "يحتوي على الحليب ومنتجاته (يشمل اللاكتوز)",
+      "description": "يشمل الحليب والمنتجات التي تحتوي على اللاكتوز"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "المكاداميا",
+      "declaration": "يحتوي على المكسرات ومنتجاتها",
+      "description": "جوز المكاداميا ومنتجاته"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "اللوز",
+      "declaration": "يحتوي على المكسرات ومنتجاتها",
+      "description": "اللوز ومنتجات اللوز"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "جوز البرازيل",
+      "declaration": "يحتوي على المكسرات ومنتجاتها",
+      "description": "جوز البرازيل ومنتجاته"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "البقان",
+      "declaration": "يحتوي على المكسرات ومنتجاتها",
+      "description": "جوز البقان ومنتجاته"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "الفستق",
+      "declaration": "يحتوي على المكسرات ومنتجاتها",
+      "description": "الفستق ومنتجات الفستق"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "الجوز",
+      "declaration": "يحتوي على المكسرات ومنتجاتها",
+      "description": "الجوز ومنتجات الجوز"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "الكاجو",
+      "declaration": "يحتوي على المكسرات ومنتجاتها",
+      "description": "الكاجو ومنتجات الكاجو"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "البندق",
+      "declaration": "يحتوي على المكسرات ومنتجاتها",
+      "description": "البندق ومنتجات البندق"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "الكرفس",
+      "declaration": "يحتوي على الكرفس ومنتجاته",
+      "description": "يشمل الكرفس ومنتجاته"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "الخردل",
+      "declaration": "يحتوي على الخردل ومنتجاته",
+      "description": "يشمل الخردل ومنتجاته"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "بذور السمسم",
+      "declaration": "يحتوي على بذور السمسم ومنتجاته",
+      "description": "يشمل بذور السمسم ومنتجاتها"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "ثاني أكسيد الكبريت والسلفيت",
+      "declaration": "يحتوي على ثاني أكسيد الكبريت والسلفيت",
+      "description": "يشمل ثاني أكسيد الكبريت والسلفيت"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "الترمس",
+      "declaration": "يحتوي على الترمس ومنتجاته",
+      "description": "يشمل الترمس ومنتجات الترمس"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "الرخويات",
+      "declaration": "يحتوي على الرخويات ومنتجاتها",
+      "description": "يشمل الرخويات كالحلزون والمحار وما شابه"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "يحتوي على مادة ملوّنة",
+      "description": "يحتوي على مواد ملوّنة"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "يحتوي على مادة حافظة",
+      "description": "يحتوي على مواد حافظة"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "يحتوي على مضاد أكسدة",
+      "description": "يحتوي على مضادات أكسدة"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "يحتوي على ملح النترات (نيتريت) للتمليح",
+      "description": "يحتوي على ملح النيتريت المستخدم للتمليح"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "يحتوي على نترات",
+      "description": "يحتوي على نترات (كمادة حافظة)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "يحتوي على ملح النيتريت للتمليح والنترات",
+      "description": "يحتوي على ملح النيتريت للتمليح والنترات"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "يحتوي على مُحسِّن للنكهة",
+      "description": "يحتوي على محسّنات النكهة"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "يحتوي على فوسفات",
+      "description": "يحتوي على فوسفات"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "معالج بالكبريت",
+      "description": "يحتوي على ثاني أكسيد الكبريت أو السلفيت"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "مسوَّد",
+      "description": "لُوِّن باللون الأسود لغرض بصري"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "مُشمَّع",
+      "description": "سطح مغلَّف بالشمع للحفاظ عليه"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "يحتوي على مُحلّيات",
+      "description": "يحتوي على محليات"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "يحتوي على مصدر للفينيل ألانين",
+      "description": "يحتوي على مصدر للفينيل ألانين"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "قد يُسبِّب تأثيرًا مليِّنًا عند الإفراط في تناوله",
+      "description": "قد يُسبِّب تأثيرًا مليِّنًا عند الإفراط في التناول"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "يحتوي على كافيين",
+      "description": "يحتوي على كافيين"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "يحتوي على كينين",
+      "description": "يحتوي على كينين"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "قد يؤثر على النشاط والانتباه لدى الأطفال",
+      "description": "قد يؤثر على النشاط والانتباه لدى الأطفال"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "يحتوي على بروتين الحليب",
+      "description": "يحتوي على بروتين الحليب"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "يحتوي على سوريمي",
+      "description": "يحتوي على سوريمي"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "مُعاد تركيبه من قطع اللحم",
+      "description": "مُعاد تركيبه من قطع اللحم"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "مُعاد تركيبه من قطع السمك",
+      "description": "مُعاد تركيبه من قطع السمك"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "مُذوَّب",
+      "description": "مُذوَّب من حالة التجميد"
+    }
+  ],
+  "fallbacks": []
+}

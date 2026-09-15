@@ -83,10 +83,10 @@ An icon means *"contains wheat"*. Render it **alongside** the declaration text, 
 This is a **nested module**, so its releases carry the directory prefix:
 
 ```
-packages/go/v1.4.0
+packages/go/v1.5.0
 ```
 
-A workflow derives that tag from the repository's plain `v1.4.0` on push, so both always point at the same commit.
+A workflow derives that tag from the repository's plain `v1.5.0` on push, so both always point at the same commit.
 
 ## Same data, other ecosystems
 

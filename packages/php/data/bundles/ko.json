@@ -1,0 +1,415 @@
+{
+  "locale": "ko",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "호밀",
+      "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+      "description": "호밀 및 호밀 제품"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "보리",
+      "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+      "description": "보리 및 보리 제품"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "엠머 밀",
+      "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+      "description": "엠머 밀 및 그 제품"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "아인콘 밀",
+      "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+      "description": "아인콘 밀 및 그 제품"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "스펠트 밀",
+      "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+      "description": "스펠트 밀 및 그 제품"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "밀",
+      "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+      "description": "밀 및 밀 제품"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "귀리",
+      "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+      "description": "귀리 및 귀리 제품"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "호라산 밀(카무트)",
+      "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+      "description": "호라산 밀 및 그 제품"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "갑각류",
+      "declaration": "갑각류 및 갑각류 제품이 포함되어 있습니다",
+      "description": "새우, 게 등의 갑각류를 포함합니다"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "달걀",
+      "declaration": "달걀 및 달걀 제품이 포함되어 있습니다",
+      "description": "달걀 및 달걀 제품을 포함합니다"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "생선",
+      "declaration": "생선 및 어류 제품이 포함되어 있습니다",
+      "description": "생선 및 어류 제품을 포함합니다"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "땅콩",
+      "declaration": "땅콩 및 땅콩 제품이 포함되어 있습니다",
+      "description": "땅콩 및 땅콩 제품을 포함합니다"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "대두",
+      "declaration": "대두 및 대두 제품이 포함되어 있습니다",
+      "description": "대두 및 대두 제품을 포함합니다"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "우유(유당 포함)",
+      "declaration": "우유 및 유제품(유당 포함)이 포함되어 있습니다",
+      "description": "우유 및 유당 함유 제품을 포함합니다"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "마카다미아",
+      "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+      "description": "마카다미아 및 그 제품"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "아몬드",
+      "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+      "description": "아몬드 및 그 제품"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "브라질너트",
+      "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+      "description": "브라질너트 및 그 제품"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "피칸",
+      "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+      "description": "피칸 및 그 제품"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "피스타치오",
+      "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+      "description": "피스타치오 및 그 제품"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "호두",
+      "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+      "description": "호두 및 그 제품"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "캐슈넛",
+      "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+      "description": "캐슈넛 및 그 제품"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "헤이즐넛",
+      "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+      "description": "헤이즐넛 및 그 제품"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "셀러리",
+      "declaration": "셀러리 및 셀러리 제품이 포함되어 있습니다",
+      "description": "셀러리 및 셀러리 제품을 포함합니다"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "겨자",
+      "declaration": "겨자 및 겨자 제품이 포함되어 있습니다",
+      "description": "겨자 및 겨자 제품을 포함합니다"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "참깨",
+      "declaration": "참깨 및 참깨 제품이 포함되어 있습니다",
+      "description": "참깨 및 참깨 제품을 포함합니다"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "이산화황 및 아황산염",
+      "declaration": "이산화황 및 아황산염이 포함되어 있습니다",
+      "description": "이산화황 및 아황산염을 포함합니다"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "루핀콩",
+      "declaration": "루핀콩 및 루핀콩 제품이 포함되어 있습니다",
+      "description": "루핀콩 및 루핀콩 제품을 포함합니다"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "연체동물",
+      "declaration": "연체동물 및 연체동물 제품이 포함되어 있습니다",
+      "description": "달팽이, 조개 등의 연체동물을 포함합니다"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "색소 함유",
+      "description": "식용 색소가 포함되어 있습니다"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "보존료 함유",
+      "description": "보존료가 포함되어 있습니다"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "산화방지제 함유",
+      "description": "산화방지제가 포함되어 있습니다"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "아질산염 절임 소금 사용",
+      "description": "아질산염 절임 소금이 포함되어 있습니다"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "질산염 함유",
+      "description": "질산염이 포함되어 있습니다(보존용)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "아질산염 절임 소금 및 질산염 함유",
+      "description": "아질산염 절임 소금 및 질산염이 포함되어 있습니다"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "향미증진제 함유",
+      "description": "향미증진제가 포함되어 있습니다"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "인산염 함유",
+      "description": "인산염이 포함되어 있습니다"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "황 처리됨",
+      "description": "이산화황 또는 아황산염을 함유합니다"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "흑색 처리됨",
+      "description": "시각적 효과를 위해 흑색 처리되었습니다"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "왁스 처리됨",
+      "description": "보존을 위해 표면에 왁스 처리되었습니다"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "감미료 함유",
+      "description": "감미료가 포함되어 있습니다"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "페닐알라닌원 함유",
+      "description": "페닐알라닌원을 포함합니다"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "과다 섭취 시 완하 작용 가능",
+      "description": "과다 섭취 시 완하 작용을 유발할 수 있습니다"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "카페인 함유",
+      "description": "카페인이 포함되어 있습니다"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "퀴닌 함유",
+      "description": "퀴닌이 포함되어 있습니다"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "어린이의 활동과 주의력에 영향을 줄 수 있음",
+      "description": "어린이의 활동과 주의력에 영향을 줄 수 있습니다"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "유단백질 함유",
+      "description": "유단백질이 포함되어 있습니다"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "수리미 함유",
+      "description": "수리미가 포함되어 있습니다"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "고기 조각으로 재구성",
+      "description": "고기 조각들을 결합하여 재구성한 제품입니다"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "생선 조각으로 재구성",
+      "description": "생선 조각들을 결합하여 재구성한 제품입니다"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "해동됨",
+      "description": "냉동 상태에서 해동된 제품입니다"
+    }
+  ],
+  "fallbacks": []
+}

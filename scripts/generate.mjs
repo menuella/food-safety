@@ -576,6 +576,11 @@ ${b.declarations.map(rustDeclaration).join("\n")}
 ];`
 }).join("\n\n")}
 
+// Grows one branch per locale, so it trips clippy::too_many_lines once the
+// dataset ships more than ~9 locales. The shape is intentional — a const context
+// has no iterator, so this cannot be looped — and refactoring it into helpers
+// only moves the same code around. Allow the lint on this one function.
+#[allow(clippy::too_many_lines)]
 pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
     // A const fn cannot match on &str, so this compares bytes. Written out
     // rather than looped because a const context has no iterator.

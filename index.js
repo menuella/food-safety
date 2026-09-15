@@ -7,21 +7,26 @@
 //
 //   import disclosures from "@menuella/food-safety/bundles/de.json"
 
+import arBundle from "./data/bundles/ar.js"
 import deBundle from "./data/bundles/de.js"
 import enBundle from "./data/bundles/en.js"
 import esBundle from "./data/bundles/es.js"
 import frBundle from "./data/bundles/fr.js"
+import heBundle from "./data/bundles/he.js"
 import itBundle from "./data/bundles/it.js"
+import jaBundle from "./data/bundles/ja.js"
+import koBundle from "./data/bundles/ko.js"
 import nlBundle from "./data/bundles/nl.js"
 import ptBundle from "./data/bundles/pt.js"
+import ruBundle from "./data/bundles/ru.js"
 import trBundle from "./data/bundles/tr.js"
 import viBundle from "./data/bundles/vi.js"
 import zhBundle from "./data/bundles/zh.js"
 
 /** Locales with a prebuilt bundle. */
-export const LOCALES = Object.freeze(["de", "en", "es", "fr", "it", "nl", "pt", "tr", "vi", "zh"])
+export const LOCALES = Object.freeze(["ar", "de", "en", "es", "fr", "he", "it", "ja", "ko", "nl", "pt", "ru", "tr", "vi", "zh"])
 
-const BUNDLES = /* @__PURE__ */ { de: deBundle, en: enBundle, es: esBundle, fr: frBundle, it: itBundle, nl: nlBundle, pt: ptBundle, tr: trBundle, vi: viBundle, zh: zhBundle }
+const BUNDLES = /* @__PURE__ */ { ar: arBundle, de: deBundle, en: enBundle, es: esBundle, fr: frBundle, he: heBundle, it: itBundle, ja: jaBundle, ko: koBundle, nl: nlBundle, pt: ptBundle, ru: ruBundle, tr: trBundle, vi: viBundle, zh: zhBundle }
 
 /** The locale a bundle falls back to for anything it does not itself carry. */
 export const FALLBACK_LOCALE = "en"
