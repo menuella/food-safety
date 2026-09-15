@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Rug",
+    "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+    "description": "Rug og rugprodukter"
+  },
+  "BARLEY": {
+    "name": "Byg",
+    "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+    "description": "Byg og bygprodukter"
+  },
+  "EMMER": {
+    "name": "Emmerhvede",
+    "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+    "description": "Emmerhvede og produkter deraf"
+  },
+  "EINKORN": {
+    "name": "Enkornhvede",
+    "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+    "description": "Enkornhvede og produkter deraf"
+  },
+  "SPELT": {
+    "name": "Spelt",
+    "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+    "description": "Spelt og speltprodukter"
+  },
+  "WHEAT": {
+    "name": "Hvede",
+    "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+    "description": "Hvede og hvedeprodukter"
+  },
+  "OATS": {
+    "name": "Havre",
+    "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+    "description": "Havre og havreprodukter"
+  },
+  "KHORASAN": {
+    "name": "Khorasan-hvede (Kamut)",
+    "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+    "description": "Khorasan-hvede og produkter deraf"
+  },
+  "CRUSTACEANS": {
+    "name": "Krebsdyr",
+    "declaration": "Indeholder krebsdyr og produkter deraf",
+    "description": "Krebsdyr såsom rejer, krabber osv."
+  },
+  "EGGS": {
+    "name": "Æg",
+    "declaration": "Indeholder æg og produkter deraf",
+    "description": "Æg og ægprodukter"
+  },
+  "FISH": {
+    "name": "Fisk",
+    "declaration": "Indeholder fisk og produkter deraf",
+    "description": "Fisk og fiskeprodukter"
+  },
+  "PEANUTS": {
+    "name": "Jordnødder",
+    "declaration": "Indeholder jordnødder og produkter deraf",
+    "description": "Jordnødder og jordnøddeprodukter"
+  },
+  "SOY": {
+    "name": "Soja",
+    "declaration": "Indeholder soja og produkter deraf",
+    "description": "Soja og sojaprodukter"
+  },
+  "MILK": {
+    "name": "Mælk (inklusive laktose)",
+    "declaration": "Indeholder mælk og produkter deraf (herunder laktose)",
+    "description": "Mælk og mejeriprodukter (inklusive laktose)"
+  },
+  "MACADAMIA": {
+    "name": "Macadamianødder",
+    "declaration": "Indeholder nødder og produkter deraf",
+    "description": "Macadamianødder og produkter deraf"
+  },
+  "ALMONDS": {
+    "name": "Mandler",
+    "declaration": "Indeholder nødder og produkter deraf",
+    "description": "Mandler og mandelprodukter"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Paranødder",
+    "declaration": "Indeholder nødder og produkter deraf",
+    "description": "Paranødder og produkter deraf"
+  },
+  "PECANS": {
+    "name": "Pekannødder",
+    "declaration": "Indeholder nødder og produkter deraf",
+    "description": "Pekannødder og produkter deraf"
+  },
+  "PISTACHIOS": {
+    "name": "Pistacienødder",
+    "declaration": "Indeholder nødder og produkter deraf",
+    "description": "Pistacienødder og produkter deraf"
+  },
+  "WALNUTS": {
+    "name": "Valnødder",
+    "declaration": "Indeholder nødder og produkter deraf",
+    "description": "Valnødder og valnøddeprodukter"
+  },
+  "CASHEWS": {
+    "name": "Cashewnødder",
+    "declaration": "Indeholder nødder og produkter deraf",
+    "description": "Cashewnødder og produkter deraf"
+  },
+  "HAZELNUTS": {
+    "name": "Hasselnødder",
+    "declaration": "Indeholder nødder og produkter deraf",
+    "description": "Hasselnødder og produkter deraf"
+  },
+  "CELERY": {
+    "name": "Selleri",
+    "declaration": "Indeholder selleri og produkter deraf",
+    "description": "Selleri og selleriprodukter"
+  },
+  "MUSTARD": {
+    "name": "Sennep",
+    "declaration": "Indeholder sennep og produkter deraf",
+    "description": "Sennep og sennepsprodukter"
+  },
+  "SESAME": {
+    "name": "Sesamfrø",
+    "declaration": "Indeholder sesamfrø og produkter deraf",
+    "description": "Sesamfrø og sesamprodukter"
+  },
+  "SULPHITES": {
+    "name": "Svovldioxid og sulfitter",
+    "declaration": "Indeholder svovldioxid og sulfitter",
+    "description": "Svovldioxid og sulfitter"
+  },
+  "LUPINS": {
+    "name": "Lupin",
+    "declaration": "Indeholder lupin og produkter deraf",
+    "description": "Lupin og lupinprodukter"
+  },
+  "MOLLUSCS": {
+    "name": "Bløddyr",
+    "declaration": "Indeholder bløddyr og produkter deraf",
+    "description": "Bløddyr såsom snegle, muslinger osv."
+  }
+}

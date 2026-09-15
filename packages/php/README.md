@@ -51,7 +51,7 @@ An icon means *"contains wheat"*. Render it **alongside** the declaration text, 
 | `FoodSafety::getIcon($name)` | a glyph as `Icon(viewBox, nodes)` |
 | `FoodSafety::iconToSvg($name, …)` | a glyph as an `<svg>` string |
 | `FoodSafety::loadDataset()` | the raw JSON, for tooling |
-| `FoodSafety::LOCALES` | the six supported locales |
+| `FoodSafety::locales()` | every locale with a prebuilt bundle |
 | `allergenKeys()` · `declarationKeys()` · `iconNames()` | the vocabularies |
 | `isLocale()` · `isAllergenKey()` · `isDeclarationKey()` | guards for untrusted input |
 | `codeScheme()` | `'MENUELLA'` |

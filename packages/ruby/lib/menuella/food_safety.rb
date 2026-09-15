@@ -103,9 +103,14 @@ module Menuella
     private_constant :LOCK
 
     class << self
-      # Locales with a prebuilt bundle.
+      # Locales with a prebuilt bundle. Derived from the shipped +bundles/+
+      # directory, so adding a new locale is a matter of dropping +bundles/xx.json+
+      # in — no source list to keep in step.
       def locales
-        @locales ||= %w[de en es fr it tr].freeze
+        @locales ||= Dir.glob(File.join(DATA_DIR, "bundles", "*.json"))
+                        .map { File.basename(_1, ".json") }
+                        .sort
+                        .freeze
       end
 
       # The locale a bundle falls back to for anything it does not itself carry.

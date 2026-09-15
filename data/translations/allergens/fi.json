@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Ruis",
+    "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+    "description": "Ruis ja ruistuotteet"
+  },
+  "BARLEY": {
+    "name": "Ohra",
+    "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+    "description": "Ohra ja ohratuotteet"
+  },
+  "EMMER": {
+    "name": "Emmervehnä",
+    "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+    "description": "Emmervehnä ja siitä valmistetut tuotteet"
+  },
+  "EINKORN": {
+    "name": "Yksijyvävehnä",
+    "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+    "description": "Yksijyvävehnä ja siitä valmistetut tuotteet"
+  },
+  "SPELT": {
+    "name": "Speltti",
+    "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+    "description": "Speltti ja spelttituotteet"
+  },
+  "WHEAT": {
+    "name": "Vehnä",
+    "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+    "description": "Vehnä ja vehnätuotteet"
+  },
+  "OATS": {
+    "name": "Kaura",
+    "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+    "description": "Kaura ja kauratuotteet"
+  },
+  "KHORASAN": {
+    "name": "Khorasanvehnä (Kamut)",
+    "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+    "description": "Khorasanvehnä ja siitä valmistetut tuotteet"
+  },
+  "CRUSTACEANS": {
+    "name": "Äyriäiset",
+    "declaration": "Sisältää äyriäisiä ja niistä valmistettuja tuotteita",
+    "description": "Äyriäiset kuten katkaravut, ravut jne."
+  },
+  "EGGS": {
+    "name": "Kananmuna",
+    "declaration": "Sisältää munaa ja siitä valmistettuja tuotteita",
+    "description": "Kananmuna ja munatuotteet"
+  },
+  "FISH": {
+    "name": "Kala",
+    "declaration": "Sisältää kalaa ja siitä valmistettuja tuotteita",
+    "description": "Kala ja kalatuotteet"
+  },
+  "PEANUTS": {
+    "name": "Maapähkinä",
+    "declaration": "Sisältää maapähkinää ja siitä valmistettuja tuotteita",
+    "description": "Maapähkinä ja maapähkinätuotteet"
+  },
+  "SOY": {
+    "name": "Soija",
+    "declaration": "Sisältää soijaa ja siitä valmistettuja tuotteita",
+    "description": "Soija ja soijatuotteet"
+  },
+  "MILK": {
+    "name": "Maito (mukaan lukien laktoosi)",
+    "declaration": "Sisältää maitoa ja siitä valmistettuja tuotteita (mukaan lukien laktoosi)",
+    "description": "Maito ja maitotuotteet (mukaan lukien laktoosi)"
+  },
+  "MACADAMIA": {
+    "name": "Makadamiapähkinät",
+    "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+    "description": "Makadamiapähkinät ja niistä valmistetut tuotteet"
+  },
+  "ALMONDS": {
+    "name": "Mantelit",
+    "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+    "description": "Mantelit ja manteliuotteet"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Parapähkinät",
+    "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+    "description": "Parapähkinät ja niistä valmistetut tuotteet"
+  },
+  "PECANS": {
+    "name": "Pekaanipähkinät",
+    "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+    "description": "Pekaanipähkinät ja niistä valmistetut tuotteet"
+  },
+  "PISTACHIOS": {
+    "name": "Pistaasipähkinät",
+    "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+    "description": "Pistaasipähkinät ja niistä valmistetut tuotteet"
+  },
+  "WALNUTS": {
+    "name": "Saksanpähkinät",
+    "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+    "description": "Saksanpähkinät ja saksanpähkinätuotteet"
+  },
+  "CASHEWS": {
+    "name": "Cashewpähkinät",
+    "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+    "description": "Cashewpähkinät ja niistä valmistetut tuotteet"
+  },
+  "HAZELNUTS": {
+    "name": "Hasselpähkinät",
+    "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+    "description": "Hasselpähkinät ja niistä valmistetut tuotteet"
+  },
+  "CELERY": {
+    "name": "Selleri",
+    "declaration": "Sisältää selleriä ja siitä valmistettuja tuotteita",
+    "description": "Selleri ja sellerituotteet"
+  },
+  "MUSTARD": {
+    "name": "Sinappi",
+    "declaration": "Sisältää sinappia ja siitä valmistettuja tuotteita",
+    "description": "Sinappi ja sinappituotteet"
+  },
+  "SESAME": {
+    "name": "Seesaminsiemenet",
+    "declaration": "Sisältää seesaminsiemeniä ja niistä valmistettuja tuotteita",
+    "description": "Seesaminsiemenet ja seesamituotteet"
+  },
+  "SULPHITES": {
+    "name": "Rikkidioksidi ja sulfiitit",
+    "declaration": "Sisältää rikkidioksidia ja sulfiitteja",
+    "description": "Rikkidioksidi ja sulfiitit"
+  },
+  "LUPINS": {
+    "name": "Lupiini",
+    "declaration": "Sisältää lupiinia ja siitä valmistettuja tuotteita",
+    "description": "Lupiini ja lupiinituotteet"
+  },
+  "MOLLUSCS": {
+    "name": "Nilviäiset",
+    "declaration": "Sisältää nilviäisiä ja niistä valmistettuja tuotteita",
+    "description": "Nilviäiset kuten etanat, simpukat jne."
+  }
+}

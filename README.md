@@ -1,6 +1,6 @@
 # @menuella/food-safety
 
-> Open dataset of **restaurant menu disclosures** — the 14 EU allergen groups and **Menuella Declarations**, with codes, icons and labels in 15 languages, keyed by stable semantic keys.
+> Open dataset of **restaurant menu disclosures** — the 14 EU allergen groups and **Menuella Declarations**, with codes, icons and labels in 25 languages, keyed by stable semantic keys.
 
 [![Verify](https://github.com/menuella/food-safety/actions/workflows/verify.yml/badge.svg)](https://github.com/menuella/food-safety/actions/workflows/verify.yml)
 [![npm](https://img.shields.io/npm/v/@menuella/food-safety.svg)](https://www.npmjs.com/package/@menuella/food-safety)
@@ -23,8 +23,8 @@ One dataset, one version, released from one tag.
 | **Rust** | `cargo add menuella-food-safety` |
 | **Ruby** | `bundle add menuella-food_safety` |
 | **Go** | `go get github.com/menuella/food-safety/packages/go` |
-| **Swift** | `.package(url: "https://github.com/menuella/food-safety", from: "1.5.0")` |
-| **Gradle** | `implementation("com.menuella:food-safety:1.5.0")` |
+| **Swift** | `.package(url: "https://github.com/menuella/food-safety", from: "1.6.0")` |
+| **Gradle** | `implementation("com.menuella:food-safety:1.6.0")` |
 
 ```js
 import { getDisclosures } from "@menuella/food-safety"
@@ -46,7 +46,7 @@ Five pieces, one vocabulary, every region:
 | **Menuella Declarations** | 22 keys for additives, beverage declarations, warnings and product indications |
 | **Menuella Codes** | the short codes printed in a menu legend — `WHEAT` → `A6` |
 | **Menuella Icons** | 15 solid glyphs, one per group |
-| **Menuella Translations** | localized labels in 15 languages |
+| **Menuella Translations** | localized labels in 25 languages |
 
 **Menuella Declarations are a standardized restaurant menu disclosure vocabulary developed by Menuella for consistent rendering across applications and regions.** They are built for portability, not to reproduce any country's official legal terminology — see [`docs/regions.md`](docs/regions.md).
 
@@ -117,17 +117,27 @@ declarations = NITRITE_CURING_SALT (sucuk)  = ["NITRITE_CURING_SALT"]
 | Code | Language | Allergens | Additives |
 |---|---|---|---|
 | `ar` | Arabic (RTL) | 28 ✅ + declarations | 22 ✅ |
+| `bg` | Bulgarian | 28 ✅ + declarations | 22 ✅ |
+| `cs` | Czech | 28 ✅ + declarations | 22 ✅ |
+| `da` | Danish | 28 ✅ + declarations | 22 ✅ |
 | `de` | German | 28 ✅ + declarations | 22 ✅ |
+| `el` | Greek | 28 ✅ + declarations | 22 ✅ |
 | `en` | English | 28 ✅ + declarations | 22 ✅ |
 | `es` | Spanish | 28 ✅ + declarations | 22 ✅ |
+| `fi` | Finnish | 28 ✅ + declarations | 22 ✅ |
 | `fr` | French | 28 ✅ + declarations | 22 ✅ |
 | `he` | Hebrew (RTL) | 28 ✅ + declarations | 22 ✅ |
+| `hu` | Hungarian | 28 ✅ + declarations | 22 ✅ |
 | `it` | Italian | 28 ✅ + declarations | 22 ✅ |
 | `ja` | Japanese | 28 ✅ + declarations | 22 ✅ |
 | `ko` | Korean | 28 ✅ + declarations | 22 ✅ |
 | `nl` | Dutch | 28 ✅ + declarations | 22 ✅ |
+| `no` | Norwegian (Bokmål) | 28 ✅ + declarations | 22 ✅ |
+| `pl` | Polish | 28 ✅ + declarations | 22 ✅ |
 | `pt` | Portuguese | 28 ✅ + declarations | 22 ✅ |
+| `ro` | Romanian | 28 ✅ + declarations | 22 ✅ |
 | `ru` | Russian | 28 ✅ + declarations | 22 ✅ |
+| `sv` | Swedish | 28 ✅ + declarations | 22 ✅ |
 | `tr` | Turkish | 28 ✅ + declarations | 22 ✅ |
 | `vi` | Vietnamese | 28 ✅ + declarations | 22 ✅ |
 | `zh` | Chinese | 28 ✅ + declarations | 22 ✅ |

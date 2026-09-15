@@ -8,25 +8,35 @@
 //   import disclosures from "@menuella/food-safety/bundles/de.json"
 
 import arBundle from "./data/bundles/ar.js"
+import bgBundle from "./data/bundles/bg.js"
+import csBundle from "./data/bundles/cs.js"
+import daBundle from "./data/bundles/da.js"
 import deBundle from "./data/bundles/de.js"
+import elBundle from "./data/bundles/el.js"
 import enBundle from "./data/bundles/en.js"
 import esBundle from "./data/bundles/es.js"
+import fiBundle from "./data/bundles/fi.js"
 import frBundle from "./data/bundles/fr.js"
 import heBundle from "./data/bundles/he.js"
+import huBundle from "./data/bundles/hu.js"
 import itBundle from "./data/bundles/it.js"
 import jaBundle from "./data/bundles/ja.js"
 import koBundle from "./data/bundles/ko.js"
 import nlBundle from "./data/bundles/nl.js"
+import noBundle from "./data/bundles/no.js"
+import plBundle from "./data/bundles/pl.js"
 import ptBundle from "./data/bundles/pt.js"
+import roBundle from "./data/bundles/ro.js"
 import ruBundle from "./data/bundles/ru.js"
+import svBundle from "./data/bundles/sv.js"
 import trBundle from "./data/bundles/tr.js"
 import viBundle from "./data/bundles/vi.js"
 import zhBundle from "./data/bundles/zh.js"
 
 /** Locales with a prebuilt bundle. */
-export const LOCALES = Object.freeze(["ar", "de", "en", "es", "fr", "he", "it", "ja", "ko", "nl", "pt", "ru", "tr", "vi", "zh"])
+export const LOCALES = Object.freeze(["ar", "bg", "cs", "da", "de", "el", "en", "es", "fi", "fr", "he", "hu", "it", "ja", "ko", "nl", "no", "pl", "pt", "ro", "ru", "sv", "tr", "vi", "zh"])
 
-const BUNDLES = /* @__PURE__ */ { ar: arBundle, de: deBundle, en: enBundle, es: esBundle, fr: frBundle, he: heBundle, it: itBundle, ja: jaBundle, ko: koBundle, nl: nlBundle, pt: ptBundle, ru: ruBundle, tr: trBundle, vi: viBundle, zh: zhBundle }
+const BUNDLES = /* @__PURE__ */ { ar: arBundle, bg: bgBundle, cs: csBundle, da: daBundle, de: deBundle, el: elBundle, en: enBundle, es: esBundle, fi: fiBundle, fr: frBundle, he: heBundle, hu: huBundle, it: itBundle, ja: jaBundle, ko: koBundle, nl: nlBundle, no: noBundle, pl: plBundle, pt: ptBundle, ro: roBundle, ru: ruBundle, sv: svBundle, tr: trBundle, vi: viBundle, zh: zhBundle }
 
 /** The locale a bundle falls back to for anything it does not itself carry. */
 export const FALLBACK_LOCALE = "en"

@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "cu colorant",
+    "description": "Conține coloranți alimentari"
+  },
+  "PRESERVATIVES": {
+    "name": "cu conservant",
+    "description": "Conține conservanți"
+  },
+  "ANTIOXIDANTS": {
+    "name": "cu antioxidant",
+    "description": "Conține antioxidanți"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "cu sare de saramurare cu nitrit",
+    "description": "Conține sare de saramurare cu nitrit"
+  },
+  "NITRATE": {
+    "name": "cu nitrat",
+    "description": "Conține nitrat (pentru conservare)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "cu sare de saramurare cu nitrit și nitrat",
+    "description": "Conține sare de saramurare cu nitrit și nitrat"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "cu potențiator de gust",
+    "description": "Conține potențiatori de gust"
+  },
+  "PHOSPHATE": {
+    "name": "cu fosfat",
+    "description": "Conține fosfat"
+  },
+  "SULPHURED": {
+    "name": "sulfurat",
+    "description": "Conține dioxid de sulf sau sulfiți"
+  },
+  "BLACKENED": {
+    "name": "înnegrit",
+    "description": "Înnegrit pentru efect vizual"
+  },
+  "WAXED": {
+    "name": "cerat",
+    "description": "Suprafață cerată pentru conservare"
+  },
+  "SWEETENERS": {
+    "name": "cu îndulcitori",
+    "description": "Conține îndulcitori"
+  },
+  "PHENYLALANINE": {
+    "name": "conține o sursă de fenilalanină",
+    "description": "Conține o sursă de fenilalanină"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "consumul excesiv poate avea efect laxativ",
+    "description": "Consumul excesiv poate avea efect laxativ"
+  },
+  "CAFFEINE": {
+    "name": "conține cafeină",
+    "description": "Conține cafeină"
+  },
+  "QUININE": {
+    "name": "conține chinină",
+    "description": "Conține chinină"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "poate afecta negativ activitatea și atenția copiilor",
+    "description": "Poate afecta negativ activitatea și atenția copiilor"
+  },
+  "MILK_PROTEIN": {
+    "name": "cu proteine din lapte",
+    "description": "Conține proteine din lapte"
+  },
+  "SURIMI": {
+    "name": "cu surimi",
+    "description": "Conține surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "reconstituit din bucăți de carne",
+    "description": "Reconstituit din bucăți de carne"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "reconstituit din bucăți de pește",
+    "description": "Reconstituit din bucăți de pește"
+  },
+  "DEFROSTED": {
+    "name": "decongelat",
+    "description": "Decongelat dintr-o stare de congelare profundă"
+  }
+}

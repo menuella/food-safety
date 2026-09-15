@@ -46,7 +46,7 @@ final class FoodSafetyTest extends TestCase
     #[Test]
     public function everyLocaleResolvesToACompleteBundle(): void
     {
-        foreach (FoodSafety::LOCALES as $locale) {
+        foreach (FoodSafety::locales() as $locale) {
             $set = FoodSafety::getDisclosures($locale);
             self::assertSame($locale, $set->locale);
             self::assertNotEmpty($set->allergens);

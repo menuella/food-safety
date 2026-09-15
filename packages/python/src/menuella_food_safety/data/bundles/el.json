@@ -1,0 +1,415 @@
+{
+  "locale": "el",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Σίκαλη",
+      "declaration": "Περιέχει σιτηρά που περιέχουν γλουτένη και προϊόντα με βάση αυτά",
+      "description": "Σίκαλη και προϊόντα σίκαλης"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Κριθάρι",
+      "declaration": "Περιέχει σιτηρά που περιέχουν γλουτένη και προϊόντα με βάση αυτά",
+      "description": "Κριθάρι και προϊόντα κριθαριού"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Δίκοκκο σιτάρι (emmer)",
+      "declaration": "Περιέχει σιτηρά που περιέχουν γλουτένη και προϊόντα με βάση αυτά",
+      "description": "Δίκοκκο σιτάρι και προϊόντα του"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Μονόκοκκο σιτάρι (einkorn)",
+      "declaration": "Περιέχει σιτηρά που περιέχουν γλουτένη και προϊόντα με βάση αυτά",
+      "description": "Μονόκοκκο σιτάρι και προϊόντα του"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ζέα (spelt)",
+      "declaration": "Περιέχει σιτηρά που περιέχουν γλουτένη και προϊόντα με βάση αυτά",
+      "description": "Ζέα και προϊόντα ζέας"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Σιτάρι",
+      "declaration": "Περιέχει σιτηρά που περιέχουν γλουτένη και προϊόντα με βάση αυτά",
+      "description": "Σιτάρι και προϊόντα σιταριού"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Βρώμη",
+      "declaration": "Περιέχει σιτηρά που περιέχουν γλουτένη και προϊόντα με βάση αυτά",
+      "description": "Βρώμη και προϊόντα βρώμης"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Σιτάρι Κhorasan (Kamut)",
+      "declaration": "Περιέχει σιτηρά που περιέχουν γλουτένη και προϊόντα με βάση αυτά",
+      "description": "Σιτάρι Khorasan και προϊόντα του"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Καρκινοειδή",
+      "declaration": "Περιέχει καρκινοειδή και προϊόντα με βάση αυτά",
+      "description": "Καρκινοειδή όπως γαρίδες, κάβουρες κ.λπ."
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Αυγά",
+      "declaration": "Περιέχει αυγά και προϊόντα με βάση αυτά",
+      "description": "Αυγά και προϊόντα αυγών"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Ψάρια",
+      "declaration": "Περιέχει ψάρια και προϊόντα με βάση αυτά",
+      "description": "Ψάρια και προϊόντα ψαριών"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Αραχίδες",
+      "declaration": "Περιέχει αραχίδες και προϊόντα με βάση αυτές",
+      "description": "Αραχίδες και προϊόντα αραχίδας"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Σόγια",
+      "declaration": "Περιέχει σόγια και προϊόντα με βάση αυτή",
+      "description": "Σόγια και προϊόντα σόγιας"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Γάλα (συμπεριλαμβανομένης της λακτόζης)",
+      "declaration": "Περιέχει γάλα και γαλακτοκομικά προϊόντα (συμπεριλαμβανομένης της λακτόζης)",
+      "description": "Γάλα και γαλακτοκομικά προϊόντα (συμπεριλαμβανομένης της λακτόζης)"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Καρύδια μακαντάμια",
+      "declaration": "Περιέχει καρπούς με κέλυφος και προϊόντα με βάση αυτούς",
+      "description": "Καρύδια μακαντάμια και προϊόντα τους"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Αμύγδαλα",
+      "declaration": "Περιέχει καρπούς με κέλυφος και προϊόντα με βάση αυτούς",
+      "description": "Αμύγδαλα και προϊόντα αμυγδάλου"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Καρύδια Βραζιλίας",
+      "declaration": "Περιέχει καρπούς με κέλυφος και προϊόντα με βάση αυτούς",
+      "description": "Καρύδια Βραζιλίας και προϊόντα τους"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Καρύδια pecan",
+      "declaration": "Περιέχει καρπούς με κέλυφος και προϊόντα με βάση αυτούς",
+      "description": "Καρύδια pecan και προϊόντα τους"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Φιστίκια Αιγίνης",
+      "declaration": "Περιέχει καρπούς με κέλυφος και προϊόντα με βάση αυτούς",
+      "description": "Φιστίκια Αιγίνης και προϊόντα τους"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Καρύδια",
+      "declaration": "Περιέχει καρπούς με κέλυφος και προϊόντα με βάση αυτούς",
+      "description": "Καρύδια και προϊόντα καρυδιού"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Κάσιους",
+      "declaration": "Περιέχει καρπούς με κέλυφος και προϊόντα με βάση αυτούς",
+      "description": "Κάσιους και προϊόντα κάσιους"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Φουντούκια",
+      "declaration": "Περιέχει καρπούς με κέλυφος και προϊόντα με βάση αυτούς",
+      "description": "Φουντούκια και προϊόντα φουντουκιού"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Σέλινο",
+      "declaration": "Περιέχει σέλινο και προϊόντα με βάση αυτό",
+      "description": "Σέλινο και προϊόντα σέλινου"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Μουστάρδα",
+      "declaration": "Περιέχει μουστάρδα και προϊόντα με βάση αυτή",
+      "description": "Μουστάρδα και προϊόντα μουστάρδας"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Σπόροι σουσαμιού",
+      "declaration": "Περιέχει σπόρους σουσαμιού και προϊόντα με βάση αυτούς",
+      "description": "Σπόροι σουσαμιού και προϊόντα σουσαμιού"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Διοξείδιο του θείου και θειώδη άλατα",
+      "declaration": "Περιέχει διοξείδιο του θείου και θειώδη άλατα",
+      "description": "Διοξείδιο του θείου και θειώδη άλατα"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Λούπινα",
+      "declaration": "Περιέχει λούπινα και προϊόντα με βάση αυτά",
+      "description": "Λούπινα και προϊόντα λούπινων"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Μαλάκια",
+      "declaration": "Περιέχει μαλάκια και προϊόντα με βάση αυτά",
+      "description": "Μαλάκια όπως σαλιγκάρια, μύδια κ.λπ."
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "με χρωστική",
+      "description": "Περιέχει χρωστικές τροφίμων"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "με συντηρητικό",
+      "description": "Περιέχει συντηρητικά"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "με αντιοξειδωτικό",
+      "description": "Περιέχει αντιοξειδωτικά"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "με νιτρώδες αλάτι ωρίμανσης",
+      "description": "Περιέχει νιτρώδες αλάτι ωρίμανσης"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "με νιτρικά",
+      "description": "Περιέχει νιτρικά (συντήρηση)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "με νιτρώδες αλάτι ωρίμανσης και νιτρικά",
+      "description": "Περιέχει νιτρώδες αλάτι ωρίμανσης και νιτρικά"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "με ενισχυτικό γεύσης",
+      "description": "Περιέχει ενισχυτικά γεύσης"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "με φωσφορικά άλατα",
+      "description": "Περιέχει φωσφορικά άλατα"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "θειούχο",
+      "description": "Περιέχει διοξείδιο του θείου ή θειώδη άλατα"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "μαυρισμένο",
+      "description": "Μαυρισμένο για οπτικό εφέ"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "κερωμένο",
+      "description": "Κερωμένη επιφάνεια για συντήρηση"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "με γλυκαντικά",
+      "description": "Περιέχει γλυκαντικά"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "περιέχει πηγή φαινυλαλανίνης",
+      "description": "Περιέχει πηγή φαινυλαλανίνης"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "η υπερβολική κατανάλωση μπορεί να έχει καθαρτική δράση",
+      "description": "Η υπερβολική κατανάλωση μπορεί να έχει καθαρτική δράση"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "περιέχει καφεΐνη",
+      "description": "Περιέχει καφεΐνη"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "περιέχει κινίνη",
+      "description": "Περιέχει κινίνη"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "μπορεί να επηρεάσει αρνητικά τη δραστηριότητα και την προσοχή των παιδιών",
+      "description": "Μπορεί να επηρεάσει αρνητικά τη δραστηριότητα και την προσοχή των παιδιών"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "με πρωτεΐνη γάλακτος",
+      "description": "Περιέχει πρωτεΐνη γάλακτος"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "με σουρίμι",
+      "description": "Περιέχει σουρίμι"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "ανασυσταμένο από κομμάτια κρέατος",
+      "description": "Ανασυσταμένο από κομμάτια κρέατος"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "ανασυσταμένο από κομμάτια ψαριού",
+      "description": "Ανασυσταμένο από κομμάτια ψαριού"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "αποψυγμένο",
+      "description": "Αποψυγμένο από κατάσταση βαθιάς κατάψυξης"
+    }
+  ],
+  "fallbacks": []
+}

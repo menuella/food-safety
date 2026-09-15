@@ -1,0 +1,415 @@
+{
+  "locale": "cs",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Žito",
+      "declaration": "Obsahuje obiloviny obsahující lepek a výrobky z nich",
+      "description": "Žito a výrobky ze žita"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ječmen",
+      "declaration": "Obsahuje obiloviny obsahující lepek a výrobky z nich",
+      "description": "Ječmen a výrobky z ječmene"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Pšenice dvouzrnka",
+      "declaration": "Obsahuje obiloviny obsahující lepek a výrobky z nich",
+      "description": "Pšenice dvouzrnka a výrobky z ní"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Pšenice jednozrnka",
+      "declaration": "Obsahuje obiloviny obsahující lepek a výrobky z nich",
+      "description": "Pšenice jednozrnka a výrobky z ní"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Špalda",
+      "declaration": "Obsahuje obiloviny obsahující lepek a výrobky z nich",
+      "description": "Špalda a výrobky ze špaldy"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Pšenice",
+      "declaration": "Obsahuje obiloviny obsahující lepek a výrobky z nich",
+      "description": "Pšenice a výrobky z pšenice"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Oves",
+      "declaration": "Obsahuje obiloviny obsahující lepek a výrobky z nich",
+      "description": "Oves a výrobky z ovsa"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Kamut",
+      "declaration": "Obsahuje obiloviny obsahující lepek a výrobky z nich",
+      "description": "Kamut a výrobky z něj"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Korýši",
+      "declaration": "Obsahuje korýše a výrobky z nich",
+      "description": "Korýši jako krevety, krabi apod."
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Vejce",
+      "declaration": "Obsahuje vejce a výrobky z nich",
+      "description": "Vejce a výrobky z vajec"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Ryby",
+      "declaration": "Obsahuje ryby a výrobky z nich",
+      "description": "Ryby a výrobky z ryb"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Arašídy",
+      "declaration": "Obsahuje arašídy a výrobky z nich",
+      "description": "Arašídy a výrobky z arašídů"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Sója",
+      "declaration": "Obsahuje sóju a výrobky z ní",
+      "description": "Sója a výrobky ze sóji"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Mléko (včetně laktózy)",
+      "declaration": "Obsahuje mléko a mléčné výrobky (včetně laktózy)",
+      "description": "Mléko a mléčné výrobky (včetně laktózy)"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Makadamové ořechy",
+      "declaration": "Obsahuje skořápkové plody a výrobky z nich",
+      "description": "Makadamové ořechy a výrobky z nich"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Mandle",
+      "declaration": "Obsahuje skořápkové plody a výrobky z nich",
+      "description": "Mandle a výrobky z mandlí"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Para ořechy",
+      "declaration": "Obsahuje skořápkové plody a výrobky z nich",
+      "description": "Para ořechy a výrobky z nich"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pekanové ořechy",
+      "declaration": "Obsahuje skořápkové plody a výrobky z nich",
+      "description": "Pekanové ořechy a výrobky z nich"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pistácie",
+      "declaration": "Obsahuje skořápkové plody a výrobky z nich",
+      "description": "Pistácie a výrobky z pistácií"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Vlašské ořechy",
+      "declaration": "Obsahuje skořápkové plody a výrobky z nich",
+      "description": "Vlašské ořechy a výrobky z nich"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Kešu ořechy",
+      "declaration": "Obsahuje skořápkové plody a výrobky z nich",
+      "description": "Kešu ořechy a výrobky z nich"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Lískové ořechy",
+      "declaration": "Obsahuje skořápkové plody a výrobky z nich",
+      "description": "Lískové ořechy a výrobky z nich"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Celer",
+      "declaration": "Obsahuje celer a výrobky z něj",
+      "description": "Celer a výrobky z celeru"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Hořčice",
+      "declaration": "Obsahuje hořčici a výrobky z ní",
+      "description": "Hořčice a výrobky z hořčice"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Sezamová semena",
+      "declaration": "Obsahuje sezamová semena a výrobky z nich",
+      "description": "Sezamová semena a výrobky ze sezamu"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Oxid siřičitý a siřičitany",
+      "declaration": "Obsahuje oxid siřičitý a siřičitany",
+      "description": "Oxid siřičitý a siřičitany"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Vlčí bob",
+      "declaration": "Obsahuje vlčí bob a výrobky z něj",
+      "description": "Vlčí bob a výrobky z vlčího bobu"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Měkkýši",
+      "declaration": "Obsahuje měkkýše a výrobky z nich",
+      "description": "Měkkýši jako hlemýždi, mušle apod."
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "s barvivem",
+      "description": "Obsahuje potravinářská barviva"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "s konzervantem",
+      "description": "Obsahuje konzervanty"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "s antioxidantem",
+      "description": "Obsahuje antioxidanty"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "s dusitanovou solicí solí",
+      "description": "Obsahuje dusitanovou solicí sůl"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "s dusičnanem",
+      "description": "Obsahuje dusičnany (konzervant)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "s dusitanovou solicí solí a dusičnanem",
+      "description": "Obsahuje dusitanovou solicí sůl a dusičnany"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "s látkou zvýrazňující chuť",
+      "description": "Obsahuje látky zvýrazňující chuť"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "s fosforečnanem",
+      "description": "Obsahuje fosforečnany"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sířený",
+      "description": "Obsahuje oxid siřičitý nebo siřičitany"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "začerněný",
+      "description": "Začerněný pro vizuální efekt"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "voskovaný",
+      "description": "Povrchová vosková úprava pro konzervaci"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "se sladidly",
+      "description": "Obsahuje sladidla"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "obsahuje zdroj fenylalaninu",
+      "description": "Obsahuje zdroj fenylalaninu"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "při nadměrné konzumaci může mít projímavé účinky",
+      "description": "Nadměrná konzumace může mít projímavé účinky"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "obsahuje kofein",
+      "description": "Obsahuje kofein"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "obsahuje chinin",
+      "description": "Obsahuje chinin"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "může mít negativní vliv na aktivitu a pozornost dětí",
+      "description": "Může mít negativní vliv na aktivitu a pozornost dětí"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "s mléčnou bílkovinou",
+      "description": "Obsahuje mléčnou bílkovinu"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "se surimi",
+      "description": "Obsahuje surimi"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "složeno z kousků masa",
+      "description": "Složeno z kousků masa"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "složeno z kousků ryby",
+      "description": "Složeno z kousků ryby"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "rozmrazený",
+      "description": "Rozmrazený z hluboce zmrazeného stavu"
+    }
+  ],
+  "fallbacks": []
+}

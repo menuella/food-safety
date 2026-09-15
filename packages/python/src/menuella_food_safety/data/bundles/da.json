@@ -1,0 +1,415 @@
+{
+  "locale": "da",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Rug",
+      "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+      "description": "Rug og rugprodukter"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Byg",
+      "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+      "description": "Byg og bygprodukter"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Emmerhvede",
+      "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+      "description": "Emmerhvede og produkter deraf"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Enkornhvede",
+      "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+      "description": "Enkornhvede og produkter deraf"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Spelt",
+      "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+      "description": "Spelt og speltprodukter"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Hvede",
+      "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+      "description": "Hvede og hvedeprodukter"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Havre",
+      "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+      "description": "Havre og havreprodukter"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Khorasan-hvede (Kamut)",
+      "declaration": "Indeholder korn indeholdende gluten og produkter deraf",
+      "description": "Khorasan-hvede og produkter deraf"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Krebsdyr",
+      "declaration": "Indeholder krebsdyr og produkter deraf",
+      "description": "Krebsdyr såsom rejer, krabber osv."
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Æg",
+      "declaration": "Indeholder æg og produkter deraf",
+      "description": "Æg og ægprodukter"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Fisk",
+      "declaration": "Indeholder fisk og produkter deraf",
+      "description": "Fisk og fiskeprodukter"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Jordnødder",
+      "declaration": "Indeholder jordnødder og produkter deraf",
+      "description": "Jordnødder og jordnøddeprodukter"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Soja",
+      "declaration": "Indeholder soja og produkter deraf",
+      "description": "Soja og sojaprodukter"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Mælk (inklusive laktose)",
+      "declaration": "Indeholder mælk og produkter deraf (herunder laktose)",
+      "description": "Mælk og mejeriprodukter (inklusive laktose)"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Macadamianødder",
+      "declaration": "Indeholder nødder og produkter deraf",
+      "description": "Macadamianødder og produkter deraf"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Mandler",
+      "declaration": "Indeholder nødder og produkter deraf",
+      "description": "Mandler og mandelprodukter"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Paranødder",
+      "declaration": "Indeholder nødder og produkter deraf",
+      "description": "Paranødder og produkter deraf"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pekannødder",
+      "declaration": "Indeholder nødder og produkter deraf",
+      "description": "Pekannødder og produkter deraf"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pistacienødder",
+      "declaration": "Indeholder nødder og produkter deraf",
+      "description": "Pistacienødder og produkter deraf"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Valnødder",
+      "declaration": "Indeholder nødder og produkter deraf",
+      "description": "Valnødder og valnøddeprodukter"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Cashewnødder",
+      "declaration": "Indeholder nødder og produkter deraf",
+      "description": "Cashewnødder og produkter deraf"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Hasselnødder",
+      "declaration": "Indeholder nødder og produkter deraf",
+      "description": "Hasselnødder og produkter deraf"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Selleri",
+      "declaration": "Indeholder selleri og produkter deraf",
+      "description": "Selleri og selleriprodukter"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Sennep",
+      "declaration": "Indeholder sennep og produkter deraf",
+      "description": "Sennep og sennepsprodukter"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Sesamfrø",
+      "declaration": "Indeholder sesamfrø og produkter deraf",
+      "description": "Sesamfrø og sesamprodukter"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Svovldioxid og sulfitter",
+      "declaration": "Indeholder svovldioxid og sulfitter",
+      "description": "Svovldioxid og sulfitter"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Lupin",
+      "declaration": "Indeholder lupin og produkter deraf",
+      "description": "Lupin og lupinprodukter"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Bløddyr",
+      "declaration": "Indeholder bløddyr og produkter deraf",
+      "description": "Bløddyr såsom snegle, muslinger osv."
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "med farvestof",
+      "description": "Indeholder farvestoffer"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "med konserveringsmiddel",
+      "description": "Indeholder konserveringsmidler"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "med antioxidant",
+      "description": "Indeholder antioxidanter"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "med nitritholdigt konserveringssalt",
+      "description": "Indeholder nitritholdigt konserveringssalt"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "med nitrat",
+      "description": "Indeholder nitrat (konservering)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "med nitritsalt og nitrat",
+      "description": "Indeholder nitritsalt og nitrat"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "med smagsforstærker",
+      "description": "Indeholder smagsforstærkere"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "med fosfat",
+      "description": "Indeholder fosfat"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "svovlbehandlet",
+      "description": "Indeholder svovldioxid eller sulfitter"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sværtet",
+      "description": "Sværtet for visuel effekt"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "vokset",
+      "description": "Overflade vokset for konservering"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "med sødestoffer",
+      "description": "Indeholder sødestoffer"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "indeholder en kilde til phenylalanin",
+      "description": "Indeholder en kilde til phenylalanin"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "kan have en afførende virkning ved for stort indtag",
+      "description": "Kan have en afførende virkning ved for stort indtag"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "indeholder koffein",
+      "description": "Indeholder koffein"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "indeholder kinin",
+      "description": "Indeholder kinin"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "kan påvirke børns aktivitet og opmærksomhed negativt",
+      "description": "Kan påvirke børns aktivitet og opmærksomhed negativt"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "med mælkeprotein",
+      "description": "Indeholder mælkeprotein"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "med surimi",
+      "description": "Indeholder surimi"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "sammensat af kødstykker",
+      "description": "Sammensat af kødstykker"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "sammensat af fiskestykker",
+      "description": "Sammensat af fiskestykker"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "optøet",
+      "description": "Optøet fra dybfrossen tilstand"
+    }
+  ],
+  "fallbacks": []
+}

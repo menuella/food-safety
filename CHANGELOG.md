@@ -10,6 +10,41 @@ Pin to a major version in production:
 
 ---
 
+## [1.6.0] – 2026-09-15
+
+### Added
+
+- **Ten new languages — Polish (`pl`), Czech (`cs`), Swedish (`sv`), Danish (`da`), Norwegian (`no`), Finnish (`fi`), Romanian (`ro`), Greek (`el`), Hungarian (`hu`) and Bulgarian (`bg`) — bringing the set to twenty-five.** Every one of the new locales carries the full triple on allergens (`name`, `description`, and the group `declaration` sentence) for all 28 allergen keys, and `name` + `description` for all 22 Menuella Declarations. Nothing is stubbed; `disclosures.fallbacks` stays empty on every field.
+
+  The `declaration` sentences continue to translate the LMIV group text rather than assert any jurisdictional legal status of their own. All ten new locales are EU official languages (Norwegian follows the same wording as Danish because it tracks the EEA context these menus operate in), so the wording lines up with what a Warenwetbesluit inspector in NL, a HACCP-hygiëne agency in FR, or the Bulgarian Хранителна и ветеринарна служба would recognise verbatim.
+
+  A few translation choices worth flagging for future reviewers:
+  - Polish uses `Orzeszki ziemne` for `PEANUTS` — the food-labelling standard, not the everyday `fistaszki`.
+  - Czech uses `Pšenice dvouzrnka` / `Pšenice jednozrnka` for `EMMER` / `EINKORN` — the botanical Czech forms used in cereal science, since the Latin loanwords are unrecognised in a Czech disclosure.
+  - Romanian uses `Fructe cu coajă lemnoasă` for the `TREE_NUTS` group sentence — the LMIV official pt-RO wording.
+  - Greek keeps `Ζέα (spelt)` explicit for `SPELT` — Greek food regulation calls it that, and `ζέα` alone is ambiguous with other cereals.
+  - Bulgarian uses `Пекан` for `PECANS` (loanword) — matches Bulgarian retail packaging; the older `американски орех` is not in current use.
+  - Hungarian uses `Diófélék` for the `TREE_NUTS` group — the standard Hungarian botanical umbrella term that the Magyar Élelmiszerkönyv itself uses.
+
+- **All ten SDK bindings pick up the ten new locales with zero SDK code changes.** The runtime-derivation refactor from v1.4.0 continues to pay off: JS, Python, Go, Swift, .NET all enumerate their shipped `bundles/` directory at load time, and the generator refreshes the tables that Rust, Kotlin/Java and Dart embed.
+
+### Fixed
+
+- **Ruby SDK now sees every shipped locale.** `Menuella::FoodSafety.locales` was hardcoded to the pre-1.4 six-locale list, so `disclosures("nl")` raised `UnsupportedLocaleError` in Ruby even though the bundle for `nl` (and later `pt`, `zh`, `vi`, `ja`, `ko`, `ru`, `ar`, `he`) was already shipped inside the gem. `locales` now enumerates `bundles/*.json` in the shipped data directory, so every locale that ships in the gem is visible through the Ruby API — nine languages become accessible retroactively, plus the ten new ones.
+- **PHP SDK now sees every shipped locale.** Same bug as Ruby: `FoodSafety::LOCALES` was frozen at the pre-1.4 six-locale array. The class constant is kept for backwards compatibility (marked `@deprecated`) and now sits alongside a new `FoodSafety::locales()` static method that reads the current `bundles/` directory; `FoodSafety::isLocale()` and the unsupported-locale error message have been switched over to the method, so `isLocale("nl")` and `disclosures("nl")` now behave correctly for every locale that ships in the package.
+
+### Compatibility
+
+No breaking changes to consumers who already call the methods this package documents:
+
+- **JS, Python, Rust, Java/Kotlin, Dart, Go, Ruby**: `LOCALES` / `Locales()` / etc. widen to include the ten new locales.
+- **PHP**: the `LOCALES` constant is now marked deprecated but still returns the historical six-locale array — the correct list lives at `FoodSafety::locales()`. This is a bug-fix release, not an API break: the SDK now returns correct data for the locales that were already shipping.
+- **Swift, .NET**: no changes — these SDKs already read from the bundles directory.
+
+The Rust integration test's `an_unsupported_locale_errors_rather_than_falling_back` case previously asserted the substring `"de, en"` in the "available:" list. That was fragile: as soon as a locale ships alphabetically between `de` and `en` (which `el` now does), the substring stops appearing verbatim. It now iterates `fs::LOCALES` and asserts each one is listed — future-proof against any locale insertion. The Ruby test had the same fragile assertion and now iterates `FS.locales` for the same reason.
+
+---
+
 ## [1.5.0] – 2026-09-15
 
 ### Added

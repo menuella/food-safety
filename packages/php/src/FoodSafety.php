@@ -25,8 +25,37 @@ use RuntimeException;
  */
 final class FoodSafety
 {
-    /** Locales with a prebuilt bundle. */
+    /**
+     * Locales this package shipped a bundle for up to 1.3.1.
+     *
+     * @deprecated since 1.6.0. Use {@see FoodSafety::locales()} instead — this
+     *     constant is frozen for backwards compatibility and does not include
+     *     locales added after 1.3.1 (nl, pt, zh, vi, ja, ko, ru, ar, he, and
+     *     the 10 European locales shipped in 1.6.0).
+     * @var list<string>
+     */
     public const LOCALES = ['de', 'en', 'es', 'fr', 'it', 'tr'];
+
+    /** @var list<string>|null */
+    private static ?array $localesCache = null;
+
+    /**
+     * Locales with a prebuilt bundle. Derived from the shipped
+     * {@code data/bundles/} directory, so adding a new locale is a matter
+     * of dropping {@code bundles/xx.json} in — no source list to keep in step.
+     *
+     * @return list<string>
+     */
+    public static function locales(): array
+    {
+        if (self::$localesCache !== null) {
+            return self::$localesCache;
+        }
+        $files = glob(__DIR__ . '/../data/bundles/*.json') ?: [];
+        $locales = array_map(static fn (string $f): string => basename($f, '.json'), $files);
+        sort($locales);
+        return self::$localesCache = array_values($locales);
+    }
 
     /** The locale a bundle falls back to for anything it does not itself carry. */
     public const FALLBACK_LOCALE = 'en';
@@ -51,7 +80,7 @@ final class FoodSafety
     /** True when the value is a locale with a bundle. */
     public static function isLocale(mixed $value): bool
     {
-        return is_string($value) && in_array($value, self::LOCALES, true);
+        return is_string($value) && in_array($value, self::locales(), true);
     }
 
     /** True when the value is a current allergen key. Retired keys return false. */
@@ -134,7 +163,7 @@ final class FoodSafety
             throw new InvalidArgumentException(sprintf(
                 'No disclosures for locale "%s". Available: %s.',
                 $locale,
-                implode(', ', self::LOCALES),
+                implode(', ', self::locales()),
             ));
         }
 
