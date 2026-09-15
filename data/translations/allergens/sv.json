@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Råg",
+    "declaration": "Innehåller spannmål som innehåller gluten och produkter framställda därav",
+    "description": "Råg och rågprodukter"
+  },
+  "BARLEY": {
+    "name": "Korn",
+    "declaration": "Innehåller spannmål som innehåller gluten och produkter framställda därav",
+    "description": "Korn och kornprodukter"
+  },
+  "EMMER": {
+    "name": "Emmervete",
+    "declaration": "Innehåller spannmål som innehåller gluten och produkter framställda därav",
+    "description": "Emmervete och produkter därav"
+  },
+  "EINKORN": {
+    "name": "Enkornvete",
+    "declaration": "Innehåller spannmål som innehåller gluten och produkter framställda därav",
+    "description": "Enkornvete och produkter därav"
+  },
+  "SPELT": {
+    "name": "Spelt",
+    "declaration": "Innehåller spannmål som innehåller gluten och produkter framställda därav",
+    "description": "Spelt och speltprodukter"
+  },
+  "WHEAT": {
+    "name": "Vete",
+    "declaration": "Innehåller spannmål som innehåller gluten och produkter framställda därav",
+    "description": "Vete och veteprodukter"
+  },
+  "OATS": {
+    "name": "Havre",
+    "declaration": "Innehåller spannmål som innehåller gluten och produkter framställda därav",
+    "description": "Havre och havreprodukter"
+  },
+  "KHORASAN": {
+    "name": "Khorasanvete (Kamut)",
+    "declaration": "Innehåller spannmål som innehåller gluten och produkter framställda därav",
+    "description": "Khorasanvete och produkter därav"
+  },
+  "CRUSTACEANS": {
+    "name": "Kräftdjur",
+    "declaration": "Innehåller kräftdjur och produkter framställda därav",
+    "description": "Kräftdjur såsom räkor, krabbor osv."
+  },
+  "EGGS": {
+    "name": "Ägg",
+    "declaration": "Innehåller ägg och produkter framställda därav",
+    "description": "Ägg och äggprodukter"
+  },
+  "FISH": {
+    "name": "Fisk",
+    "declaration": "Innehåller fisk och produkter framställda därav",
+    "description": "Fisk och fiskprodukter"
+  },
+  "PEANUTS": {
+    "name": "Jordnötter",
+    "declaration": "Innehåller jordnötter och produkter framställda därav",
+    "description": "Jordnötter och jordnötsprodukter"
+  },
+  "SOY": {
+    "name": "Soja",
+    "declaration": "Innehåller sojabönor och produkter framställda därav",
+    "description": "Soja och sojaprodukter"
+  },
+  "MILK": {
+    "name": "Mjölk (inklusive laktos)",
+    "declaration": "Innehåller mjölk och produkter framställda därav (inklusive laktos)",
+    "description": "Mjölk och mjölkprodukter (inklusive laktos)"
+  },
+  "MACADAMIA": {
+    "name": "Makadamianötter",
+    "declaration": "Innehåller nötter och produkter framställda därav",
+    "description": "Makadamianötter och produkter därav"
+  },
+  "ALMONDS": {
+    "name": "Mandel",
+    "declaration": "Innehåller nötter och produkter framställda därav",
+    "description": "Mandel och mandelprodukter"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Paranötter",
+    "declaration": "Innehåller nötter och produkter framställda därav",
+    "description": "Paranötter och produkter därav"
+  },
+  "PECANS": {
+    "name": "Pekannötter",
+    "declaration": "Innehåller nötter och produkter framställda därav",
+    "description": "Pekannötter och produkter därav"
+  },
+  "PISTACHIOS": {
+    "name": "Pistagenötter",
+    "declaration": "Innehåller nötter och produkter framställda därav",
+    "description": "Pistagenötter och produkter därav"
+  },
+  "WALNUTS": {
+    "name": "Valnötter",
+    "declaration": "Innehåller nötter och produkter framställda därav",
+    "description": "Valnötter och valnötsprodukter"
+  },
+  "CASHEWS": {
+    "name": "Cashewnötter",
+    "declaration": "Innehåller nötter och produkter framställda därav",
+    "description": "Cashewnötter och produkter därav"
+  },
+  "HAZELNUTS": {
+    "name": "Hasselnötter",
+    "declaration": "Innehåller nötter och produkter framställda därav",
+    "description": "Hasselnötter och produkter därav"
+  },
+  "CELERY": {
+    "name": "Selleri",
+    "declaration": "Innehåller selleri och produkter framställda därav",
+    "description": "Selleri och selleriprodukter"
+  },
+  "MUSTARD": {
+    "name": "Senap",
+    "declaration": "Innehåller senap och produkter framställda därav",
+    "description": "Senap och senapsprodukter"
+  },
+  "SESAME": {
+    "name": "Sesamfrön",
+    "declaration": "Innehåller sesamfrön och produkter framställda därav",
+    "description": "Sesamfrön och sesamprodukter"
+  },
+  "SULPHITES": {
+    "name": "Svaveldioxid och sulfiter",
+    "declaration": "Innehåller svaveldioxid och sulfiter",
+    "description": "Svaveldioxid och sulfiter"
+  },
+  "LUPINS": {
+    "name": "Lupin",
+    "declaration": "Innehåller lupin och produkter framställda därav",
+    "description": "Lupin och lupinprodukter"
+  },
+  "MOLLUSCS": {
+    "name": "Blötdjur",
+    "declaration": "Innehåller blötdjur och produkter framställda därav",
+    "description": "Blötdjur såsom sniglar, musslor osv."
+  }
+}

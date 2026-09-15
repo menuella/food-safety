@@ -106,9 +106,14 @@ fn an_unsupported_locale_errors_rather_than_falling_back() {
     assert!(text.contains(&sample), "{text}");
 
     // The message must name the alternatives, or the caller has to go read the
-    // source to find out what is valid.
+    // source to find out what is valid. Assert every shipped locale is listed
+    // rather than a hardcoded substring — the neighbours in the alphabetical
+    // list shift when a new locale ships between them (e.g. `de, en` becomes
+    // `de, el, en`).
     assert!(text.contains("available:"), "{text}");
-    assert!(text.contains("de, en"), "{text}");
+    for locale in fs::LOCALES {
+        assert!(text.contains(locale), "{text} — missing {locale}");
+    }
 }
 
 #[test]

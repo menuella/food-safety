@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Żyto",
+    "declaration": "Zawiera zboża zawierające gluten oraz produkty pochodne",
+    "description": "Żyto i produkty z żyta"
+  },
+  "BARLEY": {
+    "name": "Jęczmień",
+    "declaration": "Zawiera zboża zawierające gluten oraz produkty pochodne",
+    "description": "Jęczmień i produkty z jęczmienia"
+  },
+  "EMMER": {
+    "name": "Płaskurka",
+    "declaration": "Zawiera zboża zawierające gluten oraz produkty pochodne",
+    "description": "Płaskurka i produkty z płaskurki"
+  },
+  "EINKORN": {
+    "name": "Samopsza",
+    "declaration": "Zawiera zboża zawierające gluten oraz produkty pochodne",
+    "description": "Samopsza i produkty z samopszy"
+  },
+  "SPELT": {
+    "name": "Orkisz",
+    "declaration": "Zawiera zboża zawierające gluten oraz produkty pochodne",
+    "description": "Orkisz i produkty z orkiszu"
+  },
+  "WHEAT": {
+    "name": "Pszenica",
+    "declaration": "Zawiera zboża zawierające gluten oraz produkty pochodne",
+    "description": "Pszenica i produkty z pszenicy"
+  },
+  "OATS": {
+    "name": "Owies",
+    "declaration": "Zawiera zboża zawierające gluten oraz produkty pochodne",
+    "description": "Owies i produkty z owsa"
+  },
+  "KHORASAN": {
+    "name": "Kamut",
+    "declaration": "Zawiera zboża zawierające gluten oraz produkty pochodne",
+    "description": "Kamut i produkty z kamutu"
+  },
+  "CRUSTACEANS": {
+    "name": "Skorupiaki",
+    "declaration": "Zawiera skorupiaki oraz produkty pochodne",
+    "description": "Skorupiaki takie jak krewetki, kraby itp."
+  },
+  "EGGS": {
+    "name": "Jaja",
+    "declaration": "Zawiera jaja oraz produkty pochodne",
+    "description": "Jaja i produkty z jaj"
+  },
+  "FISH": {
+    "name": "Ryby",
+    "declaration": "Zawiera ryby oraz produkty pochodne",
+    "description": "Ryby i produkty rybne"
+  },
+  "PEANUTS": {
+    "name": "Orzeszki ziemne",
+    "declaration": "Zawiera orzeszki ziemne oraz produkty pochodne",
+    "description": "Orzeszki ziemne i produkty z nich"
+  },
+  "SOY": {
+    "name": "Soja",
+    "declaration": "Zawiera soję oraz produkty pochodne",
+    "description": "Soja i produkty sojowe"
+  },
+  "MILK": {
+    "name": "Mleko (w tym laktoza)",
+    "declaration": "Zawiera mleko oraz produkty pochodne (w tym laktozę)",
+    "description": "Mleko i produkty mleczne (w tym laktoza)"
+  },
+  "MACADAMIA": {
+    "name": "Orzechy makadamia",
+    "declaration": "Zawiera orzechy oraz produkty pochodne",
+    "description": "Orzechy makadamia i produkty z nich"
+  },
+  "ALMONDS": {
+    "name": "Migdały",
+    "declaration": "Zawiera orzechy oraz produkty pochodne",
+    "description": "Migdały i produkty z migdałów"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Orzechy brazylijskie",
+    "declaration": "Zawiera orzechy oraz produkty pochodne",
+    "description": "Orzechy brazylijskie i produkty z nich"
+  },
+  "PECANS": {
+    "name": "Orzechy pekan",
+    "declaration": "Zawiera orzechy oraz produkty pochodne",
+    "description": "Orzechy pekan i produkty z nich"
+  },
+  "PISTACHIOS": {
+    "name": "Pistacje",
+    "declaration": "Zawiera orzechy oraz produkty pochodne",
+    "description": "Pistacje i produkty z pistacji"
+  },
+  "WALNUTS": {
+    "name": "Orzechy włoskie",
+    "declaration": "Zawiera orzechy oraz produkty pochodne",
+    "description": "Orzechy włoskie i produkty z nich"
+  },
+  "CASHEWS": {
+    "name": "Orzechy nerkowca",
+    "declaration": "Zawiera orzechy oraz produkty pochodne",
+    "description": "Orzechy nerkowca i produkty z nich"
+  },
+  "HAZELNUTS": {
+    "name": "Orzechy laskowe",
+    "declaration": "Zawiera orzechy oraz produkty pochodne",
+    "description": "Orzechy laskowe i produkty z nich"
+  },
+  "CELERY": {
+    "name": "Seler",
+    "declaration": "Zawiera seler oraz produkty pochodne",
+    "description": "Seler i produkty z selera"
+  },
+  "MUSTARD": {
+    "name": "Gorczyca",
+    "declaration": "Zawiera gorczycę oraz produkty pochodne",
+    "description": "Gorczyca i produkty z gorczycy"
+  },
+  "SESAME": {
+    "name": "Sezam",
+    "declaration": "Zawiera nasiona sezamu oraz produkty pochodne",
+    "description": "Nasiona sezamu i produkty z nich"
+  },
+  "SULPHITES": {
+    "name": "Dwutlenek siarki i siarczyny",
+    "declaration": "Zawiera dwutlenek siarki i siarczyny",
+    "description": "Dwutlenek siarki i siarczyny"
+  },
+  "LUPINS": {
+    "name": "Łubin",
+    "declaration": "Zawiera łubin oraz produkty pochodne",
+    "description": "Łubin i produkty z łubinu"
+  },
+  "MOLLUSCS": {
+    "name": "Mięczaki",
+    "declaration": "Zawiera mięczaki oraz produkty pochodne",
+    "description": "Mięczaki takie jak ślimaki, małże itp."
+  }
+}

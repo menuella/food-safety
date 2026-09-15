@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Secară",
+    "declaration": "Conține cereale care conțin gluten și produse derivate",
+    "description": "Secară și produse din secară"
+  },
+  "BARLEY": {
+    "name": "Orz",
+    "declaration": "Conține cereale care conțin gluten și produse derivate",
+    "description": "Orz și produse din orz"
+  },
+  "EMMER": {
+    "name": "Grâu emmer",
+    "declaration": "Conține cereale care conțin gluten și produse derivate",
+    "description": "Grâu emmer și produse derivate"
+  },
+  "EINKORN": {
+    "name": "Grâu einkorn",
+    "declaration": "Conține cereale care conțin gluten și produse derivate",
+    "description": "Grâu einkorn și produse derivate"
+  },
+  "SPELT": {
+    "name": "Spelta",
+    "declaration": "Conține cereale care conțin gluten și produse derivate",
+    "description": "Spelta și produse din spelta"
+  },
+  "WHEAT": {
+    "name": "Grâu",
+    "declaration": "Conține cereale care conțin gluten și produse derivate",
+    "description": "Grâu și produse din grâu"
+  },
+  "OATS": {
+    "name": "Ovăz",
+    "declaration": "Conține cereale care conțin gluten și produse derivate",
+    "description": "Ovăz și produse din ovăz"
+  },
+  "KHORASAN": {
+    "name": "Grâu Khorasan (Kamut)",
+    "declaration": "Conține cereale care conțin gluten și produse derivate",
+    "description": "Grâu Khorasan și produse derivate"
+  },
+  "CRUSTACEANS": {
+    "name": "Crustacee",
+    "declaration": "Conține crustacee și produse derivate",
+    "description": "Crustacee precum creveți, crabi etc."
+  },
+  "EGGS": {
+    "name": "Ouă",
+    "declaration": "Conține ouă și produse derivate",
+    "description": "Ouă și produse din ouă"
+  },
+  "FISH": {
+    "name": "Pește",
+    "declaration": "Conține pește și produse derivate",
+    "description": "Pește și produse din pește"
+  },
+  "PEANUTS": {
+    "name": "Arahide",
+    "declaration": "Conține arahide și produse derivate",
+    "description": "Arahide și produse din arahide"
+  },
+  "SOY": {
+    "name": "Soia",
+    "declaration": "Conține soia și produse derivate",
+    "description": "Soia și produse din soia"
+  },
+  "MILK": {
+    "name": "Lapte (inclusiv lactoză)",
+    "declaration": "Conține lapte și produse lactate (inclusiv lactoză)",
+    "description": "Lapte și produse lactate (inclusiv lactoză)"
+  },
+  "MACADAMIA": {
+    "name": "Nuci de macadamia",
+    "declaration": "Conține fructe cu coajă lemnoasă și produse derivate",
+    "description": "Nuci de macadamia și produse derivate"
+  },
+  "ALMONDS": {
+    "name": "Migdale",
+    "declaration": "Conține fructe cu coajă lemnoasă și produse derivate",
+    "description": "Migdale și produse din migdale"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Nuci de Brazilia",
+    "declaration": "Conține fructe cu coajă lemnoasă și produse derivate",
+    "description": "Nuci de Brazilia și produse derivate"
+  },
+  "PECANS": {
+    "name": "Nuci pecan",
+    "declaration": "Conține fructe cu coajă lemnoasă și produse derivate",
+    "description": "Nuci pecan și produse derivate"
+  },
+  "PISTACHIOS": {
+    "name": "Fistic",
+    "declaration": "Conține fructe cu coajă lemnoasă și produse derivate",
+    "description": "Fistic și produse din fistic"
+  },
+  "WALNUTS": {
+    "name": "Nuci",
+    "declaration": "Conține fructe cu coajă lemnoasă și produse derivate",
+    "description": "Nuci și produse din nuci"
+  },
+  "CASHEWS": {
+    "name": "Nuci caju",
+    "declaration": "Conține fructe cu coajă lemnoasă și produse derivate",
+    "description": "Nuci caju și produse din caju"
+  },
+  "HAZELNUTS": {
+    "name": "Alune de pădure",
+    "declaration": "Conține fructe cu coajă lemnoasă și produse derivate",
+    "description": "Alune de pădure și produse din alune"
+  },
+  "CELERY": {
+    "name": "Țelină",
+    "declaration": "Conține țelină și produse derivate",
+    "description": "Țelină și produse din țelină"
+  },
+  "MUSTARD": {
+    "name": "Muștar",
+    "declaration": "Conține muștar și produse derivate",
+    "description": "Muștar și produse din muștar"
+  },
+  "SESAME": {
+    "name": "Semințe de susan",
+    "declaration": "Conține semințe de susan și produse derivate",
+    "description": "Semințe de susan și produse din susan"
+  },
+  "SULPHITES": {
+    "name": "Dioxid de sulf și sulfiți",
+    "declaration": "Conține dioxid de sulf și sulfiți",
+    "description": "Dioxid de sulf și sulfiți"
+  },
+  "LUPINS": {
+    "name": "Lupin",
+    "declaration": "Conține lupin și produse derivate",
+    "description": "Lupin și produse din lupin"
+  },
+  "MOLLUSCS": {
+    "name": "Moluște",
+    "declaration": "Conține moluște și produse derivate",
+    "description": "Moluște precum melci, midii etc."
+  }
+}

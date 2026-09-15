@@ -2,6 +2,7 @@
 
 require "minitest/autorun"
 require "json"
+require "set"
 require "menuella/food_safety"
 
 FS = Menuella::FoodSafety
@@ -64,14 +65,32 @@ class FoodSafetyTest < Minitest::Test
     assert wheat.member?
   end
 
-  def test_an_unsupported_locale_raises_rather_than_falling_back
-    error = assert_raises(FS::UnsupportedLocaleError) { FS.disclosures("nl") }
+  # Returns a two-letter code this gem does not ship a bundle for. Sweeps
+  # every "aa"..."zz" and returns the first that isn't in FS.locales, so this
+  # file does not need editing when a new locale is added.
+  def pick_negative_locale
+    shipped = FS.locales.to_set
+    ("a".."z").each do |a|
+      ("a".."z").each do |b|
+        candidate = "#{a}#{b}"
+        return candidate unless shipped.include?(candidate)
+      end
+    end
+    flunk "every two-letter code is a shipped locale"
+  end
 
-    assert_equal "nl", error.locale
+  def test_an_unsupported_locale_raises_rather_than_falling_back
+    sample = pick_negative_locale
+    error = assert_raises(FS::UnsupportedLocaleError) { FS.disclosures(sample) }
+
+    assert_equal sample, error.locale
     # The message must name the alternatives, or the caller has to go read the
-    # source to find out what is valid.
+    # source to find out what is valid. Assert every shipped locale is listed
+    # rather than a hardcoded substring — the neighbours in the alphabetical
+    # list shift when a new locale ships between them (e.g. `de, en` becomes
+    # `de, el, en`).
     assert_includes error.message, "available:"
-    assert_includes error.message, "de, en"
+    FS.locales.each { |l| assert_includes error.message, l }
     # Rescuable without naming each subclass.
     assert_kind_of FS::Error, error
   end
@@ -116,7 +135,7 @@ class FoodSafetyTest < Minitest::Test
     refute FS.declaration_key?("WHEAT")
 
     assert FS.locale?("de")
-    refute FS.locale?("nl")
+    refute FS.locale?(pick_negative_locale)
     refute FS.locale?("DE")
   end
 

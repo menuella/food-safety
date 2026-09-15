@@ -1,0 +1,415 @@
+{
+  "locale": "bg",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ръж",
+      "declaration": "Съдържа зърнени култури, съдържащи глутен, и продукти на тяхна основа",
+      "description": "Ръж и продукти от ръж"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ечемик",
+      "declaration": "Съдържа зърнени култури, съдържащи глутен, и продукти на тяхна основа",
+      "description": "Ечемик и продукти от ечемик"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Пшеница емер",
+      "declaration": "Съдържа зърнени култури, съдържащи глутен, и продукти на тяхна основа",
+      "description": "Пшеница емер и продукти на нейна основа"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Пшеница еднозърнеста",
+      "declaration": "Съдържа зърнени култури, съдържащи глутен, и продукти на тяхна основа",
+      "description": "Пшеница еднозърнеста и продукти на нейна основа"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Спелта",
+      "declaration": "Съдържа зърнени култури, съдържащи глутен, и продукти на тяхна основа",
+      "description": "Спелта и продукти от спелта"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Пшеница",
+      "declaration": "Съдържа зърнени култури, съдържащи глутен, и продукти на тяхна основа",
+      "description": "Пшеница и продукти от пшеница"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Овес",
+      "declaration": "Съдържа зърнени култури, съдържащи глутен, и продукти на тяхна основа",
+      "description": "Овес и продукти от овес"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Пшеница Khorasan (Kamut)",
+      "declaration": "Съдържа зърнени култури, съдържащи глутен, и продукти на тяхна основа",
+      "description": "Пшеница Khorasan и продукти на нейна основа"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Ракообразни",
+      "declaration": "Съдържа ракообразни и продукти на тяхна основа",
+      "description": "Ракообразни като скариди, раци и др."
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Яйца",
+      "declaration": "Съдържа яйца и продукти на тяхна основа",
+      "description": "Яйца и продукти от яйца"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Риба",
+      "declaration": "Съдържа риба и продукти на нейна основа",
+      "description": "Риба и продукти от риба"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Фъстъци",
+      "declaration": "Съдържа фъстъци и продукти на тяхна основа",
+      "description": "Фъстъци и продукти от фъстъци"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Соя",
+      "declaration": "Съдържа соя и продукти на нейна основа",
+      "description": "Соя и продукти от соя"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Мляко (включително лактоза)",
+      "declaration": "Съдържа мляко и млечни продукти (включително лактоза)",
+      "description": "Мляко и млечни продукти (включително лактоза)"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Макадамия",
+      "declaration": "Съдържа ядки и продукти на тяхна основа",
+      "description": "Ядки макадамия и продукти от тях"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Бадеми",
+      "declaration": "Съдържа ядки и продукти на тяхна основа",
+      "description": "Бадеми и продукти от бадеми"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Бразилски орехи",
+      "declaration": "Съдържа ядки и продукти на тяхна основа",
+      "description": "Бразилски орехи и продукти от тях"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Пекан",
+      "declaration": "Съдържа ядки и продукти на тяхна основа",
+      "description": "Пекан и продукти от пекан"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Шам-фъстъци",
+      "declaration": "Съдържа ядки и продукти на тяхна основа",
+      "description": "Шам-фъстъци и продукти от шам-фъстъци"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Орехи",
+      "declaration": "Съдържа ядки и продукти на тяхна основа",
+      "description": "Орехи и продукти от орехи"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Кашу",
+      "declaration": "Съдържа ядки и продукти на тяхна основа",
+      "description": "Кашу и продукти от кашу"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Лешници",
+      "declaration": "Съдържа ядки и продукти на тяхна основа",
+      "description": "Лешници и продукти от лешници"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Целина",
+      "declaration": "Съдържа целина и продукти на нейна основа",
+      "description": "Целина и продукти от целина"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Синап",
+      "declaration": "Съдържа синап и продукти на негова основа",
+      "description": "Синап и продукти от синап"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Сусамово семе",
+      "declaration": "Съдържа сусамово семе и продукти на негова основа",
+      "description": "Сусамово семе и продукти от сусам"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Серен диоксид и сулфити",
+      "declaration": "Съдържа серен диоксид и сулфити",
+      "description": "Серен диоксид и сулфити"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Лупина",
+      "declaration": "Съдържа лупина и продукти на нейна основа",
+      "description": "Лупина и продукти от лупина"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Мекотели",
+      "declaration": "Съдържа мекотели и продукти на тяхна основа",
+      "description": "Мекотели като охлюви, миди и др."
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с оцветител",
+      "description": "Съдържа хранителни оцветители"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с консервант",
+      "description": "Съдържа консерванти"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с антиоксидант",
+      "description": "Съдържа антиоксиданти"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с нитритна осолителна сол",
+      "description": "Съдържа нитритна осолителна сол"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с нитрат",
+      "description": "Съдържа нитрат (консервант)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с нитритна осолителна сол и нитрат",
+      "description": "Съдържа нитритна осолителна сол и нитрат"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с усилвател на вкуса",
+      "description": "Съдържа усилватели на вкуса"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с фосфат",
+      "description": "Съдържа фосфат"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "серифициран",
+      "description": "Съдържа серен диоксид или сулфити"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "почернен",
+      "description": "Почернен за визуален ефект"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "восъчно покритие",
+      "description": "Повърхност, покрита с восък за консервация"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с подсладители",
+      "description": "Съдържа подсладители"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "съдържа източник на фенилаланин",
+      "description": "Съдържа източник на фенилаланин"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "прекомерната консумация може да има разхлабителен ефект",
+      "description": "Прекомерната консумация може да има разхлабителен ефект"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "съдържа кофеин",
+      "description": "Съдържа кофеин"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "съдържа хинин",
+      "description": "Съдържа хинин"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "може да повлияе неблагоприятно активността и вниманието на децата",
+      "description": "Може да повлияе неблагоприятно активността и вниманието на децата"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "с млечен протеин",
+      "description": "Съдържа млечен протеин"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "със сурими",
+      "description": "Съдържа сурими"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "съставено от парчета месо",
+      "description": "Съставено от парчета месо"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "съставено от парчета риба",
+      "description": "Съставено от парчета риба"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "размразено",
+      "description": "Размразено от дълбоко замразено състояние"
+    }
+  ],
+  "fallbacks": []
+}

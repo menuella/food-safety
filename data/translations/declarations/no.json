@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "med fargestoff",
+    "description": "Inneholder fargestoffer"
+  },
+  "PRESERVATIVES": {
+    "name": "med konserveringsmiddel",
+    "description": "Inneholder konserveringsmidler"
+  },
+  "ANTIOXIDANTS": {
+    "name": "med antioksidant",
+    "description": "Inneholder antioksidanter"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "med nitritt-modningssalt",
+    "description": "Inneholder nitritt-modningssalt"
+  },
+  "NITRATE": {
+    "name": "med nitrat",
+    "description": "Inneholder nitrat (konservering)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "med nitritt-modningssalt og nitrat",
+    "description": "Inneholder nitritt-modningssalt og nitrat"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "med smaksforsterker",
+    "description": "Inneholder smaksforsterkere"
+  },
+  "PHOSPHATE": {
+    "name": "med fosfat",
+    "description": "Inneholder fosfat"
+  },
+  "SULPHURED": {
+    "name": "svovelbehandlet",
+    "description": "Inneholder svoveldioksid eller sulfitter"
+  },
+  "BLACKENED": {
+    "name": "svertet",
+    "description": "Svertet for visuell effekt"
+  },
+  "WAXED": {
+    "name": "vokset",
+    "description": "Overflate vokset for konservering"
+  },
+  "SWEETENERS": {
+    "name": "med søtningsstoffer",
+    "description": "Inneholder søtningsstoffer"
+  },
+  "PHENYLALANINE": {
+    "name": "inneholder en kilde til fenylalanin",
+    "description": "Inneholder en kilde til fenylalanin"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "kan ha avførende virkning ved stort inntak",
+    "description": "Kan ha avførende virkning ved stort inntak"
+  },
+  "CAFFEINE": {
+    "name": "inneholder koffein",
+    "description": "Inneholder koffein"
+  },
+  "QUININE": {
+    "name": "inneholder kinin",
+    "description": "Inneholder kinin"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "kan påvirke aktivitet og oppmerksomhet hos barn negativt",
+    "description": "Kan påvirke aktivitet og oppmerksomhet hos barn negativt"
+  },
+  "MILK_PROTEIN": {
+    "name": "med melkeprotein",
+    "description": "Inneholder melkeprotein"
+  },
+  "SURIMI": {
+    "name": "med surimi",
+    "description": "Inneholder surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "sammensatt av kjøttstykker",
+    "description": "Sammensatt av kjøttstykker"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "sammensatt av fiskestykker",
+    "description": "Sammensatt av fiskestykker"
+  },
+  "DEFROSTED": {
+    "name": "tint",
+    "description": "Tint fra dypfryst tilstand"
+  }
+}

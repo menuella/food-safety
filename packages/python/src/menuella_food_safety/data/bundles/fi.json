@@ -1,0 +1,415 @@
+{
+  "locale": "fi",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ruis",
+      "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+      "description": "Ruis ja ruistuotteet"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ohra",
+      "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+      "description": "Ohra ja ohratuotteet"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Emmervehnä",
+      "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+      "description": "Emmervehnä ja siitä valmistetut tuotteet"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Yksijyvävehnä",
+      "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+      "description": "Yksijyvävehnä ja siitä valmistetut tuotteet"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Speltti",
+      "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+      "description": "Speltti ja spelttituotteet"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Vehnä",
+      "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+      "description": "Vehnä ja vehnätuotteet"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Kaura",
+      "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+      "description": "Kaura ja kauratuotteet"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Khorasanvehnä (Kamut)",
+      "declaration": "Sisältää gluteenia sisältäviä viljoja ja niistä valmistettuja tuotteita",
+      "description": "Khorasanvehnä ja siitä valmistetut tuotteet"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Äyriäiset",
+      "declaration": "Sisältää äyriäisiä ja niistä valmistettuja tuotteita",
+      "description": "Äyriäiset kuten katkaravut, ravut jne."
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Kananmuna",
+      "declaration": "Sisältää munaa ja siitä valmistettuja tuotteita",
+      "description": "Kananmuna ja munatuotteet"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Kala",
+      "declaration": "Sisältää kalaa ja siitä valmistettuja tuotteita",
+      "description": "Kala ja kalatuotteet"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Maapähkinä",
+      "declaration": "Sisältää maapähkinää ja siitä valmistettuja tuotteita",
+      "description": "Maapähkinä ja maapähkinätuotteet"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Soija",
+      "declaration": "Sisältää soijaa ja siitä valmistettuja tuotteita",
+      "description": "Soija ja soijatuotteet"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Maito (mukaan lukien laktoosi)",
+      "declaration": "Sisältää maitoa ja siitä valmistettuja tuotteita (mukaan lukien laktoosi)",
+      "description": "Maito ja maitotuotteet (mukaan lukien laktoosi)"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Makadamiapähkinät",
+      "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+      "description": "Makadamiapähkinät ja niistä valmistetut tuotteet"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Mantelit",
+      "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+      "description": "Mantelit ja manteliuotteet"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Parapähkinät",
+      "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+      "description": "Parapähkinät ja niistä valmistetut tuotteet"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pekaanipähkinät",
+      "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+      "description": "Pekaanipähkinät ja niistä valmistetut tuotteet"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pistaasipähkinät",
+      "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+      "description": "Pistaasipähkinät ja niistä valmistetut tuotteet"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Saksanpähkinät",
+      "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+      "description": "Saksanpähkinät ja saksanpähkinätuotteet"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Cashewpähkinät",
+      "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+      "description": "Cashewpähkinät ja niistä valmistetut tuotteet"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Hasselpähkinät",
+      "declaration": "Sisältää pähkinöitä ja niistä valmistettuja tuotteita",
+      "description": "Hasselpähkinät ja niistä valmistetut tuotteet"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Selleri",
+      "declaration": "Sisältää selleriä ja siitä valmistettuja tuotteita",
+      "description": "Selleri ja sellerituotteet"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Sinappi",
+      "declaration": "Sisältää sinappia ja siitä valmistettuja tuotteita",
+      "description": "Sinappi ja sinappituotteet"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Seesaminsiemenet",
+      "declaration": "Sisältää seesaminsiemeniä ja niistä valmistettuja tuotteita",
+      "description": "Seesaminsiemenet ja seesamituotteet"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Rikkidioksidi ja sulfiitit",
+      "declaration": "Sisältää rikkidioksidia ja sulfiitteja",
+      "description": "Rikkidioksidi ja sulfiitit"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Lupiini",
+      "declaration": "Sisältää lupiinia ja siitä valmistettuja tuotteita",
+      "description": "Lupiini ja lupiinituotteet"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Nilviäiset",
+      "declaration": "Sisältää nilviäisiä ja niistä valmistettuja tuotteita",
+      "description": "Nilviäiset kuten etanat, simpukat jne."
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sisältää väriainetta",
+      "description": "Sisältää elintarvikeväriaineita"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sisältää säilöntäainetta",
+      "description": "Sisältää säilöntäaineita"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sisältää hapettumisenestoainetta",
+      "description": "Sisältää hapettumisenestoaineita"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sisältää nitriittiä sisältävää suolaustavainetta",
+      "description": "Sisältää nitriittiä sisältävää suolaustavainetta"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sisältää nitraattia",
+      "description": "Sisältää nitraattia (säilöntä)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sisältää nitriittisuolaa ja nitraattia",
+      "description": "Sisältää nitriittisuolaa ja nitraattia"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sisältää arominvahventeita",
+      "description": "Sisältää arominvahventeita"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sisältää fosfaattia",
+      "description": "Sisältää fosfaattia"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "rikitetty",
+      "description": "Sisältää rikkidioksidia tai sulfiitteja"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "mustaksi värjätty",
+      "description": "Mustaksi värjätty visuaalista vaikutusta varten"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "vahattu",
+      "description": "Pinta vahattu säilyvyyden vuoksi"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sisältää makeutusaineita",
+      "description": "Sisältää makeutusaineita"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sisältää fenyylialaniinin lähteen",
+      "description": "Sisältää fenyylialaniinin lähteen"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "liiallinen nauttiminen saattaa aiheuttaa laksatiivisen vaikutuksen",
+      "description": "Liiallinen nauttiminen saattaa aiheuttaa laksatiivisen vaikutuksen"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "sisältää kofeiinia",
+      "description": "Sisältää kofeiinia"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "sisältää kiniiniä",
+      "description": "Sisältää kiniiniä"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "saattaa vaikuttaa kielteisesti lasten aktiivisuuteen ja tarkkaavaisuuteen",
+      "description": "Saattaa vaikuttaa kielteisesti lasten aktiivisuuteen ja tarkkaavaisuuteen"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "sisältää maitoproteiinia",
+      "description": "Sisältää maitoproteiinia"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "sisältää surimia",
+      "description": "Sisältää surimia"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "koottu lihapalasista",
+      "description": "Koottu lihapalasista"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "koottu kalapalasista",
+      "description": "Koottu kalapalasista"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "sulatettu",
+      "description": "Sulatettu pakastetusta tilasta"
+    }
+  ],
+  "fallbacks": []
+}

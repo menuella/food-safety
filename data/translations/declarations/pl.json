@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "z barwnikiem",
+    "description": "Zawiera barwniki spożywcze"
+  },
+  "PRESERVATIVES": {
+    "name": "z konserwantem",
+    "description": "Zawiera konserwanty"
+  },
+  "ANTIOXIDANTS": {
+    "name": "z przeciwutleniaczem",
+    "description": "Zawiera przeciwutleniacze"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "z peklosolą",
+    "description": "Zawiera peklosól (azotyn)"
+  },
+  "NITRATE": {
+    "name": "z azotanem",
+    "description": "Zawiera azotan (konserwant)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "z peklosolą i azotanem",
+    "description": "Zawiera peklosól i azotan"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "ze wzmacniaczem smaku",
+    "description": "Zawiera wzmacniacze smaku"
+  },
+  "PHOSPHATE": {
+    "name": "z fosforanem",
+    "description": "Zawiera fosforany"
+  },
+  "SULPHURED": {
+    "name": "siarkowany",
+    "description": "Zawiera dwutlenek siarki lub siarczyny"
+  },
+  "BLACKENED": {
+    "name": "barwiony na czarno",
+    "description": "Barwiony na czarno dla efektu wizualnego"
+  },
+  "WAXED": {
+    "name": "woskowany",
+    "description": "Powierzchnia woskowana w celu konserwacji"
+  },
+  "SWEETENERS": {
+    "name": "z substancjami słodzącymi",
+    "description": "Zawiera substancje słodzące"
+  },
+  "PHENYLALANINE": {
+    "name": "zawiera źródło fenyloalaniny",
+    "description": "Zawiera źródło fenyloalaniny"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "przy nadmiernym spożyciu może mieć działanie przeczyszczające",
+    "description": "Nadmierne spożycie może mieć działanie przeczyszczające"
+  },
+  "CAFFEINE": {
+    "name": "zawiera kofeinę",
+    "description": "Zawiera kofeinę"
+  },
+  "QUININE": {
+    "name": "zawiera chininę",
+    "description": "Zawiera chininę"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "może wpływać na aktywność i skupienie uwagi u dzieci",
+    "description": "Może niekorzystnie wpływać na aktywność i skupienie uwagi u dzieci"
+  },
+  "MILK_PROTEIN": {
+    "name": "z białkiem mleka",
+    "description": "Zawiera białko mleka"
+  },
+  "SURIMI": {
+    "name": "z surimi",
+    "description": "Zawiera surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "składany z kawałków mięsa",
+    "description": "Składany z kawałków mięsa"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "składany z kawałków ryby",
+    "description": "Składany z kawałków ryby"
+  },
+  "DEFROSTED": {
+    "name": "rozmrożony",
+    "description": "Rozmrożony ze stanu głęboko mrożonego"
+  }
+}

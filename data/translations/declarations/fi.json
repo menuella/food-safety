@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "sisältää väriainetta",
+    "description": "Sisältää elintarvikeväriaineita"
+  },
+  "PRESERVATIVES": {
+    "name": "sisältää säilöntäainetta",
+    "description": "Sisältää säilöntäaineita"
+  },
+  "ANTIOXIDANTS": {
+    "name": "sisältää hapettumisenestoainetta",
+    "description": "Sisältää hapettumisenestoaineita"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "sisältää nitriittiä sisältävää suolaustavainetta",
+    "description": "Sisältää nitriittiä sisältävää suolaustavainetta"
+  },
+  "NITRATE": {
+    "name": "sisältää nitraattia",
+    "description": "Sisältää nitraattia (säilöntä)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "sisältää nitriittisuolaa ja nitraattia",
+    "description": "Sisältää nitriittisuolaa ja nitraattia"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "sisältää arominvahventeita",
+    "description": "Sisältää arominvahventeita"
+  },
+  "PHOSPHATE": {
+    "name": "sisältää fosfaattia",
+    "description": "Sisältää fosfaattia"
+  },
+  "SULPHURED": {
+    "name": "rikitetty",
+    "description": "Sisältää rikkidioksidia tai sulfiitteja"
+  },
+  "BLACKENED": {
+    "name": "mustaksi värjätty",
+    "description": "Mustaksi värjätty visuaalista vaikutusta varten"
+  },
+  "WAXED": {
+    "name": "vahattu",
+    "description": "Pinta vahattu säilyvyyden vuoksi"
+  },
+  "SWEETENERS": {
+    "name": "sisältää makeutusaineita",
+    "description": "Sisältää makeutusaineita"
+  },
+  "PHENYLALANINE": {
+    "name": "sisältää fenyylialaniinin lähteen",
+    "description": "Sisältää fenyylialaniinin lähteen"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "liiallinen nauttiminen saattaa aiheuttaa laksatiivisen vaikutuksen",
+    "description": "Liiallinen nauttiminen saattaa aiheuttaa laksatiivisen vaikutuksen"
+  },
+  "CAFFEINE": {
+    "name": "sisältää kofeiinia",
+    "description": "Sisältää kofeiinia"
+  },
+  "QUININE": {
+    "name": "sisältää kiniiniä",
+    "description": "Sisältää kiniiniä"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "saattaa vaikuttaa kielteisesti lasten aktiivisuuteen ja tarkkaavaisuuteen",
+    "description": "Saattaa vaikuttaa kielteisesti lasten aktiivisuuteen ja tarkkaavaisuuteen"
+  },
+  "MILK_PROTEIN": {
+    "name": "sisältää maitoproteiinia",
+    "description": "Sisältää maitoproteiinia"
+  },
+  "SURIMI": {
+    "name": "sisältää surimia",
+    "description": "Sisältää surimia"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "koottu lihapalasista",
+    "description": "Koottu lihapalasista"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "koottu kalapalasista",
+    "description": "Koottu kalapalasista"
+  },
+  "DEFROSTED": {
+    "name": "sulatettu",
+    "description": "Sulatettu pakastetusta tilasta"
+  }
+}

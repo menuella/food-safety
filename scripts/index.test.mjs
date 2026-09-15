@@ -33,10 +33,20 @@ test("every locale resolves to its own bundle", () => {
   }
 })
 
-test("labels actually differ between locales", () => {
+test("locales actually differ from each other", () => {
   // Guards against every bundle being generated from the same language.
-  const names = LOCALES.map((l) => getDisclosures(l).allergens[0].name)
-  assert.equal(new Set(names).size, names.length, `duplicate labels: ${names}`)
+  // Fingerprint each locale by its full allergen-name list rather than one
+  // entry: two locales that share an incidental word (Danish and Norwegian
+  // both call RYE "Rug") are clearly still different files, but two locales
+  // sharing every name would be an accidental copy.
+  const fingerprints = LOCALES.map((l) =>
+    getDisclosures(l).allergens.map((a) => a.name).join("|"),
+  )
+  assert.equal(
+    new Set(fingerprints).size,
+    fingerprints.length,
+    "at least two locales share every allergen label",
+  )
 })
 
 // Pick a two-letter code this package does not ship. Sweeps every "aa"…"zz" and

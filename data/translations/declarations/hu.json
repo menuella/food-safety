@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "színezékkel",
+    "description": "Élelmiszer-színezékeket tartalmaz"
+  },
+  "PRESERVATIVES": {
+    "name": "tartósítószerrel",
+    "description": "Tartósítószereket tartalmaz"
+  },
+  "ANTIOXIDANTS": {
+    "name": "antioxidánssal",
+    "description": "Antioxidánsokat tartalmaz"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "pácolósóval (nitrittel)",
+    "description": "Pácolósót (nitritet) tartalmaz"
+  },
+  "NITRATE": {
+    "name": "nitráttal",
+    "description": "Nitrátot tartalmaz (tartósítás)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "pácolósóval és nitráttal",
+    "description": "Pácolósót és nitrátot tartalmaz"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "ízfokozóval",
+    "description": "Ízfokozókat tartalmaz"
+  },
+  "PHOSPHATE": {
+    "name": "foszfáttal",
+    "description": "Foszfátot tartalmaz"
+  },
+  "SULPHURED": {
+    "name": "kénezett",
+    "description": "Kén-dioxidot vagy szulfitokat tartalmaz"
+  },
+  "BLACKENED": {
+    "name": "megfeketített",
+    "description": "Vizuális hatás céljából megfeketített"
+  },
+  "WAXED": {
+    "name": "viaszolt",
+    "description": "Felület tartósítás céljából viaszolva"
+  },
+  "SWEETENERS": {
+    "name": "édesítőszerekkel",
+    "description": "Édesítőszereket tartalmaz"
+  },
+  "PHENYLALANINE": {
+    "name": "fenilalanin-forrást tartalmaz",
+    "description": "Fenilalanin-forrást tartalmaz"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "túlzott fogyasztás esetén hashajtó hatású lehet",
+    "description": "Túlzott fogyasztás esetén hashajtó hatású lehet"
+  },
+  "CAFFEINE": {
+    "name": "koffeintartalmú",
+    "description": "Koffeint tartalmaz"
+  },
+  "QUININE": {
+    "name": "kinintartalmú",
+    "description": "Kinint tartalmaz"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "hátrányosan befolyásolhatja a gyermekek aktivitását és figyelmét",
+    "description": "Hátrányosan befolyásolhatja a gyermekek aktivitását és figyelmét"
+  },
+  "MILK_PROTEIN": {
+    "name": "tejfehérjével",
+    "description": "Tejfehérjét tartalmaz"
+  },
+  "SURIMI": {
+    "name": "szurimival",
+    "description": "Szurimit tartalmaz"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "húsdarabokból összeállítva",
+    "description": "Húsdarabokból összeállítva"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "haldarabokból összeállítva",
+    "description": "Haldarabokból összeállítva"
+  },
+  "DEFROSTED": {
+    "name": "felolvasztott",
+    "description": "Mélyfagyasztott állapotból felolvasztva"
+  }
+}
