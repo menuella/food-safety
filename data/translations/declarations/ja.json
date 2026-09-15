@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "着色料入り",
+    "description": "食用着色料を含みます"
+  },
+  "PRESERVATIVES": {
+    "name": "保存料入り",
+    "description": "保存料を含みます"
+  },
+  "ANTIOXIDANTS": {
+    "name": "酸化防止剤入り",
+    "description": "酸化防止剤を含みます"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "亜硝酸塩漬け塩使用",
+    "description": "亜硝酸塩漬け塩を含みます"
+  },
+  "NITRATE": {
+    "name": "硝酸塩入り",
+    "description": "硝酸塩を含みます（保存用）"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "亜硝酸塩漬け塩および硝酸塩入り",
+    "description": "亜硝酸塩漬け塩および硝酸塩を含みます"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "うま味調味料入り",
+    "description": "うま味調味料を含みます"
+  },
+  "PHOSPHATE": {
+    "name": "リン酸塩入り",
+    "description": "リン酸塩を含みます"
+  },
+  "SULPHURED": {
+    "name": "硫黄処理済み",
+    "description": "二酸化硫黄または亜硫酸塩を含みます"
+  },
+  "BLACKENED": {
+    "name": "着色処理により黒化",
+    "description": "見た目の効果のために黒く着色されています"
+  },
+  "WAXED": {
+    "name": "ワックス処理済み",
+    "description": "保存のためにワックス処理された表面"
+  },
+  "SWEETENERS": {
+    "name": "甘味料入り",
+    "description": "甘味料を含みます"
+  },
+  "PHENYLALANINE": {
+    "name": "フェニルアラニン源を含む",
+    "description": "フェニルアラニン源を含みます"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "過剰摂取により緩下作用の可能性あり",
+    "description": "過剰に摂取すると緩下作用を引き起こすことがあります"
+  },
+  "CAFFEINE": {
+    "name": "カフェイン含有",
+    "description": "カフェインを含みます"
+  },
+  "QUININE": {
+    "name": "キニーネ含有",
+    "description": "キニーネを含みます"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "小児の活動および注意力に影響する可能性あり",
+    "description": "小児の活動および注意力に影響することがあります"
+  },
+  "MILK_PROTEIN": {
+    "name": "乳タンパク質入り",
+    "description": "乳タンパク質を含みます"
+  },
+  "SURIMI": {
+    "name": "すり身入り",
+    "description": "すり身を含みます"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "肉片から再構成",
+    "description": "肉片から再構成されています"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "魚片から再構成",
+    "description": "魚片から再構成されています"
+  },
+  "DEFROSTED": {
+    "name": "解凍済み",
+    "description": "冷凍状態から解凍されています"
+  }
+}

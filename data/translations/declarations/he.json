@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "מכיל צבע מאכל",
+    "description": "מכיל חומרי צבע מאכל"
+  },
+  "PRESERVATIVES": {
+    "name": "מכיל חומר משמר",
+    "description": "מכיל חומרים משמרים"
+  },
+  "ANTIOXIDANTS": {
+    "name": "מכיל נוגד חמצון",
+    "description": "מכיל נוגדי חמצון"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "מכיל מלח כבישה עם ניטריט",
+    "description": "מכיל מלח כבישה עם ניטריט"
+  },
+  "NITRATE": {
+    "name": "מכיל חנקה",
+    "description": "מכיל חנקה (לשימור)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "מכיל מלח כבישה עם ניטריט וחנקה",
+    "description": "מכיל מלח כבישה עם ניטריט וחנקה"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "מכיל משפר טעם",
+    "description": "מכיל משפרי טעם"
+  },
+  "PHOSPHATE": {
+    "name": "מכיל זרחה",
+    "description": "מכיל זרחה"
+  },
+  "SULPHURED": {
+    "name": "טופל בגופרית",
+    "description": "מכיל גופרית דו־חמצנית או סולפיטים"
+  },
+  "BLACKENED": {
+    "name": "הושחר",
+    "description": "הושחר לצורך אפקט חזותי"
+  },
+  "WAXED": {
+    "name": "מצופה בשעווה",
+    "description": "משטח מצופה בשעווה לשימור"
+  },
+  "SWEETENERS": {
+    "name": "מכיל ממתיקים",
+    "description": "מכיל ממתיקים"
+  },
+  "PHENYLALANINE": {
+    "name": "מכיל מקור לפנילאלנין",
+    "description": "מכיל מקור לפנילאלנין"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "עלול לגרום להשפעה משלשלת בצריכה מוגזמת",
+    "description": "עלול לגרום להשפעה משלשלת בצריכה מוגזמת"
+  },
+  "CAFFEINE": {
+    "name": "מכיל קפאין",
+    "description": "מכיל קפאין"
+  },
+  "QUININE": {
+    "name": "מכיל כינין",
+    "description": "מכיל כינין"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "עלול להשפיע על הפעילות והריכוז אצל ילדים",
+    "description": "עלול להשפיע על הפעילות והריכוז אצל ילדים"
+  },
+  "MILK_PROTEIN": {
+    "name": "מכיל חלבון חלב",
+    "description": "מכיל חלבון חלב"
+  },
+  "SURIMI": {
+    "name": "מכיל סורימי",
+    "description": "מכיל סורימי"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "הורכב מחתיכות בשר",
+    "description": "הורכב מחתיכות בשר"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "הורכב מחתיכות דג",
+    "description": "הורכב מחתיכות דג"
+  },
+  "DEFROSTED": {
+    "name": "הופשר",
+    "description": "הופשר ממצב הקפאה"
+  }
+}

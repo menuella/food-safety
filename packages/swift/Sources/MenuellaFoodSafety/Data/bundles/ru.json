@@ -1,0 +1,415 @@
+{
+  "locale": "ru",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Рожь",
+      "declaration": "Содержит злаки, содержащие глютен, и продукты из них",
+      "description": "Рожь и продукты из ржи"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ячмень",
+      "declaration": "Содержит злаки, содержащие глютен, и продукты из них",
+      "description": "Ячмень и продукты из ячменя"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Полба двузернянка (эммер)",
+      "declaration": "Содержит злаки, содержащие глютен, и продукты из них",
+      "description": "Полба двузернянка и продукты из неё"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Однозернянка",
+      "declaration": "Содержит злаки, содержащие глютен, и продукты из них",
+      "description": "Однозернянка и продукты из неё"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Спельта",
+      "declaration": "Содержит злаки, содержащие глютен, и продукты из них",
+      "description": "Спельта и продукты из спельты"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Пшеница",
+      "declaration": "Содержит злаки, содержащие глютен, и продукты из них",
+      "description": "Пшеница и продукты из пшеницы"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Овёс",
+      "declaration": "Содержит злаки, содержащие глютен, и продукты из них",
+      "description": "Овёс и продукты из овса"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Хорасан (камут)",
+      "declaration": "Содержит злаки, содержащие глютен, и продукты из них",
+      "description": "Хорасан и продукты из него"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Ракообразные",
+      "declaration": "Содержит ракообразных и продукты из них",
+      "description": "Включая ракообразных, таких как креветки, крабы и т. п."
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Яйца",
+      "declaration": "Содержит яйца и продукты из яиц",
+      "description": "Включая яйца и продукты из яиц"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Рыба",
+      "declaration": "Содержит рыбу и продукты из рыбы",
+      "description": "Включая рыбу и продукты из рыбы"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Арахис",
+      "declaration": "Содержит арахис и продукты из арахиса",
+      "description": "Включая арахис и продукты из арахиса"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Соя",
+      "declaration": "Содержит сою и продукты из сои",
+      "description": "Включая соевые бобы и продукты из сои"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Молоко (включая лактозу)",
+      "declaration": "Содержит молоко и молочные продукты (включая лактозу)",
+      "description": "Включая молоко и продукты, содержащие лактозу"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Орехи макадамия",
+      "declaration": "Содержит орехи и продукты из них",
+      "description": "Орехи макадамия и продукты из них"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Миндаль",
+      "declaration": "Содержит орехи и продукты из них",
+      "description": "Миндаль и продукты из миндаля"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Бразильский орех",
+      "declaration": "Содержит орехи и продукты из них",
+      "description": "Бразильский орех и продукты из него"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Пекан",
+      "declaration": "Содержит орехи и продукты из них",
+      "description": "Пекан и продукты из пекана"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Фисташки",
+      "declaration": "Содержит орехи и продукты из них",
+      "description": "Фисташки и продукты из фисташек"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Грецкие орехи",
+      "declaration": "Содержит орехи и продукты из них",
+      "description": "Грецкие орехи и продукты из них"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Кешью",
+      "declaration": "Содержит орехи и продукты из них",
+      "description": "Кешью и продукты из кешью"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Фундук",
+      "declaration": "Содержит орехи и продукты из них",
+      "description": "Фундук и продукты из фундука"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Сельдерей",
+      "declaration": "Содержит сельдерей и продукты из сельдерея",
+      "description": "Включая сельдерей и продукты из сельдерея"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Горчица",
+      "declaration": "Содержит горчицу и продукты из горчицы",
+      "description": "Включая горчицу и продукты из горчицы"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Семена кунжута",
+      "declaration": "Содержит семена кунжута и продукты из них",
+      "description": "Включая семена кунжута и продукты из них"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Диоксид серы и сульфиты",
+      "declaration": "Содержит диоксид серы и сульфиты",
+      "description": "Включая диоксид серы и сульфиты"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Люпин",
+      "declaration": "Содержит люпин и продукты из люпина",
+      "description": "Включая люпин и продукты из люпина"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Моллюски",
+      "declaration": "Содержит моллюсков и продукты из них",
+      "description": "Включая улиток, мидий и других моллюсков"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с красителем",
+      "description": "Содержит пищевые красители"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с консервантом",
+      "description": "Содержит консерванты"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с антиоксидантом",
+      "description": "Содержит антиоксиданты"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с нитритной посолочной солью",
+      "description": "Содержит нитритную посолочную соль"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с нитратом",
+      "description": "Содержит нитрат (консервант)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с нитритной посолочной солью и нитратом",
+      "description": "Содержит нитритную посолочную соль и нитрат"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с усилителем вкуса",
+      "description": "Содержит усилители вкуса"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с фосфатом",
+      "description": "Содержит фосфат"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "обработано серой",
+      "description": "Содержит диоксид серы или сульфиты"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "окрашено в чёрный",
+      "description": "Окрашено в чёрный для визуального эффекта"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "покрыто воском",
+      "description": "Поверхность покрыта воском для сохранности"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "с подсластителями",
+      "description": "Содержит подсластители"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "содержит источник фенилаланина",
+      "description": "Содержит источник фенилаланина"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "при чрезмерном употреблении может оказывать слабительное действие",
+      "description": "При чрезмерном употреблении может оказывать слабительное действие"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "содержит кофеин",
+      "description": "Содержит кофеин"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "содержит хинин",
+      "description": "Содержит хинин"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "может влиять на активность и внимание у детей",
+      "description": "Может влиять на активность и внимание у детей"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "с молочным белком",
+      "description": "Содержит молочный белок"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "с сурими",
+      "description": "Содержит сурими"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "восстановлено из кусочков мяса",
+      "description": "Восстановлено из кусочков мяса"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "восстановлено из кусочков рыбы",
+      "description": "Восстановлено из кусочков рыбы"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "размороженное",
+      "description": "Размороженное из глубокозамороженного состояния"
+    }
+  ],
+  "fallbacks": []
+}

@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "ライ麦",
+    "declaration": "グルテンを含む穀物を含みます",
+    "description": "ライ麦およびライ麦製品"
+  },
+  "BARLEY": {
+    "name": "大麦",
+    "declaration": "グルテンを含む穀物を含みます",
+    "description": "大麦および大麦製品"
+  },
+  "EMMER": {
+    "name": "エンマー小麦",
+    "declaration": "グルテンを含む穀物を含みます",
+    "description": "エンマー小麦およびその製品"
+  },
+  "EINKORN": {
+    "name": "アインコルン小麦",
+    "declaration": "グルテンを含む穀物を含みます",
+    "description": "アインコルン小麦およびその製品"
+  },
+  "SPELT": {
+    "name": "スペルト小麦",
+    "declaration": "グルテンを含む穀物を含みます",
+    "description": "スペルト小麦およびその製品"
+  },
+  "WHEAT": {
+    "name": "小麦",
+    "declaration": "グルテンを含む穀物を含みます",
+    "description": "小麦および小麦製品"
+  },
+  "OATS": {
+    "name": "オーツ麦",
+    "declaration": "グルテンを含む穀物を含みます",
+    "description": "オーツ麦およびオーツ麦製品"
+  },
+  "KHORASAN": {
+    "name": "ホラーサン小麦（カムット）",
+    "declaration": "グルテンを含む穀物を含みます",
+    "description": "ホラーサン小麦およびその製品"
+  },
+  "CRUSTACEANS": {
+    "name": "甲殻類",
+    "declaration": "甲殻類および甲殻類製品を含みます",
+    "description": "エビ、カニなどの甲殻類を含みます"
+  },
+  "EGGS": {
+    "name": "卵",
+    "declaration": "卵および卵製品を含みます",
+    "description": "卵および卵製品を含みます"
+  },
+  "FISH": {
+    "name": "魚",
+    "declaration": "魚および魚製品を含みます",
+    "description": "魚および魚製品を含みます"
+  },
+  "PEANUTS": {
+    "name": "落花生",
+    "declaration": "落花生および落花生製品を含みます",
+    "description": "落花生および落花生製品を含みます"
+  },
+  "SOY": {
+    "name": "大豆",
+    "declaration": "大豆および大豆製品を含みます",
+    "description": "大豆および大豆製品を含みます"
+  },
+  "MILK": {
+    "name": "乳（乳糖を含む）",
+    "declaration": "乳および乳製品（乳糖を含む）を含みます",
+    "description": "乳および乳糖含有製品を含みます"
+  },
+  "MACADAMIA": {
+    "name": "マカダミアナッツ",
+    "declaration": "木の実類を含みます",
+    "description": "マカダミアナッツおよびその製品"
+  },
+  "ALMONDS": {
+    "name": "アーモンド",
+    "declaration": "木の実類を含みます",
+    "description": "アーモンドおよびその製品"
+  },
+  "BRAZIL_NUTS": {
+    "name": "ブラジルナッツ",
+    "declaration": "木の実類を含みます",
+    "description": "ブラジルナッツおよびその製品"
+  },
+  "PECANS": {
+    "name": "ピーカンナッツ",
+    "declaration": "木の実類を含みます",
+    "description": "ピーカンナッツおよびその製品"
+  },
+  "PISTACHIOS": {
+    "name": "ピスタチオ",
+    "declaration": "木の実類を含みます",
+    "description": "ピスタチオおよびその製品"
+  },
+  "WALNUTS": {
+    "name": "クルミ",
+    "declaration": "木の実類を含みます",
+    "description": "クルミおよびその製品"
+  },
+  "CASHEWS": {
+    "name": "カシューナッツ",
+    "declaration": "木の実類を含みます",
+    "description": "カシューナッツおよびその製品"
+  },
+  "HAZELNUTS": {
+    "name": "ヘーゼルナッツ",
+    "declaration": "木の実類を含みます",
+    "description": "ヘーゼルナッツおよびその製品"
+  },
+  "CELERY": {
+    "name": "セロリ",
+    "declaration": "セロリおよびセロリ製品を含みます",
+    "description": "セロリおよびセロリ製品を含みます"
+  },
+  "MUSTARD": {
+    "name": "マスタード",
+    "declaration": "マスタードおよびマスタード製品を含みます",
+    "description": "マスタードおよびマスタード製品を含みます"
+  },
+  "SESAME": {
+    "name": "ごま",
+    "declaration": "ごま種子およびごま製品を含みます",
+    "description": "ごま種子およびごま製品を含みます"
+  },
+  "SULPHITES": {
+    "name": "二酸化硫黄および亜硫酸塩",
+    "declaration": "二酸化硫黄および亜硫酸塩を含みます",
+    "description": "二酸化硫黄および亜硫酸塩を含みます"
+  },
+  "LUPINS": {
+    "name": "ルピナス",
+    "declaration": "ルピナスおよびルピナス製品を含みます",
+    "description": "ルピナスおよびルピナス製品を含みます"
+  },
+  "MOLLUSCS": {
+    "name": "軟体動物",
+    "declaration": "軟体動物および軟体動物製品を含みます",
+    "description": "カタツムリ、貝類などの軟体動物を含みます"
+  }
+}

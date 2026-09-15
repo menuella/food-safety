@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "색소 함유",
+    "description": "식용 색소가 포함되어 있습니다"
+  },
+  "PRESERVATIVES": {
+    "name": "보존료 함유",
+    "description": "보존료가 포함되어 있습니다"
+  },
+  "ANTIOXIDANTS": {
+    "name": "산화방지제 함유",
+    "description": "산화방지제가 포함되어 있습니다"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "아질산염 절임 소금 사용",
+    "description": "아질산염 절임 소금이 포함되어 있습니다"
+  },
+  "NITRATE": {
+    "name": "질산염 함유",
+    "description": "질산염이 포함되어 있습니다(보존용)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "아질산염 절임 소금 및 질산염 함유",
+    "description": "아질산염 절임 소금 및 질산염이 포함되어 있습니다"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "향미증진제 함유",
+    "description": "향미증진제가 포함되어 있습니다"
+  },
+  "PHOSPHATE": {
+    "name": "인산염 함유",
+    "description": "인산염이 포함되어 있습니다"
+  },
+  "SULPHURED": {
+    "name": "황 처리됨",
+    "description": "이산화황 또는 아황산염을 함유합니다"
+  },
+  "BLACKENED": {
+    "name": "흑색 처리됨",
+    "description": "시각적 효과를 위해 흑색 처리되었습니다"
+  },
+  "WAXED": {
+    "name": "왁스 처리됨",
+    "description": "보존을 위해 표면에 왁스 처리되었습니다"
+  },
+  "SWEETENERS": {
+    "name": "감미료 함유",
+    "description": "감미료가 포함되어 있습니다"
+  },
+  "PHENYLALANINE": {
+    "name": "페닐알라닌원 함유",
+    "description": "페닐알라닌원을 포함합니다"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "과다 섭취 시 완하 작용 가능",
+    "description": "과다 섭취 시 완하 작용을 유발할 수 있습니다"
+  },
+  "CAFFEINE": {
+    "name": "카페인 함유",
+    "description": "카페인이 포함되어 있습니다"
+  },
+  "QUININE": {
+    "name": "퀴닌 함유",
+    "description": "퀴닌이 포함되어 있습니다"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "어린이의 활동과 주의력에 영향을 줄 수 있음",
+    "description": "어린이의 활동과 주의력에 영향을 줄 수 있습니다"
+  },
+  "MILK_PROTEIN": {
+    "name": "유단백질 함유",
+    "description": "유단백질이 포함되어 있습니다"
+  },
+  "SURIMI": {
+    "name": "수리미 함유",
+    "description": "수리미가 포함되어 있습니다"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "고기 조각으로 재구성",
+    "description": "고기 조각들을 결합하여 재구성한 제품입니다"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "생선 조각으로 재구성",
+    "description": "생선 조각들을 결합하여 재구성한 제품입니다"
+  },
+  "DEFROSTED": {
+    "name": "해동됨",
+    "description": "냉동 상태에서 해동된 제품입니다"
+  }
+}

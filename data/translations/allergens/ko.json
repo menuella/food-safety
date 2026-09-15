@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "호밀",
+    "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+    "description": "호밀 및 호밀 제품"
+  },
+  "BARLEY": {
+    "name": "보리",
+    "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+    "description": "보리 및 보리 제품"
+  },
+  "EMMER": {
+    "name": "엠머 밀",
+    "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+    "description": "엠머 밀 및 그 제품"
+  },
+  "EINKORN": {
+    "name": "아인콘 밀",
+    "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+    "description": "아인콘 밀 및 그 제품"
+  },
+  "SPELT": {
+    "name": "스펠트 밀",
+    "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+    "description": "스펠트 밀 및 그 제품"
+  },
+  "WHEAT": {
+    "name": "밀",
+    "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+    "description": "밀 및 밀 제품"
+  },
+  "OATS": {
+    "name": "귀리",
+    "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+    "description": "귀리 및 귀리 제품"
+  },
+  "KHORASAN": {
+    "name": "호라산 밀(카무트)",
+    "declaration": "글루텐 함유 곡물 및 그 제품이 포함되어 있습니다",
+    "description": "호라산 밀 및 그 제품"
+  },
+  "CRUSTACEANS": {
+    "name": "갑각류",
+    "declaration": "갑각류 및 갑각류 제품이 포함되어 있습니다",
+    "description": "새우, 게 등의 갑각류를 포함합니다"
+  },
+  "EGGS": {
+    "name": "달걀",
+    "declaration": "달걀 및 달걀 제품이 포함되어 있습니다",
+    "description": "달걀 및 달걀 제품을 포함합니다"
+  },
+  "FISH": {
+    "name": "생선",
+    "declaration": "생선 및 어류 제품이 포함되어 있습니다",
+    "description": "생선 및 어류 제품을 포함합니다"
+  },
+  "PEANUTS": {
+    "name": "땅콩",
+    "declaration": "땅콩 및 땅콩 제품이 포함되어 있습니다",
+    "description": "땅콩 및 땅콩 제품을 포함합니다"
+  },
+  "SOY": {
+    "name": "대두",
+    "declaration": "대두 및 대두 제품이 포함되어 있습니다",
+    "description": "대두 및 대두 제품을 포함합니다"
+  },
+  "MILK": {
+    "name": "우유(유당 포함)",
+    "declaration": "우유 및 유제품(유당 포함)이 포함되어 있습니다",
+    "description": "우유 및 유당 함유 제품을 포함합니다"
+  },
+  "MACADAMIA": {
+    "name": "마카다미아",
+    "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+    "description": "마카다미아 및 그 제품"
+  },
+  "ALMONDS": {
+    "name": "아몬드",
+    "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+    "description": "아몬드 및 그 제품"
+  },
+  "BRAZIL_NUTS": {
+    "name": "브라질너트",
+    "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+    "description": "브라질너트 및 그 제품"
+  },
+  "PECANS": {
+    "name": "피칸",
+    "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+    "description": "피칸 및 그 제품"
+  },
+  "PISTACHIOS": {
+    "name": "피스타치오",
+    "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+    "description": "피스타치오 및 그 제품"
+  },
+  "WALNUTS": {
+    "name": "호두",
+    "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+    "description": "호두 및 그 제품"
+  },
+  "CASHEWS": {
+    "name": "캐슈넛",
+    "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+    "description": "캐슈넛 및 그 제품"
+  },
+  "HAZELNUTS": {
+    "name": "헤이즐넛",
+    "declaration": "견과류 및 그 제품이 포함되어 있습니다",
+    "description": "헤이즐넛 및 그 제품"
+  },
+  "CELERY": {
+    "name": "셀러리",
+    "declaration": "셀러리 및 셀러리 제품이 포함되어 있습니다",
+    "description": "셀러리 및 셀러리 제품을 포함합니다"
+  },
+  "MUSTARD": {
+    "name": "겨자",
+    "declaration": "겨자 및 겨자 제품이 포함되어 있습니다",
+    "description": "겨자 및 겨자 제품을 포함합니다"
+  },
+  "SESAME": {
+    "name": "참깨",
+    "declaration": "참깨 및 참깨 제품이 포함되어 있습니다",
+    "description": "참깨 및 참깨 제품을 포함합니다"
+  },
+  "SULPHITES": {
+    "name": "이산화황 및 아황산염",
+    "declaration": "이산화황 및 아황산염이 포함되어 있습니다",
+    "description": "이산화황 및 아황산염을 포함합니다"
+  },
+  "LUPINS": {
+    "name": "루핀콩",
+    "declaration": "루핀콩 및 루핀콩 제품이 포함되어 있습니다",
+    "description": "루핀콩 및 루핀콩 제품을 포함합니다"
+  },
+  "MOLLUSCS": {
+    "name": "연체동물",
+    "declaration": "연체동물 및 연체동물 제품이 포함되어 있습니다",
+    "description": "달팽이, 조개 등의 연체동물을 포함합니다"
+  }
+}
