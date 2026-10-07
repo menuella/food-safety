@@ -58,9 +58,13 @@ jobs:
         with:
           go-version: "1.24"
 
+      # The module path is read from go.mod rather than written here: from v2
+      # on it carries a /vN suffix, and a hard-coded path would ask the proxy
+      # for a module that does not exist.
       - name: Ask the Go proxy to index it
         run: |
           version="${GITHUB_REF_NAME}"
+          module="$(go mod edit -json packages/go/go.mod | jq -r .Module.Path)"
           GOPROXY=https://proxy.golang.org GONOSUMDB="" \
-            go list -m "github.com/menuella/food-safety/packages/go@${version}" || \
+            go list -m "${module}@${version}" || \
             echo "::notice::proxy has not seen the tag yet; it will index on first fetch"

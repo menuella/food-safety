@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Centeio",
+    "declaration": "Contém cereais com glúten e derivados",
+    "description": "Centeio e derivados"
+  },
+  "BARLEY": {
+    "name": "Cevada",
+    "declaration": "Contém cereais com glúten e derivados",
+    "description": "Cevada e derivados"
+  },
+  "EMMER": {
+    "name": "Trigo emmer",
+    "declaration": "Contém cereais com glúten e derivados",
+    "description": "Trigo emmer e derivados"
+  },
+  "EINKORN": {
+    "name": "Trigo einkorn",
+    "declaration": "Contém cereais com glúten e derivados",
+    "description": "Trigo einkorn e derivados"
+  },
+  "SPELT": {
+    "name": "Espelta",
+    "declaration": "Contém cereais com glúten e derivados",
+    "description": "Espelta e derivados"
+  },
+  "WHEAT": {
+    "name": "Trigo",
+    "declaration": "Contém cereais com glúten e derivados",
+    "description": "Trigo e derivados"
+  },
+  "OATS": {
+    "name": "Aveia",
+    "declaration": "Contém cereais com glúten e derivados",
+    "description": "Aveia e derivados"
+  },
+  "KHORASAN": {
+    "name": "Trigo khorasan (Kamut)",
+    "declaration": "Contém cereais com glúten e derivados",
+    "description": "Trigo khorasan e derivados"
+  },
+  "CRUSTACEANS": {
+    "name": "Crustáceos",
+    "declaration": "Contém crustáceos e derivados",
+    "description": "Inclui crustáceos como camarão, caranguejo e lagosta"
+  },
+  "EGGS": {
+    "name": "Ovo",
+    "declaration": "Contém ovos e derivados",
+    "description": "Inclui ovos e derivados"
+  },
+  "FISH": {
+    "name": "Peixe",
+    "declaration": "Contém peixes e derivados",
+    "description": "Inclui peixes e derivados"
+  },
+  "PEANUTS": {
+    "name": "Amendoim",
+    "declaration": "Contém amendoim e derivados",
+    "description": "Amendoim e derivados"
+  },
+  "SOY": {
+    "name": "Soja",
+    "declaration": "Contém soja e derivados",
+    "description": "Soja e derivados"
+  },
+  "MILK": {
+    "name": "Leite (incluindo lactose)",
+    "declaration": "Contém leite e derivados (incluindo lactose)",
+    "description": "Inclui leite e derivados, incluindo lactose"
+  },
+  "MACADAMIA": {
+    "name": "Macadâmia",
+    "declaration": "Contém castanhas, nozes e derivados",
+    "description": "Macadâmia e derivados"
+  },
+  "ALMONDS": {
+    "name": "Amêndoa",
+    "declaration": "Contém castanhas, nozes e derivados",
+    "description": "Amêndoa e derivados"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Castanha-do-pará",
+    "declaration": "Contém castanhas, nozes e derivados",
+    "description": "Castanha-do-pará e derivados"
+  },
+  "PECANS": {
+    "name": "Noz-pecã",
+    "declaration": "Contém castanhas, nozes e derivados",
+    "description": "Noz-pecã e derivados"
+  },
+  "PISTACHIOS": {
+    "name": "Pistache",
+    "declaration": "Contém castanhas, nozes e derivados",
+    "description": "Pistache e derivados"
+  },
+  "WALNUTS": {
+    "name": "Nozes",
+    "declaration": "Contém castanhas, nozes e derivados",
+    "description": "Nozes e derivados"
+  },
+  "CASHEWS": {
+    "name": "Castanha-de-caju",
+    "declaration": "Contém castanhas, nozes e derivados",
+    "description": "Castanha-de-caju e derivados"
+  },
+  "HAZELNUTS": {
+    "name": "Avelã",
+    "declaration": "Contém castanhas, nozes e derivados",
+    "description": "Avelã e derivados"
+  },
+  "CELERY": {
+    "name": "Aipo (salsão)",
+    "declaration": "Contém aipo e derivados",
+    "description": "Aipo e derivados"
+  },
+  "MUSTARD": {
+    "name": "Mostarda",
+    "declaration": "Contém mostarda e derivados",
+    "description": "Mostarda e derivados"
+  },
+  "SESAME": {
+    "name": "Gergelim",
+    "declaration": "Contém gergelim e derivados",
+    "description": "Gergelim e derivados"
+  },
+  "SULPHITES": {
+    "name": "Dióxido de enxofre e sulfitos",
+    "declaration": "Contém dióxido de enxofre e sulfitos",
+    "description": "Inclui dióxido de enxofre e sulfitos"
+  },
+  "LUPINS": {
+    "name": "Tremoço",
+    "declaration": "Contém tremoço e derivados",
+    "description": "Tremoço e derivados"
+  },
+  "MOLLUSCS": {
+    "name": "Moluscos",
+    "declaration": "Contém moluscos e derivados",
+    "description": "Inclui moluscos como lula, polvo, mexilhão e ostra"
+  }
+}

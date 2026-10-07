@@ -1,6 +1,6 @@
 {
   "name": "menuella/food-safety",
-  "description": "Open allergen and additive vocabulary for restaurant menus: 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, icons and six languages.",
+  "description": "Open allergen and additive vocabulary for restaurant menus: 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, icons and 27 languages.",
   "type": "library",
   "license": "MIT",
   "homepage": "https://www.menuella.com/food-safety",

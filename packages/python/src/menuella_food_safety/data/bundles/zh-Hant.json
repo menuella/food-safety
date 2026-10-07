@@ -1,0 +1,415 @@
+{
+  "locale": "zh-Hant",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "黑麥",
+      "declaration": "含有含麩質之穀物及其製品",
+      "description": "黑麥及其製品"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "大麥",
+      "declaration": "含有含麩質之穀物及其製品",
+      "description": "大麥及其製品"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "二粒小麥",
+      "declaration": "含有含麩質之穀物及其製品",
+      "description": "二粒小麥及其製品"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "一粒小麥",
+      "declaration": "含有含麩質之穀物及其製品",
+      "description": "一粒小麥及其製品"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "斯佩爾特小麥",
+      "declaration": "含有含麩質之穀物及其製品",
+      "description": "斯佩爾特小麥及其製品"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "小麥",
+      "declaration": "含有含麩質之穀物及其製品",
+      "description": "小麥及其製品"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "燕麥",
+      "declaration": "含有含麩質之穀物及其製品",
+      "description": "燕麥及其製品"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "呼羅珊小麥（Kamut）",
+      "declaration": "含有含麩質之穀物及其製品",
+      "description": "呼羅珊小麥及其製品"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "甲殼類",
+      "declaration": "含有甲殼類及其製品",
+      "description": "包括蝦、蟹等甲殼類"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "蛋",
+      "declaration": "含有蛋及其製品",
+      "description": "包括蛋及蛋製品"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "魚類",
+      "declaration": "含有魚類及其製品",
+      "description": "包括魚類及魚製品"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "花生",
+      "declaration": "含有花生及其製品",
+      "description": "包括花生及花生製品"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "大豆（黃豆）",
+      "declaration": "含有大豆及其製品",
+      "description": "包括大豆及大豆製品"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "乳（含乳糖）",
+      "declaration": "含有乳及其製品（含乳糖）",
+      "description": "包括乳及乳製品，含乳糖"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "夏威夷豆",
+      "declaration": "含有堅果類及其製品",
+      "description": "夏威夷豆及其製品"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "杏仁果",
+      "declaration": "含有堅果類及其製品",
+      "description": "杏仁果及其製品"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "巴西堅果",
+      "declaration": "含有堅果類及其製品",
+      "description": "巴西堅果及其製品"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "胡桃（美洲山核桃）",
+      "declaration": "含有堅果類及其製品",
+      "description": "胡桃及其製品"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "開心果",
+      "declaration": "含有堅果類及其製品",
+      "description": "開心果及其製品"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "核桃",
+      "declaration": "含有堅果類及其製品",
+      "description": "核桃及其製品"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "腰果",
+      "declaration": "含有堅果類及其製品",
+      "description": "腰果及其製品"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "榛果",
+      "declaration": "含有堅果類及其製品",
+      "description": "榛果及其製品"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "芹菜",
+      "declaration": "含有芹菜及其製品",
+      "description": "包括芹菜及芹菜製品"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "芥末",
+      "declaration": "含有芥末及其製品",
+      "description": "包括芥末及芥末製品"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "芝麻",
+      "declaration": "含有芝麻及其製品",
+      "description": "包括芝麻及芝麻製品"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "二氧化硫及亞硫酸鹽類",
+      "declaration": "含有二氧化硫及亞硫酸鹽類",
+      "description": "包括二氧化硫及亞硫酸鹽類"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "羽扇豆",
+      "declaration": "含有羽扇豆及其製品",
+      "description": "包括羽扇豆及羽扇豆製品"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "軟體動物",
+      "declaration": "含有軟體動物及其製品",
+      "description": "包括蝸牛、貝類等軟體動物"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "含著色劑",
+      "description": "含有食品著色劑"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "含防腐劑",
+      "description": "含有防腐劑"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "含抗氧化劑",
+      "description": "含有抗氧化劑"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "含亞硝酸鹽（醃肉鹽）",
+      "description": "含亞硝酸鹽（用於肉類醃製）"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "含硝酸鹽",
+      "description": "含硝酸鹽（防腐）"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "含亞硝酸鹽（醃肉鹽）及硝酸鹽",
+      "description": "含亞硝酸鹽（醃肉鹽）及硝酸鹽"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "含增味劑",
+      "description": "含有增味劑"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "含磷酸鹽",
+      "description": "含有磷酸鹽"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "經硫處理",
+      "description": "含二氧化硫或亞硫酸鹽類"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "已染黑",
+      "description": "為視覺效果染黑處理"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "打蠟處理",
+      "description": "表面打蠟以延長保存期限"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "含甜味劑",
+      "description": "含有甜味劑"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "含苯丙胺酸",
+      "description": "含有苯丙胺酸來源"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "過量食用可能引起腹瀉",
+      "description": "過量食用可能引起腹瀉"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "含咖啡因",
+      "description": "含有咖啡因"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "含奎寧",
+      "description": "含有奎寧"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "可能影響兒童的活動力和注意力",
+      "description": "可能影響兒童的活動力和注意力"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "含乳蛋白",
+      "description": "含有乳蛋白"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "含魚漿",
+      "description": "含有魚漿（Surimi）"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "由碎肉重組",
+      "description": "由碎肉重組製成"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "由碎魚肉重組",
+      "description": "由碎魚肉重組製成"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "已解凍",
+      "description": "由冷凍狀態解凍"
+    }
+  ],
+  "fallbacks": []
+}

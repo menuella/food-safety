@@ -35,6 +35,19 @@ public class DisclosuresTests
     }
 
     [Fact]
+    public void ACaseInsensitiveLookupResolvesToTheCanonicalTag()
+    {
+        // Resources are named after the canonical tag ("pt-BR"), so a lookup
+        // that folded case on the way to the resource would find nothing for
+        // every tag with a region or script subtag.
+        foreach (var locale in Disclosures.Locales)
+        {
+            Assert.Equal(locale, Disclosures.Get(locale.ToLowerInvariant()).Locale);
+            Assert.Equal(locale, Disclosures.Get(locale.ToUpperInvariant()).Locale);
+        }
+    }
+
+    [Fact]
     public void TheSameBundleIsReturnedEachTime()
     {
         // Parsed once and cached — a fresh parse per call would be a silent

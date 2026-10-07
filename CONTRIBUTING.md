@@ -8,21 +8,23 @@ Thanks for considering a contribution. This dataset is for **everyone** who work
 
 ### 🌐 Add or fix a translation
 
-Open any file under [`data/`](data/), find the entry you want to add a language to, and add the key. Example — adding Portuguese to an allergen:
+Every language is one file per module, named by its [BCP 47](https://www.rfc-editor.org/info/bcp47) tag and keyed by the semantic key:
 
 ```diff
-  "name": {
-    "de": "Roggen",
-    "en": "Rye",
-+   "pt": "Centeio",
-    ...
+  // data/translations/allergens/pt-PT.json
+  "RYE": {
+-   "name": "Centieo",
++   "name": "Centeio",
+    "declaration": "Contém cereais que contêm glúten",
+    "description": "Centeio e produtos à base de centeio"
+  },
 ```
 
-Then update the same key across **all** entries in that file (consistency matters more than completeness for a single language pass).
+Then run `npm run generate` and `npm run check`. The generator rebuilds every bundle and every language binding from these files; the check fails if anything is out of step.
 
 ### 🔤 Add a new language
 
-Same as above — just be willing to translate **all** entries in that file before merging. Partial language coverage gets confusing for consumers.
+Add `data/translations/allergens/<tag>.json` and `data/translations/declarations/<tag>.json`, covering **every** key — verification rejects a file with a missing key. Use the shortest tag that is unambiguous (`nl`, `ja`), and a region or script subtag only where variants word allergens differently (`pt-BR` and `pt-PT`, `zh-Hans` and `zh-Hant`). In that case ship every variant and no bare tag.
 
 ### 🐛 Fix a typo or description
 
@@ -41,7 +43,7 @@ Steps:
 3. Add `schemas/<module>.schema.json` (JSON Schema draft-07).
 4. Add a row to the table in [`README.md`](README.md).
 5. Add legal citations to [`docs/legal-references.md`](docs/legal-references.md).
-6. Add an entry to [`docs/changelog.md`](changelog.md).
+6. Add an entry to [`CHANGELOG.md`](CHANGELOG.md).
 
 ### 🌍 Extend the standard for a region
 

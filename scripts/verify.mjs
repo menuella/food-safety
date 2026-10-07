@@ -149,7 +149,10 @@ execFileSync(process.execPath, [join(ROOT, "scripts/generate.mjs"), "--out", tmp
 // stale data the day someone edits a source file and forgets to regenerate —
 // and nothing else would catch it, because the binding's own tests pass
 // happily against whatever it was last built from.
+const ktIdent = (l) => l.toUpperCase().replace(/-/g, "_")
 const generated = ["index.js", "index.d.ts", "data/icons.json", "data/icons.js",
+  "load.js", "load.d.ts", "all.js", "all.d.ts",
+  ...locales.flatMap((l) => [`locales/${l}.js`, `locales/${l}.d.ts`]),
   // Only when the Dart SDK is present: generate.mjs formats its Dart output,
   // so without dart the temp build is unformatted and would diff against a
   // committed file that is perfectly in sync.
@@ -179,7 +182,7 @@ const generated = ["index.js", "index.d.ts", "data/icons.json", "data/icons.js",
   ...locales.map((l) => `packages/php/data/bundles/${l}.json`),
   "packages/java/src/main/kotlin/com/menuella/foodsafety/GeneratedData.kt",
   "packages/java/src/main/kotlin/com/menuella/foodsafety/GeneratedIcons.kt",
-  ...locales.map((l) => `packages/java/src/main/kotlin/com/menuella/foodsafety/Bundle${l.toUpperCase()}.kt`),
+  ...locales.map((l) => `packages/java/src/main/kotlin/com/menuella/foodsafety/Bundle${ktIdent(l)}.kt`),
   "packages/python/src/menuella_food_safety/data/allergens.json",
   "packages/python/src/menuella_food_safety/data/declarations.json",
   "packages/python/src/menuella_food_safety/data/codes.json",
@@ -197,6 +200,34 @@ const stale = generated.filter(
 rmSync(tmp, { recursive: true, force: true })
 check("generated files match their sources", stale.length === 0,
   stale.length ? `stale: ${stale.join(", ")} — run \`npm run generate\`` : "")
+
+// The generator writes files; it never deletes them. A locale that was renamed
+// or removed would leave its old file behind — and every binding that lists
+// its locales from the directory (Python, Go, Swift, Ruby, PHP, .NET) would
+// keep offering it. So each output directory must hold exactly the shipped set.
+const exactly = [
+  ["data/bundles", [".json", ".js"]],
+  ["locales", [".js", ".d.ts"]],
+  ["packages/python/src/menuella_food_safety/data/bundles", [".json"]],
+  ["packages/go/data/bundles", [".json"]],
+  ["packages/swift/Sources/MenuellaFoodSafety/Data/bundles", [".json"]],
+  ["packages/php/data/bundles", [".json"]],
+  ["packages/ruby/lib/menuella/food_safety/data/bundles", [".json"]],
+]
+for (const [dir, exts] of exactly) {
+  const want = locales.flatMap((l) => exts.map((e) => `${l}${e}`)).sort()
+  const have = existsSync(join(ROOT, dir)) ? readdirSync(join(ROOT, dir)).sort() : []
+  const extra = have.filter((f) => !want.includes(f))
+  const missing = want.filter((f) => !have.includes(f))
+  check(`${dir} holds exactly the shipped locales`, extra.length === 0 && missing.length === 0,
+    [extra.length ? `extra=${extra}` : "", missing.length ? `missing=${missing}` : ""].join(" ").trim())
+}
+const kotlinDir = "packages/java/src/main/kotlin/com/menuella/foodsafety"
+const kotlinBundles = readdirSync(join(ROOT, kotlinDir)).filter((f) => /^Bundle.+\.kt$/.test(f)).sort()
+const kotlinWant = locales.map((l) => `Bundle${ktIdent(l)}.kt`).sort()
+check(`${kotlinDir} has one Bundle*.kt per locale`,
+  JSON.stringify(kotlinBundles) === JSON.stringify(kotlinWant),
+  kotlinBundles.filter((f) => !kotlinWant.includes(f)).join(", "))
 
 // ----------------------------------------------------- language bindings ----
 section("language bindings")
@@ -303,6 +334,35 @@ if (existsSync(gemVersionFile)) {
   console.log("  SKIP  no Ruby binding in this checkout")
 }
 
+// npm ci installs from the lockfile, and the lockfile repeats the package's
+// own version. A bump that skips it leaves a lockfile describing a release
+// that is not this one.
+const lockfile = JSON.parse(readFileSync(join(ROOT, "package-lock.json"), "utf8"))
+const pkgVersion = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")).version
+check(
+  `package-lock.json says ${pkgVersion}`,
+  lockfile.version === pkgVersion && lockfile.packages?.[""]?.version === pkgVersion,
+  `lockfile says ${lockfile.version} / ${lockfile.packages?.[""]?.version}`,
+)
+
+// Every registry shows a one-line description, and each one states how many
+// languages the dataset ships. They are written by hand, so they rot: before
+// this check they said six, ten and twenty-five at the same time.
+const languageCount = /\b(\d+|six|ten) languages\b/g
+const wrongCounts = []
+for (const file of ["package.json", "composer.json", "README.md",
+  "packages/python/pyproject.toml", "packages/dart/pubspec.yaml", "packages/rust/Cargo.toml",
+  "packages/java/build.gradle.kts", "packages/ruby/menuella-food_safety.gemspec",
+  "packages/dotnet/Menuella.FoodSafety/Menuella.FoodSafety.csproj",
+  ...["dart", "go", "java", "php", "python", "ruby", "rust", "swift"].map((p) => `packages/${p}/README.md`)]) {
+  const path = join(ROOT, file)
+  if (!existsSync(path)) continue
+  for (const [, n] of readFileSync(path, "utf8").matchAll(languageCount)) {
+    if (n !== String(locales.length)) wrongCounts.push(`${file}: ${n}`)
+  }
+}
+check(`every description says ${locales.length} languages`, wrongCounts.length === 0, wrongCounts.join(", "))
+
 // Most install snippets carry no version — `npm i` and `pip install` resolve
 // the latest on their own. Gradle, Maven and SwiftPM coordinates do not, so a
 // stale literal there tells readers to install a version that is not current.
@@ -311,8 +371,10 @@ if (existsSync(gemVersionFile)) {
 // grows one, add it here rather than leaving it to rot — the Swift and Go
 // READMEs were each a release behind before this list included them.
 const npmVersion = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")).version
+// Full x.y.z for the tag forms: from 2.0.0 the Go module path itself ends in
+// "/v2", which is a major-version suffix, not a release.
 const versionedSnippet =
-  /com\.menuella:food-safety:([\d.]+)|<version>([\d.]+)<\/version>|from:\s*"([\d.]+)"|packages\/go\/v([\d.]+)|\bv([\d.]+)`/g
+  /com\.menuella:food-safety:([\d.]+)|<version>([\d.]+)<\/version>|from:\s*"([\d.]+)"|packages\/go\/v(\d+\.\d+\.\d+)|\bv(\d+\.\d+\.\d+)`/g
 for (const [label, file] of [
   ["JVM README", "packages/java/README.md"],
   ["root README", "README.md"],

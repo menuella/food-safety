@@ -4,39 +4,73 @@ How to turn stored keys into what a guest reads. The examples are JavaScript;
 the same shapes exist in the [.NET](https://www.nuget.org/packages/Menuella.FoodSafety)
 and [Dart](https://pub.dev/packages/menuella_food_safety) bindings.
 
-## Rendering — one call
+## Rendering — pick a locale, resolve the keys
 
-Hand it the locale your app already resolved. That's the whole API:
+Import the locale your app already resolved, and hand it the keys a product
+carries:
 
 ```ts
-import { getDisclosures } from '@menuella/food-safety'
-import { useLocale } from 'next-intl'
+import de from '@menuella/food-safety/locales/de'
+import { resolveDisclosures } from '@menuella/food-safety'
 
-const { allergens, declarations } = getDisclosures(useLocale())
+const { allergens, declarations, unknown } = resolveDisclosures(de, product.disclosures)
 
-allergens[0].name         // "Roggen"
-allergens[0].declaration  // "Enthält Getreide und glutenhaltige Erzeugnisse"
-allergens[0].icon         // "cereals"  → icons/cereals.svg
+allergens[0].declaration                 // "Enthält Getreide und glutenhaltige Erzeugnisse"
+allergens[0].members.map((m) => m.name)  // ["Gerste", "Weizen"]
+allergens[0].icon                        // "cereals"  → icons/cereals.svg
 ```
 
-Astro is the same — `getDisclosures(Astro.currentLocale)`. It is **synchronous**:
-no `await`, no loading state, no dynamic import for your bundler to reason about.
-Structure, label and icon arrive on one object, so there is no lookup table and
-no `GROUP_ICON` map in your app.
+`resolveDisclosures` applies the one rule that is not yours to compose:
+`declaration` is the legal group sentence, so it is stated **once per group**,
+with the specific members beneath it — not once per member. Groups and
+declarations come back in the dataset's order, not the input's, so the same
+product always renders the same way. A key this release does not know — a
+retired code, or a key from a newer release — lands in `unknown` rather than
+disappearing: on an allergen panel, showing a raw key beats silently showing
+less.
 
-The returned object is **deeply frozen**. Bundles are shared singletons, so one
-consumer mutating a bundle would corrupt the dataset for every other caller in
-the process — on safety data that is not a risk worth carrying. Freezing happens
-on first access, which keeps the locale data tree-shakeable for consumers that
-never call this.
+### Four entry points, one dataset
+
+| Import | Gives you | Cost (gzip) |
+|---|---|---|
+| `@menuella/food-safety` | keys, groups, guards, types, `resolveDisclosures` | ~0.7–1.1 kB, no locale data |
+| `@menuella/food-safety/locales/<tag>` | one locale, typed and frozen | ~1.8 kB per locale |
+| `@menuella/food-safety/load` | `loadDisclosures(tag)` — on demand | ~1.2 kB, then one chunk per locale |
+| `@menuella/food-safety/all` | `getDisclosures(tag)` — synchronous | ~33 kB, every locale |
+
+**One fixed locale** (a server render, a page per language): import it
+statically, as above. **The locale changes at runtime** in a browser: load it,
+and only that locale is downloaded —
+
+```ts
+import { loadDisclosures } from '@menuella/food-safety/load'
+
+const disclosures = await loadDisclosures(locale)
+```
+
+Each locale is a literal `import()`, so every bundler splits it into a chunk of
+its own. **Build scripts, servers, tests**, where size does not matter:
+
+```ts
+import { getDisclosures } from '@menuella/food-safety/all'
+```
+
+All three return the same object for the same locale. It is **deeply frozen**:
+bundles are shared singletons, so one consumer mutating a bundle would corrupt
+the dataset for every other caller in the process — on safety data that is not
+a risk worth carrying. The types say so too: every field is `readonly`.
 
 **It does no i18n.** No browser sniffing, no negotiation, no silent fallback —
 guessing the language of a legal declaration is worse than failing loudly. An
-unsupported locale throws and names the ones that exist. Want a fallback? That's
-your policy, in one line:
+unsupported locale throws (or, from `loadDisclosures`, rejects) with
+`code: "ERR_UNSUPPORTED_LOCALE"` and names the locales that exist. Tags are
+matched exactly: `pt-BR` is a locale, `pt-br` and `pt` are not. Want a
+fallback? That's your policy, in one line:
 
 ```ts
-getDisclosures(LOCALES.includes(locale) ? locale : 'en')
+import { isLocale } from '@menuella/food-safety'
+
+loadDisclosures(isLocale(locale) ? locale : 'en')
 ```
 
 ### Composing — take only what you need
@@ -45,7 +79,7 @@ The package **renders nothing**. Every entry is a plain object, so you decide
 what appears: icon only, label only, label plus description, codes on or off.
 
 ```ts
-const { allergens, declarations } = getDisclosures(locale)
+const { allergens, declarations } = de
 
 // icon only — a compact chip row
 allergens.map((a) => `icons/${a.icon}.svg`)
@@ -55,9 +89,6 @@ allergens.map((a) => a.name)                    // "Weizen"
 
 // label + description — a tooltip or expandable row
 allergens.map((a) => [a.name, a.description])
-
-// only what this dish declares
-allergens.filter((a) => dish.allergens.includes(a.key))
 
 // warnings before the rest
 declarations.filter((d) => d.category === 'WARNING')
@@ -73,39 +104,17 @@ codes.allergens['WHEAT']       // "A6"  — letters for allergens
 codes.declarations['SWEETENERS'] // "12"  — numbers for declarations
 ```
 
-**The one rule that is not yours to compose:** `declaration` is the legal group
-sentence, so render it **once per group** with the specific members beneath it —
-not once per member. `group` and `isMember` exist to make that grouping trivial:
-
-```ts
-const byGroup = new Map<string, Allergen[]>()
-for (const a of allergens) byGroup.set(a.group, [...(byGroup.get(a.group) ?? []), a])
-
-// → "Enthält Getreide und glutenhaltige Erzeugnisse — Weizen, Gerste"
-[...byGroup.values()].map((m) => `${m[0].declaration} — ${m.map((x) => x.name).join(', ')}`)
-```
-
 If you show an icon **without** its label, give it the label as an accessible
 name — an allergen glyph alone is not a disclosure.
 
-### Shipping only one language
-
-`getDisclosures` carries all six locales — 7.7 kB gzipped, and switching is
-instant. If a surface only ever renders one language (an SSR storefront where
-the locale is fixed per request), import that bundle directly for **1.8 kB**:
-
-```ts
-import type { Disclosures } from '@menuella/food-safety'
-import data from '@menuella/food-safety/bundles/de.json'
-
-const { allergens } = data as Disclosures
-```
-
-Both read the same generated files. Importing only the type guards costs
-**652 B** — the locale data tree-shakes away entirely.
-
 Every bundle also carries `fallbacks`, listing any field served from `en`, so a
-fallback is inspectable rather than silent. Today that array is empty for all six.
+fallback is inspectable rather than silent. Today that array is empty for every
+locale.
+
+### Raw JSON
+
+`@menuella/food-safety/bundles/<tag>.json` is the same data as plain JSON, for
+tools that read files rather than import modules. Its shape is `Disclosures`.
 
 ---
 

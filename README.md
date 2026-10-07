@@ -1,6 +1,6 @@
 # @menuella/food-safety
 
-> Open dataset of **restaurant menu disclosures** — the 14 EU allergen groups and **Menuella Declarations**, with codes, icons and labels in 25 languages, keyed by stable semantic keys.
+> Open dataset of **restaurant menu disclosures** — the 14 EU allergen groups and **Menuella Declarations**, with codes, icons and labels in 27 languages, keyed by stable semantic keys.
 
 [![Verify](https://github.com/menuella/food-safety/actions/workflows/verify.yml/badge.svg)](https://github.com/menuella/food-safety/actions/workflows/verify.yml)
 [![npm](https://img.shields.io/npm/v/@menuella/food-safety.svg)](https://www.npmjs.com/package/@menuella/food-safety)
@@ -22,17 +22,27 @@ One dataset, one version, released from one tag.
 | **PHP** | `composer require menuella/food-safety` |
 | **Rust** | `cargo add menuella-food-safety` |
 | **Ruby** | `bundle add menuella-food_safety` |
-| **Go** | `go get github.com/menuella/food-safety/packages/go` |
-| **Swift** | `.package(url: "https://github.com/menuella/food-safety", from: "1.6.0")` |
-| **Gradle** | `implementation("com.menuella:food-safety:1.6.0")` |
+| **Go** | `go get github.com/menuella/food-safety/packages/go/v2` |
+| **Swift** | `.package(url: "https://github.com/menuella/food-safety", from: "2.0.0")` |
+| **Gradle** | `implementation("com.menuella:food-safety:2.0.0")` |
 
 ```js
-import { getDisclosures } from "@menuella/food-safety"
+import de from "@menuella/food-safety/locales/de"
+import { resolveDisclosures } from "@menuella/food-safety"
 
-const { allergens } = getDisclosures("de")
-allergens.find((a) => a.key === "WHEAT").declaration
-// "Enthält Getreide und glutenhaltige Erzeugnisse"
+const { allergens } = resolveDisclosures(de, ["WHEAT", "BARLEY"])
+allergens[0].declaration                 // "Enthält Getreide und glutenhaltige Erzeugnisse"
+allergens[0].members.map((m) => m.name)  // ["Gerste", "Weizen"]
 ```
+
+Import only the locales you render. The root entry point carries the vocabulary and no locale data at all, so a bundle pays for exactly the languages it uses:
+
+| Entry point | What it gives you | Locale data in your bundle |
+|---|---|---|
+| `@menuella/food-safety` | keys, groups, guards, types, `resolveDisclosures` | none |
+| `@menuella/food-safety/locales/<tag>` | one locale, typed and frozen | that locale only |
+| `@menuella/food-safety/load` | `loadDisclosures(tag)` — fetched on demand | one chunk per locale |
+| `@menuella/food-safety/all` | `getDisclosures(tag)` — synchronous | every locale |
 
 Hand it the locale your app already resolved — this package does no i18n of its own. See **[docs/rendering.md](docs/rendering.md)** for grouping, icons, codes and the type surface.
 
@@ -46,7 +56,7 @@ Five pieces, one vocabulary, every region:
 | **Menuella Declarations** | 22 keys for additives, beverage declarations, warnings and product indications |
 | **Menuella Codes** | the short codes printed in a menu legend — `WHEAT` → `A6` |
 | **Menuella Icons** | 15 solid glyphs, one per group |
-| **Menuella Translations** | localized labels in 25 languages |
+| **Menuella Translations** | localized labels in 27 languages |
 
 **Menuella Declarations are a standardized restaurant menu disclosure vocabulary developed by Menuella for consistent rendering across applications and regions.** They are built for portability, not to reproduce any country's official legal terminology — see [`docs/regions.md`](docs/regions.md).
 
@@ -114,7 +124,7 @@ declarations = NITRITE_CURING_SALT (sucuk)  = ["NITRITE_CURING_SALT"]
 
 ## Languages
 
-| Code | Language | Allergens | Additives |
+| Tag | Language | Allergens | Declarations |
 |---|---|---|---|
 | `ar` | Arabic (RTL) | 28 ✅ + declarations | 22 ✅ |
 | `bg` | Bulgarian | 28 ✅ + declarations | 22 ✅ |
@@ -134,17 +144,21 @@ declarations = NITRITE_CURING_SALT (sucuk)  = ["NITRITE_CURING_SALT"]
 | `nl` | Dutch | 28 ✅ + declarations | 22 ✅ |
 | `no` | Norwegian (Bokmål) | 28 ✅ + declarations | 22 ✅ |
 | `pl` | Polish | 28 ✅ + declarations | 22 ✅ |
-| `pt` | Portuguese | 28 ✅ + declarations | 22 ✅ |
+| `pt-BR` | Portuguese (Brazil) | 28 ✅ + declarations | 22 ✅ |
+| `pt-PT` | Portuguese (Portugal) | 28 ✅ + declarations | 22 ✅ |
 | `ro` | Romanian | 28 ✅ + declarations | 22 ✅ |
 | `ru` | Russian | 28 ✅ + declarations | 22 ✅ |
 | `sv` | Swedish | 28 ✅ + declarations | 22 ✅ |
 | `tr` | Turkish | 28 ✅ + declarations | 22 ✅ |
 | `vi` | Vietnamese | 28 ✅ + declarations | 22 ✅ |
-| `zh` | Chinese | 28 ✅ + declarations | 22 ✅ |
+| `zh-Hans` | Chinese (Simplified) | 28 ✅ + declarations | 22 ✅ |
+| `zh-Hant` | Chinese (Traditional) | 28 ✅ + declarations | 22 ✅ |
+
+Locales are [BCP 47](https://www.rfc-editor.org/info/bcp47) tags and are matched exactly. Where a language has variants that word allergens differently, each variant ships under its own tag and there is no bare one: `pt-BR` says *gergelim* where `pt-PT` says *sésamo*, and `zh-Hant` is written in a different script from `zh-Hans`. An app that holds only `pt` or `zh` decides which variant it means.
 
 Every language is complete: all 28 allergens and 22 declarations carry a name, description and — for allergens — the group declaration sentence. Arabic and Hebrew are right-to-left; the data itself is plain UTF-8 with no embedded direction control characters, so consumers wrap the rendered block in a container with `dir="rtl"` (or the framework equivalent) exactly as they already do for any other RTL text in the same UI.
 
-Missing a language you need? **Open a PR.** Adding one = one new file under `data/translations/<module>/<lang>.json`.
+Missing a language you need? **Open a PR.** Adding one = one new file under `data/translations/<module>/<tag>.json`.
 
 ---
 
@@ -175,7 +189,7 @@ Keys (`WHEAT`, `NITRITE_CURING_SALT`) and `canonicalKey` values are **stable ide
 Pin to a major version in production:
 
 ```jsonc
-{ "dependencies": { "@menuella/food-safety": "^0" } }
+{ "dependencies": { "@menuella/food-safety": "^2" } }
 ```
 
 See [`CHANGELOG.md`](CHANGELOG.md).
@@ -195,6 +209,8 @@ See [`CHANGELOG.md`](CHANGELOG.md).
 ## Legal disclaimer
 
 This dataset is provided **for informational purposes**. We cite source regulations in [`docs/legal-references.md`](docs/legal-references.md) and aim for accuracy, but **you remain responsible for compliance** with the laws of your jurisdiction. This dataset is **not** legal advice.
+
+Every locale translates the same EU Annex II vocabulary. A translation is not a statement of another jurisdiction's rules: `pt-BR`, for example, words the EU allergens in Brazilian Portuguese, and is not a rendering of Brazil's own allergen labelling regulation, whose list differs.
 
 ---
 
@@ -231,5 +247,5 @@ the dataset.
 ## Links
 
 - 🔎 Explorer — [menuella.com/food-safety](https://www.menuella.com/food-safety)
-- 📦 [npm](https://www.npmjs.com/package/@menuella/food-safety) · [NuGet](https://www.nuget.org/packages/Menuella.FoodSafety) · [pub.dev](https://pub.dev/packages/menuella_food_safety) · [PyPI](https://pypi.org/project/menuella-food-safety/) · [Packagist](https://packagist.org/packages/menuella/food-safety) · [crates.io](https://crates.io/crates/menuella-food-safety) · [RubyGems](https://rubygems.org/gems/menuella-food_safety) · [pkg.go.dev](https://pkg.go.dev/github.com/menuella/food-safety/packages/go)
+- 📦 [npm](https://www.npmjs.com/package/@menuella/food-safety) · [NuGet](https://www.nuget.org/packages/Menuella.FoodSafety) · [pub.dev](https://pub.dev/packages/menuella_food_safety) · [PyPI](https://pypi.org/project/menuella-food-safety/) · [Packagist](https://packagist.org/packages/menuella/food-safety) · [crates.io](https://crates.io/crates/menuella-food-safety) · [RubyGems](https://rubygems.org/gems/menuella-food_safety) · [pkg.go.dev](https://pkg.go.dev/github.com/menuella/food-safety/packages/go/v2)
 - 🧑‍💻 [github.com/menuella/food-safety](https://github.com/menuella/food-safety)

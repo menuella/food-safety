@@ -50,7 +50,7 @@ publishing {
                 description.set(
                     "Open allergen and additive vocabulary for restaurant menus: 28 allergen " +
                         "keys from EU Reg. 1169/2011 Annex II, 22 declarations, codes, icons " +
-                        "and six languages."
+                        "and 27 languages."
                 )
                 url.set("https://www.menuella.com/food-safety")
                 inceptionYear.set("2026")

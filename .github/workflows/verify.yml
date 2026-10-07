@@ -35,8 +35,13 @@ jobs:
       # error contracts.
       - run: npm test
 
+      # What each entry point costs a real bundle, and which locale data it
+      # pulls in. The root must carry none; a locale import must carry only
+      # its own.
+      - run: npm run size
+
       # A dependency with a known high-severity advisory should not reach a
-      # release. One devDependency today, so this is cheap insurance.
+      # release. Two devDependencies, both build-time only.
       - run: npm audit --audit-level=high
 
   dart:

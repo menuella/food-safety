@@ -5,8 +5,52 @@ All notable changes to this dataset will be documented here. Follows [Keep a Cha
 Pin to a major version in production:
 
 ```jsonc
-{ "dependencies": { "@menuella/food-safety": "^0" } }
+{ "dependencies": { "@menuella/food-safety": "^2" } }
 ```
+
+---
+
+## [2.0.0] – 2026-10-07
+
+### Breaking
+
+- **The root entry point no longer carries locale data, and `getDisclosures` has moved off it.** Importing anything from `@menuella/food-safety` used to bring every locale's labels into the bundle. The root now holds the vocabulary only — keys, groups, guards, types and `resolveDisclosures` — and labels come from the entry point that fits how you render:
+
+  | Before | After |
+  |---|---|
+  | `import { getDisclosures } from "@menuella/food-safety"` | `import { getDisclosures } from "@menuella/food-safety/all"` — same behaviour, every locale |
+  | `getDisclosures("de")` for one fixed locale | `import de from "@menuella/food-safety/locales/de"` |
+  | `getDisclosures(locale)` with a locale that changes at runtime | `await loadDisclosures(locale)` from `@menuella/food-safety/load` |
+  | `import data from ".../bundles/de.json"` plus `as Disclosures` | `import de from "@menuella/food-safety/locales/de"` — typed, no cast |
+
+  A missed call site is a compile-time error (`getDisclosures` is not exported), not a runtime one.
+
+- **Portuguese and Chinese ship as variants, with no bare tag.** `pt` becomes `pt-PT` and `pt-BR`; `zh` becomes `zh-Hans` and `zh-Hant`. The variants word allergens differently — `pt-BR` says *gergelim* where `pt-PT` says *sésamo*, and `zh-Hant` is a different script — so a bare `pt` or `zh` would have to pick one silently. Tags are BCP 47 and matched exactly: `pt-br` and `pt` are rejected. This applies to every binding.
+
+- **Types are `readonly`.** `Disclosures`, `Allergen` and `Declaration` now type their fields and arrays as `readonly`, matching the frozen objects they describe. `Disclosures` takes the locale as a type parameter, so `locales/pt-BR` is typed `Disclosures<"pt-BR">`.
+
+- **Go: the module path is now `github.com/menuella/food-safety/packages/go/v2`,** as Go requires for every major version above 1. The API is unchanged.
+
+- **PHP: the deprecated `FoodSafety::LOCALES` constant is removed.** Use `FoodSafety::locales()`.
+
+### Added
+
+- **Brazilian Portuguese (`pt-BR`) and Traditional Chinese (`zh-Hant`)**, complete for all 28 allergens and 22 declarations. `pt-BR` uses Brazilian vocabulary (*castanha-do-pará*, *castanha-de-caju*, *pistache*, *adoçante*, *realçador de sabor*); `zh-Hant` follows the wording of Taiwanese allergen labels (含麩質之穀物, 堅果類, 亞硫酸鹽類). Both translate the EU Annex II vocabulary; `pt-BR` is not a rendering of Brazil's own allergen labelling regulation.
+- **`resolveDisclosures(disclosures, keys)`** turns the keys a product carries into what a guest reads: one declaration per allergen group with the specific members beneath it, then the declarations, both in dataset order. Keys the release does not know are returned in `unknown` instead of being dropped.
+- **`@menuella/food-safety/locales/<tag>`** — one locale, typed and deeply frozen.
+- **`@menuella/food-safety/load`** — `loadDisclosures(tag)`, one dynamic import per locale, so a bundler emits a chunk per locale and downloads only the one requested.
+- **`@menuella/food-safety/all`** — `getDisclosures(tag)`, synchronous, every locale.
+
+### Changed
+
+- **`pt-PT` follows the Portuguese text of Regulation (EU) No 1169/2011 Annex II** more closely: *castanhas de caju*, *nozes pécan*, *castanhas do Brasil*, *tremoço*, and *frutos de casca rija e produtos à base destes frutos*.
+- **`zh-Hans`: pecans are 碧根果 (美国山核桃).** The previous 山核桃 names a different *Carya* species.
+
+### Unchanged
+
+- **Every key, group, code and icon.** Stored data needs no migration.
+- **Every other binding's API** — .NET, Dart, Python, Rust, Ruby, Swift and Kotlin/Java change only in which locale tags they accept.
+- **`bundles/*`, `data/*`, `schemas/*`, `icons` and `docs/*`** export paths.
 
 ---
 
