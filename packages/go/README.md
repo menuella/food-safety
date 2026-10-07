@@ -1,17 +1,17 @@
 # food-safety (Go)
 
-> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and ten languages.
+> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and 27 languages.
 
 Semantic keys instead of country-specific numbers. **Store the key, render the code — never the other way round.**
 
 **No dependencies.** The dataset is embedded with `//go:embed`, so your binary is self-contained and there is nothing to find on disk at runtime.
 
 ```sh
-go get github.com/menuella/food-safety/packages/go@latest
+go get github.com/menuella/food-safety/packages/go/v2@latest
 ```
 
 ```go
-import foodsafety "github.com/menuella/food-safety/packages/go"
+import foodsafety "github.com/menuella/food-safety/packages/go/v2"
 ```
 
 ## Use it
@@ -72,7 +72,7 @@ An icon means *"contains wheat"*. Render it **alongside** the declaration text, 
 | `GetDisclosures(locale)` | every allergen and declaration for a locale |
 | `GetCodes()` · `CodeScheme()` | the footnote-code scheme |
 | `GetIcon(name)` · `IconToSVG(name, opts)` | glyphs as data or markup |
-| `Locales()` | the six supported locales |
+| `Locales()` | every supported locale, as BCP 47 tags |
 | `AllergenKeys()` · `DeclarationKeys()` · `IconNames()` | the vocabularies |
 | `IsLocale` · `IsAllergenKey` · `IsDeclarationKey` | guards for untrusted input |
 | `LoadDataset(name)` | the raw embedded JSON, for tooling |
@@ -83,10 +83,10 @@ An icon means *"contains wheat"*. Render it **alongside** the declaration text, 
 This is a **nested module**, so its releases carry the directory prefix:
 
 ```
-packages/go/v1.6.0
+packages/go/v2.0.0
 ```
 
-A workflow derives that tag from the repository's plain `v1.6.0` on push, so both always point at the same commit.
+A workflow derives that tag from the repository's plain `v2.0.0` on push, so both always point at the same commit. From 2.0.0 the module path ends in `/v2`, as Go requires for every major version above 1.
 
 ## Same data, other ecosystems
 

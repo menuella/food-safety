@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://menuella.github.io/food-safety/schemas/allergen.schema.json",
   "title": "EU Allergen Disclosures (structural)",
-  "description": "The 28 selectable allergen disclosures covering the 14 EU/LMIV groups of Regulation 1169/2011 Annex II. Gluten-containing cereals and tree nuts are expanded into their specific members, because LMIV requires naming the exact cereal or nut — the group itself is never selectable, it only appears as `group`. Keys are semantic and stable; German flyer codes (A6, 11) are a render-time projection and are deliberately absent. Labels live in data/translations/allergens/<lang>.json.",
+  "description": "The 28 selectable allergen disclosures covering the 14 EU/LMIV groups of Regulation 1169/2011 Annex II. Gluten-containing cereals and tree nuts are expanded into their specific members, because LMIV requires naming the exact cereal or nut — the group itself is never selectable, it only appears as `group`. Keys are semantic and stable; German flyer codes (A6, 11) are a render-time projection and are deliberately absent. Labels live in data/translations/allergens/<tag>.json.",
   "type": "array",
   "items": {
     "type": "object",

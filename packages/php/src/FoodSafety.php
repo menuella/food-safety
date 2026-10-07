@@ -9,7 +9,7 @@ use RuntimeException;
 
 /**
  * The Menuella food-safety vocabulary: EU Reg. 1169/2011 Annex II allergens and
- * the Menuella declarations, in six languages.
+ * the Menuella declarations, in every language the dataset ships.
  *
  * Semantic keys instead of country-specific numbers — store the key, render the
  * code, never the reverse.
@@ -25,24 +25,13 @@ use RuntimeException;
  */
 final class FoodSafety
 {
-    /**
-     * Locales this package shipped a bundle for up to 1.3.1.
-     *
-     * @deprecated since 1.6.0. Use {@see FoodSafety::locales()} instead — this
-     *     constant is frozen for backwards compatibility and does not include
-     *     locales added after 1.3.1 (nl, pt, zh, vi, ja, ko, ru, ar, he, and
-     *     the 10 European locales shipped in 1.6.0).
-     * @var list<string>
-     */
-    public const LOCALES = ['de', 'en', 'es', 'fr', 'it', 'tr'];
-
     /** @var list<string>|null */
     private static ?array $localesCache = null;
 
     /**
      * Locales with a prebuilt bundle. Derived from the shipped
      * {@code data/bundles/} directory, so adding a new locale is a matter
-     * of dropping {@code bundles/xx.json} in — no source list to keep in step.
+     * of dropping {@code bundles/<tag>.json} in — no source list to keep in step.
      *
      * @return list<string>
      */
@@ -53,7 +42,8 @@ final class FoodSafety
         }
         $files = glob(__DIR__ . '/../data/bundles/*.json') ?: [];
         $locales = array_map(static fn (string $f): string => basename($f, '.json'), $files);
-        sort($locales);
+        // Byte order, so every binding lists the locales in the same order.
+        sort($locales, SORT_STRING);
         return self::$localesCache = array_values($locales);
     }
 

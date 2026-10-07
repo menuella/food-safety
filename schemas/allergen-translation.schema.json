@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://menuella.github.io/food-safety/schemas/allergen-translation.schema.json",
   "title": "Allergen Labels (per language)",
-  "description": "Shape of every data/translations/allergens/<lang>.json file: an object keyed by the allergen `key` from data/allergens.json, so a lookup is O(1) with no join step. `declaration` is present in de, en, es, fr, it and tr; locales that do not yet carry the legal sentence omit the field rather than guess it, and consumers should fall back to another locale.",
+  "description": "Shape of every data/translations/allergens/<tag>.json file: an object keyed by the allergen `key` from data/allergens.json, so a lookup is O(1) with no join step. A locale that does not carry the legal `declaration` sentence omits the field rather than guess it; the generated bundle then falls back to English and records the field in `fallbacks`.",
   "type": "object",
   "propertyNames": {
     "enum": [

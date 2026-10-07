@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.summary = "Open allergen and additive vocabulary for restaurant menus."
   spec.description = <<~TEXT.strip
     28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote
-    codes, 15 icons and six languages. Semantic keys instead of
+    codes, 15 icons and 27 languages. Semantic keys instead of
     country-specific numbers: store the key, render the code, never the
     reverse. No runtime dependencies.
   TEXT

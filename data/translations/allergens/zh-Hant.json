@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "黑麥",
+    "declaration": "含有含麩質之穀物及其製品",
+    "description": "黑麥及其製品"
+  },
+  "BARLEY": {
+    "name": "大麥",
+    "declaration": "含有含麩質之穀物及其製品",
+    "description": "大麥及其製品"
+  },
+  "EMMER": {
+    "name": "二粒小麥",
+    "declaration": "含有含麩質之穀物及其製品",
+    "description": "二粒小麥及其製品"
+  },
+  "EINKORN": {
+    "name": "一粒小麥",
+    "declaration": "含有含麩質之穀物及其製品",
+    "description": "一粒小麥及其製品"
+  },
+  "SPELT": {
+    "name": "斯佩爾特小麥",
+    "declaration": "含有含麩質之穀物及其製品",
+    "description": "斯佩爾特小麥及其製品"
+  },
+  "WHEAT": {
+    "name": "小麥",
+    "declaration": "含有含麩質之穀物及其製品",
+    "description": "小麥及其製品"
+  },
+  "OATS": {
+    "name": "燕麥",
+    "declaration": "含有含麩質之穀物及其製品",
+    "description": "燕麥及其製品"
+  },
+  "KHORASAN": {
+    "name": "呼羅珊小麥（Kamut）",
+    "declaration": "含有含麩質之穀物及其製品",
+    "description": "呼羅珊小麥及其製品"
+  },
+  "CRUSTACEANS": {
+    "name": "甲殼類",
+    "declaration": "含有甲殼類及其製品",
+    "description": "包括蝦、蟹等甲殼類"
+  },
+  "EGGS": {
+    "name": "蛋",
+    "declaration": "含有蛋及其製品",
+    "description": "包括蛋及蛋製品"
+  },
+  "FISH": {
+    "name": "魚類",
+    "declaration": "含有魚類及其製品",
+    "description": "包括魚類及魚製品"
+  },
+  "PEANUTS": {
+    "name": "花生",
+    "declaration": "含有花生及其製品",
+    "description": "包括花生及花生製品"
+  },
+  "SOY": {
+    "name": "大豆（黃豆）",
+    "declaration": "含有大豆及其製品",
+    "description": "包括大豆及大豆製品"
+  },
+  "MILK": {
+    "name": "乳（含乳糖）",
+    "declaration": "含有乳及其製品（含乳糖）",
+    "description": "包括乳及乳製品，含乳糖"
+  },
+  "MACADAMIA": {
+    "name": "夏威夷豆",
+    "declaration": "含有堅果類及其製品",
+    "description": "夏威夷豆及其製品"
+  },
+  "ALMONDS": {
+    "name": "杏仁果",
+    "declaration": "含有堅果類及其製品",
+    "description": "杏仁果及其製品"
+  },
+  "BRAZIL_NUTS": {
+    "name": "巴西堅果",
+    "declaration": "含有堅果類及其製品",
+    "description": "巴西堅果及其製品"
+  },
+  "PECANS": {
+    "name": "胡桃（美洲山核桃）",
+    "declaration": "含有堅果類及其製品",
+    "description": "胡桃及其製品"
+  },
+  "PISTACHIOS": {
+    "name": "開心果",
+    "declaration": "含有堅果類及其製品",
+    "description": "開心果及其製品"
+  },
+  "WALNUTS": {
+    "name": "核桃",
+    "declaration": "含有堅果類及其製品",
+    "description": "核桃及其製品"
+  },
+  "CASHEWS": {
+    "name": "腰果",
+    "declaration": "含有堅果類及其製品",
+    "description": "腰果及其製品"
+  },
+  "HAZELNUTS": {
+    "name": "榛果",
+    "declaration": "含有堅果類及其製品",
+    "description": "榛果及其製品"
+  },
+  "CELERY": {
+    "name": "芹菜",
+    "declaration": "含有芹菜及其製品",
+    "description": "包括芹菜及芹菜製品"
+  },
+  "MUSTARD": {
+    "name": "芥末",
+    "declaration": "含有芥末及其製品",
+    "description": "包括芥末及芥末製品"
+  },
+  "SESAME": {
+    "name": "芝麻",
+    "declaration": "含有芝麻及其製品",
+    "description": "包括芝麻及芝麻製品"
+  },
+  "SULPHITES": {
+    "name": "二氧化硫及亞硫酸鹽類",
+    "declaration": "含有二氧化硫及亞硫酸鹽類",
+    "description": "包括二氧化硫及亞硫酸鹽類"
+  },
+  "LUPINS": {
+    "name": "羽扇豆",
+    "declaration": "含有羽扇豆及其製品",
+    "description": "包括羽扇豆及羽扇豆製品"
+  },
+  "MOLLUSCS": {
+    "name": "軟體動物",
+    "declaration": "含有軟體動物及其製品",
+    "description": "包括蝸牛、貝類等軟體動物"
+  }
+}

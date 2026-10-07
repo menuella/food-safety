@@ -1,7 +1,7 @@
 {
   "name": "@menuella/food-safety",
-  "version": "1.6.0",
-  "description": "Open dataset of restaurant menu disclosures \u2014 the 14 EU allergen groups, Menuella Declarations, and an ingredient lexicon \u2014 in 6 languages, keyed by stable semantic keys.",
+  "version": "2.0.0",
+  "description": "Open dataset of restaurant menu disclosures — the 14 EU allergen groups and Menuella Declarations, in 27 languages, keyed by stable semantic keys.",
   "license": "MIT",
   "author": "Menuella",
   "homepage": "https://www.menuella.com/food-safety",
@@ -40,6 +40,18 @@
       "types": "./index.d.ts",
       "default": "./index.js"
     },
+    "./locales/*": {
+      "types": "./locales/*.d.ts",
+      "default": "./locales/*.js"
+    },
+    "./load": {
+      "types": "./load.d.ts",
+      "default": "./load.js"
+    },
+    "./all": {
+      "types": "./all.d.ts",
+      "default": "./all.js"
+    },
     "./bundles/*": "./data/bundles/*",
     "./package.json": "./package.json",
     "./data/*": "./data/*",
@@ -54,6 +66,12 @@
   "files": [
     "index.js",
     "index.d.ts",
+    "internal.js",
+    "load.js",
+    "load.d.ts",
+    "all.js",
+    "all.d.ts",
+    "locales",
     "icons.d.ts",
     "icons.js",
     "data",
@@ -71,12 +89,14 @@
     "generate": "node scripts/generate.mjs",
     "verify": "node scripts/verify.mjs",
     "test": "node --test \"scripts/**/*.test.mjs\"",
-    "check": "npm run verify && npm test",
+    "check": "npm run verify && npm test && npm run size",
     "preversion": "npm run check",
-    "prepublishOnly": "npm run verify && npm test"
+    "prepublishOnly": "npm run verify && npm test && npm run size",
+    "size": "node scripts/size.mjs"
   },
   "devDependencies": {
-    "ajv": "^8.17.1"
+    "ajv": "^8.17.1",
+    "esbuild": "^0.28.2"
   },
   "publishConfig": {
     "access": "public"

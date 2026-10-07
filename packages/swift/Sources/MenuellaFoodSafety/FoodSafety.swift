@@ -30,7 +30,7 @@ public enum FoodSafetyError: Error, LocalizedError, Sendable, Equatable {
 }
 
 /// The Menuella food-safety vocabulary: EU Reg. 1169/2011 Annex II allergens
-/// and the Menuella declarations, in six languages.
+/// and the Menuella declarations, in every language the dataset ships.
 ///
 /// Semantic keys instead of country-specific numbers — store the key, render
 /// the code, never the reverse.

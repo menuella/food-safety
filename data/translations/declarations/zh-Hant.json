@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "含著色劑",
+    "description": "含有食品著色劑"
+  },
+  "PRESERVATIVES": {
+    "name": "含防腐劑",
+    "description": "含有防腐劑"
+  },
+  "ANTIOXIDANTS": {
+    "name": "含抗氧化劑",
+    "description": "含有抗氧化劑"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "含亞硝酸鹽（醃肉鹽）",
+    "description": "含亞硝酸鹽（用於肉類醃製）"
+  },
+  "NITRATE": {
+    "name": "含硝酸鹽",
+    "description": "含硝酸鹽（防腐）"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "含亞硝酸鹽（醃肉鹽）及硝酸鹽",
+    "description": "含亞硝酸鹽（醃肉鹽）及硝酸鹽"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "含增味劑",
+    "description": "含有增味劑"
+  },
+  "PHOSPHATE": {
+    "name": "含磷酸鹽",
+    "description": "含有磷酸鹽"
+  },
+  "SULPHURED": {
+    "name": "經硫處理",
+    "description": "含二氧化硫或亞硫酸鹽類"
+  },
+  "BLACKENED": {
+    "name": "已染黑",
+    "description": "為視覺效果染黑處理"
+  },
+  "WAXED": {
+    "name": "打蠟處理",
+    "description": "表面打蠟以延長保存期限"
+  },
+  "SWEETENERS": {
+    "name": "含甜味劑",
+    "description": "含有甜味劑"
+  },
+  "PHENYLALANINE": {
+    "name": "含苯丙胺酸",
+    "description": "含有苯丙胺酸來源"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "過量食用可能引起腹瀉",
+    "description": "過量食用可能引起腹瀉"
+  },
+  "CAFFEINE": {
+    "name": "含咖啡因",
+    "description": "含有咖啡因"
+  },
+  "QUININE": {
+    "name": "含奎寧",
+    "description": "含有奎寧"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "可能影響兒童的活動力和注意力",
+    "description": "可能影響兒童的活動力和注意力"
+  },
+  "MILK_PROTEIN": {
+    "name": "含乳蛋白",
+    "description": "含有乳蛋白"
+  },
+  "SURIMI": {
+    "name": "含魚漿",
+    "description": "含有魚漿（Surimi）"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "由碎肉重組",
+    "description": "由碎肉重組製成"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "由碎魚肉重組",
+    "description": "由碎魚肉重組製成"
+  },
+  "DEFROSTED": {
+    "name": "已解凍",
+    "description": "由冷凍狀態解凍"
+  }
+}

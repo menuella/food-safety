@@ -4,6 +4,6 @@ module Menuella
   module FoodSafety
     # Kept in step with every other binding by scripts/verify.mjs: one dataset,
     # one version, released from one tag.
-    VERSION = "1.6.0"
+    VERSION = "2.0.0"
   end
 end

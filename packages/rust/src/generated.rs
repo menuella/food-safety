@@ -5,7 +5,7 @@ use crate::{Allergen, Declaration, Disclosures, Icon, IconNode};
 
 pub(crate) const LOCALES: &[&str] = &[
     "ar", "bg", "cs", "da", "de", "el", "en", "es", "fi", "fr", "he", "hu", "it", "ja", "ko", "nl",
-    "no", "pl", "pt", "ro", "ru", "sv", "tr", "vi", "zh",
+    "no", "pl", "pt-BR", "pt-PT", "ro", "ru", "sv", "tr", "vi", "zh-Hans", "zh-Hant",
 ];
 pub(crate) const FALLBACK_LOCALE: &str = "en";
 pub(crate) const CODE_SCHEME: &str = "MENUELLA";
@@ -7536,7 +7536,419 @@ const DECLARATIONS_PL: &[Declaration] = &[
     },
 ];
 
-const ALLERGENS_PT: &[Allergen] = &[
+const ALLERGENS_PT_BR: &[Allergen] = &[
+    Allergen {
+        key: "RYE",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "Centeio",
+        declaration: "Contém cereais com glúten e derivados",
+        description: "Centeio e derivados",
+    },
+    Allergen {
+        key: "BARLEY",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "Cevada",
+        declaration: "Contém cereais com glúten e derivados",
+        description: "Cevada e derivados",
+    },
+    Allergen {
+        key: "EMMER",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "Trigo emmer",
+        declaration: "Contém cereais com glúten e derivados",
+        description: "Trigo emmer e derivados",
+    },
+    Allergen {
+        key: "EINKORN",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "Trigo einkorn",
+        declaration: "Contém cereais com glúten e derivados",
+        description: "Trigo einkorn e derivados",
+    },
+    Allergen {
+        key: "SPELT",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "Espelta",
+        declaration: "Contém cereais com glúten e derivados",
+        description: "Espelta e derivados",
+    },
+    Allergen {
+        key: "WHEAT",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "Trigo",
+        declaration: "Contém cereais com glúten e derivados",
+        description: "Trigo e derivados",
+    },
+    Allergen {
+        key: "OATS",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "Aveia",
+        declaration: "Contém cereais com glúten e derivados",
+        description: "Aveia e derivados",
+    },
+    Allergen {
+        key: "KHORASAN",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "Trigo khorasan (Kamut)",
+        declaration: "Contém cereais com glúten e derivados",
+        description: "Trigo khorasan e derivados",
+    },
+    Allergen {
+        key: "CRUSTACEANS",
+        group: "CRUSTACEANS",
+        is_member: false,
+        icon: "crustaceans",
+        name: "Crustáceos",
+        declaration: "Contém crustáceos e derivados",
+        description: "Inclui crustáceos como camarão, caranguejo e lagosta",
+    },
+    Allergen {
+        key: "EGGS",
+        group: "EGGS",
+        is_member: false,
+        icon: "eggs",
+        name: "Ovo",
+        declaration: "Contém ovos e derivados",
+        description: "Inclui ovos e derivados",
+    },
+    Allergen {
+        key: "FISH",
+        group: "FISH",
+        is_member: false,
+        icon: "fish",
+        name: "Peixe",
+        declaration: "Contém peixes e derivados",
+        description: "Inclui peixes e derivados",
+    },
+    Allergen {
+        key: "PEANUTS",
+        group: "PEANUTS",
+        is_member: false,
+        icon: "peanuts",
+        name: "Amendoim",
+        declaration: "Contém amendoim e derivados",
+        description: "Amendoim e derivados",
+    },
+    Allergen {
+        key: "SOY",
+        group: "SOY",
+        is_member: false,
+        icon: "soy",
+        name: "Soja",
+        declaration: "Contém soja e derivados",
+        description: "Soja e derivados",
+    },
+    Allergen {
+        key: "MILK",
+        group: "MILK",
+        is_member: false,
+        icon: "milk",
+        name: "Leite (incluindo lactose)",
+        declaration: "Contém leite e derivados (incluindo lactose)",
+        description: "Inclui leite e derivados, incluindo lactose",
+    },
+    Allergen {
+        key: "MACADAMIA",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "Macadâmia",
+        declaration: "Contém castanhas, nozes e derivados",
+        description: "Macadâmia e derivados",
+    },
+    Allergen {
+        key: "ALMONDS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "Amêndoa",
+        declaration: "Contém castanhas, nozes e derivados",
+        description: "Amêndoa e derivados",
+    },
+    Allergen {
+        key: "BRAZIL_NUTS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "Castanha-do-pará",
+        declaration: "Contém castanhas, nozes e derivados",
+        description: "Castanha-do-pará e derivados",
+    },
+    Allergen {
+        key: "PECANS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "Noz-pecã",
+        declaration: "Contém castanhas, nozes e derivados",
+        description: "Noz-pecã e derivados",
+    },
+    Allergen {
+        key: "PISTACHIOS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "Pistache",
+        declaration: "Contém castanhas, nozes e derivados",
+        description: "Pistache e derivados",
+    },
+    Allergen {
+        key: "WALNUTS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "Nozes",
+        declaration: "Contém castanhas, nozes e derivados",
+        description: "Nozes e derivados",
+    },
+    Allergen {
+        key: "CASHEWS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "Castanha-de-caju",
+        declaration: "Contém castanhas, nozes e derivados",
+        description: "Castanha-de-caju e derivados",
+    },
+    Allergen {
+        key: "HAZELNUTS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "Avelã",
+        declaration: "Contém castanhas, nozes e derivados",
+        description: "Avelã e derivados",
+    },
+    Allergen {
+        key: "CELERY",
+        group: "CELERY",
+        is_member: false,
+        icon: "celery",
+        name: "Aipo (salsão)",
+        declaration: "Contém aipo e derivados",
+        description: "Aipo e derivados",
+    },
+    Allergen {
+        key: "MUSTARD",
+        group: "MUSTARD",
+        is_member: false,
+        icon: "mustard",
+        name: "Mostarda",
+        declaration: "Contém mostarda e derivados",
+        description: "Mostarda e derivados",
+    },
+    Allergen {
+        key: "SESAME",
+        group: "SESAME",
+        is_member: false,
+        icon: "sesame",
+        name: "Gergelim",
+        declaration: "Contém gergelim e derivados",
+        description: "Gergelim e derivados",
+    },
+    Allergen {
+        key: "SULPHITES",
+        group: "SULPHITES",
+        is_member: false,
+        icon: "sulphites",
+        name: "Dióxido de enxofre e sulfitos",
+        declaration: "Contém dióxido de enxofre e sulfitos",
+        description: "Inclui dióxido de enxofre e sulfitos",
+    },
+    Allergen {
+        key: "LUPINS",
+        group: "LUPINS",
+        is_member: false,
+        icon: "lupins",
+        name: "Tremoço",
+        declaration: "Contém tremoço e derivados",
+        description: "Tremoço e derivados",
+    },
+    Allergen {
+        key: "MOLLUSCS",
+        group: "MOLLUSCS",
+        is_member: false,
+        icon: "molluscs",
+        name: "Moluscos",
+        declaration: "Contém moluscos e derivados",
+        description: "Inclui moluscos como lula, polvo, mexilhão e ostra",
+    },
+];
+
+const DECLARATIONS_PT_BR: &[Declaration] = &[
+    Declaration {
+        key: "COLORING",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "com corante",
+        description: "Contém corantes",
+    },
+    Declaration {
+        key: "PRESERVATIVES",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "com conservante",
+        description: "Contém conservantes",
+    },
+    Declaration {
+        key: "ANTIOXIDANTS",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "com antioxidante",
+        description: "Contém antioxidantes",
+    },
+    Declaration {
+        key: "NITRITE_CURING_SALT",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "com sal de cura (nitrito)",
+        description: "Contém sal de cura com nitrito",
+    },
+    Declaration {
+        key: "NITRATE",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "com nitrato",
+        description: "Contém nitrato (conservação)",
+    },
+    Declaration {
+        key: "NITRITE_CURING_SALT_AND_NITRATE",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "com sal de cura (nitrito) e nitrato",
+        description: "Contém sal de cura com nitrito e nitrato",
+    },
+    Declaration {
+        key: "FLAVOR_ENHANCERS",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "com realçador de sabor",
+        description: "Contém realçadores de sabor",
+    },
+    Declaration {
+        key: "PHOSPHATE",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "com fosfato",
+        description: "Contém fosfato",
+    },
+    Declaration {
+        key: "SULPHURED",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "sulfitado",
+        description: "Contém dióxido de enxofre ou sulfitos",
+    },
+    Declaration {
+        key: "BLACKENED",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "escurecido",
+        description: "Escurecido para efeito visual",
+    },
+    Declaration {
+        key: "WAXED",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "encerado",
+        description: "Superfície encerada para conservação",
+    },
+    Declaration {
+        key: "SWEETENERS",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "com adoçante",
+        description: "Contém edulcorantes (adoçantes)",
+    },
+    Declaration {
+        key: "PHENYLALANINE",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "contém fenilalanina",
+        description: "Contém uma fonte de fenilalanina",
+    },
+    Declaration {
+        key: "LAXATIVE_WARNING",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "pode ter efeito laxativo se consumido em excesso",
+        description: "Pode ter efeito laxativo se consumido em excesso",
+    },
+    Declaration {
+        key: "CAFFEINE",
+        category: "BEVERAGE",
+        icon: "declarations",
+        name: "com cafeína",
+        description: "Contém cafeína",
+    },
+    Declaration {
+        key: "QUININE",
+        category: "BEVERAGE",
+        icon: "declarations",
+        name: "com quinina",
+        description: "Contém quinina",
+    },
+    Declaration {
+        key: "CHILD_ATTENTION_WARNING",
+        category: "WARNING",
+        icon: "declarations",
+        name: "pode afetar a atividade e a atenção das crianças",
+        description: "Pode afetar a atividade e a atenção das crianças",
+    },
+    Declaration {
+        key: "MILK_PROTEIN",
+        category: "PRODUCT",
+        icon: "declarations",
+        name: "com proteína do leite",
+        description: "Contém proteína do leite",
+    },
+    Declaration {
+        key: "SURIMI",
+        category: "PRODUCT",
+        icon: "declarations",
+        name: "com surimi",
+        description: "Contém surimi",
+    },
+    Declaration {
+        key: "RECONSTITUTED_MEAT",
+        category: "PRODUCT",
+        icon: "declarations",
+        name: "composto de pedaços de carne reestruturados",
+        description: "Composto de pedaços de carne reestruturados",
+    },
+    Declaration {
+        key: "RECONSTITUTED_FISH",
+        category: "PRODUCT",
+        icon: "declarations",
+        name: "composto de pedaços de peixe reestruturados",
+        description: "Composto de pedaços de peixe reestruturados",
+    },
+    Declaration {
+        key: "DEFROSTED",
+        category: "PRODUCT",
+        icon: "declarations",
+        name: "descongelado",
+        description: "Descongelado após congelamento",
+    },
+];
+
+const ALLERGENS_PT_PT: &[Allergen] = &[
     Allergen {
         key: "RYE",
         group: "CEREALS",
@@ -7562,7 +7974,7 @@ const ALLERGENS_PT: &[Allergen] = &[
         icon: "cereals",
         name: "Trigo emmer",
         declaration: "Contém cereais que contêm glúten",
-        description: "Trigo emmer e produtos à base",
+        description: "Trigo emmer e produtos à base de trigo emmer",
     },
     Allergen {
         key: "EINKORN",
@@ -7571,7 +7983,7 @@ const ALLERGENS_PT: &[Allergen] = &[
         icon: "cereals",
         name: "Trigo einkorn",
         declaration: "Contém cereais que contêm glúten",
-        description: "Trigo einkorn e produtos à base",
+        description: "Trigo einkorn e produtos à base de trigo einkorn",
     },
     Allergen {
         key: "SPELT",
@@ -7605,9 +8017,9 @@ const ALLERGENS_PT: &[Allergen] = &[
         group: "CEREALS",
         is_member: true,
         icon: "cereals",
-        name: "Khorasan/Kamut",
+        name: "Trigo khorasan (Kamut)",
         declaration: "Contém cereais que contêm glúten",
-        description: "Khorasan/Kamut e produtos à base",
+        description: "Trigo khorasan e produtos à base de trigo khorasan",
     },
     Allergen {
         key: "CRUSTACEANS",
@@ -7633,7 +8045,7 @@ const ALLERGENS_PT: &[Allergen] = &[
         is_member: false,
         icon: "fish",
         name: "Peixe",
-        declaration: "Contém peixe e produtos à base de peixe",
+        declaration: "Contém peixes e produtos à base de peixe",
         description: "Inclui peixe e produtos à base de peixe",
     },
     Allergen {
@@ -7641,9 +8053,9 @@ const ALLERGENS_PT: &[Allergen] = &[
         group: "PEANUTS",
         is_member: false,
         icon: "peanuts",
-        name: "Amendoim",
-        declaration: "Contém amendoins e produtos à base de amendoim",
-        description: "Inclui amendoins e produtos à base",
+        name: "Amendoins",
+        declaration: "Contém amendoins e produtos à base de amendoins",
+        description: "Amendoins e produtos à base de amendoins",
     },
     Allergen {
         key: "SOY",
@@ -7652,7 +8064,7 @@ const ALLERGENS_PT: &[Allergen] = &[
         icon: "soy",
         name: "Soja",
         declaration: "Contém soja e produtos à base de soja",
-        description: "Inclui grãos de soja e produtos à base",
+        description: "Soja e produtos à base de soja",
     },
     Allergen {
         key: "MILK",
@@ -7669,8 +8081,8 @@ const ALLERGENS_PT: &[Allergen] = &[
         is_member: true,
         icon: "tree-nuts",
         name: "Nozes de macadâmia",
-        declaration: "Contém frutos de casca rija e produtos à base",
-        description: "Nozes de macadâmia e produtos à base",
+        declaration: "Contém frutos de casca rija e produtos à base destes frutos",
+        description: "Nozes de macadâmia ou do Queensland e produtos à base destes frutos",
     },
     Allergen {
         key: "ALMONDS",
@@ -7678,26 +8090,26 @@ const ALLERGENS_PT: &[Allergen] = &[
         is_member: true,
         icon: "tree-nuts",
         name: "Amêndoas",
-        declaration: "Contém frutos de casca rija e produtos à base",
-        description: "Amêndoas e produtos à base de amêndoa",
+        declaration: "Contém frutos de casca rija e produtos à base destes frutos",
+        description: "Amêndoas e produtos à base de amêndoas",
     },
     Allergen {
         key: "BRAZIL_NUTS",
         group: "TREE_NUTS",
         is_member: true,
         icon: "tree-nuts",
-        name: "Castanha do Brasil",
-        declaration: "Contém frutos de casca rija e produtos à base",
-        description: "Castanha do Brasil e produtos à base",
+        name: "Castanhas do Brasil",
+        declaration: "Contém frutos de casca rija e produtos à base destes frutos",
+        description: "Castanhas do Brasil e produtos à base destes frutos",
     },
     Allergen {
         key: "PECANS",
         group: "TREE_NUTS",
         is_member: true,
         icon: "tree-nuts",
-        name: "Nozes-pecã",
-        declaration: "Contém frutos de casca rija e produtos à base",
-        description: "Nozes-pecã e produtos à base",
+        name: "Nozes pécan",
+        declaration: "Contém frutos de casca rija e produtos à base destes frutos",
+        description: "Nozes pécan e produtos à base destes frutos",
     },
     Allergen {
         key: "PISTACHIOS",
@@ -7705,8 +8117,8 @@ const ALLERGENS_PT: &[Allergen] = &[
         is_member: true,
         icon: "tree-nuts",
         name: "Pistácios",
-        declaration: "Contém frutos de casca rija e produtos à base",
-        description: "Pistácios e produtos à base",
+        declaration: "Contém frutos de casca rija e produtos à base destes frutos",
+        description: "Pistácios e produtos à base de pistácios",
     },
     Allergen {
         key: "WALNUTS",
@@ -7714,17 +8126,17 @@ const ALLERGENS_PT: &[Allergen] = &[
         is_member: true,
         icon: "tree-nuts",
         name: "Nozes",
-        declaration: "Contém frutos de casca rija e produtos à base",
-        description: "Nozes e produtos à base",
+        declaration: "Contém frutos de casca rija e produtos à base destes frutos",
+        description: "Nozes e produtos à base de nozes",
     },
     Allergen {
         key: "CASHEWS",
         group: "TREE_NUTS",
         is_member: true,
         icon: "tree-nuts",
-        name: "Cajus",
-        declaration: "Contém frutos de casca rija e produtos à base",
-        description: "Cajus e produtos à base",
+        name: "Castanhas de caju",
+        declaration: "Contém frutos de casca rija e produtos à base destes frutos",
+        description: "Castanhas de caju e produtos à base destes frutos",
     },
     Allergen {
         key: "HAZELNUTS",
@@ -7732,8 +8144,8 @@ const ALLERGENS_PT: &[Allergen] = &[
         is_member: true,
         icon: "tree-nuts",
         name: "Avelãs",
-        declaration: "Contém frutos de casca rija e produtos à base",
-        description: "Avelãs e produtos à base",
+        declaration: "Contém frutos de casca rija e produtos à base destes frutos",
+        description: "Avelãs e produtos à base de avelãs",
     },
     Allergen {
         key: "CELERY",
@@ -7742,7 +8154,7 @@ const ALLERGENS_PT: &[Allergen] = &[
         icon: "celery",
         name: "Aipo",
         declaration: "Contém aipo e produtos à base de aipo",
-        description: "Inclui aipo e produtos à base",
+        description: "Aipo e produtos à base de aipo",
     },
     Allergen {
         key: "MUSTARD",
@@ -7751,7 +8163,7 @@ const ALLERGENS_PT: &[Allergen] = &[
         icon: "mustard",
         name: "Mostarda",
         declaration: "Contém mostarda e produtos à base de mostarda",
-        description: "Inclui mostarda e produtos à base",
+        description: "Mostarda e produtos à base de mostarda",
     },
     Allergen {
         key: "SESAME",
@@ -7759,8 +8171,8 @@ const ALLERGENS_PT: &[Allergen] = &[
         is_member: false,
         icon: "sesame",
         name: "Sementes de sésamo",
-        declaration: "Contém sementes de sésamo e produtos à base",
-        description: "Inclui sementes de sésamo e produtos à base",
+        declaration: "Contém sementes de sésamo e produtos à base de sementes de sésamo",
+        description: "Sementes de sésamo e produtos à base de sementes de sésamo",
     },
     Allergen {
         key: "SULPHITES",
@@ -7776,9 +8188,9 @@ const ALLERGENS_PT: &[Allergen] = &[
         group: "LUPINS",
         is_member: false,
         icon: "lupins",
-        name: "Tremoços",
-        declaration: "Contém tremoços e produtos à base de tremoços",
-        description: "Inclui tremoços e produtos à base",
+        name: "Tremoço",
+        declaration: "Contém tremoço e produtos à base de tremoço",
+        description: "Tremoço e produtos à base de tremoço",
     },
     Allergen {
         key: "MOLLUSCS",
@@ -7791,7 +8203,7 @@ const ALLERGENS_PT: &[Allergen] = &[
     },
 ];
 
-const DECLARATIONS_PT: &[Declaration] = &[
+const DECLARATIONS_PT_PT: &[Declaration] = &[
     Declaration {
         key: "COLORING",
         category: "ADDITIVE",
@@ -10008,7 +10420,7 @@ const DECLARATIONS_VI: &[Declaration] = &[
     },
 ];
 
-const ALLERGENS_ZH: &[Allergen] = &[
+const ALLERGENS_ZH_HANS: &[Allergen] = &[
     Allergen {
         key: "RYE",
         group: "CEREALS",
@@ -10167,9 +10579,9 @@ const ALLERGENS_ZH: &[Allergen] = &[
         group: "TREE_NUTS",
         is_member: true,
         icon: "tree-nuts",
-        name: "山核桃",
+        name: "碧根果（美国山核桃）",
         declaration: "含有坚果及其制品",
-        description: "山核桃及其制品",
+        description: "碧根果及其制品",
     },
     Allergen {
         key: "PISTACHIOS",
@@ -10263,7 +10675,7 @@ const ALLERGENS_ZH: &[Allergen] = &[
     },
 ];
 
-const DECLARATIONS_ZH: &[Declaration] = &[
+const DECLARATIONS_ZH_HANS: &[Declaration] = &[
     Declaration {
         key: "COLORING",
         category: "ADDITIVE",
@@ -10420,15 +10832,425 @@ const DECLARATIONS_ZH: &[Declaration] = &[
     },
 ];
 
+const ALLERGENS_ZH_HANT: &[Allergen] = &[
+    Allergen {
+        key: "RYE",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "黑麥",
+        declaration: "含有含麩質之穀物及其製品",
+        description: "黑麥及其製品",
+    },
+    Allergen {
+        key: "BARLEY",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "大麥",
+        declaration: "含有含麩質之穀物及其製品",
+        description: "大麥及其製品",
+    },
+    Allergen {
+        key: "EMMER",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "二粒小麥",
+        declaration: "含有含麩質之穀物及其製品",
+        description: "二粒小麥及其製品",
+    },
+    Allergen {
+        key: "EINKORN",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "一粒小麥",
+        declaration: "含有含麩質之穀物及其製品",
+        description: "一粒小麥及其製品",
+    },
+    Allergen {
+        key: "SPELT",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "斯佩爾特小麥",
+        declaration: "含有含麩質之穀物及其製品",
+        description: "斯佩爾特小麥及其製品",
+    },
+    Allergen {
+        key: "WHEAT",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "小麥",
+        declaration: "含有含麩質之穀物及其製品",
+        description: "小麥及其製品",
+    },
+    Allergen {
+        key: "OATS",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "燕麥",
+        declaration: "含有含麩質之穀物及其製品",
+        description: "燕麥及其製品",
+    },
+    Allergen {
+        key: "KHORASAN",
+        group: "CEREALS",
+        is_member: true,
+        icon: "cereals",
+        name: "呼羅珊小麥（Kamut）",
+        declaration: "含有含麩質之穀物及其製品",
+        description: "呼羅珊小麥及其製品",
+    },
+    Allergen {
+        key: "CRUSTACEANS",
+        group: "CRUSTACEANS",
+        is_member: false,
+        icon: "crustaceans",
+        name: "甲殼類",
+        declaration: "含有甲殼類及其製品",
+        description: "包括蝦、蟹等甲殼類",
+    },
+    Allergen {
+        key: "EGGS",
+        group: "EGGS",
+        is_member: false,
+        icon: "eggs",
+        name: "蛋",
+        declaration: "含有蛋及其製品",
+        description: "包括蛋及蛋製品",
+    },
+    Allergen {
+        key: "FISH",
+        group: "FISH",
+        is_member: false,
+        icon: "fish",
+        name: "魚類",
+        declaration: "含有魚類及其製品",
+        description: "包括魚類及魚製品",
+    },
+    Allergen {
+        key: "PEANUTS",
+        group: "PEANUTS",
+        is_member: false,
+        icon: "peanuts",
+        name: "花生",
+        declaration: "含有花生及其製品",
+        description: "包括花生及花生製品",
+    },
+    Allergen {
+        key: "SOY",
+        group: "SOY",
+        is_member: false,
+        icon: "soy",
+        name: "大豆（黃豆）",
+        declaration: "含有大豆及其製品",
+        description: "包括大豆及大豆製品",
+    },
+    Allergen {
+        key: "MILK",
+        group: "MILK",
+        is_member: false,
+        icon: "milk",
+        name: "乳（含乳糖）",
+        declaration: "含有乳及其製品（含乳糖）",
+        description: "包括乳及乳製品，含乳糖",
+    },
+    Allergen {
+        key: "MACADAMIA",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "夏威夷豆",
+        declaration: "含有堅果類及其製品",
+        description: "夏威夷豆及其製品",
+    },
+    Allergen {
+        key: "ALMONDS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "杏仁果",
+        declaration: "含有堅果類及其製品",
+        description: "杏仁果及其製品",
+    },
+    Allergen {
+        key: "BRAZIL_NUTS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "巴西堅果",
+        declaration: "含有堅果類及其製品",
+        description: "巴西堅果及其製品",
+    },
+    Allergen {
+        key: "PECANS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "胡桃（美洲山核桃）",
+        declaration: "含有堅果類及其製品",
+        description: "胡桃及其製品",
+    },
+    Allergen {
+        key: "PISTACHIOS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "開心果",
+        declaration: "含有堅果類及其製品",
+        description: "開心果及其製品",
+    },
+    Allergen {
+        key: "WALNUTS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "核桃",
+        declaration: "含有堅果類及其製品",
+        description: "核桃及其製品",
+    },
+    Allergen {
+        key: "CASHEWS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "腰果",
+        declaration: "含有堅果類及其製品",
+        description: "腰果及其製品",
+    },
+    Allergen {
+        key: "HAZELNUTS",
+        group: "TREE_NUTS",
+        is_member: true,
+        icon: "tree-nuts",
+        name: "榛果",
+        declaration: "含有堅果類及其製品",
+        description: "榛果及其製品",
+    },
+    Allergen {
+        key: "CELERY",
+        group: "CELERY",
+        is_member: false,
+        icon: "celery",
+        name: "芹菜",
+        declaration: "含有芹菜及其製品",
+        description: "包括芹菜及芹菜製品",
+    },
+    Allergen {
+        key: "MUSTARD",
+        group: "MUSTARD",
+        is_member: false,
+        icon: "mustard",
+        name: "芥末",
+        declaration: "含有芥末及其製品",
+        description: "包括芥末及芥末製品",
+    },
+    Allergen {
+        key: "SESAME",
+        group: "SESAME",
+        is_member: false,
+        icon: "sesame",
+        name: "芝麻",
+        declaration: "含有芝麻及其製品",
+        description: "包括芝麻及芝麻製品",
+    },
+    Allergen {
+        key: "SULPHITES",
+        group: "SULPHITES",
+        is_member: false,
+        icon: "sulphites",
+        name: "二氧化硫及亞硫酸鹽類",
+        declaration: "含有二氧化硫及亞硫酸鹽類",
+        description: "包括二氧化硫及亞硫酸鹽類",
+    },
+    Allergen {
+        key: "LUPINS",
+        group: "LUPINS",
+        is_member: false,
+        icon: "lupins",
+        name: "羽扇豆",
+        declaration: "含有羽扇豆及其製品",
+        description: "包括羽扇豆及羽扇豆製品",
+    },
+    Allergen {
+        key: "MOLLUSCS",
+        group: "MOLLUSCS",
+        is_member: false,
+        icon: "molluscs",
+        name: "軟體動物",
+        declaration: "含有軟體動物及其製品",
+        description: "包括蝸牛、貝類等軟體動物",
+    },
+];
+
+const DECLARATIONS_ZH_HANT: &[Declaration] = &[
+    Declaration {
+        key: "COLORING",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "含著色劑",
+        description: "含有食品著色劑",
+    },
+    Declaration {
+        key: "PRESERVATIVES",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "含防腐劑",
+        description: "含有防腐劑",
+    },
+    Declaration {
+        key: "ANTIOXIDANTS",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "含抗氧化劑",
+        description: "含有抗氧化劑",
+    },
+    Declaration {
+        key: "NITRITE_CURING_SALT",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "含亞硝酸鹽（醃肉鹽）",
+        description: "含亞硝酸鹽（用於肉類醃製）",
+    },
+    Declaration {
+        key: "NITRATE",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "含硝酸鹽",
+        description: "含硝酸鹽（防腐）",
+    },
+    Declaration {
+        key: "NITRITE_CURING_SALT_AND_NITRATE",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "含亞硝酸鹽（醃肉鹽）及硝酸鹽",
+        description: "含亞硝酸鹽（醃肉鹽）及硝酸鹽",
+    },
+    Declaration {
+        key: "FLAVOR_ENHANCERS",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "含增味劑",
+        description: "含有增味劑",
+    },
+    Declaration {
+        key: "PHOSPHATE",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "含磷酸鹽",
+        description: "含有磷酸鹽",
+    },
+    Declaration {
+        key: "SULPHURED",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "經硫處理",
+        description: "含二氧化硫或亞硫酸鹽類",
+    },
+    Declaration {
+        key: "BLACKENED",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "已染黑",
+        description: "為視覺效果染黑處理",
+    },
+    Declaration {
+        key: "WAXED",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "打蠟處理",
+        description: "表面打蠟以延長保存期限",
+    },
+    Declaration {
+        key: "SWEETENERS",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "含甜味劑",
+        description: "含有甜味劑",
+    },
+    Declaration {
+        key: "PHENYLALANINE",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "含苯丙胺酸",
+        description: "含有苯丙胺酸來源",
+    },
+    Declaration {
+        key: "LAXATIVE_WARNING",
+        category: "ADDITIVE",
+        icon: "declarations",
+        name: "過量食用可能引起腹瀉",
+        description: "過量食用可能引起腹瀉",
+    },
+    Declaration {
+        key: "CAFFEINE",
+        category: "BEVERAGE",
+        icon: "declarations",
+        name: "含咖啡因",
+        description: "含有咖啡因",
+    },
+    Declaration {
+        key: "QUININE",
+        category: "BEVERAGE",
+        icon: "declarations",
+        name: "含奎寧",
+        description: "含有奎寧",
+    },
+    Declaration {
+        key: "CHILD_ATTENTION_WARNING",
+        category: "WARNING",
+        icon: "declarations",
+        name: "可能影響兒童的活動力和注意力",
+        description: "可能影響兒童的活動力和注意力",
+    },
+    Declaration {
+        key: "MILK_PROTEIN",
+        category: "PRODUCT",
+        icon: "declarations",
+        name: "含乳蛋白",
+        description: "含有乳蛋白",
+    },
+    Declaration {
+        key: "SURIMI",
+        category: "PRODUCT",
+        icon: "declarations",
+        name: "含魚漿",
+        description: "含有魚漿（Surimi）",
+    },
+    Declaration {
+        key: "RECONSTITUTED_MEAT",
+        category: "PRODUCT",
+        icon: "declarations",
+        name: "由碎肉重組",
+        description: "由碎肉重組製成",
+    },
+    Declaration {
+        key: "RECONSTITUTED_FISH",
+        category: "PRODUCT",
+        icon: "declarations",
+        name: "由碎魚肉重組",
+        description: "由碎魚肉重組製成",
+    },
+    Declaration {
+        key: "DEFROSTED",
+        category: "PRODUCT",
+        icon: "declarations",
+        name: "已解凍",
+        description: "由冷凍狀態解凍",
+    },
+];
+
 // Grows one branch per locale, so it trips clippy::too_many_lines once the
 // dataset ships more than ~9 locales. The shape is intentional — a const context
 // has no iterator, so this cannot be looped — and refactoring it into helpers
 // only moves the same code around. Allow the lint on this one function.
 #[allow(clippy::too_many_lines)]
 pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
-    // A const fn cannot match on &str, so this compares bytes. Written out
-    // rather than looped because a const context has no iterator.
-    if matches_ar(locale) {
+    if eq(locale, "ar") {
         return Some(Disclosures {
             locale: "ar",
             fallback_locale: FALLBACK_LOCALE,
@@ -10436,7 +11258,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_AR,
         });
     }
-    if matches_bg(locale) {
+    if eq(locale, "bg") {
         return Some(Disclosures {
             locale: "bg",
             fallback_locale: FALLBACK_LOCALE,
@@ -10444,7 +11266,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_BG,
         });
     }
-    if matches_cs(locale) {
+    if eq(locale, "cs") {
         return Some(Disclosures {
             locale: "cs",
             fallback_locale: FALLBACK_LOCALE,
@@ -10452,7 +11274,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_CS,
         });
     }
-    if matches_da(locale) {
+    if eq(locale, "da") {
         return Some(Disclosures {
             locale: "da",
             fallback_locale: FALLBACK_LOCALE,
@@ -10460,7 +11282,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_DA,
         });
     }
-    if matches_de(locale) {
+    if eq(locale, "de") {
         return Some(Disclosures {
             locale: "de",
             fallback_locale: FALLBACK_LOCALE,
@@ -10468,7 +11290,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_DE,
         });
     }
-    if matches_el(locale) {
+    if eq(locale, "el") {
         return Some(Disclosures {
             locale: "el",
             fallback_locale: FALLBACK_LOCALE,
@@ -10476,7 +11298,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_EL,
         });
     }
-    if matches_en(locale) {
+    if eq(locale, "en") {
         return Some(Disclosures {
             locale: "en",
             fallback_locale: FALLBACK_LOCALE,
@@ -10484,7 +11306,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_EN,
         });
     }
-    if matches_es(locale) {
+    if eq(locale, "es") {
         return Some(Disclosures {
             locale: "es",
             fallback_locale: FALLBACK_LOCALE,
@@ -10492,7 +11314,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_ES,
         });
     }
-    if matches_fi(locale) {
+    if eq(locale, "fi") {
         return Some(Disclosures {
             locale: "fi",
             fallback_locale: FALLBACK_LOCALE,
@@ -10500,7 +11322,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_FI,
         });
     }
-    if matches_fr(locale) {
+    if eq(locale, "fr") {
         return Some(Disclosures {
             locale: "fr",
             fallback_locale: FALLBACK_LOCALE,
@@ -10508,7 +11330,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_FR,
         });
     }
-    if matches_he(locale) {
+    if eq(locale, "he") {
         return Some(Disclosures {
             locale: "he",
             fallback_locale: FALLBACK_LOCALE,
@@ -10516,7 +11338,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_HE,
         });
     }
-    if matches_hu(locale) {
+    if eq(locale, "hu") {
         return Some(Disclosures {
             locale: "hu",
             fallback_locale: FALLBACK_LOCALE,
@@ -10524,7 +11346,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_HU,
         });
     }
-    if matches_it(locale) {
+    if eq(locale, "it") {
         return Some(Disclosures {
             locale: "it",
             fallback_locale: FALLBACK_LOCALE,
@@ -10532,7 +11354,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_IT,
         });
     }
-    if matches_ja(locale) {
+    if eq(locale, "ja") {
         return Some(Disclosures {
             locale: "ja",
             fallback_locale: FALLBACK_LOCALE,
@@ -10540,7 +11362,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_JA,
         });
     }
-    if matches_ko(locale) {
+    if eq(locale, "ko") {
         return Some(Disclosures {
             locale: "ko",
             fallback_locale: FALLBACK_LOCALE,
@@ -10548,7 +11370,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_KO,
         });
     }
-    if matches_nl(locale) {
+    if eq(locale, "nl") {
         return Some(Disclosures {
             locale: "nl",
             fallback_locale: FALLBACK_LOCALE,
@@ -10556,7 +11378,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_NL,
         });
     }
-    if matches_no(locale) {
+    if eq(locale, "no") {
         return Some(Disclosures {
             locale: "no",
             fallback_locale: FALLBACK_LOCALE,
@@ -10564,7 +11386,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_NO,
         });
     }
-    if matches_pl(locale) {
+    if eq(locale, "pl") {
         return Some(Disclosures {
             locale: "pl",
             fallback_locale: FALLBACK_LOCALE,
@@ -10572,15 +11394,23 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_PL,
         });
     }
-    if matches_pt(locale) {
+    if eq(locale, "pt-BR") {
         return Some(Disclosures {
-            locale: "pt",
+            locale: "pt-BR",
             fallback_locale: FALLBACK_LOCALE,
-            allergens: ALLERGENS_PT,
-            declarations: DECLARATIONS_PT,
+            allergens: ALLERGENS_PT_BR,
+            declarations: DECLARATIONS_PT_BR,
         });
     }
-    if matches_ro(locale) {
+    if eq(locale, "pt-PT") {
+        return Some(Disclosures {
+            locale: "pt-PT",
+            fallback_locale: FALLBACK_LOCALE,
+            allergens: ALLERGENS_PT_PT,
+            declarations: DECLARATIONS_PT_PT,
+        });
+    }
+    if eq(locale, "ro") {
         return Some(Disclosures {
             locale: "ro",
             fallback_locale: FALLBACK_LOCALE,
@@ -10588,7 +11418,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_RO,
         });
     }
-    if matches_ru(locale) {
+    if eq(locale, "ru") {
         return Some(Disclosures {
             locale: "ru",
             fallback_locale: FALLBACK_LOCALE,
@@ -10596,7 +11426,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_RU,
         });
     }
-    if matches_sv(locale) {
+    if eq(locale, "sv") {
         return Some(Disclosures {
             locale: "sv",
             fallback_locale: FALLBACK_LOCALE,
@@ -10604,7 +11434,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_SV,
         });
     }
-    if matches_tr(locale) {
+    if eq(locale, "tr") {
         return Some(Disclosures {
             locale: "tr",
             fallback_locale: FALLBACK_LOCALE,
@@ -10612,7 +11442,7 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_TR,
         });
     }
-    if matches_vi(locale) {
+    if eq(locale, "vi") {
         return Some(Disclosures {
             locale: "vi",
             fallback_locale: FALLBACK_LOCALE,
@@ -10620,140 +11450,39 @@ pub(crate) const fn bundle_for(locale: &str) -> Option<Disclosures> {
             declarations: DECLARATIONS_VI,
         });
     }
-    if matches_zh(locale) {
+    if eq(locale, "zh-Hans") {
         return Some(Disclosures {
-            locale: "zh",
+            locale: "zh-Hans",
             fallback_locale: FALLBACK_LOCALE,
-            allergens: ALLERGENS_ZH,
-            declarations: DECLARATIONS_ZH,
+            allergens: ALLERGENS_ZH_HANS,
+            declarations: DECLARATIONS_ZH_HANS,
+        });
+    }
+    if eq(locale, "zh-Hant") {
+        return Some(Disclosures {
+            locale: "zh-Hant",
+            fallback_locale: FALLBACK_LOCALE,
+            allergens: ALLERGENS_ZH_HANT,
+            declarations: DECLARATIONS_ZH_HANT,
         });
     }
     None
 }
 
-const fn matches_ar(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'a' && b[1] == b'r'
-}
-
-const fn matches_bg(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'b' && b[1] == b'g'
-}
-
-const fn matches_cs(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'c' && b[1] == b's'
-}
-
-const fn matches_da(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'd' && b[1] == b'a'
-}
-
-const fn matches_de(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'd' && b[1] == b'e'
-}
-
-const fn matches_el(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'e' && b[1] == b'l'
-}
-
-const fn matches_en(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'e' && b[1] == b'n'
-}
-
-const fn matches_es(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'e' && b[1] == b's'
-}
-
-const fn matches_fi(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'f' && b[1] == b'i'
-}
-
-const fn matches_fr(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'f' && b[1] == b'r'
-}
-
-const fn matches_he(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'h' && b[1] == b'e'
-}
-
-const fn matches_hu(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'h' && b[1] == b'u'
-}
-
-const fn matches_it(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'i' && b[1] == b't'
-}
-
-const fn matches_ja(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'j' && b[1] == b'a'
-}
-
-const fn matches_ko(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'k' && b[1] == b'o'
-}
-
-const fn matches_nl(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'n' && b[1] == b'l'
-}
-
-const fn matches_no(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'n' && b[1] == b'o'
-}
-
-const fn matches_pl(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'p' && b[1] == b'l'
-}
-
-const fn matches_pt(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'p' && b[1] == b't'
-}
-
-const fn matches_ro(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'r' && b[1] == b'o'
-}
-
-const fn matches_ru(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'r' && b[1] == b'u'
-}
-
-const fn matches_sv(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b's' && b[1] == b'v'
-}
-
-const fn matches_tr(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b't' && b[1] == b'r'
-}
-
-const fn matches_vi(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'v' && b[1] == b'i'
-}
-
-const fn matches_zh(v: &str) -> bool {
-    let b = v.as_bytes();
-    b.len() == 2 && b[0] == b'z' && b[1] == b'h'
+// A const fn cannot compare &str with ==, so this compares bytes by hand.
+const fn eq(a: &str, b: &str) -> bool {
+    let (a, b) = (a.as_bytes(), b.as_bytes());
+    if a.len() != b.len() {
+        return false;
+    }
+    let mut i = 0;
+    while i < a.len() {
+        if a[i] != b[i] {
+            return false;
+        }
+        i += 1;
+    }
+    true
 }
 
 pub(crate) const ICON_NAMES: &[&str] = &[

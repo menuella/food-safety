@@ -1,6 +1,6 @@
 # food-safety (Ruby)
 
-> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and ten languages.
+> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and 27 languages.
 
 Semantic keys instead of country-specific numbers. **Store the key, render the code — never the other way round.**
 
@@ -86,7 +86,7 @@ An icon means *"contains wheat"*. Render it **alongside** the declaration text, 
 | PyPI | [`menuella-food-safety`](https://pypi.org/project/menuella-food-safety/) |
 | Packagist | [`menuella/food-safety`](https://packagist.org/packages/menuella/food-safety) |
 | crates.io | [`menuella-food-safety`](https://crates.io/crates/menuella-food-safety) |
-| Go | [`github.com/menuella/food-safety/packages/go`](https://pkg.go.dev/github.com/menuella/food-safety/packages/go) |
+| Go | [`github.com/menuella/food-safety/packages/go/v2`](https://pkg.go.dev/github.com/menuella/food-safety/packages/go/v2) |
 | Swift | `MenuellaFoodSafety` |
 | Maven Central | `com.menuella:food-safety` |
 

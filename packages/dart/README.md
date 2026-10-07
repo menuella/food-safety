@@ -1,6 +1,6 @@
 # menuella_food_safety
 
-> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and ten languages.
+> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and 27 languages.
 
 Semantic keys instead of country-specific numbers. **Store the key, render the code — never the other way round.**
 
@@ -93,7 +93,7 @@ This is one binding of a shared dataset. The vocabulary, the keys and the icons 
 | Packagist | [`menuella/food-safety`](https://packagist.org/packages/menuella/food-safety) |
 | crates.io | [`menuella-food-safety`](https://crates.io/crates/menuella-food-safety) |
 | RubyGems | [`menuella-food_safety`](https://rubygems.org/gems/menuella-food_safety) |
-| Go | [`github.com/menuella/food-safety/packages/go`](https://pkg.go.dev/github.com/menuella/food-safety/packages/go) |
+| Go | [`github.com/menuella/food-safety/packages/go/v2`](https://pkg.go.dev/github.com/menuella/food-safety/packages/go/v2) |
 | Swift | `MenuellaFoodSafety` |
 | Maven Central | `com.menuella:food-safety` |
 

@@ -8,7 +8,7 @@ namespace Menuella.FoodSafety;
 
 /// <summary>
 /// The Menuella food-safety vocabulary: EU Reg. 1169/2011 Annex II allergens and
-/// the Menuella declarations, in six languages.
+/// the Menuella declarations, in every language the dataset ships.
 ///
 /// <para>
 /// This is the same dataset the <c>@menuella/food-safety</c> npm package ships,
@@ -28,7 +28,7 @@ public static class Disclosures
     /// <summary>
     /// Locales with a prebuilt bundle. Derived from the embedded
     /// <c>bundles.*.json</c> resources at type-init time, so adding a new
-    /// locale is a matter of dropping <c>bundles/xx.json</c> in — no source
+    /// locale is a matter of dropping <c>bundles/&lt;tag&gt;.json</c> in — no source
     /// list to keep in step.
     /// </summary>
     public static IReadOnlyList<string> Locales { get; } = typeof(Disclosures).Assembly
@@ -67,7 +67,12 @@ public static class Disclosures
                 nameof(locale));
         }
 
-        return Cache.GetOrAdd(locale.ToLowerInvariant(), static key =>
+        // Resources are named after the canonical tag ("bundles.pt-BR.json"), and
+        // the lookup is case-insensitive, so resolve to that spelling first —
+        // lower-casing would ask for "bundles.pt-br.json", which does not exist.
+        var canonical = Locales.First(l => string.Equals(l, locale, StringComparison.OrdinalIgnoreCase));
+
+        return Cache.GetOrAdd(canonical, static key =>
         {
             var dto = Resources.Read<BundleDto>($"bundles.{key}.json", FoodSafetyJsonContext.Default.BundleDto);
             return new DisclosureSet(

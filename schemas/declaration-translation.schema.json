@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://menuella.github.io/food-safety/schemas/declaration-translation.schema.json",
   "title": "Additive & Disclosure Labels (per language)",
-  "description": "Shape of every data/translations/declarations/<lang>.json file: an object keyed by the disclosure `key` from data/additives.json, so a lookup is O(1) with no join step. A locale may cover fewer keys than the structural file; consumers should fall back to another locale for anything absent.",
+  "description": "Shape of every data/translations/declarations/<tag>.json file: an object keyed by the disclosure `key` from data/declarations.json, so a lookup is O(1) with no join step. A locale may cover fewer keys than the structural file; consumers should fall back to another locale for anything absent.",
   "type": "object",
   "propertyNames": {
     "enum": [

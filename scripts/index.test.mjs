@@ -1,11 +1,15 @@
-// Runtime behaviour of the published entry point.
+// Runtime behaviour of the published entry points.
 //
 // `npm run verify` checks the DATA is correct; this checks the CODE that hands
-// it out — immutability, guards, error contracts. Uses node:test, so there is
-// no test dependency.
+// it out — immutability, guards, error contracts, and which entry point
+// carries what. Uses node:test, so there is no test dependency.
+//
+// Locale modules are imported by the PACKAGE name, not by relative path, so the
+// `exports` map is exercised exactly as a consumer would hit it.
 import { test } from "node:test"
 import assert from "node:assert/strict"
 
+import * as root from "../index.js"
 import {
   ALLERGEN_GROUPS,
   ALLERGEN_KEYS,
@@ -15,14 +19,40 @@ import {
   FALLBACK_LOCALE,
   ICON_NAMES,
   LOCALES,
-  getDisclosures,
   isAllergenKey,
   isDeclarationKey,
   isLocale,
+  resolveDisclosures,
 } from "../index.js"
+import { getDisclosures } from "../all.js"
+import { loadDisclosures } from "../load.js"
 import { ICONS_AVAILABLE, getIcon, getIconSvg } from "../icons.js"
 
-test("every locale resolves to its own bundle", () => {
+const importLocale = async (tag) =>
+  (await import(`@menuella/food-safety/locales/${tag}`)).default
+
+// ------------------------------------------------------------ entry points ---
+
+test("the root entry point carries the contract and no locale data", () => {
+  // An exact list, so a re-added data export (or a new one) is a decision
+  // someone has to make here rather than an accident.
+  assert.deepEqual(Object.keys(root).sort(), [
+    "ALLERGEN_GROUPS", "ALLERGEN_KEYS", "CODE_SCHEME", "DECLARATION_CATEGORIES",
+    "DECLARATION_KEYS", "FALLBACK_LOCALE", "ICON_NAMES", "LOCALES",
+    "isAllergenKey", "isDeclarationKey", "isLocale", "resolveDisclosures",
+  ])
+})
+
+test("every locale is reachable three ways, and all three are the same object", async () => {
+  for (const locale of LOCALES) {
+    const imported = await importLocale(locale)
+    assert.equal(imported.locale, locale)
+    assert.equal(await loadDisclosures(locale), imported, `${locale}: load`)
+    assert.equal(getDisclosures(locale), imported, `${locale}: all`)
+  }
+})
+
+test("every locale resolves to a complete bundle of its own", () => {
   for (const locale of LOCALES) {
     const d = getDisclosures(locale)
     assert.equal(d.locale, locale, `${locale} bundle reports the wrong locale`)
@@ -34,19 +64,28 @@ test("every locale resolves to its own bundle", () => {
 })
 
 test("locales actually differ from each other", () => {
-  // Guards against every bundle being generated from the same language.
-  // Fingerprint each locale by its full allergen-name list rather than one
-  // entry: two locales that share an incidental word (Danish and Norwegian
-  // both call RYE "Rug") are clearly still different files, but two locales
-  // sharing every name would be an accidental copy.
-  const fingerprints = LOCALES.map((l) =>
-    getDisclosures(l).allergens.map((a) => a.name).join("|"),
-  )
-  assert.equal(
-    new Set(fingerprints).size,
-    fingerprints.length,
-    "at least two locales share every allergen label",
-  )
+  // Guards against two bundles being generated from the same file. Fingerprint
+  // each locale by every label it carries rather than one entry: two locales
+  // can share an incidental word (Danish and Norwegian both call RYE "Rug"),
+  // and two variants of one language share many — but never all of them.
+  const fingerprints = LOCALES.map((l) => {
+    const { allergens, declarations } = getDisclosures(l)
+    return JSON.stringify([allergens, declarations])
+  })
+  assert.equal(new Set(fingerprints).size, fingerprints.length,
+    "at least two locales carry identical labels")
+})
+
+test("locale tags are BCP 47, and a language with variants has no bare tag", () => {
+  for (const tag of LOCALES) {
+    assert.match(tag, /^[a-z]{2}(-[A-Z]{2}|-[A-Z][a-z]{3})?$/, tag)
+  }
+  // Shipping "pt" beside "pt-BR" would make "pt" mean one of them silently.
+  // A caller holding a bare language must choose the variant themselves.
+  for (const tag of LOCALES) {
+    const base = tag.split("-")[0]
+    if (base !== tag) assert.ok(!LOCALES.includes(base), `${base} ships beside ${tag}`)
+  }
 })
 
 // Pick a two-letter code this package does not ship. Sweeps every "aa"…"zz" and
@@ -76,14 +115,25 @@ test("an unsupported locale throws, and says what exists", () => {
   assert.match(err.message, new RegExp(`No disclosures for locale "${sample}"`))
   assert.equal(err.code, "ERR_UNSUPPORTED_LOCALE")
   // The message must name every locale that does work, or it is not actionable.
-  for (const locale of LOCALES) assert.match(err.message, new RegExp(locale))
+  for (const locale of LOCALES) assert.ok(err.message.includes(locale), locale)
 })
 
-test("non-locale inputs throw rather than returning something", () => {
-  // `__proto__` and `constructor` would resolve on a plain object lookup.
-  for (const input of ["__proto__", "constructor", "toString", "", "DE", " de ", null, undefined, 0, {}]) {
+test("loadDisclosures rejects an unsupported locale the same way", async () => {
+  await assert.rejects(loadDisclosures(pickNegativeLocale()), { code: "ERR_UNSUPPORTED_LOCALE" })
+  await assert.rejects(loadDisclosures(undefined), { code: "ERR_UNSUPPORTED_LOCALE" })
+})
+
+test("non-locale inputs throw rather than returning something", async () => {
+  // `__proto__` and `constructor` would resolve on a plain object lookup. A
+  // variant tag is matched exactly: no case folding, no prefix match.
+  for (const input of ["__proto__", "constructor", "toString", "", "DE", " de ",
+                       "pt", "zh", "pt-br", "PT-BR", "zh-hant", "zh_Hant",
+                       null, undefined, 0, {}]) {
     assert.throws(() => getDisclosures(input), { code: "ERR_UNSUPPORTED_LOCALE" },
       `expected ${JSON.stringify(input)} to be rejected`)
+    await assert.rejects(loadDisclosures(input), { code: "ERR_UNSUPPORTED_LOCALE" },
+      `expected ${JSON.stringify(input)} to be rejected by load`)
+    assert.equal(isLocale(input), false)
   }
 })
 
@@ -98,8 +148,9 @@ test("a bundle cannot be mutated by one consumer and poison another", () => {
   assert.equal(second.allergens[0].name, "Roggen")
 })
 
-test("bundles are frozen all the way down", () => {
-  const d = getDisclosures("en")
+test("a locale module is frozen all the way down on import", async () => {
+  // Imported directly, with nothing else having touched it first.
+  const d = await importLocale("en")
   assert.ok(Object.isFrozen(d))
   assert.ok(Object.isFrozen(d.allergens))
   assert.ok(Object.isFrozen(d.allergens[0]))
@@ -107,9 +158,7 @@ test("bundles are frozen all the way down", () => {
   assert.ok(Object.isFrozen(d.fallbacks))
 })
 
-test("repeated calls are cheap and identical", () => {
-  assert.equal(getDisclosures("de"), getDisclosures("de"))
-})
+// -------------------------------------------------------------- vocabulary ---
 
 test("key guards accept current keys and reject retired codes", () => {
   for (const key of ALLERGEN_KEYS) assert.ok(isAllergenKey(key), key)
@@ -157,16 +206,19 @@ test("every entry references a real icon, group and category", () => {
   }
 })
 
-test("members of a group share one declaration sentence", () => {
-  // The LMIV rendering rule: one declaration per group, members beneath it.
-  const { allergens } = getDisclosures("de")
-  const byGroup = new Map()
-  for (const a of allergens) {
-    byGroup.set(a.group, [...(byGroup.get(a.group) ?? []), a])
-  }
-  for (const [group, members] of byGroup) {
-    const sentences = new Set(members.map((m) => m.declaration))
-    assert.equal(sentences.size, 1, `${group} has ${sentences.size} different declarations`)
+test("members of a group share one declaration sentence, in every locale", () => {
+  // The rendering rule resolveDisclosures relies on: one declaration per
+  // group, members beneath it. A locale that gave two members of one group
+  // different sentences would make "the group's declaration" ambiguous.
+  for (const locale of LOCALES) {
+    const byGroup = new Map()
+    for (const a of getDisclosures(locale).allergens) {
+      byGroup.set(a.group, [...(byGroup.get(a.group) ?? []), a])
+    }
+    for (const [group, members] of byGroup) {
+      const sentences = new Set(members.map((m) => m.declaration))
+      assert.equal(sentences.size, 1, `${locale}/${group} has ${sentences.size} different declarations`)
+    }
   }
 })
 
@@ -176,6 +228,55 @@ test("exported vocabularies are immutable", () => {
     assert.ok(Object.isFrozen(frozen))
   }
   assert.equal(CODE_SCHEME, "MENUELLA")
+})
+
+// ------------------------------------------------------ resolveDisclosures ---
+
+test("resolveDisclosures states each group once, with its members beneath", () => {
+  const en = getDisclosures("en")
+  const r = resolveDisclosures(en, ["BARLEY", "WHEAT", "MILK"])
+
+  assert.deepEqual(r.allergens.map((g) => g.group), ["CEREALS", "MILK"])
+  const cereals = r.allergens[0]
+  assert.equal(cereals.declaration, en.allergens.find((a) => a.key === "WHEAT").declaration)
+  assert.equal(cereals.icon, "cereals")
+  // Dataset order, not input order: barley was asked for first.
+  assert.deepEqual(cereals.members.map((m) => m.key),
+    en.allergens.filter((a) => a.key === "WHEAT" || a.key === "BARLEY").map((a) => a.key))
+  // A single-member group has nothing to list beneath its declaration.
+  assert.deepEqual(r.allergens[1].members, [])
+  assert.deepEqual(r.declarations, [])
+  assert.deepEqual(r.unknown, [])
+})
+
+test("resolveDisclosures keeps unknown keys instead of dropping them", () => {
+  const r = resolveDisclosures(getDisclosures("de"), ["A6", "WHEAT", "SWEETENERS", "A6", "NEW_KEY"])
+  assert.deepEqual(r.unknown, ["A6", "NEW_KEY"])
+  assert.deepEqual(r.allergens.map((g) => g.group), ["CEREALS"])
+  assert.deepEqual(r.declarations.map((d) => d.key), ["SWEETENERS"])
+})
+
+test("resolveDisclosures orders groups and declarations by the dataset", () => {
+  const de = getDisclosures("de")
+  const everything = [...ALLERGEN_KEYS, ...DECLARATION_KEYS].reverse()
+  const r = resolveDisclosures(de, everything)
+  assert.deepEqual(r.allergens.map((g) => g.group),
+    [...new Set(de.allergens.map((a) => a.group))])
+  assert.deepEqual(r.declarations, de.declarations)
+  assert.equal(r.allergens.reduce((n, g) => n + Math.max(g.members.length, 1), 0),
+    ALLERGEN_KEYS.length)
+})
+
+test("resolveDisclosures refuses a single string instead of spelling it out", () => {
+  assert.throws(() => resolveDisclosures(getDisclosures("en"), "WHEAT"), TypeError)
+  // A Set is a list of keys too.
+  const r = resolveDisclosures(getDisclosures("en"), new Set(["WHEAT"]))
+  assert.deepEqual(r.allergens.map((g) => g.group), ["CEREALS"])
+})
+
+test("resolveDisclosures with no keys resolves to nothing", () => {
+  const r = resolveDisclosures(getDisclosures("en"), [])
+  assert.deepEqual(r, { allergens: [], declarations: [], unknown: [] })
 })
 
 // ------------------------------------------------------------------ icons ---
