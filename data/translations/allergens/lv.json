@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Rudzi",
+    "declaration": "Satur graudaugus, kas satur lipekli, un to izstrādājumus",
+    "description": "Rudzi un rudzu izstrādājumi"
+  },
+  "BARLEY": {
+    "name": "Mieži",
+    "declaration": "Satur graudaugus, kas satur lipekli, un to izstrādājumus",
+    "description": "Mieži un miežu izstrādājumi"
+  },
+  "EMMER": {
+    "name": "Divgraudu kvieši (emmers)",
+    "declaration": "Satur graudaugus, kas satur lipekli, un to izstrādājumus",
+    "description": "Divgraudu kvieši un to izstrādājumi"
+  },
+  "EINKORN": {
+    "name": "Vienegraudu kvieši (einkorns)",
+    "declaration": "Satur graudaugus, kas satur lipekli, un to izstrādājumus",
+    "description": "Vienegraudu kvieši un to izstrādājumi"
+  },
+  "SPELT": {
+    "name": "Spelta kvieši",
+    "declaration": "Satur graudaugus, kas satur lipekli, un to izstrādājumus",
+    "description": "Spelta kvieši un to izstrādājumi"
+  },
+  "WHEAT": {
+    "name": "Kvieši",
+    "declaration": "Satur graudaugus, kas satur lipekli, un to izstrādājumus",
+    "description": "Kvieši un kviešu izstrādājumi"
+  },
+  "OATS": {
+    "name": "Auzas",
+    "declaration": "Satur graudaugus, kas satur lipekli, un to izstrādājumus",
+    "description": "Auzas un auzu izstrādājumi"
+  },
+  "KHORASAN": {
+    "name": "Horasānas kvieši (Kamut)",
+    "declaration": "Satur graudaugus, kas satur lipekli, un to izstrādājumus",
+    "description": "Horasānas kvieši un to izstrādājumi"
+  },
+  "CRUSTACEANS": {
+    "name": "Vēžveidīgie",
+    "declaration": "Satur vēžveidīgos un to izstrādājumus",
+    "description": "Vēžveidīgie, piemēram, garneles un krabji, un to izstrādājumi"
+  },
+  "EGGS": {
+    "name": "Olas",
+    "declaration": "Satur olas un olu izstrādājumus",
+    "description": "Olas un olu izstrādājumi"
+  },
+  "FISH": {
+    "name": "Zivis",
+    "declaration": "Satur zivis un zivju izstrādājumus",
+    "description": "Zivis un zivju izstrādājumi"
+  },
+  "PEANUTS": {
+    "name": "Zemesrieksti",
+    "declaration": "Satur zemesriekstus un to izstrādājumus",
+    "description": "Zemesrieksti un to izstrādājumi"
+  },
+  "SOY": {
+    "name": "Soja",
+    "declaration": "Satur sojas pupas un to izstrādājumus",
+    "description": "Sojas pupas un to izstrādājumi"
+  },
+  "MILK": {
+    "name": "Piens (tostarp laktoze)",
+    "declaration": "Satur pienu un tā izstrādājumus (tostarp laktozi)",
+    "description": "Piens un piena izstrādājumi, tostarp laktoze"
+  },
+  "MACADAMIA": {
+    "name": "Makadāmijas rieksti",
+    "declaration": "Satur riekstus un to izstrādājumus",
+    "description": "Makadāmijas rieksti un to izstrādājumi"
+  },
+  "ALMONDS": {
+    "name": "Mandeles",
+    "declaration": "Satur riekstus un to izstrādājumus",
+    "description": "Mandeles un mandeļu izstrādājumi"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Brazīlijas rieksti",
+    "declaration": "Satur riekstus un to izstrādājumus",
+    "description": "Brazīlijas rieksti un to izstrādājumi"
+  },
+  "PECANS": {
+    "name": "Pekanrieksti",
+    "declaration": "Satur riekstus un to izstrādājumus",
+    "description": "Pekanrieksti un to izstrādājumi"
+  },
+  "PISTACHIOS": {
+    "name": "Pistācijas",
+    "declaration": "Satur riekstus un to izstrādājumus",
+    "description": "Pistācijas un to izstrādājumi"
+  },
+  "WALNUTS": {
+    "name": "Valrieksti",
+    "declaration": "Satur riekstus un to izstrādājumus",
+    "description": "Valrieksti un to izstrādājumi"
+  },
+  "CASHEWS": {
+    "name": "Indijas rieksti",
+    "declaration": "Satur riekstus un to izstrādājumus",
+    "description": "Indijas rieksti un to izstrādājumi"
+  },
+  "HAZELNUTS": {
+    "name": "Lazdu rieksti",
+    "declaration": "Satur riekstus un to izstrādājumus",
+    "description": "Lazdu rieksti un to izstrādājumi"
+  },
+  "CELERY": {
+    "name": "Selerijas",
+    "declaration": "Satur selerijas un to izstrādājumus",
+    "description": "Selerijas un to izstrādājumi"
+  },
+  "MUSTARD": {
+    "name": "Sinepes",
+    "declaration": "Satur sinepes un to izstrādājumus",
+    "description": "Sinepes un to izstrādājumi"
+  },
+  "SESAME": {
+    "name": "Sezama sēklas",
+    "declaration": "Satur sezama sēklas un to izstrādājumus",
+    "description": "Sezama sēklas un to izstrādājumi"
+  },
+  "SULPHITES": {
+    "name": "Sēra dioksīds un sulfīti",
+    "declaration": "Satur sēra dioksīdu un sulfītus",
+    "description": "Sēra dioksīds un sulfīti"
+  },
+  "LUPINS": {
+    "name": "Lupīnas",
+    "declaration": "Satur lupīnas un to izstrādājumus",
+    "description": "Lupīnas un to izstrādājumi"
+  },
+  "MOLLUSCS": {
+    "name": "Gliemji",
+    "declaration": "Satur gliemjus un to izstrādājumus",
+    "description": "Gliemji, piemēram, gliemeži un mīdijas, un to izstrādājumi"
+  }
+}

@@ -9,7 +9,7 @@
 //   import { getDisclosures } from "@menuella/food-safety/all"   every locale, sync
 
 /** Locales with a prebuilt bundle, as BCP 47 tags. */
-export const LOCALES = Object.freeze(["ar", "bg", "cs", "da", "de", "el", "en", "es", "fi", "fr", "he", "hu", "it", "ja", "ko", "nl", "no", "pl", "pt-BR", "pt-PT", "ro", "ru", "sv", "tr", "vi", "zh-Hans", "zh-Hant"])
+export const LOCALES = Object.freeze(["am", "ar", "bg", "bn", "ca", "cs", "da", "de", "el", "en", "es", "et", "fa", "fi", "fil", "fr", "he", "hi", "hr", "hu", "id", "it", "ja", "ka", "ko", "ku", "lt", "lv", "ms", "nl", "no", "pl", "pt-BR", "pt-PT", "ro", "ru", "sk", "sl", "sq", "sr-Latn", "sv", "sw", "ta", "th", "tr", "uk", "ur", "vi", "zh-Hans", "zh-Hant"])
 
 /** The locale a bundle falls back to for anything it does not itself carry. */
 export const FALLBACK_LOCALE = "en"

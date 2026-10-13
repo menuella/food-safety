@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "रंग युक्त",
+    "description": "खाद्य रंग शामिल है"
+  },
+  "PRESERVATIVES": {
+    "name": "परिरक्षक युक्त",
+    "description": "परिरक्षक शामिल है"
+  },
+  "ANTIOXIDANTS": {
+    "name": "एंटीऑक्सीडेंट युक्त",
+    "description": "एंटीऑक्सीडेंट शामिल है"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "नाइट्राइट क्योरिंग नमक युक्त",
+    "description": "नाइट्राइट क्योरिंग नमक शामिल है"
+  },
+  "NITRATE": {
+    "name": "नाइट्रेट युक्त",
+    "description": "नाइट्रेट शामिल है (परिरक्षक)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "नाइट्राइट क्योरिंग नमक और नाइट्रेट युक्त",
+    "description": "नाइट्राइट क्योरिंग नमक और नाइट्रेट शामिल हैं"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "स्वाद वर्धक युक्त",
+    "description": "स्वाद वर्धक शामिल है"
+  },
+  "PHOSPHATE": {
+    "name": "फॉस्फेट युक्त",
+    "description": "फॉस्फेट शामिल है"
+  },
+  "SULPHURED": {
+    "name": "गंधकित",
+    "description": "सल्फर डाइऑक्साइड या सल्फाइट शामिल है"
+  },
+  "BLACKENED": {
+    "name": "काला किया गया",
+    "description": "रूप के लिए काला किया गया"
+  },
+  "WAXED": {
+    "name": "मोम लेपित",
+    "description": "टिकाऊपन के लिए सतह पर मोम लगाया गया"
+  },
+  "SWEETENERS": {
+    "name": "मिठास कारक युक्त",
+    "description": "मिठास कारक शामिल हैं"
+  },
+  "PHENYLALANINE": {
+    "name": "फेनिलएलनिन का स्रोत शामिल है",
+    "description": "फेनिलएलनिन का स्रोत शामिल है"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "अधिक सेवन से रेचक प्रभाव हो सकता है",
+    "description": "अधिक सेवन से रेचक प्रभाव हो सकता है"
+  },
+  "CAFFEINE": {
+    "name": "कैफ़ीन शामिल है",
+    "description": "कैफ़ीन शामिल है"
+  },
+  "QUININE": {
+    "name": "कुनैन शामिल है",
+    "description": "कुनैन शामिल है"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "बच्चों की सक्रियता और ध्यान पर असर डाल सकता है",
+    "description": "बच्चों की सक्रियता और ध्यान पर प्रतिकूल असर डाल सकता है"
+  },
+  "MILK_PROTEIN": {
+    "name": "दूध प्रोटीन शामिल है",
+    "description": "दूध प्रोटीन शामिल है"
+  },
+  "SURIMI": {
+    "name": "सुरिमी शामिल है",
+    "description": "सुरिमी शामिल है"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "जोड़े गए मांस के टुकड़ों से बना",
+    "description": "जोड़े गए मांस के टुकड़ों से बनाया गया"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "जोड़े गए मछली के टुकड़ों से बना",
+    "description": "जोड़े गए मछली के टुकड़ों से बनाया गया"
+  },
+  "DEFROSTED": {
+    "name": "डीफ़्रॉस्ट किया गया",
+    "description": "जमी हुई अवस्था से पिघलाया गया"
+  }
+}

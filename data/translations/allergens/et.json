@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Rukis",
+    "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+    "description": "Rukis ja rukkitooted"
+  },
+  "BARLEY": {
+    "name": "Oder",
+    "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+    "description": "Oder ja odratooted"
+  },
+  "EMMER": {
+    "name": "Kaksikterane nisu (emmer)",
+    "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+    "description": "Kaksikterane nisu ja sellest valmistatud tooted"
+  },
+  "EINKORN": {
+    "name": "Üheteraline nisu (einkorn)",
+    "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+    "description": "Üheteraline nisu ja sellest valmistatud tooted"
+  },
+  "SPELT": {
+    "name": "Spelta",
+    "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+    "description": "Spelta ja speltatooted"
+  },
+  "WHEAT": {
+    "name": "Nisu",
+    "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+    "description": "Nisu ja nisutooted"
+  },
+  "OATS": {
+    "name": "Kaer",
+    "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+    "description": "Kaer ja kaeratooted"
+  },
+  "KHORASAN": {
+    "name": "Horasani nisu (Kamut)",
+    "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+    "description": "Horasani nisu ja sellest valmistatud tooted"
+  },
+  "CRUSTACEANS": {
+    "name": "Koorikloomad",
+    "declaration": "Sisaldab koorikloomi ja nendest valmistatud tooteid",
+    "description": "Koorikloomad, nt krevetid ja krabid, ning nendest valmistatud tooted"
+  },
+  "EGGS": {
+    "name": "Muna",
+    "declaration": "Sisaldab mune ja munatooteid",
+    "description": "Munad ja munatooted"
+  },
+  "FISH": {
+    "name": "Kala",
+    "declaration": "Sisaldab kala ja kalatooteid",
+    "description": "Kala ja kalatooted"
+  },
+  "PEANUTS": {
+    "name": "Maapähklid",
+    "declaration": "Sisaldab maapähkleid ja nendest valmistatud tooteid",
+    "description": "Maapähklid ja maapähklitooted"
+  },
+  "SOY": {
+    "name": "Soja",
+    "declaration": "Sisaldab sojaube ja nendest valmistatud tooteid",
+    "description": "Sojaoad ja sojatooted"
+  },
+  "MILK": {
+    "name": "Piim (sh laktoos)",
+    "declaration": "Sisaldab piima ja piimatooteid (sh laktoosi)",
+    "description": "Piim ja piimatooted, sh laktoos"
+  },
+  "MACADAMIA": {
+    "name": "Makadaamiapähklid",
+    "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+    "description": "Makadaamiapähklid ja nendest valmistatud tooted"
+  },
+  "ALMONDS": {
+    "name": "Mandlid",
+    "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+    "description": "Mandlid ja mandlitooted"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Brasiilia pähklid",
+    "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+    "description": "Brasiilia pähklid ja nendest valmistatud tooted"
+  },
+  "PECANS": {
+    "name": "Pekanipähklid",
+    "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+    "description": "Pekanipähklid ja nendest valmistatud tooted"
+  },
+  "PISTACHIOS": {
+    "name": "Pistaatsiapähklid",
+    "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+    "description": "Pistaatsiapähklid ja nendest valmistatud tooted"
+  },
+  "WALNUTS": {
+    "name": "Kreeka pähklid",
+    "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+    "description": "Kreeka pähklid ja nendest valmistatud tooted"
+  },
+  "CASHEWS": {
+    "name": "Kašupähklid",
+    "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+    "description": "Kašupähklid ja nendest valmistatud tooted"
+  },
+  "HAZELNUTS": {
+    "name": "Sarapuupähklid",
+    "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+    "description": "Sarapuupähklid ja nendest valmistatud tooted"
+  },
+  "CELERY": {
+    "name": "Seller",
+    "declaration": "Sisaldab sellerit ja sellerist valmistatud tooteid",
+    "description": "Seller ja sellerist valmistatud tooted"
+  },
+  "MUSTARD": {
+    "name": "Sinep",
+    "declaration": "Sisaldab sinepit ja sinepist valmistatud tooteid",
+    "description": "Sinep ja sinepist valmistatud tooted"
+  },
+  "SESAME": {
+    "name": "Seesamiseemned",
+    "declaration": "Sisaldab seesamiseemneid ja nendest valmistatud tooteid",
+    "description": "Seesamiseemned ja nendest valmistatud tooted"
+  },
+  "SULPHITES": {
+    "name": "Vääveldioksiid ja sulfitid",
+    "declaration": "Sisaldab vääveldioksiidi ja sulfiteid",
+    "description": "Vääveldioksiid ja sulfitid"
+  },
+  "LUPINS": {
+    "name": "Lupiin",
+    "declaration": "Sisaldab lupiini ja lupiinist valmistatud tooteid",
+    "description": "Lupiin ja lupiinist valmistatud tooted"
+  },
+  "MOLLUSCS": {
+    "name": "Molluskid",
+    "declaration": "Sisaldab molluskeid ja nendest valmistatud tooteid",
+    "description": "Molluskid, nt teod ja rannakarbid, ning nendest valmistatud tooted"
+  }
+}

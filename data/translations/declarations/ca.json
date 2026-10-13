@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "amb colorant",
+    "description": "Conté colorants"
+  },
+  "PRESERVATIVES": {
+    "name": "amb conservant",
+    "description": "Conté conservants"
+  },
+  "ANTIOXIDANTS": {
+    "name": "amb antioxidant",
+    "description": "Conté antioxidants"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "amb sal de curació amb nitrit",
+    "description": "Conté sal de curació amb nitrit"
+  },
+  "NITRATE": {
+    "name": "amb nitrat",
+    "description": "Conté nitrat (conservant)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "amb sal de curació amb nitrit i nitrat",
+    "description": "Conté sal de curació amb nitrit i nitrat"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "amb potenciador del sabor",
+    "description": "Conté potenciadors del sabor"
+  },
+  "PHOSPHATE": {
+    "name": "amb fosfat",
+    "description": "Conté fosfat"
+  },
+  "SULPHURED": {
+    "name": "sulfitat",
+    "description": "Conté diòxid de sofre o sulfits"
+  },
+  "BLACKENED": {
+    "name": "ennegrit",
+    "description": "Ennegrit per a l'aspecte"
+  },
+  "WAXED": {
+    "name": "encerat",
+    "description": "Superfície encerada per a la conservació"
+  },
+  "SWEETENERS": {
+    "name": "amb edulcorants",
+    "description": "Conté edulcorants"
+  },
+  "PHENYLALANINE": {
+    "name": "conté una font de fenilalanina",
+    "description": "Conté una font de fenilalanina"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "un consum excessiu pot tenir efectes laxants",
+    "description": "Un consum excessiu pot tenir efectes laxants"
+  },
+  "CAFFEINE": {
+    "name": "conté cafeïna",
+    "description": "Conté cafeïna"
+  },
+  "QUININE": {
+    "name": "conté quinina",
+    "description": "Conté quinina"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "pot afectar l'activitat i l'atenció dels infants",
+    "description": "Pot afectar l'activitat i l'atenció dels infants"
+  },
+  "MILK_PROTEIN": {
+    "name": "conté proteïna de llet",
+    "description": "Conté proteïna de llet"
+  },
+  "SURIMI": {
+    "name": "conté surimi",
+    "description": "Conté surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "elaborat amb trossos de carn units",
+    "description": "Elaborat amb trossos de carn units"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "elaborat amb trossos de peix units",
+    "description": "Elaborat amb trossos de peix units"
+  },
+  "DEFROSTED": {
+    "name": "descongelat",
+    "description": "Descongelat després de congelat"
+  }
+}

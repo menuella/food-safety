@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "me ngjyrues",
+    "description": "Përmban ngjyrues ushqimorë"
+  },
+  "PRESERVATIVES": {
+    "name": "me konservues",
+    "description": "Përmban konservues"
+  },
+  "ANTIOXIDANTS": {
+    "name": "me antioksidant",
+    "description": "Përmban antioksidantë"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "me kripë kurimi me nitrit",
+    "description": "Përmban kripë kurimi me nitrit"
+  },
+  "NITRATE": {
+    "name": "me nitrat",
+    "description": "Përmban nitrat (konservues)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "me kripë kurimi me nitrit dhe nitrat",
+    "description": "Përmban kripë kurimi me nitrit dhe nitrat"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "me përforcues shije",
+    "description": "Përmban përforcues shije"
+  },
+  "PHOSPHATE": {
+    "name": "me fosfat",
+    "description": "Përmban fosfat"
+  },
+  "SULPHURED": {
+    "name": "i squfuruar",
+    "description": "Përmban dioksid squfuri ose sulfite"
+  },
+  "BLACKENED": {
+    "name": "i nxirë",
+    "description": "I nxirë për pamjen"
+  },
+  "WAXED": {
+    "name": "i dyllosur",
+    "description": "Sipërfaqe e dyllosur për ruajtje"
+  },
+  "SWEETENERS": {
+    "name": "me ëmbëlsues",
+    "description": "Përmban ëmbëlsues"
+  },
+  "PHENYLALANINE": {
+    "name": "përmban një burim fenilalanine",
+    "description": "Përmban një burim fenilalanine"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "konsumi i tepërt mund të ketë efekt laksativ",
+    "description": "Konsumi i tepërt mund të ketë efekt laksativ"
+  },
+  "CAFFEINE": {
+    "name": "përmban kafeinë",
+    "description": "Përmban kafeinë"
+  },
+  "QUININE": {
+    "name": "përmban kininë",
+    "description": "Përmban kininë"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "mund të ndikojë në aktivitetin dhe vëmendjen e fëmijëve",
+    "description": "Mund të ndikojë negativisht në aktivitetin dhe vëmendjen e fëmijëve"
+  },
+  "MILK_PROTEIN": {
+    "name": "përmban proteinë qumështi",
+    "description": "Përmban proteinë qumështi"
+  },
+  "SURIMI": {
+    "name": "përmban surimi",
+    "description": "Përmban surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "prej copash mishi të bashkuara",
+    "description": "Prodhuar prej copash mishi të bashkuara"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "prej copash peshku të bashkuara",
+    "description": "Prodhuar prej copash peshku të bashkuara"
+  },
+  "DEFROSTED": {
+    "name": "i shkrirë",
+    "description": "I shkrirë nga gjendja e ngrirë"
+  }
+}

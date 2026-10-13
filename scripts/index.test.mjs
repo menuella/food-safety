@@ -78,7 +78,8 @@ test("locales actually differ from each other", () => {
 
 test("locale tags are BCP 47, and a language with variants has no bare tag", () => {
   for (const tag of LOCALES) {
-    assert.match(tag, /^[a-z]{2}(-[A-Z]{2}|-[A-Z][a-z]{3})?$/, tag)
+    // Two letters where ISO 639-1 has a code, three where it does not ("fil").
+    assert.match(tag, /^[a-z]{2,3}(-[A-Z]{2}|-[A-Z][a-z]{3})?$/, tag)
   }
   // Shipping "pt" beside "pt-BR" would make "pt" mean one of them silently.
   // A caller holding a bare language must choose the variant themselves.
@@ -119,7 +120,14 @@ test("an unsupported locale throws, and says what exists", () => {
 })
 
 test("loadDisclosures rejects an unsupported locale the same way", async () => {
-  await assert.rejects(loadDisclosures(pickNegativeLocale()), { code: "ERR_UNSUPPORTED_LOCALE" })
+  const sample = pickNegativeLocale()
+  await assert.rejects(loadDisclosures(sample), (err) => {
+    assert.equal(err.code, "ERR_UNSUPPORTED_LOCALE")
+    assert.match(err.message, new RegExp(`No disclosures for locale "${sample}"`))
+    // load.js lists its own loaders, not LOCALES — they must name the same set.
+    assert.ok(err.message.endsWith(`Available: ${LOCALES.join(", ")}.`), err.message)
+    return true
+  })
   await assert.rejects(loadDisclosures(undefined), { code: "ERR_UNSUPPORTED_LOCALE" })
 })
 
@@ -127,7 +135,7 @@ test("non-locale inputs throw rather than returning something", async () => {
   // `__proto__` and `constructor` would resolve on a plain object lookup. A
   // variant tag is matched exactly: no case folding, no prefix match.
   for (const input of ["__proto__", "constructor", "toString", "", "DE", " de ",
-                       "pt", "zh", "pt-br", "PT-BR", "zh-hant", "zh_Hant",
+                       "pt", "zh", "pt-br", "PT-BR", "sr", "sr-latn", "FIL", "zh-hant", "zh_Hant",
                        null, undefined, 0, {}]) {
     assert.throws(() => getDisclosures(input), { code: "ERR_UNSUPPORTED_LOCALE" },
       `expected ${JSON.stringify(input)} to be rejected`)

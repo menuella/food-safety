@@ -10,6 +10,28 @@ Pin to a major version in production:
 
 ---
 
+## [2.1.0] – 2026-10-13
+
+### Added
+
+- **Twenty-three new languages, bringing the set to fifty:** Amharic (`am`), Bengali (`bn`), Catalan (`ca`), Estonian (`et`), Persian (`fa`), Filipino (`fil`), Hindi (`hi`), Croatian (`hr`), Indonesian (`id`), Georgian (`ka`), Kurdish (`ku`), Lithuanian (`lt`), Latvian (`lv`), Malay (`ms`), Slovak (`sk`), Slovenian (`sl`), Albanian (`sq`), Serbian (`sr-Latn`), Swahili (`sw`), Tamil (`ta`), Thai (`th`), Ukrainian (`uk`) and Urdu (`ur`). Each is complete for all 28 allergens and 22 declarations, with no fields served from the fallback locale.
+
+  - Estonian, Croatian, Lithuanian, Latvian, Slovak and Slovenian follow the official wording of Regulation (EU) No 1169/2011 in those languages, and of Regulation (EC) No 1333/2008 Annex V for the colour warning.
+  - `ku` is Kurmanji. `sr-Latn` is Serbian in the Latin script.
+  - Persian and Urdu are right-to-left, like Arabic and Hebrew.
+  - In Hindi, Urdu and Bengali the everyday word for rye is also a word for mustard seed, so rye carries "(Rye)" and mustard uses the unambiguous सरसों / سرسوں / সরিষা.
+  - Where a region grows a cereal under its own name, that name is used: खपली / کھپلی (emmer) in Hindi and Urdu, சம்பா கோதுமை (emmer) in Tamil, ასლი and ზანდური (emmer, einkorn) in Georgian.
+
+### Changed
+
+- **Locale tags may have a three-letter language subtag** where ISO 639-1 has no two-letter code, as with `fil`.
+
+### Unchanged
+
+- Every key, group, code and icon, and every API. Importing one locale costs the same as before; only `@menuella/food-safety/all` grows.
+
+---
+
 ## [2.0.0] – 2026-10-07
 
 ### Breaking

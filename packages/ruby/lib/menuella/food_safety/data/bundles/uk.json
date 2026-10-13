@@ -1,0 +1,415 @@
+{
+  "locale": "uk",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Жито",
+      "declaration": "Містить злаки, що містять глютен, та продукти з них",
+      "description": "Жито та продукти з жита"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ячмінь",
+      "declaration": "Містить злаки, що містять глютен, та продукти з них",
+      "description": "Ячмінь та продукти з ячменю"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Полба двозернянка (емер)",
+      "declaration": "Містить злаки, що містять глютен, та продукти з них",
+      "description": "Полба двозернянка та продукти з неї"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Однозернянка",
+      "declaration": "Містить злаки, що містять глютен, та продукти з них",
+      "description": "Однозернянка та продукти з неї"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Спельта",
+      "declaration": "Містить злаки, що містять глютен, та продукти з них",
+      "description": "Спельта та продукти зі спельти"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Пшениця",
+      "declaration": "Містить злаки, що містять глютен, та продукти з них",
+      "description": "Пшениця та продукти з пшениці"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Овес",
+      "declaration": "Містить злаки, що містять глютен, та продукти з них",
+      "description": "Овес та продукти з вівса"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Хорасан (камут)",
+      "declaration": "Містить злаки, що містять глютен, та продукти з них",
+      "description": "Пшениця хорасан та продукти з неї"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Ракоподібні",
+      "declaration": "Містить ракоподібних та продукти з них",
+      "description": "Ракоподібні, як-от креветки та краби, та продукти з них"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Яйця",
+      "declaration": "Містить яйця та продукти з яєць",
+      "description": "Яйця та продукти з яєць"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Риба",
+      "declaration": "Містить рибу та рибні продукти",
+      "description": "Риба та рибні продукти"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Арахіс",
+      "declaration": "Містить арахіс та продукти з нього",
+      "description": "Арахіс та продукти з арахісу"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Соя",
+      "declaration": "Містить соєві боби та продукти з них",
+      "description": "Соєві боби та продукти з сої"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Молоко (включно з лактозою)",
+      "declaration": "Містить молоко та молочні продукти (включно з лактозою)",
+      "description": "Молоко та молочні продукти, включно з лактозою"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Макадамія",
+      "declaration": "Містить горіхи та продукти з них",
+      "description": "Горіхи макадамія та продукти з них"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Мигдаль",
+      "declaration": "Містить горіхи та продукти з них",
+      "description": "Мигдаль та продукти з мигдалю"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Бразильський горіх",
+      "declaration": "Містить горіхи та продукти з них",
+      "description": "Бразильський горіх та продукти з нього"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Пекан",
+      "declaration": "Містить горіхи та продукти з них",
+      "description": "Горіхи пекан та продукти з них"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Фісташки",
+      "declaration": "Містить горіхи та продукти з них",
+      "description": "Фісташки та продукти з них"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Волоські горіхи",
+      "declaration": "Містить горіхи та продукти з них",
+      "description": "Волоські горіхи та продукти з них"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Кеш'ю",
+      "declaration": "Містить горіхи та продукти з них",
+      "description": "Горіхи кеш'ю та продукти з них"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Фундук",
+      "declaration": "Містить горіхи та продукти з них",
+      "description": "Фундук (лісовий горіх) та продукти з нього"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Селера",
+      "declaration": "Містить селеру та продукти з неї",
+      "description": "Селера та продукти з селери"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Гірчиця",
+      "declaration": "Містить гірчицю та продукти з неї",
+      "description": "Гірчиця та продукти з гірчиці"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Кунжут",
+      "declaration": "Містить насіння кунжуту та продукти з нього",
+      "description": "Насіння кунжуту та продукти з нього"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Діоксид сірки та сульфіти",
+      "declaration": "Містить діоксид сірки та сульфіти",
+      "description": "Діоксид сірки та сульфіти"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Люпин",
+      "declaration": "Містить люпин та продукти з нього",
+      "description": "Люпин та продукти з люпину"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Молюски",
+      "declaration": "Містить молюсків та продукти з них",
+      "description": "Молюски, як-от равлики та мідії, та продукти з них"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "з барвником",
+      "description": "Містить харчові барвники"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "з консервантом",
+      "description": "Містить консерванти"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "з антиоксидантом",
+      "description": "Містить антиоксиданти"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "з нітритною посолочною сумішшю",
+      "description": "Містить нітритну посолочну суміш"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "з нітратом",
+      "description": "Містить нітрат (консервант)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "з нітритною посолочною сумішшю та нітратом",
+      "description": "Містить нітритну посолочну суміш та нітрат"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "з підсилювачем смаку",
+      "description": "Містить підсилювачі смаку"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "з фосфатом",
+      "description": "Містить фосфат"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "сульфітовано",
+      "description": "Містить діоксид сірки або сульфіти"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "зачорнено",
+      "description": "Зачорнено для вигляду"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "вощено",
+      "description": "Поверхня вкрита воском для зберігання"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "з підсолоджувачами",
+      "description": "Містить підсолоджувачі"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "містить джерело фенілаланіну",
+      "description": "Містить джерело фенілаланіну"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "надмірне вживання може мати проносну дію",
+      "description": "Надмірне вживання може мати проносну дію"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "містить кофеїн",
+      "description": "Містить кофеїн"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "містить хінін",
+      "description": "Містить хінін"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "може негативно впливати на активність і увагу дітей",
+      "description": "Може негативно впливати на активність і увагу дітей"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "містить молочний білок",
+      "description": "Містить молочний білок"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "містить сурімі",
+      "description": "Містить сурімі"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "зі з'єднаних шматочків м'яса",
+      "description": "Виготовлено зі з'єднаних шматочків м'яса"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "зі з'єднаних шматочків риби",
+      "description": "Виготовлено зі з'єднаних шматочків риби"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "розморожено",
+      "description": "Розморожено із замороженого стану"
+    }
+  ],
+  "fallbacks": []
+}

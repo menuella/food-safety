@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Raž",
+    "declaration": "Obsahuje obilniny obsahujúce lepok a výrobky z nich",
+    "description": "Raž a výrobky z raže"
+  },
+  "BARLEY": {
+    "name": "Jačmeň",
+    "declaration": "Obsahuje obilniny obsahujúce lepok a výrobky z nich",
+    "description": "Jačmeň a výrobky z jačmeňa"
+  },
+  "EMMER": {
+    "name": "Dvojzrnová pšenica (pšenica škrobnatá)",
+    "declaration": "Obsahuje obilniny obsahujúce lepok a výrobky z nich",
+    "description": "Dvojzrnová pšenica a výrobky z nej"
+  },
+  "EINKORN": {
+    "name": "Jednozrnová pšenica",
+    "declaration": "Obsahuje obilniny obsahujúce lepok a výrobky z nich",
+    "description": "Jednozrnová pšenica a výrobky z nej"
+  },
+  "SPELT": {
+    "name": "Špalda",
+    "declaration": "Obsahuje obilniny obsahujúce lepok a výrobky z nich",
+    "description": "Špalda a výrobky zo špaldy"
+  },
+  "WHEAT": {
+    "name": "Pšenica",
+    "declaration": "Obsahuje obilniny obsahujúce lepok a výrobky z nich",
+    "description": "Pšenica a výrobky z pšenice"
+  },
+  "OATS": {
+    "name": "Ovos",
+    "declaration": "Obsahuje obilniny obsahujúce lepok a výrobky z nich",
+    "description": "Ovos a výrobky z ovsa"
+  },
+  "KHORASAN": {
+    "name": "Pšenica khorasan (Kamut)",
+    "declaration": "Obsahuje obilniny obsahujúce lepok a výrobky z nich",
+    "description": "Pšenica khorasan a výrobky z nej"
+  },
+  "CRUSTACEANS": {
+    "name": "Kôrovce",
+    "declaration": "Obsahuje kôrovce a výrobky z nich",
+    "description": "Kôrovce, napr. krevety a kraby, a výrobky z nich"
+  },
+  "EGGS": {
+    "name": "Vajcia",
+    "declaration": "Obsahuje vajcia a výrobky z nich",
+    "description": "Vajcia a výrobky z vajec"
+  },
+  "FISH": {
+    "name": "Ryby",
+    "declaration": "Obsahuje ryby a výrobky z nich",
+    "description": "Ryby a výrobky z rýb"
+  },
+  "PEANUTS": {
+    "name": "Arašidy",
+    "declaration": "Obsahuje arašidy a výrobky z nich",
+    "description": "Arašidy a výrobky z arašidov"
+  },
+  "SOY": {
+    "name": "Sója",
+    "declaration": "Obsahuje sójové zrná a výrobky z nich",
+    "description": "Sójové zrná a výrobky zo sóje"
+  },
+  "MILK": {
+    "name": "Mlieko (vrátane laktózy)",
+    "declaration": "Obsahuje mlieko a výrobky z neho (vrátane laktózy)",
+    "description": "Mlieko a mliečne výrobky vrátane laktózy"
+  },
+  "MACADAMIA": {
+    "name": "Makadamové orechy",
+    "declaration": "Obsahuje orechy a výrobky z nich",
+    "description": "Makadamové orechy a výrobky z nich"
+  },
+  "ALMONDS": {
+    "name": "Mandle",
+    "declaration": "Obsahuje orechy a výrobky z nich",
+    "description": "Mandle a výrobky z mandlí"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Para orechy",
+    "declaration": "Obsahuje orechy a výrobky z nich",
+    "description": "Para orechy a výrobky z nich"
+  },
+  "PECANS": {
+    "name": "Pekanové orechy",
+    "declaration": "Obsahuje orechy a výrobky z nich",
+    "description": "Pekanové orechy a výrobky z nich"
+  },
+  "PISTACHIOS": {
+    "name": "Pistácie",
+    "declaration": "Obsahuje orechy a výrobky z nich",
+    "description": "Pistácie a výrobky z nich"
+  },
+  "WALNUTS": {
+    "name": "Vlašské orechy",
+    "declaration": "Obsahuje orechy a výrobky z nich",
+    "description": "Vlašské orechy a výrobky z nich"
+  },
+  "CASHEWS": {
+    "name": "Kešu orechy",
+    "declaration": "Obsahuje orechy a výrobky z nich",
+    "description": "Kešu orechy a výrobky z nich"
+  },
+  "HAZELNUTS": {
+    "name": "Lieskové orechy",
+    "declaration": "Obsahuje orechy a výrobky z nich",
+    "description": "Lieskové orechy a výrobky z nich"
+  },
+  "CELERY": {
+    "name": "Zeler",
+    "declaration": "Obsahuje zeler a výrobky z neho",
+    "description": "Zeler a výrobky zo zeleru"
+  },
+  "MUSTARD": {
+    "name": "Horčica",
+    "declaration": "Obsahuje horčicu a výrobky z nej",
+    "description": "Horčica a výrobky z horčice"
+  },
+  "SESAME": {
+    "name": "Sezamové semená",
+    "declaration": "Obsahuje sezamové semená a výrobky z nich",
+    "description": "Sezamové semená a výrobky z nich"
+  },
+  "SULPHITES": {
+    "name": "Oxid siričitý a siričitany",
+    "declaration": "Obsahuje oxid siričitý a siričitany",
+    "description": "Oxid siričitý a siričitany"
+  },
+  "LUPINS": {
+    "name": "Vlčí bôb",
+    "declaration": "Obsahuje vlčí bôb a výrobky z neho",
+    "description": "Vlčí bôb a výrobky z neho"
+  },
+  "MOLLUSCS": {
+    "name": "Mäkkýše",
+    "declaration": "Obsahuje mäkkýše a výrobky z nich",
+    "description": "Mäkkýše, napr. slimáky a mušle, a výrobky z nich"
+  }
+}

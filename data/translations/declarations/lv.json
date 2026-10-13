@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "ar krāsvielu",
+    "description": "Satur pārtikas krāsvielas"
+  },
+  "PRESERVATIVES": {
+    "name": "ar konservantu",
+    "description": "Satur konservantus"
+  },
+  "ANTIOXIDANTS": {
+    "name": "ar antioksidantu",
+    "description": "Satur antioksidantus"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "ar nitrītu sāls maisījumu",
+    "description": "Satur nitrītu sāls maisījumu"
+  },
+  "NITRATE": {
+    "name": "ar nitrātu",
+    "description": "Satur nitrātu (konservants)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "ar nitrītu sāls maisījumu un nitrātu",
+    "description": "Satur nitrītu sāls maisījumu un nitrātu"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "ar garšas pastiprinātāju",
+    "description": "Satur garšas pastiprinātājus"
+  },
+  "PHOSPHATE": {
+    "name": "ar fosfātu",
+    "description": "Satur fosfātu"
+  },
+  "SULPHURED": {
+    "name": "sērots",
+    "description": "Satur sēra dioksīdu vai sulfītus"
+  },
+  "BLACKENED": {
+    "name": "nomelnināts",
+    "description": "Nomelnināts izskata dēļ"
+  },
+  "WAXED": {
+    "name": "vaskots",
+    "description": "Virsma vaskota glabāšanai"
+  },
+  "SWEETENERS": {
+    "name": "ar saldinātājiem",
+    "description": "Satur saldinātājus"
+  },
+  "PHENYLALANINE": {
+    "name": "satur fenilalanīna avotu",
+    "description": "Satur fenilalanīna avotu"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "pārmērīga lietošana var izraisīt caureju",
+    "description": "Pārmērīga lietošana var izraisīt caureju"
+  },
+  "CAFFEINE": {
+    "name": "satur kofeīnu",
+    "description": "Satur kofeīnu"
+  },
+  "QUININE": {
+    "name": "satur hinīnu",
+    "description": "Satur hinīnu"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "var nelabvēlīgi ietekmēt bērnu aktivitāti un uzmanību",
+    "description": "Var nelabvēlīgi ietekmēt bērnu aktivitāti un uzmanību"
+  },
+  "MILK_PROTEIN": {
+    "name": "satur piena olbaltumvielas",
+    "description": "Satur piena olbaltumvielas"
+  },
+  "SURIMI": {
+    "name": "satur surimi",
+    "description": "Satur surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "no savienotiem gaļas gabaliem",
+    "description": "Izgatavots no savienotiem gaļas gabaliem"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "no savienotiem zivju gabaliem",
+    "description": "Izgatavots no savienotiem zivju gabaliem"
+  },
+  "DEFROSTED": {
+    "name": "atkausēts",
+    "description": "Atkausēts no saldēta stāvokļa"
+  }
+}

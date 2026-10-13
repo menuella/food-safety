@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Gandum hitam (rye)",
+    "declaration": "Mengandung serealia yang mengandung gluten dan produk olahannya",
+    "description": "Gandum hitam dan produk olahannya"
+  },
+  "BARLEY": {
+    "name": "Jelai (barley)",
+    "declaration": "Mengandung serealia yang mengandung gluten dan produk olahannya",
+    "description": "Jelai dan produk olahannya"
+  },
+  "EMMER": {
+    "name": "Gandum emmer",
+    "declaration": "Mengandung serealia yang mengandung gluten dan produk olahannya",
+    "description": "Gandum emmer dan produk olahannya"
+  },
+  "EINKORN": {
+    "name": "Gandum einkorn",
+    "declaration": "Mengandung serealia yang mengandung gluten dan produk olahannya",
+    "description": "Gandum einkorn dan produk olahannya"
+  },
+  "SPELT": {
+    "name": "Gandum spelt",
+    "declaration": "Mengandung serealia yang mengandung gluten dan produk olahannya",
+    "description": "Gandum spelt dan produk olahannya"
+  },
+  "WHEAT": {
+    "name": "Gandum",
+    "declaration": "Mengandung serealia yang mengandung gluten dan produk olahannya",
+    "description": "Gandum dan produk olahannya"
+  },
+  "OATS": {
+    "name": "Oat",
+    "declaration": "Mengandung serealia yang mengandung gluten dan produk olahannya",
+    "description": "Oat dan produk olahannya"
+  },
+  "KHORASAN": {
+    "name": "Gandum khorasan (Kamut)",
+    "declaration": "Mengandung serealia yang mengandung gluten dan produk olahannya",
+    "description": "Gandum khorasan dan produk olahannya"
+  },
+  "CRUSTACEANS": {
+    "name": "Krustasea",
+    "declaration": "Mengandung krustasea dan produk olahannya",
+    "description": "Krustasea seperti udang dan kepiting, serta produk olahannya"
+  },
+  "EGGS": {
+    "name": "Telur",
+    "declaration": "Mengandung telur dan produk olahannya",
+    "description": "Telur dan produk olahan telur"
+  },
+  "FISH": {
+    "name": "Ikan",
+    "declaration": "Mengandung ikan dan produk olahannya",
+    "description": "Ikan dan produk olahan ikan"
+  },
+  "PEANUTS": {
+    "name": "Kacang tanah",
+    "declaration": "Mengandung kacang tanah dan produk olahannya",
+    "description": "Kacang tanah dan produk olahannya"
+  },
+  "SOY": {
+    "name": "Kedelai",
+    "declaration": "Mengandung kedelai dan produk olahannya",
+    "description": "Kedelai dan produk olahannya"
+  },
+  "MILK": {
+    "name": "Susu (termasuk laktosa)",
+    "declaration": "Mengandung susu dan produk olahannya (termasuk laktosa)",
+    "description": "Susu dan produk olahan susu, termasuk laktosa"
+  },
+  "MACADAMIA": {
+    "name": "Kacang makadamia",
+    "declaration": "Mengandung kacang pohon dan produk olahannya",
+    "description": "Kacang makadamia dan produk olahannya"
+  },
+  "ALMONDS": {
+    "name": "Almond",
+    "declaration": "Mengandung kacang pohon dan produk olahannya",
+    "description": "Almond dan produk olahannya"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Kacang Brasil",
+    "declaration": "Mengandung kacang pohon dan produk olahannya",
+    "description": "Kacang Brasil dan produk olahannya"
+  },
+  "PECANS": {
+    "name": "Kacang pekan",
+    "declaration": "Mengandung kacang pohon dan produk olahannya",
+    "description": "Kacang pekan dan produk olahannya"
+  },
+  "PISTACHIOS": {
+    "name": "Pistasio",
+    "declaration": "Mengandung kacang pohon dan produk olahannya",
+    "description": "Pistasio dan produk olahannya"
+  },
+  "WALNUTS": {
+    "name": "Walnut",
+    "declaration": "Mengandung kacang pohon dan produk olahannya",
+    "description": "Walnut dan produk olahannya"
+  },
+  "CASHEWS": {
+    "name": "Kacang mete",
+    "declaration": "Mengandung kacang pohon dan produk olahannya",
+    "description": "Kacang mete dan produk olahannya"
+  },
+  "HAZELNUTS": {
+    "name": "Hazelnut",
+    "declaration": "Mengandung kacang pohon dan produk olahannya",
+    "description": "Hazelnut dan produk olahannya"
+  },
+  "CELERY": {
+    "name": "Seledri",
+    "declaration": "Mengandung seledri dan produk olahannya",
+    "description": "Seledri dan produk olahannya"
+  },
+  "MUSTARD": {
+    "name": "Mustar",
+    "declaration": "Mengandung mustar dan produk olahannya",
+    "description": "Mustar dan produk olahannya"
+  },
+  "SESAME": {
+    "name": "Wijen",
+    "declaration": "Mengandung biji wijen dan produk olahannya",
+    "description": "Biji wijen dan produk olahannya"
+  },
+  "SULPHITES": {
+    "name": "Sulfur dioksida dan sulfit",
+    "declaration": "Mengandung sulfur dioksida dan sulfit",
+    "description": "Sulfur dioksida dan sulfit"
+  },
+  "LUPINS": {
+    "name": "Lupin",
+    "declaration": "Mengandung lupin dan produk olahannya",
+    "description": "Lupin dan produk olahannya"
+  },
+  "MOLLUSCS": {
+    "name": "Moluska",
+    "declaration": "Mengandung moluska dan produk olahannya",
+    "description": "Moluska seperti siput dan kerang, serta produk olahannya"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "värvainega",
+    "description": "Sisaldab toiduvärve"
+  },
+  "PRESERVATIVES": {
+    "name": "säilitusainega",
+    "description": "Sisaldab säilitusaineid"
+  },
+  "ANTIOXIDANTS": {
+    "name": "antioksüdandiga",
+    "description": "Sisaldab antioksüdante"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "nitritisoolaga",
+    "description": "Sisaldab nitritisoola"
+  },
+  "NITRATE": {
+    "name": "nitraadiga",
+    "description": "Sisaldab nitraati (säilitusaine)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "nitritisoola ja nitraadiga",
+    "description": "Sisaldab nitritisoola ja nitraati"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "lõhna- ja maitsetugevdajaga",
+    "description": "Sisaldab lõhna- ja maitsetugevdajaid"
+  },
+  "PHOSPHATE": {
+    "name": "fosfaadiga",
+    "description": "Sisaldab fosfaati"
+  },
+  "SULPHURED": {
+    "name": "väävlitatud",
+    "description": "Sisaldab vääveldioksiidi või sulfiteid"
+  },
+  "BLACKENED": {
+    "name": "mustaks värvitud",
+    "description": "Mustaks värvitud visuaalse efekti saamiseks"
+  },
+  "WAXED": {
+    "name": "vahatatud",
+    "description": "Säilivuse parandamiseks vahatatud pind"
+  },
+  "SWEETENERS": {
+    "name": "magusainetega",
+    "description": "Sisaldab magusaineid"
+  },
+  "PHENYLALANINE": {
+    "name": "sisaldab fenüülalaniini allikat",
+    "description": "Sisaldab fenüülalaniini allikat"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "liigsel tarbimisel võib olla lahtistava toimega",
+    "description": "Liigsel tarbimisel võib olla lahtistava toimega"
+  },
+  "CAFFEINE": {
+    "name": "sisaldab kofeiini",
+    "description": "Sisaldab kofeiini"
+  },
+  "QUININE": {
+    "name": "sisaldab kiniini",
+    "description": "Sisaldab kiniini"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "võib mõjuda halvasti laste aktiivsusele ja tähelepanuvõimele",
+    "description": "Võib mõjuda halvasti laste aktiivsusele ja tähelepanuvõimele"
+  },
+  "MILK_PROTEIN": {
+    "name": "sisaldab piimavalku",
+    "description": "Sisaldab piimavalku"
+  },
+  "SURIMI": {
+    "name": "sisaldab surimit",
+    "description": "Sisaldab surimit"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "liidetud lihatükkidest",
+    "description": "Valmistatud liidetud lihatükkidest"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "liidetud kalatükkidest",
+    "description": "Valmistatud liidetud kalatükkidest"
+  },
+  "DEFROSTED": {
+    "name": "sulatatud",
+    "description": "Külmutatud olekust sulatatud"
+  }
+}

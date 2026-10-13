@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "yenye rangi",
+    "description": "Ina rangi ya chakula"
+  },
+  "PRESERVATIVES": {
+    "name": "yenye kihifadhi",
+    "description": "Ina vihifadhi"
+  },
+  "ANTIOXIDANTS": {
+    "name": "yenye kizuia-oksidi",
+    "description": "Ina vizuia-oksidi"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "yenye chumvi ya nitriti",
+    "description": "Ina chumvi ya nitriti ya kuhifadhi nyama"
+  },
+  "NITRATE": {
+    "name": "yenye nitrati",
+    "description": "Ina nitrati (kihifadhi)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "yenye chumvi ya nitriti na nitrati",
+    "description": "Ina chumvi ya nitriti na nitrati"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "yenye kiongeza ladha",
+    "description": "Ina viongeza ladha"
+  },
+  "PHOSPHATE": {
+    "name": "yenye fosfeti",
+    "description": "Ina fosfeti"
+  },
+  "SULPHURED": {
+    "name": "iliyotiwa salfa",
+    "description": "Ina dioksidi ya salfa au salfiti"
+  },
+  "BLACKENED": {
+    "name": "iliyotiwa weusi",
+    "description": "Imetiwa weusi kwa mwonekano"
+  },
+  "WAXED": {
+    "name": "iliyopakwa nta",
+    "description": "Uso umepakwa nta ili kudumu"
+  },
+  "SWEETENERS": {
+    "name": "yenye vitamu-bandia",
+    "description": "Ina vitamu-bandia"
+  },
+  "PHENYLALANINE": {
+    "name": "ina chanzo cha fenilalanini",
+    "description": "Ina chanzo cha fenilalanini"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "ikiliwa kwa wingi inaweza kusababisha kuharisha",
+    "description": "Ikiliwa kwa wingi inaweza kusababisha kuharisha"
+  },
+  "CAFFEINE": {
+    "name": "ina kafeini",
+    "description": "Ina kafeini"
+  },
+  "QUININE": {
+    "name": "ina kwinini",
+    "description": "Ina kwinini"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "inaweza kuathiri shughuli na umakini wa watoto",
+    "description": "Inaweza kuathiri shughuli na umakini wa watoto"
+  },
+  "MILK_PROTEIN": {
+    "name": "ina protini ya maziwa",
+    "description": "Ina protini ya maziwa"
+  },
+  "SURIMI": {
+    "name": "ina surimi",
+    "description": "Ina surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "imetengenezwa kwa vipande vya nyama vilivyounganishwa",
+    "description": "Imetengenezwa kwa vipande vya nyama vilivyounganishwa"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "imetengenezwa kwa vipande vya samaki vilivyounganishwa",
+    "description": "Imetengenezwa kwa vipande vya samaki vilivyounganishwa"
+  },
+  "DEFROSTED": {
+    "name": "iliyoyeyushwa kutoka barafu",
+    "description": "Imeyeyushwa kutoka hali ya kuganda"
+  }
+}

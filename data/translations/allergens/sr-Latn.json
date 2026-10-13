@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Raž",
+    "declaration": "Sadrži žitarice koje sadrže gluten i proizvode od njih",
+    "description": "Raž i proizvodi od raži"
+  },
+  "BARLEY": {
+    "name": "Ječam",
+    "declaration": "Sadrži žitarice koje sadrže gluten i proizvode od njih",
+    "description": "Ječam i proizvodi od ječma"
+  },
+  "EMMER": {
+    "name": "Dvozrna pšenica (emer)",
+    "declaration": "Sadrži žitarice koje sadrže gluten i proizvode od njih",
+    "description": "Dvozrna pšenica i proizvodi od nje"
+  },
+  "EINKORN": {
+    "name": "Jednozrna pšenica (einkorn)",
+    "declaration": "Sadrži žitarice koje sadrže gluten i proizvode od njih",
+    "description": "Jednozrna pšenica i proizvodi od nje"
+  },
+  "SPELT": {
+    "name": "Krupnik (spelta)",
+    "declaration": "Sadrži žitarice koje sadrže gluten i proizvode od njih",
+    "description": "Krupnik i proizvodi od krupnika"
+  },
+  "WHEAT": {
+    "name": "Pšenica",
+    "declaration": "Sadrži žitarice koje sadrže gluten i proizvode od njih",
+    "description": "Pšenica i proizvodi od pšenice"
+  },
+  "OATS": {
+    "name": "Ovas",
+    "declaration": "Sadrži žitarice koje sadrže gluten i proizvode od njih",
+    "description": "Ovas i proizvodi od ovsa"
+  },
+  "KHORASAN": {
+    "name": "Horasan pšenica (Kamut)",
+    "declaration": "Sadrži žitarice koje sadrže gluten i proizvode od njih",
+    "description": "Horasan pšenica i proizvodi od nje"
+  },
+  "CRUSTACEANS": {
+    "name": "Ljuskari",
+    "declaration": "Sadrži ljuskare i proizvode od njih",
+    "description": "Ljuskari, poput škampa i rakova, i proizvodi od njih"
+  },
+  "EGGS": {
+    "name": "Jaja",
+    "declaration": "Sadrži jaja i proizvode od jaja",
+    "description": "Jaja i proizvodi od jaja"
+  },
+  "FISH": {
+    "name": "Riba",
+    "declaration": "Sadrži ribu i proizvode od ribe",
+    "description": "Riba i proizvodi od ribe"
+  },
+  "PEANUTS": {
+    "name": "Kikiriki",
+    "declaration": "Sadrži kikiriki i proizvode od kikirikija",
+    "description": "Kikiriki i proizvodi od kikirikija"
+  },
+  "SOY": {
+    "name": "Soja",
+    "declaration": "Sadrži soju i proizvode od soje",
+    "description": "Zrno soje i proizvodi od soje"
+  },
+  "MILK": {
+    "name": "Mleko (uključujući laktozu)",
+    "declaration": "Sadrži mleko i proizvode od mleka (uključujući laktozu)",
+    "description": "Mleko i mlečni proizvodi, uključujući laktozu"
+  },
+  "MACADAMIA": {
+    "name": "Makadamija orah",
+    "declaration": "Sadrži orašaste plodove i proizvode od njih",
+    "description": "Makadamija orah i proizvodi od njega"
+  },
+  "ALMONDS": {
+    "name": "Bademi",
+    "declaration": "Sadrži orašaste plodove i proizvode od njih",
+    "description": "Bademi i proizvodi od badema"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Brazilski orah",
+    "declaration": "Sadrži orašaste plodove i proizvode od njih",
+    "description": "Brazilski orah i proizvodi od njega"
+  },
+  "PECANS": {
+    "name": "Pekan orah",
+    "declaration": "Sadrži orašaste plodove i proizvode od njih",
+    "description": "Pekan orah i proizvodi od njega"
+  },
+  "PISTACHIOS": {
+    "name": "Pistaći",
+    "declaration": "Sadrži orašaste plodove i proizvode od njih",
+    "description": "Pistaći i proizvodi od pistaća"
+  },
+  "WALNUTS": {
+    "name": "Orasi",
+    "declaration": "Sadrži orašaste plodove i proizvode od njih",
+    "description": "Orasi i proizvodi od oraha"
+  },
+  "CASHEWS": {
+    "name": "Indijski orah",
+    "declaration": "Sadrži orašaste plodove i proizvode od njih",
+    "description": "Indijski orah i proizvodi od njega"
+  },
+  "HAZELNUTS": {
+    "name": "Lešnici",
+    "declaration": "Sadrži orašaste plodove i proizvode od njih",
+    "description": "Lešnici i proizvodi od lešnika"
+  },
+  "CELERY": {
+    "name": "Celer",
+    "declaration": "Sadrži celer i proizvode od celera",
+    "description": "Celer i proizvodi od celera"
+  },
+  "MUSTARD": {
+    "name": "Slačica",
+    "declaration": "Sadrži slačicu i proizvode od slačice",
+    "description": "Slačica i proizvodi od slačice"
+  },
+  "SESAME": {
+    "name": "Susam",
+    "declaration": "Sadrži seme susama i proizvode od susama",
+    "description": "Seme susama i proizvodi od susama"
+  },
+  "SULPHITES": {
+    "name": "Sumpor-dioksid i sulfiti",
+    "declaration": "Sadrži sumpor-dioksid i sulfite",
+    "description": "Sumpor-dioksid i sulfiti"
+  },
+  "LUPINS": {
+    "name": "Lupina",
+    "declaration": "Sadrži lupinu i proizvode od lupine",
+    "description": "Lupina i proizvodi od lupine"
+  },
+  "MOLLUSCS": {
+    "name": "Mekušci",
+    "declaration": "Sadrži mekušce i proizvode od njih",
+    "description": "Mekušci, poput puževa i dagnji, i proizvodi od njih"
+  }
+}

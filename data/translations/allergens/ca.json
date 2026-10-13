@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Sègol",
+    "declaration": "Conté cereals amb gluten i productes derivats",
+    "description": "Sègol i productes de sègol"
+  },
+  "BARLEY": {
+    "name": "Ordi",
+    "declaration": "Conté cereals amb gluten i productes derivats",
+    "description": "Ordi i productes d'ordi"
+  },
+  "EMMER": {
+    "name": "Pisana (emmer)",
+    "declaration": "Conté cereals amb gluten i productes derivats",
+    "description": "Pisana i productes derivats"
+  },
+  "EINKORN": {
+    "name": "Espelta petita (einkorn)",
+    "declaration": "Conté cereals amb gluten i productes derivats",
+    "description": "Espelta petita i productes derivats"
+  },
+  "SPELT": {
+    "name": "Espelta",
+    "declaration": "Conté cereals amb gluten i productes derivats",
+    "description": "Espelta i productes d'espelta"
+  },
+  "WHEAT": {
+    "name": "Blat",
+    "declaration": "Conté cereals amb gluten i productes derivats",
+    "description": "Blat i productes de blat"
+  },
+  "OATS": {
+    "name": "Civada",
+    "declaration": "Conté cereals amb gluten i productes derivats",
+    "description": "Civada i productes de civada"
+  },
+  "KHORASAN": {
+    "name": "Blat de Khorasan (Kamut)",
+    "declaration": "Conté cereals amb gluten i productes derivats",
+    "description": "Blat de Khorasan i productes derivats"
+  },
+  "CRUSTACEANS": {
+    "name": "Crustacis",
+    "declaration": "Conté crustacis i productes a base de crustacis",
+    "description": "Crustacis, com ara gambes i crancs, i productes derivats"
+  },
+  "EGGS": {
+    "name": "Ou",
+    "declaration": "Conté ous i productes a base d'ou",
+    "description": "Ous i productes a base d'ou"
+  },
+  "FISH": {
+    "name": "Peix",
+    "declaration": "Conté peix i productes a base de peix",
+    "description": "Peix i productes a base de peix"
+  },
+  "PEANUTS": {
+    "name": "Cacauets",
+    "declaration": "Conté cacauets i productes a base de cacauets",
+    "description": "Cacauets i productes a base de cacauets"
+  },
+  "SOY": {
+    "name": "Soja",
+    "declaration": "Conté soja i productes a base de soja",
+    "description": "Soja i productes a base de soja"
+  },
+  "MILK": {
+    "name": "Llet (inclosa la lactosa)",
+    "declaration": "Conté llet i derivats (inclosa la lactosa)",
+    "description": "Llet i derivats, inclosa la lactosa"
+  },
+  "MACADAMIA": {
+    "name": "Nous de macadàmia",
+    "declaration": "Conté fruits de closca i productes derivats",
+    "description": "Nous de macadàmia i productes derivats"
+  },
+  "ALMONDS": {
+    "name": "Ametlles",
+    "declaration": "Conté fruits de closca i productes derivats",
+    "description": "Ametlles i productes derivats"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Nous del Brasil",
+    "declaration": "Conté fruits de closca i productes derivats",
+    "description": "Nous del Brasil i productes derivats"
+  },
+  "PECANS": {
+    "name": "Nous pacanes",
+    "declaration": "Conté fruits de closca i productes derivats",
+    "description": "Nous pacanes i productes derivats"
+  },
+  "PISTACHIOS": {
+    "name": "Festucs",
+    "declaration": "Conté fruits de closca i productes derivats",
+    "description": "Festucs i productes derivats"
+  },
+  "WALNUTS": {
+    "name": "Nous",
+    "declaration": "Conté fruits de closca i productes derivats",
+    "description": "Nous i productes derivats"
+  },
+  "CASHEWS": {
+    "name": "Anacards",
+    "declaration": "Conté fruits de closca i productes derivats",
+    "description": "Anacards i productes derivats"
+  },
+  "HAZELNUTS": {
+    "name": "Avellanes",
+    "declaration": "Conté fruits de closca i productes derivats",
+    "description": "Avellanes i productes derivats"
+  },
+  "CELERY": {
+    "name": "Api",
+    "declaration": "Conté api i productes derivats",
+    "description": "Api i productes derivats"
+  },
+  "MUSTARD": {
+    "name": "Mostassa",
+    "declaration": "Conté mostassa i productes derivats",
+    "description": "Mostassa i productes derivats"
+  },
+  "SESAME": {
+    "name": "Sèsam",
+    "declaration": "Conté llavors de sèsam i productes derivats",
+    "description": "Llavors de sèsam i productes derivats"
+  },
+  "SULPHITES": {
+    "name": "Diòxid de sofre i sulfits",
+    "declaration": "Conté diòxid de sofre i sulfits",
+    "description": "Diòxid de sofre i sulfits"
+  },
+  "LUPINS": {
+    "name": "Tramussos",
+    "declaration": "Conté tramussos i productes derivats",
+    "description": "Tramussos i productes derivats"
+  },
+  "MOLLUSCS": {
+    "name": "Mol·luscs",
+    "declaration": "Conté mol·luscs i productes derivats",
+    "description": "Mol·luscs, com ara cargols i musclos, i productes derivats"
+  }
+}

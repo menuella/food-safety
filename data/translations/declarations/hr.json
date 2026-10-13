@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "s bojilom",
+    "description": "Sadrži bojila"
+  },
+  "PRESERVATIVES": {
+    "name": "s konzervansom",
+    "description": "Sadrži konzervanse"
+  },
+  "ANTIOXIDANTS": {
+    "name": "s antioksidansom",
+    "description": "Sadrži antioksidanse"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "sa soli za salamurenje s nitritom",
+    "description": "Sadrži sol za salamurenje s nitritom"
+  },
+  "NITRATE": {
+    "name": "s nitratom",
+    "description": "Sadrži nitrat (konzervans)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "sa soli za salamurenje s nitritom i nitratom",
+    "description": "Sadrži sol za salamurenje s nitritom i nitrat"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "s pojačivačem okusa",
+    "description": "Sadrži pojačivače okusa"
+  },
+  "PHOSPHATE": {
+    "name": "s fosfatom",
+    "description": "Sadrži fosfat"
+  },
+  "SULPHURED": {
+    "name": "sumporeno",
+    "description": "Sadrži sumporov dioksid ili sulfite"
+  },
+  "BLACKENED": {
+    "name": "pocrnjeno",
+    "description": "Pocrnjeno radi izgleda"
+  },
+  "WAXED": {
+    "name": "voskom premazano",
+    "description": "Površina premazana voskom radi očuvanja"
+  },
+  "SWEETENERS": {
+    "name": "sa sladilima",
+    "description": "Sadrži sladila"
+  },
+  "PHENYLALANINE": {
+    "name": "sadrži izvor fenilalanina",
+    "description": "Sadrži izvor fenilalanina"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "prekomjerna konzumacija može imati laksativni učinak",
+    "description": "Prekomjerna konzumacija može imati laksativni učinak"
+  },
+  "CAFFEINE": {
+    "name": "sadrži kofein",
+    "description": "Sadrži kofein"
+  },
+  "QUININE": {
+    "name": "sadrži kinin",
+    "description": "Sadrži kinin"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "može nepovoljno utjecati na aktivnost i pažnju djece",
+    "description": "Može nepovoljno utjecati na aktivnost i pažnju djece"
+  },
+  "MILK_PROTEIN": {
+    "name": "sadrži mliječne proteine",
+    "description": "Sadrži mliječne proteine"
+  },
+  "SURIMI": {
+    "name": "sadrži surimi",
+    "description": "Sadrži surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "od spojenih komada mesa",
+    "description": "Proizvedeno od spojenih komada mesa"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "od spojenih komada ribe",
+    "description": "Proizvedeno od spojenih komada ribe"
+  },
+  "DEFROSTED": {
+    "name": "odmrznuto",
+    "description": "Odmrznuto iz smrznutog stanja"
+  }
+}

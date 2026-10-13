@@ -4,21 +4,35 @@
 // scripts, servers, tests. In a browser bundle prefer locales/<tag> or load.
 import { LOCALES } from "./index.js"
 import { unsupportedLocale } from "./internal.js"
+import locale_am from "./locales/am.js"
 import locale_ar from "./locales/ar.js"
 import locale_bg from "./locales/bg.js"
+import locale_bn from "./locales/bn.js"
+import locale_ca from "./locales/ca.js"
 import locale_cs from "./locales/cs.js"
 import locale_da from "./locales/da.js"
 import locale_de from "./locales/de.js"
 import locale_el from "./locales/el.js"
 import locale_en from "./locales/en.js"
 import locale_es from "./locales/es.js"
+import locale_et from "./locales/et.js"
+import locale_fa from "./locales/fa.js"
 import locale_fi from "./locales/fi.js"
+import locale_fil from "./locales/fil.js"
 import locale_fr from "./locales/fr.js"
 import locale_he from "./locales/he.js"
+import locale_hi from "./locales/hi.js"
+import locale_hr from "./locales/hr.js"
 import locale_hu from "./locales/hu.js"
+import locale_id from "./locales/id.js"
 import locale_it from "./locales/it.js"
 import locale_ja from "./locales/ja.js"
+import locale_ka from "./locales/ka.js"
 import locale_ko from "./locales/ko.js"
+import locale_ku from "./locales/ku.js"
+import locale_lt from "./locales/lt.js"
+import locale_lv from "./locales/lv.js"
+import locale_ms from "./locales/ms.js"
 import locale_nl from "./locales/nl.js"
 import locale_no from "./locales/no.js"
 import locale_pl from "./locales/pl.js"
@@ -26,28 +40,51 @@ import locale_pt_BR from "./locales/pt-BR.js"
 import locale_pt_PT from "./locales/pt-PT.js"
 import locale_ro from "./locales/ro.js"
 import locale_ru from "./locales/ru.js"
+import locale_sk from "./locales/sk.js"
+import locale_sl from "./locales/sl.js"
+import locale_sq from "./locales/sq.js"
+import locale_sr_Latn from "./locales/sr-Latn.js"
 import locale_sv from "./locales/sv.js"
+import locale_sw from "./locales/sw.js"
+import locale_ta from "./locales/ta.js"
+import locale_th from "./locales/th.js"
 import locale_tr from "./locales/tr.js"
+import locale_uk from "./locales/uk.js"
+import locale_ur from "./locales/ur.js"
 import locale_vi from "./locales/vi.js"
 import locale_zh_Hans from "./locales/zh-Hans.js"
 import locale_zh_Hant from "./locales/zh-Hant.js"
 
 const BUNDLES = {
+  "am": locale_am,
   "ar": locale_ar,
   "bg": locale_bg,
+  "bn": locale_bn,
+  "ca": locale_ca,
   "cs": locale_cs,
   "da": locale_da,
   "de": locale_de,
   "el": locale_el,
   "en": locale_en,
   "es": locale_es,
+  "et": locale_et,
+  "fa": locale_fa,
   "fi": locale_fi,
+  "fil": locale_fil,
   "fr": locale_fr,
   "he": locale_he,
+  "hi": locale_hi,
+  "hr": locale_hr,
   "hu": locale_hu,
+  "id": locale_id,
   "it": locale_it,
   "ja": locale_ja,
+  "ka": locale_ka,
   "ko": locale_ko,
+  "ku": locale_ku,
+  "lt": locale_lt,
+  "lv": locale_lv,
+  "ms": locale_ms,
   "nl": locale_nl,
   "no": locale_no,
   "pl": locale_pl,
@@ -55,8 +92,17 @@ const BUNDLES = {
   "pt-PT": locale_pt_PT,
   "ro": locale_ro,
   "ru": locale_ru,
+  "sk": locale_sk,
+  "sl": locale_sl,
+  "sq": locale_sq,
+  "sr-Latn": locale_sr_Latn,
   "sv": locale_sv,
+  "sw": locale_sw,
+  "ta": locale_ta,
+  "th": locale_th,
   "tr": locale_tr,
+  "uk": locale_uk,
+  "ur": locale_ur,
   "vi": locale_vi,
   "zh-Hans": locale_zh_Hans,
   "zh-Hant": locale_zh_Hant,

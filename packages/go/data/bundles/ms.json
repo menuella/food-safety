@@ -1,0 +1,415 @@
+{
+  "locale": "ms",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Rai",
+      "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+      "description": "Rai dan hasilannya"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Barli",
+      "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+      "description": "Barli dan hasilannya"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Gandum emmer",
+      "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+      "description": "Gandum emmer dan hasilannya"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Gandum einkorn",
+      "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+      "description": "Gandum einkorn dan hasilannya"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Gandum spelt",
+      "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+      "description": "Gandum spelt dan hasilannya"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Gandum",
+      "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+      "description": "Gandum dan hasilannya"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Oat",
+      "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+      "description": "Oat dan hasilannya"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Gandum khorasan (Kamut)",
+      "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+      "description": "Gandum khorasan dan hasilannya"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Krustasea",
+      "declaration": "Mengandungi krustasea dan hasilannya",
+      "description": "Krustasea seperti udang dan ketam, serta hasilannya"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Telur",
+      "declaration": "Mengandungi telur dan hasilannya",
+      "description": "Telur dan hasilan telur"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Ikan",
+      "declaration": "Mengandungi ikan dan hasilannya",
+      "description": "Ikan dan hasilan ikan"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Kacang tanah",
+      "declaration": "Mengandungi kacang tanah dan hasilannya",
+      "description": "Kacang tanah dan hasilannya"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Kacang soya",
+      "declaration": "Mengandungi kacang soya dan hasilannya",
+      "description": "Kacang soya dan hasilannya"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Susu (termasuk laktosa)",
+      "declaration": "Mengandungi susu dan hasilannya (termasuk laktosa)",
+      "description": "Susu dan hasilan tenusu, termasuk laktosa"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Kacang makadamia",
+      "declaration": "Mengandungi kekacang pokok dan hasilannya",
+      "description": "Kacang makadamia dan hasilannya"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Badam",
+      "declaration": "Mengandungi kekacang pokok dan hasilannya",
+      "description": "Badam dan hasilannya"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Kacang Brazil",
+      "declaration": "Mengandungi kekacang pokok dan hasilannya",
+      "description": "Kacang Brazil dan hasilannya"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Kacang pecan",
+      "declaration": "Mengandungi kekacang pokok dan hasilannya",
+      "description": "Kacang pecan dan hasilannya"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pistachio",
+      "declaration": "Mengandungi kekacang pokok dan hasilannya",
+      "description": "Pistachio dan hasilannya"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Walnut",
+      "declaration": "Mengandungi kekacang pokok dan hasilannya",
+      "description": "Walnut dan hasilannya"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Gajus",
+      "declaration": "Mengandungi kekacang pokok dan hasilannya",
+      "description": "Gajus dan hasilannya"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Hazelnut",
+      "declaration": "Mengandungi kekacang pokok dan hasilannya",
+      "description": "Hazelnut dan hasilannya"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Saderi",
+      "declaration": "Mengandungi saderi dan hasilannya",
+      "description": "Saderi dan hasilannya"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Biji sawi (mustard)",
+      "declaration": "Mengandungi biji sawi dan hasilannya",
+      "description": "Biji sawi dan hasilannya"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Bijan",
+      "declaration": "Mengandungi biji bijan dan hasilannya",
+      "description": "Biji bijan dan hasilannya"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Sulfur dioksida dan sulfit",
+      "declaration": "Mengandungi sulfur dioksida dan sulfit",
+      "description": "Sulfur dioksida dan sulfit"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Lupin",
+      "declaration": "Mengandungi lupin dan hasilannya",
+      "description": "Lupin dan hasilannya"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Moluska",
+      "declaration": "Mengandungi moluska dan hasilannya",
+      "description": "Moluska seperti siput dan kupang, serta hasilannya"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "dengan pewarna",
+      "description": "Mengandungi pewarna makanan"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "dengan pengawet",
+      "description": "Mengandungi pengawet"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "dengan antioksidan",
+      "description": "Mengandungi antioksidan"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "dengan garam pengawet nitrit",
+      "description": "Mengandungi garam pengawet nitrit"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "dengan nitrat",
+      "description": "Mengandungi nitrat (pengawet)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "dengan garam pengawet nitrit dan nitrat",
+      "description": "Mengandungi garam pengawet nitrit dan nitrat"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "dengan penambah perisa",
+      "description": "Mengandungi penambah perisa"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "dengan fosfat",
+      "description": "Mengandungi fosfat"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "disulfurkan",
+      "description": "Mengandungi sulfur dioksida atau sulfit"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "dihitamkan",
+      "description": "Dihitamkan untuk rupa"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "dilapisi lilin",
+      "description": "Permukaan dilapisi lilin untuk pengawetan"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "dengan pemanis",
+      "description": "Mengandungi pemanis"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "mengandungi sumber fenilalanina",
+      "description": "Mengandungi sumber fenilalanina"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "pengambilan berlebihan boleh menyebabkan kesan julap",
+      "description": "Pengambilan berlebihan boleh menyebabkan kesan julap"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "mengandungi kafein",
+      "description": "Mengandungi kafein"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "mengandungi kuinin",
+      "description": "Mengandungi kuinin"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "boleh menjejaskan aktiviti dan perhatian kanak-kanak",
+      "description": "Boleh menjejaskan aktiviti dan perhatian kanak-kanak"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "mengandungi protein susu",
+      "description": "Mengandungi protein susu"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "mengandungi surimi",
+      "description": "Mengandungi surimi"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "daripada kepingan daging yang dicantumkan",
+      "description": "Dibuat daripada kepingan daging yang dicantumkan"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "daripada kepingan ikan yang dicantumkan",
+      "description": "Dibuat daripada kepingan ikan yang dicantumkan"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "dinyahbeku",
+      "description": "Dinyahbeku daripada keadaan beku"
+    }
+  ],
+  "fallbacks": []
+}

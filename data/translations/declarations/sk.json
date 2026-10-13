@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "s farbivom",
+    "description": "Obsahuje potravinárske farbivá"
+  },
+  "PRESERVATIVES": {
+    "name": "s konzervačnou látkou",
+    "description": "Obsahuje konzervačné látky"
+  },
+  "ANTIOXIDANTS": {
+    "name": "s antioxidantom",
+    "description": "Obsahuje antioxidanty"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "s dusitanovou soliacou zmesou",
+    "description": "Obsahuje dusitanovú soliacu zmes"
+  },
+  "NITRATE": {
+    "name": "s dusičnanom",
+    "description": "Obsahuje dusičnan (konzervačná látka)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "s dusitanovou soliacou zmesou a dusičnanom",
+    "description": "Obsahuje dusitanovú soliacu zmes a dusičnan"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "so zvýrazňovačom chuti",
+    "description": "Obsahuje zvýrazňovače chuti"
+  },
+  "PHOSPHATE": {
+    "name": "s fosfátom",
+    "description": "Obsahuje fosfát"
+  },
+  "SULPHURED": {
+    "name": "sírené",
+    "description": "Obsahuje oxid siričitý alebo siričitany"
+  },
+  "BLACKENED": {
+    "name": "začiernené",
+    "description": "Začiernené kvôli vzhľadu"
+  },
+  "WAXED": {
+    "name": "voskované",
+    "description": "Povrch ošetrený voskom na predĺženie trvanlivosti"
+  },
+  "SWEETENERS": {
+    "name": "so sladidlami",
+    "description": "Obsahuje sladidlá"
+  },
+  "PHENYLALANINE": {
+    "name": "obsahuje zdroj fenylalanínu",
+    "description": "Obsahuje zdroj fenylalanínu"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "nadmerná konzumácia môže vyvolať laxatívne účinky",
+    "description": "Nadmerná konzumácia môže vyvolať laxatívne účinky"
+  },
+  "CAFFEINE": {
+    "name": "obsahuje kofeín",
+    "description": "Obsahuje kofeín"
+  },
+  "QUININE": {
+    "name": "obsahuje chinín",
+    "description": "Obsahuje chinín"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "môže nepriaznivo ovplyvňovať činnosť a pozornosť detí",
+    "description": "Môže nepriaznivo ovplyvňovať činnosť a pozornosť detí"
+  },
+  "MILK_PROTEIN": {
+    "name": "obsahuje mliečnu bielkovinu",
+    "description": "Obsahuje mliečnu bielkovinu"
+  },
+  "SURIMI": {
+    "name": "obsahuje surimi",
+    "description": "Obsahuje surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "zo spojených kúskov mäsa",
+    "description": "Vyrobené zo spojených kúskov mäsa"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "zo spojených kúskov rýb",
+    "description": "Vyrobené zo spojených kúskov rýb"
+  },
+  "DEFROSTED": {
+    "name": "rozmrazené",
+    "description": "Rozmrazené zo zmrazeného stavu"
+  }
+}

@@ -1,6 +1,6 @@
 # @menuella/food-safety
 
-> Open dataset of **restaurant menu disclosures** — the 14 EU allergen groups and **Menuella Declarations**, with codes, icons and labels in 27 languages, keyed by stable semantic keys.
+> Open dataset of **restaurant menu disclosures** — the 14 EU allergen groups and **Menuella Declarations**, with codes, icons and labels in 50 languages, keyed by stable semantic keys.
 
 [![Verify](https://github.com/menuella/food-safety/actions/workflows/verify.yml/badge.svg)](https://github.com/menuella/food-safety/actions/workflows/verify.yml)
 [![npm](https://img.shields.io/npm/v/@menuella/food-safety.svg)](https://www.npmjs.com/package/@menuella/food-safety)
@@ -23,8 +23,8 @@ One dataset, one version, released from one tag.
 | **Rust** | `cargo add menuella-food-safety` |
 | **Ruby** | `bundle add menuella-food_safety` |
 | **Go** | `go get github.com/menuella/food-safety/packages/go/v2` |
-| **Swift** | `.package(url: "https://github.com/menuella/food-safety", from: "2.0.0")` |
-| **Gradle** | `implementation("com.menuella:food-safety:2.0.0")` |
+| **Swift** | `.package(url: "https://github.com/menuella/food-safety", from: "2.1.0")` |
+| **Gradle** | `implementation("com.menuella:food-safety:2.1.0")` |
 
 ```js
 import de from "@menuella/food-safety/locales/de"
@@ -56,7 +56,7 @@ Five pieces, one vocabulary, every region:
 | **Menuella Declarations** | 22 keys for additives, beverage declarations, warnings and product indications |
 | **Menuella Codes** | the short codes printed in a menu legend — `WHEAT` → `A6` |
 | **Menuella Icons** | 15 solid glyphs, one per group |
-| **Menuella Translations** | localized labels in 27 languages |
+| **Menuella Translations** | localized labels in 50 languages |
 
 **Menuella Declarations are a standardized restaurant menu disclosure vocabulary developed by Menuella for consistent rendering across applications and regions.** They are built for portability, not to reproduce any country's official legal terminology — see [`docs/regions.md`](docs/regions.md).
 
@@ -126,21 +126,35 @@ declarations = NITRITE_CURING_SALT (sucuk)  = ["NITRITE_CURING_SALT"]
 
 | Tag | Language | Allergens | Declarations |
 |---|---|---|---|
+| `am` | Amharic | 28 ✅ + declarations | 22 ✅ |
 | `ar` | Arabic (RTL) | 28 ✅ + declarations | 22 ✅ |
 | `bg` | Bulgarian | 28 ✅ + declarations | 22 ✅ |
+| `bn` | Bengali | 28 ✅ + declarations | 22 ✅ |
+| `ca` | Catalan | 28 ✅ + declarations | 22 ✅ |
 | `cs` | Czech | 28 ✅ + declarations | 22 ✅ |
 | `da` | Danish | 28 ✅ + declarations | 22 ✅ |
 | `de` | German | 28 ✅ + declarations | 22 ✅ |
 | `el` | Greek | 28 ✅ + declarations | 22 ✅ |
 | `en` | English | 28 ✅ + declarations | 22 ✅ |
 | `es` | Spanish | 28 ✅ + declarations | 22 ✅ |
+| `et` | Estonian | 28 ✅ + declarations | 22 ✅ |
+| `fa` | Persian (RTL) | 28 ✅ + declarations | 22 ✅ |
 | `fi` | Finnish | 28 ✅ + declarations | 22 ✅ |
+| `fil` | Filipino | 28 ✅ + declarations | 22 ✅ |
 | `fr` | French | 28 ✅ + declarations | 22 ✅ |
 | `he` | Hebrew (RTL) | 28 ✅ + declarations | 22 ✅ |
+| `hi` | Hindi | 28 ✅ + declarations | 22 ✅ |
+| `hr` | Croatian | 28 ✅ + declarations | 22 ✅ |
 | `hu` | Hungarian | 28 ✅ + declarations | 22 ✅ |
+| `id` | Indonesian | 28 ✅ + declarations | 22 ✅ |
 | `it` | Italian | 28 ✅ + declarations | 22 ✅ |
 | `ja` | Japanese | 28 ✅ + declarations | 22 ✅ |
+| `ka` | Georgian | 28 ✅ + declarations | 22 ✅ |
 | `ko` | Korean | 28 ✅ + declarations | 22 ✅ |
+| `ku` | Kurdish (Kurmanji) | 28 ✅ + declarations | 22 ✅ |
+| `lt` | Lithuanian | 28 ✅ + declarations | 22 ✅ |
+| `lv` | Latvian | 28 ✅ + declarations | 22 ✅ |
+| `ms` | Malay | 28 ✅ + declarations | 22 ✅ |
 | `nl` | Dutch | 28 ✅ + declarations | 22 ✅ |
 | `no` | Norwegian (Bokmål) | 28 ✅ + declarations | 22 ✅ |
 | `pl` | Polish | 28 ✅ + declarations | 22 ✅ |
@@ -148,15 +162,24 @@ declarations = NITRITE_CURING_SALT (sucuk)  = ["NITRITE_CURING_SALT"]
 | `pt-PT` | Portuguese (Portugal) | 28 ✅ + declarations | 22 ✅ |
 | `ro` | Romanian | 28 ✅ + declarations | 22 ✅ |
 | `ru` | Russian | 28 ✅ + declarations | 22 ✅ |
+| `sk` | Slovak | 28 ✅ + declarations | 22 ✅ |
+| `sl` | Slovenian | 28 ✅ + declarations | 22 ✅ |
+| `sq` | Albanian | 28 ✅ + declarations | 22 ✅ |
+| `sr-Latn` | Serbian (Latin) | 28 ✅ + declarations | 22 ✅ |
 | `sv` | Swedish | 28 ✅ + declarations | 22 ✅ |
+| `sw` | Swahili | 28 ✅ + declarations | 22 ✅ |
+| `ta` | Tamil | 28 ✅ + declarations | 22 ✅ |
+| `th` | Thai | 28 ✅ + declarations | 22 ✅ |
 | `tr` | Turkish | 28 ✅ + declarations | 22 ✅ |
+| `uk` | Ukrainian | 28 ✅ + declarations | 22 ✅ |
+| `ur` | Urdu (RTL) | 28 ✅ + declarations | 22 ✅ |
 | `vi` | Vietnamese | 28 ✅ + declarations | 22 ✅ |
 | `zh-Hans` | Chinese (Simplified) | 28 ✅ + declarations | 22 ✅ |
 | `zh-Hant` | Chinese (Traditional) | 28 ✅ + declarations | 22 ✅ |
 
-Locales are [BCP 47](https://www.rfc-editor.org/info/bcp47) tags and are matched exactly. Where a language has variants that word allergens differently, each variant ships under its own tag and there is no bare one: `pt-BR` says *gergelim* where `pt-PT` says *sésamo*, and `zh-Hant` is written in a different script from `zh-Hans`. An app that holds only `pt` or `zh` decides which variant it means.
+Locales are [BCP 47](https://www.rfc-editor.org/info/bcp47) tags and are matched exactly. Where a language has variants that word allergens differently, each variant ships under its own tag and there is no bare one: `pt-BR` says *gergelim* where `pt-PT` says *sésamo*, and `zh-Hant` is written in a different script from `zh-Hans`. An app that holds only `pt` or `zh` decides which variant it means. A bare tag means one stated form of its language: `ku` is Kurmanji.
 
-Every language is complete: all 28 allergens and 22 declarations carry a name, description and — for allergens — the group declaration sentence. Arabic and Hebrew are right-to-left; the data itself is plain UTF-8 with no embedded direction control characters, so consumers wrap the rendered block in a container with `dir="rtl"` (or the framework equivalent) exactly as they already do for any other RTL text in the same UI.
+Every language is complete: all 28 allergens and 22 declarations carry a name, description and — for allergens — the group declaration sentence. Arabic, Hebrew, Persian and Urdu are right-to-left; the data itself is plain UTF-8 with no embedded direction control characters, so consumers wrap the rendered block in a container with `dir="rtl"` (or the framework equivalent) exactly as they already do for any other RTL text in the same UI.
 
 Missing a language you need? **Open a PR.** Adding one = one new file under `data/translations/<module>/<tag>.json`.
 

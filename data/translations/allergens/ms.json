@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Rai",
+    "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+    "description": "Rai dan hasilannya"
+  },
+  "BARLEY": {
+    "name": "Barli",
+    "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+    "description": "Barli dan hasilannya"
+  },
+  "EMMER": {
+    "name": "Gandum emmer",
+    "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+    "description": "Gandum emmer dan hasilannya"
+  },
+  "EINKORN": {
+    "name": "Gandum einkorn",
+    "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+    "description": "Gandum einkorn dan hasilannya"
+  },
+  "SPELT": {
+    "name": "Gandum spelt",
+    "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+    "description": "Gandum spelt dan hasilannya"
+  },
+  "WHEAT": {
+    "name": "Gandum",
+    "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+    "description": "Gandum dan hasilannya"
+  },
+  "OATS": {
+    "name": "Oat",
+    "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+    "description": "Oat dan hasilannya"
+  },
+  "KHORASAN": {
+    "name": "Gandum khorasan (Kamut)",
+    "declaration": "Mengandungi bijirin yang mengandungi gluten dan hasilannya",
+    "description": "Gandum khorasan dan hasilannya"
+  },
+  "CRUSTACEANS": {
+    "name": "Krustasea",
+    "declaration": "Mengandungi krustasea dan hasilannya",
+    "description": "Krustasea seperti udang dan ketam, serta hasilannya"
+  },
+  "EGGS": {
+    "name": "Telur",
+    "declaration": "Mengandungi telur dan hasilannya",
+    "description": "Telur dan hasilan telur"
+  },
+  "FISH": {
+    "name": "Ikan",
+    "declaration": "Mengandungi ikan dan hasilannya",
+    "description": "Ikan dan hasilan ikan"
+  },
+  "PEANUTS": {
+    "name": "Kacang tanah",
+    "declaration": "Mengandungi kacang tanah dan hasilannya",
+    "description": "Kacang tanah dan hasilannya"
+  },
+  "SOY": {
+    "name": "Kacang soya",
+    "declaration": "Mengandungi kacang soya dan hasilannya",
+    "description": "Kacang soya dan hasilannya"
+  },
+  "MILK": {
+    "name": "Susu (termasuk laktosa)",
+    "declaration": "Mengandungi susu dan hasilannya (termasuk laktosa)",
+    "description": "Susu dan hasilan tenusu, termasuk laktosa"
+  },
+  "MACADAMIA": {
+    "name": "Kacang makadamia",
+    "declaration": "Mengandungi kekacang pokok dan hasilannya",
+    "description": "Kacang makadamia dan hasilannya"
+  },
+  "ALMONDS": {
+    "name": "Badam",
+    "declaration": "Mengandungi kekacang pokok dan hasilannya",
+    "description": "Badam dan hasilannya"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Kacang Brazil",
+    "declaration": "Mengandungi kekacang pokok dan hasilannya",
+    "description": "Kacang Brazil dan hasilannya"
+  },
+  "PECANS": {
+    "name": "Kacang pecan",
+    "declaration": "Mengandungi kekacang pokok dan hasilannya",
+    "description": "Kacang pecan dan hasilannya"
+  },
+  "PISTACHIOS": {
+    "name": "Pistachio",
+    "declaration": "Mengandungi kekacang pokok dan hasilannya",
+    "description": "Pistachio dan hasilannya"
+  },
+  "WALNUTS": {
+    "name": "Walnut",
+    "declaration": "Mengandungi kekacang pokok dan hasilannya",
+    "description": "Walnut dan hasilannya"
+  },
+  "CASHEWS": {
+    "name": "Gajus",
+    "declaration": "Mengandungi kekacang pokok dan hasilannya",
+    "description": "Gajus dan hasilannya"
+  },
+  "HAZELNUTS": {
+    "name": "Hazelnut",
+    "declaration": "Mengandungi kekacang pokok dan hasilannya",
+    "description": "Hazelnut dan hasilannya"
+  },
+  "CELERY": {
+    "name": "Saderi",
+    "declaration": "Mengandungi saderi dan hasilannya",
+    "description": "Saderi dan hasilannya"
+  },
+  "MUSTARD": {
+    "name": "Biji sawi (mustard)",
+    "declaration": "Mengandungi biji sawi dan hasilannya",
+    "description": "Biji sawi dan hasilannya"
+  },
+  "SESAME": {
+    "name": "Bijan",
+    "declaration": "Mengandungi biji bijan dan hasilannya",
+    "description": "Biji bijan dan hasilannya"
+  },
+  "SULPHITES": {
+    "name": "Sulfur dioksida dan sulfit",
+    "declaration": "Mengandungi sulfur dioksida dan sulfit",
+    "description": "Sulfur dioksida dan sulfit"
+  },
+  "LUPINS": {
+    "name": "Lupin",
+    "declaration": "Mengandungi lupin dan hasilannya",
+    "description": "Lupin dan hasilannya"
+  },
+  "MOLLUSCS": {
+    "name": "Moluska",
+    "declaration": "Mengandungi moluska dan hasilannya",
+    "description": "Moluska seperti siput dan kupang, serta hasilannya"
+  }
+}

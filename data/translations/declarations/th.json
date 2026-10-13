@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "ใส่สีผสมอาหาร",
+    "description": "มีสีผสมอาหาร"
+  },
+  "PRESERVATIVES": {
+    "name": "ใส่วัตถุกันเสีย",
+    "description": "มีวัตถุกันเสีย"
+  },
+  "ANTIOXIDANTS": {
+    "name": "ใส่สารต้านอนุมูลอิสระ",
+    "description": "มีสารต้านอนุมูลอิสระ"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "ใส่เกลือไนไตรต์สำหรับหมัก",
+    "description": "มีเกลือไนไตรต์สำหรับหมักเนื้อ"
+  },
+  "NITRATE": {
+    "name": "ใส่ไนเตรต",
+    "description": "มีไนเตรต (วัตถุกันเสีย)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "ใส่เกลือไนไตรต์และไนเตรต",
+    "description": "มีเกลือไนไตรต์สำหรับหมักเนื้อและไนเตรต"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "ใส่สารเพิ่มรสชาติ",
+    "description": "มีสารเพิ่มรสชาติ"
+  },
+  "PHOSPHATE": {
+    "name": "ใส่ฟอสเฟต",
+    "description": "มีฟอสเฟต"
+  },
+  "SULPHURED": {
+    "name": "รมกำมะถัน",
+    "description": "มีซัลเฟอร์ไดออกไซด์หรือซัลไฟต์"
+  },
+  "BLACKENED": {
+    "name": "ทำให้ดำ",
+    "description": "ทำให้ดำเพื่อความสวยงาม"
+  },
+  "WAXED": {
+    "name": "เคลือบไข",
+    "description": "เคลือบไขที่ผิวเพื่อยืดอายุ"
+  },
+  "SWEETENERS": {
+    "name": "ใส่วัตถุให้ความหวาน",
+    "description": "มีวัตถุให้ความหวาน"
+  },
+  "PHENYLALANINE": {
+    "name": "มีแหล่งของฟีนิลอะลานีน",
+    "description": "มีแหล่งของฟีนิลอะลานีน"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "หากบริโภคมากเกินไปอาจมีฤทธิ์ระบาย",
+    "description": "หากบริโภคมากเกินไปอาจมีฤทธิ์ระบาย"
+  },
+  "CAFFEINE": {
+    "name": "มีคาเฟอีน",
+    "description": "มีคาเฟอีน"
+  },
+  "QUININE": {
+    "name": "มีควินิน",
+    "description": "มีควินิน"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "อาจส่งผลต่อพฤติกรรมและสมาธิของเด็ก",
+    "description": "อาจส่งผลเสียต่อพฤติกรรมและสมาธิของเด็ก"
+  },
+  "MILK_PROTEIN": {
+    "name": "มีโปรตีนนม",
+    "description": "มีโปรตีนนม"
+  },
+  "SURIMI": {
+    "name": "มีซูริมิ",
+    "description": "มีซูริมิ"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "ทำจากชิ้นเนื้อที่นำมาประกอบกัน",
+    "description": "ทำจากชิ้นเนื้อที่นำมาประกอบกัน"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "ทำจากชิ้นปลาที่นำมาประกอบกัน",
+    "description": "ทำจากชิ้นปลาที่นำมาประกอบกัน"
+  },
+  "DEFROSTED": {
+    "name": "ละลายน้ำแข็งแล้ว",
+    "description": "ละลายจากสภาพแช่แข็ง"
+  }
+}

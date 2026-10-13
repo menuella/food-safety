@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "رنگ شامل",
+    "description": "کھانے کا رنگ شامل ہے"
+  },
+  "PRESERVATIVES": {
+    "name": "پریزرویٹو شامل",
+    "description": "پریزرویٹو شامل ہے"
+  },
+  "ANTIOXIDANTS": {
+    "name": "اینٹی آکسیڈنٹ شامل",
+    "description": "اینٹی آکسیڈنٹ شامل ہے"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "نائٹرائٹ نمک شامل",
+    "description": "گوشت محفوظ کرنے والا نائٹرائٹ نمک شامل ہے"
+  },
+  "NITRATE": {
+    "name": "نائٹریٹ شامل",
+    "description": "نائٹریٹ شامل ہے (پریزرویٹو)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "نائٹرائٹ نمک اور نائٹریٹ شامل",
+    "description": "نائٹرائٹ نمک اور نائٹریٹ شامل ہیں"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "ذائقہ بڑھانے والا شامل",
+    "description": "ذائقہ بڑھانے والے اجزا شامل ہیں"
+  },
+  "PHOSPHATE": {
+    "name": "فاسفیٹ شامل",
+    "description": "فاسفیٹ شامل ہے"
+  },
+  "SULPHURED": {
+    "name": "گندھک سے پراسیس شدہ",
+    "description": "سلفر ڈائی آکسائیڈ یا سلفائٹس شامل ہیں"
+  },
+  "BLACKENED": {
+    "name": "سیاہ کیا گیا",
+    "description": "ظاہری شکل کے لیے سیاہ کیا گیا"
+  },
+  "WAXED": {
+    "name": "موم لگا",
+    "description": "محفوظ رکھنے کے لیے سطح پر موم لگایا گیا"
+  },
+  "SWEETENERS": {
+    "name": "مٹھاس پیدا کرنے والے اجزا شامل",
+    "description": "مصنوعی مٹھاس شامل ہے"
+  },
+  "PHENYLALANINE": {
+    "name": "فینائل الانین کا ذریعہ شامل ہے",
+    "description": "فینائل الانین کا ذریعہ شامل ہے"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "زیادہ استعمال سے جلاب کا اثر ہو سکتا ہے",
+    "description": "زیادہ استعمال سے جلاب کا اثر ہو سکتا ہے"
+  },
+  "CAFFEINE": {
+    "name": "کیفین شامل ہے",
+    "description": "کیفین شامل ہے"
+  },
+  "QUININE": {
+    "name": "کونین شامل ہے",
+    "description": "کونین شامل ہے"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "بچوں کی سرگرمی اور توجہ پر اثر ڈال سکتا ہے",
+    "description": "بچوں کی سرگرمی اور توجہ پر منفی اثر ڈال سکتا ہے"
+  },
+  "MILK_PROTEIN": {
+    "name": "دودھ کا پروٹین شامل ہے",
+    "description": "دودھ کا پروٹین شامل ہے"
+  },
+  "SURIMI": {
+    "name": "سوریمی شامل ہے",
+    "description": "سوریمی شامل ہے"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "جوڑے گئے گوشت کے ٹکڑوں سے بنا",
+    "description": "جوڑے گئے گوشت کے ٹکڑوں سے بنایا گیا"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "جوڑے گئے مچھلی کے ٹکڑوں سے بنا",
+    "description": "جوڑے گئے مچھلی کے ٹکڑوں سے بنایا گیا"
+  },
+  "DEFROSTED": {
+    "name": "پگھلایا ہوا",
+    "description": "منجمد حالت سے پگھلایا گیا"
+  }
+}

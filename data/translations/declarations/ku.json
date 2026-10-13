@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "bi rengdêr",
+    "description": "Rengdêrên xwarinê dihewîne"
+  },
+  "PRESERVATIVES": {
+    "name": "bi parastinker",
+    "description": "Parastinkeran dihewîne"
+  },
+  "ANTIOXIDANTS": {
+    "name": "bi antîoksîdan",
+    "description": "Antîoksîdanan dihewîne"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "bi xwêya nîtrîtê",
+    "description": "Xwêya nîtrîtê ya qelandinê dihewîne"
+  },
+  "NITRATE": {
+    "name": "bi nîtrat",
+    "description": "Nîtrat dihewîne (parastinker)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "bi xwêya nîtrîtê û nîtrat",
+    "description": "Xwêya nîtrîtê û nîtrat dihewîne"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "bi xurtkerê tamê",
+    "description": "Xurtkerên tamê dihewîne"
+  },
+  "PHOSPHATE": {
+    "name": "bi fosfat",
+    "description": "Fosfat dihewîne"
+  },
+  "SULPHURED": {
+    "name": "kibrîtkirî",
+    "description": "Dîoksîda kibrîtê an sulfît dihewîne"
+  },
+  "BLACKENED": {
+    "name": "reşkirî",
+    "description": "Ji bo xuyangê reşkirî"
+  },
+  "WAXED": {
+    "name": "mûmkirî",
+    "description": "Rûyê wê ji bo parastinê mûmkirî ye"
+  },
+  "SWEETENERS": {
+    "name": "bi şîrînker",
+    "description": "Şîrînkeran dihewîne"
+  },
+  "PHENYLALANINE": {
+    "name": "çavkaniyeke fenîlalanînê dihewîne",
+    "description": "Çavkaniyeke fenîlalanînê dihewîne"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "xwarina zêde dikare bandora vekirina zikê bike",
+    "description": "Xwarina zêde dikare bandora vekirina zikê bike"
+  },
+  "CAFFEINE": {
+    "name": "kafeîn dihewîne",
+    "description": "Kafeîn dihewîne"
+  },
+  "QUININE": {
+    "name": "kînîn dihewîne",
+    "description": "Kînîn dihewîne"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "dikare bandorê li çalakî û baldariya zarokan bike",
+    "description": "Dikare bandorê li çalakî û baldariya zarokan bike"
+  },
+  "MILK_PROTEIN": {
+    "name": "proteîna şîr dihewîne",
+    "description": "Proteîna şîr dihewîne"
+  },
+  "SURIMI": {
+    "name": "surimî dihewîne",
+    "description": "Surimî dihewîne"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "ji perçeyên goşt ên bihevgirtî",
+    "description": "Ji perçeyên goşt ên bihevgirtî hatiye çêkirin"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "ji perçeyên masî ên bihevgirtî",
+    "description": "Ji perçeyên masî ên bihevgirtî hatiye çêkirin"
+  },
+  "DEFROSTED": {
+    "name": "helandî",
+    "description": "Ji rewşa cemidî hatiye helandin"
+  }
+}
