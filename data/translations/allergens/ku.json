@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Çewdar",
+    "declaration": "Genimên bi glutenê û berhemên wan dihewîne",
+    "description": "Çewdar û berhemên çewdarê"
+  },
+  "BARLEY": {
+    "name": "Ceh",
+    "declaration": "Genimên bi glutenê û berhemên wan dihewîne",
+    "description": "Ceh û berhemên cehê"
+  },
+  "EMMER": {
+    "name": "Genimê emmer (kavilca)",
+    "declaration": "Genimên bi glutenê û berhemên wan dihewîne",
+    "description": "Genimê emmer û berhemên wî"
+  },
+  "EINKORN": {
+    "name": "Siyez (einkorn)",
+    "declaration": "Genimên bi glutenê û berhemên wan dihewîne",
+    "description": "Siyez û berhemên wê"
+  },
+  "SPELT": {
+    "name": "Genimê spelt",
+    "declaration": "Genimên bi glutenê û berhemên wan dihewîne",
+    "description": "Genimê spelt û berhemên wî"
+  },
+  "WHEAT": {
+    "name": "Genim",
+    "declaration": "Genimên bi glutenê û berhemên wan dihewîne",
+    "description": "Genim û berhemên genim"
+  },
+  "OATS": {
+    "name": "Yulaf",
+    "declaration": "Genimên bi glutenê û berhemên wan dihewîne",
+    "description": "Yulaf û berhemên wê"
+  },
+  "KHORASAN": {
+    "name": "Genimê Xorasanê (Kamut)",
+    "declaration": "Genimên bi glutenê û berhemên wan dihewîne",
+    "description": "Genimê Xorasanê û berhemên wî"
+  },
+  "CRUSTACEANS": {
+    "name": "Krûstase",
+    "declaration": "Krûstase û berhemên wan dihewîne",
+    "description": "Krûstase, wek mîgû û kevjal, û berhemên wan"
+  },
+  "EGGS": {
+    "name": "Hêk",
+    "declaration": "Hêk û berhemên hêkan dihewîne",
+    "description": "Hêk û berhemên hêkan"
+  },
+  "FISH": {
+    "name": "Masî",
+    "declaration": "Masî û berhemên masiyan dihewîne",
+    "description": "Masî û berhemên masiyan"
+  },
+  "PEANUTS": {
+    "name": "Fistiqê erdê",
+    "declaration": "Fistiqê erdê û berhemên wî dihewîne",
+    "description": "Fistiqê erdê û berhemên wî"
+  },
+  "SOY": {
+    "name": "Soya",
+    "declaration": "Soya û berhemên soyayê dihewîne",
+    "description": "Soya û berhemên soyayê"
+  },
+  "MILK": {
+    "name": "Şîr (laktoz jî tê de)",
+    "declaration": "Şîr û berhemên şîr dihewîne (laktoz jî tê de)",
+    "description": "Şîr û berhemên şîr, laktoz jî tê de"
+  },
+  "MACADAMIA": {
+    "name": "Makadamya",
+    "declaration": "Fêkiyên bi qalik û berhemên wan dihewîne",
+    "description": "Makadamya û berhemên wê"
+  },
+  "ALMONDS": {
+    "name": "Behîv",
+    "declaration": "Fêkiyên bi qalik û berhemên wan dihewîne",
+    "description": "Behîv û berhemên behîvan"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Gwîza Brezîlyayê",
+    "declaration": "Fêkiyên bi qalik û berhemên wan dihewîne",
+    "description": "Gwîza Brezîlyayê û berhemên wê"
+  },
+  "PECANS": {
+    "name": "Pekan",
+    "declaration": "Fêkiyên bi qalik û berhemên wan dihewîne",
+    "description": "Pekan û berhemên wê"
+  },
+  "PISTACHIOS": {
+    "name": "Fistiq",
+    "declaration": "Fêkiyên bi qalik û berhemên wan dihewîne",
+    "description": "Fistiq û berhemên fistiqan"
+  },
+  "WALNUTS": {
+    "name": "Gwîz",
+    "declaration": "Fêkiyên bi qalik û berhemên wan dihewîne",
+    "description": "Gwîz û berhemên gwîzan"
+  },
+  "CASHEWS": {
+    "name": "Kaju",
+    "declaration": "Fêkiyên bi qalik û berhemên wan dihewîne",
+    "description": "Kaju û berhemên wê"
+  },
+  "HAZELNUTS": {
+    "name": "Bindeq",
+    "declaration": "Fêkiyên bi qalik û berhemên wan dihewîne",
+    "description": "Bindeq û berhemên bindeqan"
+  },
+  "CELERY": {
+    "name": "Kerefs",
+    "declaration": "Kerefs û berhemên kerefsê dihewîne",
+    "description": "Kerefs û berhemên kerefsê"
+  },
+  "MUSTARD": {
+    "name": "Xerdel",
+    "declaration": "Xerdel û berhemên xerdelê dihewîne",
+    "description": "Xerdel û berhemên xerdelê"
+  },
+  "SESAME": {
+    "name": "Kuncî",
+    "declaration": "Tovên kuncî û berhemên wan dihewîne",
+    "description": "Tovên kuncî û berhemên wan"
+  },
+  "SULPHITES": {
+    "name": "Dîoksîda kibrîtê û sulfît",
+    "declaration": "Dîoksîda kibrîtê û sulfîtan dihewîne",
+    "description": "Dîoksîda kibrîtê û sulfît"
+  },
+  "LUPINS": {
+    "name": "Lupîn",
+    "declaration": "Lupîn û berhemên wê dihewîne",
+    "description": "Lupîn û berhemên wê"
+  },
+  "MOLLUSCS": {
+    "name": "Nermlaş",
+    "declaration": "Nermlaş û berhemên wan dihewîne",
+    "description": "Nermlaş, wek şeytanok û midye, û berhemên wan"
+  }
+}

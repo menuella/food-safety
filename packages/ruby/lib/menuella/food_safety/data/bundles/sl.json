@@ -1,0 +1,415 @@
+{
+  "locale": "sl",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Rž",
+      "declaration": "Vsebuje žita, ki vsebujejo gluten, in proizvode iz njih",
+      "description": "Rž in proizvodi iz rži"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ječmen",
+      "declaration": "Vsebuje žita, ki vsebujejo gluten, in proizvode iz njih",
+      "description": "Ječmen in proizvodi iz ječmena"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Dvozrna pšenica (emer)",
+      "declaration": "Vsebuje žita, ki vsebujejo gluten, in proizvode iz njih",
+      "description": "Dvozrna pšenica in proizvodi iz nje"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Enozrna pšenica (einkorn)",
+      "declaration": "Vsebuje žita, ki vsebujejo gluten, in proizvode iz njih",
+      "description": "Enozrna pšenica in proizvodi iz nje"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Pira",
+      "declaration": "Vsebuje žita, ki vsebujejo gluten, in proizvode iz njih",
+      "description": "Pira in proizvodi iz pire"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Pšenica",
+      "declaration": "Vsebuje žita, ki vsebujejo gluten, in proizvode iz njih",
+      "description": "Pšenica in proizvodi iz pšenice"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Oves",
+      "declaration": "Vsebuje žita, ki vsebujejo gluten, in proizvode iz njih",
+      "description": "Oves in proizvodi iz ovsa"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Pšenica khorasan (Kamut)",
+      "declaration": "Vsebuje žita, ki vsebujejo gluten, in proizvode iz njih",
+      "description": "Pšenica khorasan in proizvodi iz nje"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Raki",
+      "declaration": "Vsebuje rake in proizvode iz njih",
+      "description": "Raki, npr. kozice in rakovice, in proizvodi iz njih"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Jajca",
+      "declaration": "Vsebuje jajca in proizvode iz jajc",
+      "description": "Jajca in proizvodi iz jajc"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Ribe",
+      "declaration": "Vsebuje ribe in proizvode iz rib",
+      "description": "Ribe in proizvodi iz rib"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Arašidi",
+      "declaration": "Vsebuje arašide in proizvode iz arašidov",
+      "description": "Arašidi in proizvodi iz arašidov"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Soja",
+      "declaration": "Vsebuje zrnje soje in proizvode iz soje",
+      "description": "Zrnje soje in proizvodi iz soje"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Mleko (vključno z laktozo)",
+      "declaration": "Vsebuje mleko in mlečne proizvode (vključno z laktozo)",
+      "description": "Mleko in mlečni proizvodi, vključno z laktozo"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Makadamija oreški",
+      "declaration": "Vsebuje oreške in proizvode iz njih",
+      "description": "Makadamija oreški in proizvodi iz njih"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Mandlji",
+      "declaration": "Vsebuje oreške in proizvode iz njih",
+      "description": "Mandlji in proizvodi iz mandljev"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Brazilski oreški",
+      "declaration": "Vsebuje oreške in proizvode iz njih",
+      "description": "Brazilski oreški in proizvodi iz njih"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Ameriški orehi (pekan)",
+      "declaration": "Vsebuje oreške in proizvode iz njih",
+      "description": "Ameriški orehi in proizvodi iz njih"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pistacije",
+      "declaration": "Vsebuje oreške in proizvode iz njih",
+      "description": "Pistacije in proizvodi iz njih"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Orehi",
+      "declaration": "Vsebuje oreške in proizvode iz njih",
+      "description": "Orehi in proizvodi iz orehov"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Indijski oreški",
+      "declaration": "Vsebuje oreške in proizvode iz njih",
+      "description": "Indijski oreški in proizvodi iz njih"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Lešniki",
+      "declaration": "Vsebuje oreške in proizvode iz njih",
+      "description": "Lešniki in proizvodi iz lešnikov"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Listna zelena",
+      "declaration": "Vsebuje listno zeleno in proizvode iz nje",
+      "description": "Listna zelena in proizvodi iz nje"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Gorčično seme",
+      "declaration": "Vsebuje gorčično seme in proizvode iz njega",
+      "description": "Gorčično seme in proizvodi iz njega"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Sezamovo seme",
+      "declaration": "Vsebuje sezamovo seme in proizvode iz njega",
+      "description": "Sezamovo seme in proizvodi iz njega"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Žveplov dioksid in sulfiti",
+      "declaration": "Vsebuje žveplov dioksid in sulfite",
+      "description": "Žveplov dioksid in sulfiti"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Volčji bob",
+      "declaration": "Vsebuje volčji bob in proizvode iz njega",
+      "description": "Volčji bob in proizvodi iz njega"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Mehkužci",
+      "declaration": "Vsebuje mehkužce in proizvode iz njih",
+      "description": "Mehkužci, npr. polži in školjke, in proizvodi iz njih"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "z barvilom",
+      "description": "Vsebuje barvila"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "s konzervansom",
+      "description": "Vsebuje konzervanse"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "z antioksidantom",
+      "description": "Vsebuje antioksidante"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "z nitritno soljo za razsoljevanje",
+      "description": "Vsebuje nitritno sol za razsoljevanje"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "z nitratom",
+      "description": "Vsebuje nitrat (konzervans)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "z nitritno soljo za razsoljevanje in nitratom",
+      "description": "Vsebuje nitritno sol za razsoljevanje in nitrat"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "z ojačevalcem arome",
+      "description": "Vsebuje ojačevalce arome"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "s fosfatom",
+      "description": "Vsebuje fosfat"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "žveplano",
+      "description": "Vsebuje žveplov dioksid ali sulfite"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "počrnjeno",
+      "description": "Počrnjeno zaradi videza"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "povoskano",
+      "description": "Površina povoskana za daljšo obstojnost"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "s sladili",
+      "description": "Vsebuje sladila"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "vsebuje vir fenilalanina",
+      "description": "Vsebuje vir fenilalanina"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "prekomerno uživanje lahko odvaja",
+      "description": "Prekomerno uživanje lahko odvaja"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "vsebuje kofein",
+      "description": "Vsebuje kofein"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "vsebuje kinin",
+      "description": "Vsebuje kinin"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "lahko škodljivo vpliva na dejavnost in pozornost otrok",
+      "description": "Lahko škodljivo vpliva na dejavnost in pozornost otrok"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "vsebuje mlečne beljakovine",
+      "description": "Vsebuje mlečne beljakovine"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "vsebuje surimi",
+      "description": "Vsebuje surimi"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "iz združenih kosov mesa",
+      "description": "Izdelano iz združenih kosov mesa"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "iz združenih kosov rib",
+      "description": "Izdelano iz združenih kosov rib"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "odmrznjeno",
+      "description": "Odmrznjeno iz zamrznjenega stanja"
+    }
+  ],
+  "fallbacks": []
+}

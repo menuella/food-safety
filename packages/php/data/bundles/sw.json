@@ -1,0 +1,415 @@
+{
+  "locale": "sw",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Rai",
+      "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+      "description": "Rai na bidhaa zake"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Shayiri",
+      "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+      "description": "Shayiri na bidhaa zake"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ngano ya emmer",
+      "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+      "description": "Ngano ya emmer na bidhaa zake"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ngano ya einkorn",
+      "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+      "description": "Ngano ya einkorn na bidhaa zake"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ngano ya spelt",
+      "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+      "description": "Ngano ya spelt na bidhaa zake"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ngano",
+      "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+      "description": "Ngano na bidhaa zake"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Oti",
+      "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+      "description": "Oti na bidhaa zake"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ngano ya khorasan (Kamut)",
+      "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+      "description": "Ngano ya khorasan na bidhaa zake"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Krasteshia",
+      "declaration": "Ina krasteshia na bidhaa zake",
+      "description": "Krasteshia kama kamba na kaa, na bidhaa zake"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Mayai",
+      "declaration": "Ina mayai na bidhaa zake",
+      "description": "Mayai na bidhaa za mayai"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Samaki",
+      "declaration": "Ina samaki na bidhaa zake",
+      "description": "Samaki na bidhaa za samaki"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Karanga",
+      "declaration": "Ina karanga na bidhaa zake",
+      "description": "Karanga na bidhaa zake"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Soya",
+      "declaration": "Ina soya na bidhaa zake",
+      "description": "Soya na bidhaa zake"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Maziwa (pamoja na laktosi)",
+      "declaration": "Ina maziwa na bidhaa zake (pamoja na laktosi)",
+      "description": "Maziwa na bidhaa za maziwa, pamoja na laktosi"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Makadamia",
+      "declaration": "Ina njugu za miti na bidhaa zake",
+      "description": "Makadamia na bidhaa zake"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Lozi",
+      "declaration": "Ina njugu za miti na bidhaa zake",
+      "description": "Lozi na bidhaa zake"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Njugu za Brazili",
+      "declaration": "Ina njugu za miti na bidhaa zake",
+      "description": "Njugu za Brazili na bidhaa zake"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pekani",
+      "declaration": "Ina njugu za miti na bidhaa zake",
+      "description": "Pekani na bidhaa zake"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pistachio",
+      "declaration": "Ina njugu za miti na bidhaa zake",
+      "description": "Pistachio na bidhaa zake"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Jozi",
+      "declaration": "Ina njugu za miti na bidhaa zake",
+      "description": "Jozi na bidhaa zake"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Korosho",
+      "declaration": "Ina njugu za miti na bidhaa zake",
+      "description": "Korosho na bidhaa zake"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Hazelnati",
+      "declaration": "Ina njugu za miti na bidhaa zake",
+      "description": "Hazelnati na bidhaa zake"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Seleri",
+      "declaration": "Ina seleri na bidhaa zake",
+      "description": "Seleri na bidhaa zake"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Haradali",
+      "declaration": "Ina haradali na bidhaa zake",
+      "description": "Haradali na bidhaa zake"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Ufuta",
+      "declaration": "Ina ufuta na bidhaa zake",
+      "description": "Mbegu za ufuta na bidhaa zake"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Dioksidi ya salfa na salfiti",
+      "declaration": "Ina dioksidi ya salfa na salfiti",
+      "description": "Dioksidi ya salfa na salfiti"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Lupini",
+      "declaration": "Ina lupini na bidhaa zake",
+      "description": "Lupini na bidhaa zake"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Moluska",
+      "declaration": "Ina moluska na bidhaa zake",
+      "description": "Moluska kama konokono na kome, na bidhaa zake"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "yenye rangi",
+      "description": "Ina rangi ya chakula"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "yenye kihifadhi",
+      "description": "Ina vihifadhi"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "yenye kizuia-oksidi",
+      "description": "Ina vizuia-oksidi"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "yenye chumvi ya nitriti",
+      "description": "Ina chumvi ya nitriti ya kuhifadhi nyama"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "yenye nitrati",
+      "description": "Ina nitrati (kihifadhi)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "yenye chumvi ya nitriti na nitrati",
+      "description": "Ina chumvi ya nitriti na nitrati"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "yenye kiongeza ladha",
+      "description": "Ina viongeza ladha"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "yenye fosfeti",
+      "description": "Ina fosfeti"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "iliyotiwa salfa",
+      "description": "Ina dioksidi ya salfa au salfiti"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "iliyotiwa weusi",
+      "description": "Imetiwa weusi kwa mwonekano"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "iliyopakwa nta",
+      "description": "Uso umepakwa nta ili kudumu"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "yenye vitamu-bandia",
+      "description": "Ina vitamu-bandia"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ina chanzo cha fenilalanini",
+      "description": "Ina chanzo cha fenilalanini"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ikiliwa kwa wingi inaweza kusababisha kuharisha",
+      "description": "Ikiliwa kwa wingi inaweza kusababisha kuharisha"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "ina kafeini",
+      "description": "Ina kafeini"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "ina kwinini",
+      "description": "Ina kwinini"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "inaweza kuathiri shughuli na umakini wa watoto",
+      "description": "Inaweza kuathiri shughuli na umakini wa watoto"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "ina protini ya maziwa",
+      "description": "Ina protini ya maziwa"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "ina surimi",
+      "description": "Ina surimi"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "imetengenezwa kwa vipande vya nyama vilivyounganishwa",
+      "description": "Imetengenezwa kwa vipande vya nyama vilivyounganishwa"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "imetengenezwa kwa vipande vya samaki vilivyounganishwa",
+      "description": "Imetengenezwa kwa vipande vya samaki vilivyounganishwa"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "iliyoyeyushwa kutoka barafu",
+      "description": "Imeyeyushwa kutoka hali ya kuganda"
+    }
+  ],
+  "fallbacks": []
+}

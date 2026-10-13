@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "ራይ",
+    "declaration": "ግሉተን ያላቸውን እህሎችና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "ራይና ተዋጽኦዎቹ"
+  },
+  "BARLEY": {
+    "name": "ገብስ",
+    "declaration": "ግሉተን ያላቸውን እህሎችና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "ገብስና ተዋጽኦዎቹ"
+  },
+  "EMMER": {
+    "name": "ኤመር ስንዴ",
+    "declaration": "ግሉተን ያላቸውን እህሎችና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "ኤመር ስንዴና ተዋጽኦዎቹ"
+  },
+  "EINKORN": {
+    "name": "አይንኮርን ስንዴ",
+    "declaration": "ግሉተን ያላቸውን እህሎችና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "አይንኮርን ስንዴና ተዋጽኦዎቹ"
+  },
+  "SPELT": {
+    "name": "ስፔልት ስንዴ",
+    "declaration": "ግሉተን ያላቸውን እህሎችና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "ስፔልት ስንዴና ተዋጽኦዎቹ"
+  },
+  "WHEAT": {
+    "name": "ስንዴ",
+    "declaration": "ግሉተን ያላቸውን እህሎችና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "ስንዴና ተዋጽኦዎቹ"
+  },
+  "OATS": {
+    "name": "አጃ",
+    "declaration": "ግሉተን ያላቸውን እህሎችና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "አጃና ተዋጽኦዎቹ"
+  },
+  "KHORASAN": {
+    "name": "ኮራሳን ስንዴ (Kamut)",
+    "declaration": "ግሉተን ያላቸውን እህሎችና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "ኮራሳን ስንዴና ተዋጽኦዎቹ"
+  },
+  "CRUSTACEANS": {
+    "name": "ክራስታሴያን",
+    "declaration": "ክራስታሴያንና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "እንደ ሽሪምፕና ሸርጣን ያሉ ክራስታሴያንና ተዋጽኦዎቻቸው"
+  },
+  "EGGS": {
+    "name": "እንቁላል",
+    "declaration": "እንቁላልና ተዋጽኦዎቹን ይዟል",
+    "description": "እንቁላልና የእንቁላል ተዋጽኦዎች"
+  },
+  "FISH": {
+    "name": "ዓሣ",
+    "declaration": "ዓሣና ተዋጽኦዎቹን ይዟል",
+    "description": "ዓሣና የዓሣ ተዋጽኦዎች"
+  },
+  "PEANUTS": {
+    "name": "ኦቾሎኒ",
+    "declaration": "ኦቾሎኒና ተዋጽኦዎቹን ይዟል",
+    "description": "ኦቾሎኒና ተዋጽኦዎቹ"
+  },
+  "SOY": {
+    "name": "አኩሪ አተር",
+    "declaration": "አኩሪ አተርና ተዋጽኦዎቹን ይዟል",
+    "description": "አኩሪ አተርና ተዋጽኦዎቹ"
+  },
+  "MILK": {
+    "name": "ወተት (ላክቶስን ጨምሮ)",
+    "declaration": "ወተትና የወተት ተዋጽኦዎችን ይዟል (ላክቶስን ጨምሮ)",
+    "description": "ወተትና የወተት ተዋጽኦዎች፣ ላክቶስን ጨምሮ"
+  },
+  "MACADAMIA": {
+    "name": "ማከዴሚያ",
+    "declaration": "የዛፍ ለውዞችንና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "ማከዴሚያና ተዋጽኦዎቹ"
+  },
+  "ALMONDS": {
+    "name": "ለውዝ (አልሞንድ)",
+    "declaration": "የዛፍ ለውዞችንና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "ለውዝና ተዋጽኦዎቹ"
+  },
+  "BRAZIL_NUTS": {
+    "name": "የብራዚል ለውዝ",
+    "declaration": "የዛፍ ለውዞችንና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "የብራዚል ለውዝና ተዋጽኦዎቹ"
+  },
+  "PECANS": {
+    "name": "ፔካን",
+    "declaration": "የዛፍ ለውዞችንና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "ፔካንና ተዋጽኦዎቹ"
+  },
+  "PISTACHIOS": {
+    "name": "ፒስታቺዮ",
+    "declaration": "የዛፍ ለውዞችንና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "ፒስታቺዮና ተዋጽኦዎቹ"
+  },
+  "WALNUTS": {
+    "name": "ዋልነት",
+    "declaration": "የዛፍ ለውዞችንና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "ዋልነትና ተዋጽኦዎቹ"
+  },
+  "CASHEWS": {
+    "name": "ካሼው",
+    "declaration": "የዛፍ ለውዞችንና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "ካሼውና ተዋጽኦዎቹ"
+  },
+  "HAZELNUTS": {
+    "name": "ሃዘልነት",
+    "declaration": "የዛፍ ለውዞችንና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "ሃዘልነትና ተዋጽኦዎቹ"
+  },
+  "CELERY": {
+    "name": "ሴለሪ",
+    "declaration": "ሴለሪና ተዋጽኦዎቹን ይዟል",
+    "description": "ሴለሪና ተዋጽኦዎቹ"
+  },
+  "MUSTARD": {
+    "name": "ሰናፍጭ",
+    "declaration": "ሰናፍጭና ተዋጽኦዎቹን ይዟል",
+    "description": "ሰናፍጭና ተዋጽኦዎቹ"
+  },
+  "SESAME": {
+    "name": "ሰሊጥ",
+    "declaration": "ሰሊጥና ተዋጽኦዎቹን ይዟል",
+    "description": "የሰሊጥ ፍሬና ተዋጽኦዎቹ"
+  },
+  "SULPHITES": {
+    "name": "ሰልፈር ዳይኦክሳይድና ሰልፋይቶች",
+    "declaration": "ሰልፈር ዳይኦክሳይድና ሰልፋይቶችን ይዟል",
+    "description": "ሰልፈር ዳይኦክሳይድና ሰልፋይቶች"
+  },
+  "LUPINS": {
+    "name": "ግብጦ (ሉፒን)",
+    "declaration": "ግብጦና ተዋጽኦዎቹን ይዟል",
+    "description": "ግብጦና ተዋጽኦዎቹ"
+  },
+  "MOLLUSCS": {
+    "name": "ሞለስኮች",
+    "declaration": "ሞለስኮችንና ተዋጽኦዎቻቸውን ይዟል",
+    "description": "እንደ ቀንድ አውጣና ሙሴል ያሉ ሞለስኮችና ተዋጽኦዎቻቸው"
+  }
+}

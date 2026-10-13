@@ -1,0 +1,415 @@
+{
+  "locale": "th",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ข้าวไรย์",
+      "declaration": "มีธัญพืชที่มีกลูเตนและผลิตภัณฑ์จากธัญพืชดังกล่าว",
+      "description": "ข้าวไรย์และผลิตภัณฑ์จากข้าวไรย์"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ข้าวบาร์เลย์",
+      "declaration": "มีธัญพืชที่มีกลูเตนและผลิตภัณฑ์จากธัญพืชดังกล่าว",
+      "description": "ข้าวบาร์เลย์และผลิตภัณฑ์จากข้าวบาร์เลย์"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ข้าวสาลีเอมเมอร์",
+      "declaration": "มีธัญพืชที่มีกลูเตนและผลิตภัณฑ์จากธัญพืชดังกล่าว",
+      "description": "ข้าวสาลีเอมเมอร์และผลิตภัณฑ์"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ข้าวสาลีไอน์คอร์น",
+      "declaration": "มีธัญพืชที่มีกลูเตนและผลิตภัณฑ์จากธัญพืชดังกล่าว",
+      "description": "ข้าวสาลีไอน์คอร์นและผลิตภัณฑ์"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ข้าวสาลีสเปลท์",
+      "declaration": "มีธัญพืชที่มีกลูเตนและผลิตภัณฑ์จากธัญพืชดังกล่าว",
+      "description": "ข้าวสาลีสเปลท์และผลิตภัณฑ์"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ข้าวสาลี",
+      "declaration": "มีธัญพืชที่มีกลูเตนและผลิตภัณฑ์จากธัญพืชดังกล่าว",
+      "description": "ข้าวสาลีและผลิตภัณฑ์จากข้าวสาลี"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ข้าวโอ๊ต",
+      "declaration": "มีธัญพืชที่มีกลูเตนและผลิตภัณฑ์จากธัญพืชดังกล่าว",
+      "description": "ข้าวโอ๊ตและผลิตภัณฑ์จากข้าวโอ๊ต"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ข้าวสาลีโคราซาน (Kamut)",
+      "declaration": "มีธัญพืชที่มีกลูเตนและผลิตภัณฑ์จากธัญพืชดังกล่าว",
+      "description": "ข้าวสาลีโคราซานและผลิตภัณฑ์"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "สัตว์น้ำที่มีเปลือกแข็ง",
+      "declaration": "มีสัตว์น้ำที่มีเปลือกแข็งและผลิตภัณฑ์",
+      "description": "สัตว์น้ำที่มีเปลือกแข็ง เช่น กุ้ง ปู และผลิตภัณฑ์"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "ไข่",
+      "declaration": "มีไข่และผลิตภัณฑ์จากไข่",
+      "description": "ไข่และผลิตภัณฑ์จากไข่"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "ปลา",
+      "declaration": "มีปลาและผลิตภัณฑ์จากปลา",
+      "description": "ปลาและผลิตภัณฑ์จากปลา"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "ถั่วลิสง",
+      "declaration": "มีถั่วลิสงและผลิตภัณฑ์จากถั่วลิสง",
+      "description": "ถั่วลิสงและผลิตภัณฑ์จากถั่วลิสง"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "ถั่วเหลือง",
+      "declaration": "มีถั่วเหลืองและผลิตภัณฑ์จากถั่วเหลือง",
+      "description": "ถั่วเหลืองและผลิตภัณฑ์จากถั่วเหลือง"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "นม (รวมถึงแล็กโทส)",
+      "declaration": "มีนมและผลิตภัณฑ์จากนม (รวมถึงแล็กโทส)",
+      "description": "นมและผลิตภัณฑ์จากนม รวมถึงแล็กโทส"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "แมคาเดเมีย",
+      "declaration": "มีถั่วเปลือกแข็งและผลิตภัณฑ์จากถั่วเปลือกแข็ง",
+      "description": "แมคาเดเมียและผลิตภัณฑ์"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "อัลมอนด์",
+      "declaration": "มีถั่วเปลือกแข็งและผลิตภัณฑ์จากถั่วเปลือกแข็ง",
+      "description": "อัลมอนด์และผลิตภัณฑ์"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "ถั่วบราซิล",
+      "declaration": "มีถั่วเปลือกแข็งและผลิตภัณฑ์จากถั่วเปลือกแข็ง",
+      "description": "ถั่วบราซิลและผลิตภัณฑ์"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "พีแคน",
+      "declaration": "มีถั่วเปลือกแข็งและผลิตภัณฑ์จากถั่วเปลือกแข็ง",
+      "description": "พีแคนและผลิตภัณฑ์"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "พิสตาชิโอ",
+      "declaration": "มีถั่วเปลือกแข็งและผลิตภัณฑ์จากถั่วเปลือกแข็ง",
+      "description": "พิสตาชิโอและผลิตภัณฑ์"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "วอลนัท",
+      "declaration": "มีถั่วเปลือกแข็งและผลิตภัณฑ์จากถั่วเปลือกแข็ง",
+      "description": "วอลนัทและผลิตภัณฑ์"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "มะม่วงหิมพานต์",
+      "declaration": "มีถั่วเปลือกแข็งและผลิตภัณฑ์จากถั่วเปลือกแข็ง",
+      "description": "มะม่วงหิมพานต์และผลิตภัณฑ์"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "เฮเซลนัท",
+      "declaration": "มีถั่วเปลือกแข็งและผลิตภัณฑ์จากถั่วเปลือกแข็ง",
+      "description": "เฮเซลนัทและผลิตภัณฑ์"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "ขึ้นฉ่ายฝรั่ง (เซเลอรี)",
+      "declaration": "มีขึ้นฉ่ายฝรั่งและผลิตภัณฑ์",
+      "description": "ขึ้นฉ่ายฝรั่งและผลิตภัณฑ์"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "มัสตาร์ด",
+      "declaration": "มีมัสตาร์ดและผลิตภัณฑ์",
+      "description": "มัสตาร์ดและผลิตภัณฑ์"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "งา",
+      "declaration": "มีงาและผลิตภัณฑ์จากงา",
+      "description": "เมล็ดงาและผลิตภัณฑ์จากงา"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "ซัลเฟอร์ไดออกไซด์และซัลไฟต์",
+      "declaration": "มีซัลเฟอร์ไดออกไซด์และซัลไฟต์",
+      "description": "ซัลเฟอร์ไดออกไซด์และซัลไฟต์"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "ลูพิน",
+      "declaration": "มีลูพินและผลิตภัณฑ์",
+      "description": "ลูพินและผลิตภัณฑ์"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "หอยและหมึก (มอลลัสก์)",
+      "declaration": "มีหอย หมึก และผลิตภัณฑ์",
+      "description": "มอลลัสก์ เช่น หอยทาก หอยแมลงภู่ และผลิตภัณฑ์"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ใส่สีผสมอาหาร",
+      "description": "มีสีผสมอาหาร"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ใส่วัตถุกันเสีย",
+      "description": "มีวัตถุกันเสีย"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ใส่สารต้านอนุมูลอิสระ",
+      "description": "มีสารต้านอนุมูลอิสระ"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ใส่เกลือไนไตรต์สำหรับหมัก",
+      "description": "มีเกลือไนไตรต์สำหรับหมักเนื้อ"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ใส่ไนเตรต",
+      "description": "มีไนเตรต (วัตถุกันเสีย)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ใส่เกลือไนไตรต์และไนเตรต",
+      "description": "มีเกลือไนไตรต์สำหรับหมักเนื้อและไนเตรต"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ใส่สารเพิ่มรสชาติ",
+      "description": "มีสารเพิ่มรสชาติ"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ใส่ฟอสเฟต",
+      "description": "มีฟอสเฟต"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "รมกำมะถัน",
+      "description": "มีซัลเฟอร์ไดออกไซด์หรือซัลไฟต์"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ทำให้ดำ",
+      "description": "ทำให้ดำเพื่อความสวยงาม"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "เคลือบไข",
+      "description": "เคลือบไขที่ผิวเพื่อยืดอายุ"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ใส่วัตถุให้ความหวาน",
+      "description": "มีวัตถุให้ความหวาน"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "มีแหล่งของฟีนิลอะลานีน",
+      "description": "มีแหล่งของฟีนิลอะลานีน"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "หากบริโภคมากเกินไปอาจมีฤทธิ์ระบาย",
+      "description": "หากบริโภคมากเกินไปอาจมีฤทธิ์ระบาย"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "มีคาเฟอีน",
+      "description": "มีคาเฟอีน"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "มีควินิน",
+      "description": "มีควินิน"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "อาจส่งผลต่อพฤติกรรมและสมาธิของเด็ก",
+      "description": "อาจส่งผลเสียต่อพฤติกรรมและสมาธิของเด็ก"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "มีโปรตีนนม",
+      "description": "มีโปรตีนนม"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "มีซูริมิ",
+      "description": "มีซูริมิ"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "ทำจากชิ้นเนื้อที่นำมาประกอบกัน",
+      "description": "ทำจากชิ้นเนื้อที่นำมาประกอบกัน"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "ทำจากชิ้นปลาที่นำมาประกอบกัน",
+      "description": "ทำจากชิ้นปลาที่นำมาประกอบกัน"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "ละลายน้ำแข็งแล้ว",
+      "description": "ละลายจากสภาพแช่แข็ง"
+    }
+  ],
+  "fallbacks": []
+}

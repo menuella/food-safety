@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Thekër",
+    "declaration": "Përmban drithëra që përmbajnë gluten dhe produkte prej tyre",
+    "description": "Thekër dhe produkte prej thekre"
+  },
+  "BARLEY": {
+    "name": "Elb",
+    "declaration": "Përmban drithëra që përmbajnë gluten dhe produkte prej tyre",
+    "description": "Elb dhe produkte prej elbi"
+  },
+  "EMMER": {
+    "name": "Grurë emmer",
+    "declaration": "Përmban drithëra që përmbajnë gluten dhe produkte prej tyre",
+    "description": "Grurë emmer dhe produkte prej tij"
+  },
+  "EINKORN": {
+    "name": "Grurë njëkokrrësh (einkorn)",
+    "declaration": "Përmban drithëra që përmbajnë gluten dhe produkte prej tyre",
+    "description": "Grurë njëkokrrësh dhe produkte prej tij"
+  },
+  "SPELT": {
+    "name": "Grurë spelta",
+    "declaration": "Përmban drithëra që përmbajnë gluten dhe produkte prej tyre",
+    "description": "Grurë spelta dhe produkte prej tij"
+  },
+  "WHEAT": {
+    "name": "Grurë",
+    "declaration": "Përmban drithëra që përmbajnë gluten dhe produkte prej tyre",
+    "description": "Grurë dhe produkte prej gruri"
+  },
+  "OATS": {
+    "name": "Tërshërë",
+    "declaration": "Përmban drithëra që përmbajnë gluten dhe produkte prej tyre",
+    "description": "Tërshërë dhe produkte prej tërshëre"
+  },
+  "KHORASAN": {
+    "name": "Grurë Khorasan (Kamut)",
+    "declaration": "Përmban drithëra që përmbajnë gluten dhe produkte prej tyre",
+    "description": "Grurë Khorasan dhe produkte prej tij"
+  },
+  "CRUSTACEANS": {
+    "name": "Krustace",
+    "declaration": "Përmban krustace dhe produkte prej tyre",
+    "description": "Krustace, si karkaleca dhe gaforre, dhe produkte prej tyre"
+  },
+  "EGGS": {
+    "name": "Vezë",
+    "declaration": "Përmban vezë dhe produkte prej vezësh",
+    "description": "Vezë dhe produkte prej vezësh"
+  },
+  "FISH": {
+    "name": "Peshk",
+    "declaration": "Përmban peshk dhe produkte prej peshku",
+    "description": "Peshk dhe produkte prej peshku"
+  },
+  "PEANUTS": {
+    "name": "Kikirikë",
+    "declaration": "Përmban kikirikë dhe produkte prej tyre",
+    "description": "Kikirikë dhe produkte prej kikirikësh"
+  },
+  "SOY": {
+    "name": "Sojë",
+    "declaration": "Përmban sojë dhe produkte prej soje",
+    "description": "Kokrra soje dhe produkte prej soje"
+  },
+  "MILK": {
+    "name": "Qumësht (përfshirë laktozën)",
+    "declaration": "Përmban qumësht dhe produkte qumështi (përfshirë laktozën)",
+    "description": "Qumësht dhe produkte qumështi, përfshirë laktozën"
+  },
+  "MACADAMIA": {
+    "name": "Arra makadamia",
+    "declaration": "Përmban fruta me lëvozhgë dhe produkte prej tyre",
+    "description": "Arra makadamia dhe produkte prej tyre"
+  },
+  "ALMONDS": {
+    "name": "Bajame",
+    "declaration": "Përmban fruta me lëvozhgë dhe produkte prej tyre",
+    "description": "Bajame dhe produkte prej bajamesh"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Arra braziliane",
+    "declaration": "Përmban fruta me lëvozhgë dhe produkte prej tyre",
+    "description": "Arra braziliane dhe produkte prej tyre"
+  },
+  "PECANS": {
+    "name": "Arra pekan",
+    "declaration": "Përmban fruta me lëvozhgë dhe produkte prej tyre",
+    "description": "Arra pekan dhe produkte prej tyre"
+  },
+  "PISTACHIOS": {
+    "name": "Fistikë",
+    "declaration": "Përmban fruta me lëvozhgë dhe produkte prej tyre",
+    "description": "Fistikë dhe produkte prej tyre"
+  },
+  "WALNUTS": {
+    "name": "Arra",
+    "declaration": "Përmban fruta me lëvozhgë dhe produkte prej tyre",
+    "description": "Arra dhe produkte prej arrash"
+  },
+  "CASHEWS": {
+    "name": "Shqeme",
+    "declaration": "Përmban fruta me lëvozhgë dhe produkte prej tyre",
+    "description": "Shqeme dhe produkte prej tyre"
+  },
+  "HAZELNUTS": {
+    "name": "Lajthi",
+    "declaration": "Përmban fruta me lëvozhgë dhe produkte prej tyre",
+    "description": "Lajthi dhe produkte prej lajthish"
+  },
+  "CELERY": {
+    "name": "Selino",
+    "declaration": "Përmban selino dhe produkte prej saj",
+    "description": "Selino dhe produkte prej selinoje"
+  },
+  "MUSTARD": {
+    "name": "Mustardë",
+    "declaration": "Përmban mustardë dhe produkte prej saj",
+    "description": "Mustardë dhe produkte prej mustarde"
+  },
+  "SESAME": {
+    "name": "Fara susami",
+    "declaration": "Përmban fara susami dhe produkte prej tyre",
+    "description": "Fara susami dhe produkte prej tyre"
+  },
+  "SULPHITES": {
+    "name": "Dioksid squfuri dhe sulfite",
+    "declaration": "Përmban dioksid squfuri dhe sulfite",
+    "description": "Dioksid squfuri dhe sulfite"
+  },
+  "LUPINS": {
+    "name": "Lupinë",
+    "declaration": "Përmban lupinë dhe produkte prej saj",
+    "description": "Lupinë dhe produkte prej lupine"
+  },
+  "MOLLUSCS": {
+    "name": "Molusqe",
+    "declaration": "Përmban molusqe dhe produkte prej tyre",
+    "description": "Molusqe, si kërmij dhe midhje, dhe produkte prej tyre"
+  }
+}

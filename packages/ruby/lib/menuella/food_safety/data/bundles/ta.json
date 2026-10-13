@@ -1,0 +1,415 @@
+{
+  "locale": "ta",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ரை தானியம்",
+      "declaration": "குளுட்டன் உள்ள தானியங்களும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "ரை தானியமும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "பார்லி (வாற்கோதுமை)",
+      "declaration": "குளுட்டன் உள்ள தானியங்களும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "பார்லியும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "எம்மர் கோதுமை (சம்பா கோதுமை)",
+      "declaration": "குளுட்டன் உள்ள தானியங்களும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "எம்மர் கோதுமையும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ஐன்கார்ன் கோதுமை",
+      "declaration": "குளுட்டன் உள்ள தானியங்களும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "ஐன்கார்ன் கோதுமையும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ஸ்பெல்ட் கோதுமை",
+      "declaration": "குளுட்டன் உள்ள தானியங்களும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "ஸ்பெல்ட் கோதுமையும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "கோதுமை",
+      "declaration": "குளுட்டன் உள்ள தானியங்களும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "கோதுமையும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ஓட்ஸ்",
+      "declaration": "குளுட்டன் உள்ள தானியங்களும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "ஓட்ஸும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "கொராசான் கோதுமை (Kamut)",
+      "declaration": "குளுட்டன் உள்ள தானியங்களும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "கொராசான் கோதுமையும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "ஓட்டுமீன்கள்",
+      "declaration": "ஓட்டுமீன்களும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "இறால், நண்டு போன்ற ஓட்டுமீன்களும் அவற்றின் பொருட்களும்"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "முட்டை",
+      "declaration": "முட்டையும் அதன் பொருட்களும் உள்ளன",
+      "description": "முட்டையும் முட்டைப் பொருட்களும்"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "மீன்",
+      "declaration": "மீனும் அதன் பொருட்களும் உள்ளன",
+      "description": "மீனும் மீன் பொருட்களும்"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "வேர்க்கடலை",
+      "declaration": "வேர்க்கடலையும் அதன் பொருட்களும் உள்ளன",
+      "description": "வேர்க்கடலையும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "சோயா",
+      "declaration": "சோயாவும் அதன் பொருட்களும் உள்ளன",
+      "description": "சோயா பீன்ஸும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "பால் (லாக்டோஸ் உட்பட)",
+      "declaration": "பாலும் பால் பொருட்களும் உள்ளன (லாக்டோஸ் உட்பட)",
+      "description": "பாலும் பால் பொருட்களும், லாக்டோஸ் உட்பட"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "மெக்கடாமியா",
+      "declaration": "மரக் கொட்டைகளும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "மெக்கடாமியாவும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "பாதாம்",
+      "declaration": "மரக் கொட்டைகளும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "பாதாமும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "பிரேசில் கொட்டை",
+      "declaration": "மரக் கொட்டைகளும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "பிரேசில் கொட்டையும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "பெக்கன்",
+      "declaration": "மரக் கொட்டைகளும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "பெக்கனும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "பிஸ்தா",
+      "declaration": "மரக் கொட்டைகளும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "பிஸ்தாவும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "வால்நட் (அக்ரூட்)",
+      "declaration": "மரக் கொட்டைகளும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "வால்நட்டும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "முந்திரி",
+      "declaration": "மரக் கொட்டைகளும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "முந்திரியும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "ஹேசல்நட்",
+      "declaration": "மரக் கொட்டைகளும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "ஹேசல்நட்டும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "செலரி",
+      "declaration": "செலரியும் அதன் பொருட்களும் உள்ளன",
+      "description": "செலரியும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "கடுகு",
+      "declaration": "கடுகும் அதன் பொருட்களும் உள்ளன",
+      "description": "கடுகும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "எள்",
+      "declaration": "எள்ளும் அதன் பொருட்களும் உள்ளன",
+      "description": "எள் விதைகளும் அவற்றின் பொருட்களும்"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "சல்பர் டை ஆக்சைடு மற்றும் சல்பைட்டுகள்",
+      "declaration": "சல்பர் டை ஆக்சைடும் சல்பைட்டுகளும் உள்ளன",
+      "description": "சல்பர் டை ஆக்சைடு மற்றும் சல்பைட்டுகள்"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "லூபின்",
+      "declaration": "லூபினும் அதன் பொருட்களும் உள்ளன",
+      "description": "லூபினும் அதன் பொருட்களும்"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "மெல்லுடலிகள்",
+      "declaration": "மெல்லுடலிகளும் அவற்றின் பொருட்களும் உள்ளன",
+      "description": "நத்தை, சிப்பி போன்ற மெல்லுடலிகளும் அவற்றின் பொருட்களும்"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "நிறமி சேர்க்கப்பட்டது",
+      "description": "உணவு நிறமி உள்ளது"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "பதப்படுத்தி சேர்க்கப்பட்டது",
+      "description": "பதப்படுத்திகள் உள்ளன"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ஆக்ஸிஜனேற்ற எதிர்ப்பி சேர்க்கப்பட்டது",
+      "description": "ஆக்ஸிஜனேற்ற எதிர்ப்பிகள் உள்ளன"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "நைட்ரைட் பதப்படுத்தும் உப்பு சேர்க்கப்பட்டது",
+      "description": "நைட்ரைட் பதப்படுத்தும் உப்பு உள்ளது"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "நைட்ரேட் சேர்க்கப்பட்டது",
+      "description": "நைட்ரேட் உள்ளது (பதப்படுத்தி)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "நைட்ரைட் உப்பும் நைட்ரேட்டும் சேர்க்கப்பட்டது",
+      "description": "நைட்ரைட் பதப்படுத்தும் உப்பும் நைட்ரேட்டும் உள்ளன"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "சுவையூட்டி சேர்க்கப்பட்டது",
+      "description": "சுவையூட்டிகள் உள்ளன"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "பாஸ்பேட் சேர்க்கப்பட்டது",
+      "description": "பாஸ்பேட் உள்ளது"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "கந்தகமூட்டப்பட்டது",
+      "description": "சல்பர் டை ஆக்சைடு அல்லது சல்பைட்டுகள் உள்ளன"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "கருப்பாக்கப்பட்டது",
+      "description": "தோற்றத்திற்காக கருப்பாக்கப்பட்டது"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "மெழுகு பூசப்பட்டது",
+      "description": "நீண்ட நாள் இருக்க மேற்பரப்பில் மெழுகு பூசப்பட்டது"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "இனிப்பூட்டி சேர்க்கப்பட்டது",
+      "description": "இனிப்பூட்டிகள் உள்ளன"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ஃபினைல்அலனைன் மூலம் உள்ளது",
+      "description": "ஃபினைல்அலனைன் மூலம் உள்ளது"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "அதிகம் உட்கொண்டால் மலமிளக்கி விளைவு ஏற்படலாம்",
+      "description": "அதிகம் உட்கொண்டால் மலமிளக்கி விளைவு ஏற்படலாம்"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "காஃபின் உள்ளது",
+      "description": "காஃபின் உள்ளது"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "குயினைன் உள்ளது",
+      "description": "குயினைன் உள்ளது"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "குழந்தைகளின் செயல்பாடு மற்றும் கவனத்தைப் பாதிக்கலாம்",
+      "description": "குழந்தைகளின் செயல்பாடு மற்றும் கவனத்தைப் பாதிக்கலாம்"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "பால் புரதம் உள்ளது",
+      "description": "பால் புரதம் உள்ளது"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "சுரிமி உள்ளது",
+      "description": "சுரிமி உள்ளது"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "இணைக்கப்பட்ட இறைச்சித் துண்டுகளால் ஆனது",
+      "description": "இணைக்கப்பட்ட இறைச்சித் துண்டுகளால் தயாரிக்கப்பட்டது"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "இணைக்கப்பட்ட மீன் துண்டுகளால் ஆனது",
+      "description": "இணைக்கப்பட்ட மீன் துண்டுகளால் தயாரிக்கப்பட்டது"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "உறைநீக்கம் செய்யப்பட்டது",
+      "description": "உறைந்த நிலையிலிருந்து உருக்கப்பட்டது"
+    }
+  ],
+  "fallbacks": []
+}

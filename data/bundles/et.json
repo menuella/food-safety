@@ -1,0 +1,415 @@
+{
+  "locale": "et",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Rukis",
+      "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+      "description": "Rukis ja rukkitooted"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Oder",
+      "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+      "description": "Oder ja odratooted"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Kaksikterane nisu (emmer)",
+      "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+      "description": "Kaksikterane nisu ja sellest valmistatud tooted"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Üheteraline nisu (einkorn)",
+      "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+      "description": "Üheteraline nisu ja sellest valmistatud tooted"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Spelta",
+      "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+      "description": "Spelta ja speltatooted"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Nisu",
+      "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+      "description": "Nisu ja nisutooted"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Kaer",
+      "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+      "description": "Kaer ja kaeratooted"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Horasani nisu (Kamut)",
+      "declaration": "Sisaldab gluteeni sisaldavaid teravilju ja nendest valmistatud tooteid",
+      "description": "Horasani nisu ja sellest valmistatud tooted"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Koorikloomad",
+      "declaration": "Sisaldab koorikloomi ja nendest valmistatud tooteid",
+      "description": "Koorikloomad, nt krevetid ja krabid, ning nendest valmistatud tooted"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Muna",
+      "declaration": "Sisaldab mune ja munatooteid",
+      "description": "Munad ja munatooted"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Kala",
+      "declaration": "Sisaldab kala ja kalatooteid",
+      "description": "Kala ja kalatooted"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Maapähklid",
+      "declaration": "Sisaldab maapähkleid ja nendest valmistatud tooteid",
+      "description": "Maapähklid ja maapähklitooted"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Soja",
+      "declaration": "Sisaldab sojaube ja nendest valmistatud tooteid",
+      "description": "Sojaoad ja sojatooted"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Piim (sh laktoos)",
+      "declaration": "Sisaldab piima ja piimatooteid (sh laktoosi)",
+      "description": "Piim ja piimatooted, sh laktoos"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Makadaamiapähklid",
+      "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+      "description": "Makadaamiapähklid ja nendest valmistatud tooted"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Mandlid",
+      "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+      "description": "Mandlid ja mandlitooted"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Brasiilia pähklid",
+      "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+      "description": "Brasiilia pähklid ja nendest valmistatud tooted"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pekanipähklid",
+      "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+      "description": "Pekanipähklid ja nendest valmistatud tooted"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Pistaatsiapähklid",
+      "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+      "description": "Pistaatsiapähklid ja nendest valmistatud tooted"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Kreeka pähklid",
+      "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+      "description": "Kreeka pähklid ja nendest valmistatud tooted"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Kašupähklid",
+      "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+      "description": "Kašupähklid ja nendest valmistatud tooted"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Sarapuupähklid",
+      "declaration": "Sisaldab pähkleid ja nendest valmistatud tooteid",
+      "description": "Sarapuupähklid ja nendest valmistatud tooted"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Seller",
+      "declaration": "Sisaldab sellerit ja sellerist valmistatud tooteid",
+      "description": "Seller ja sellerist valmistatud tooted"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Sinep",
+      "declaration": "Sisaldab sinepit ja sinepist valmistatud tooteid",
+      "description": "Sinep ja sinepist valmistatud tooted"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Seesamiseemned",
+      "declaration": "Sisaldab seesamiseemneid ja nendest valmistatud tooteid",
+      "description": "Seesamiseemned ja nendest valmistatud tooted"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Vääveldioksiid ja sulfitid",
+      "declaration": "Sisaldab vääveldioksiidi ja sulfiteid",
+      "description": "Vääveldioksiid ja sulfitid"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Lupiin",
+      "declaration": "Sisaldab lupiini ja lupiinist valmistatud tooteid",
+      "description": "Lupiin ja lupiinist valmistatud tooted"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Molluskid",
+      "declaration": "Sisaldab molluskeid ja nendest valmistatud tooteid",
+      "description": "Molluskid, nt teod ja rannakarbid, ning nendest valmistatud tooted"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "värvainega",
+      "description": "Sisaldab toiduvärve"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "säilitusainega",
+      "description": "Sisaldab säilitusaineid"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "antioksüdandiga",
+      "description": "Sisaldab antioksüdante"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "nitritisoolaga",
+      "description": "Sisaldab nitritisoola"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "nitraadiga",
+      "description": "Sisaldab nitraati (säilitusaine)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "nitritisoola ja nitraadiga",
+      "description": "Sisaldab nitritisoola ja nitraati"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "lõhna- ja maitsetugevdajaga",
+      "description": "Sisaldab lõhna- ja maitsetugevdajaid"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "fosfaadiga",
+      "description": "Sisaldab fosfaati"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "väävlitatud",
+      "description": "Sisaldab vääveldioksiidi või sulfiteid"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "mustaks värvitud",
+      "description": "Mustaks värvitud visuaalse efekti saamiseks"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "vahatatud",
+      "description": "Säilivuse parandamiseks vahatatud pind"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "magusainetega",
+      "description": "Sisaldab magusaineid"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sisaldab fenüülalaniini allikat",
+      "description": "Sisaldab fenüülalaniini allikat"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "liigsel tarbimisel võib olla lahtistava toimega",
+      "description": "Liigsel tarbimisel võib olla lahtistava toimega"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "sisaldab kofeiini",
+      "description": "Sisaldab kofeiini"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "sisaldab kiniini",
+      "description": "Sisaldab kiniini"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "võib mõjuda halvasti laste aktiivsusele ja tähelepanuvõimele",
+      "description": "Võib mõjuda halvasti laste aktiivsusele ja tähelepanuvõimele"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "sisaldab piimavalku",
+      "description": "Sisaldab piimavalku"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "sisaldab surimit",
+      "description": "Sisaldab surimit"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "liidetud lihatükkidest",
+      "description": "Valmistatud liidetud lihatükkidest"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "liidetud kalatükkidest",
+      "description": "Valmistatud liidetud kalatükkidest"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "sulatatud",
+      "description": "Külmutatud olekust sulatatud"
+    }
+  ],
+  "fallbacks": []
+}

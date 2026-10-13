@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "z barvilom",
+    "description": "Vsebuje barvila"
+  },
+  "PRESERVATIVES": {
+    "name": "s konzervansom",
+    "description": "Vsebuje konzervanse"
+  },
+  "ANTIOXIDANTS": {
+    "name": "z antioksidantom",
+    "description": "Vsebuje antioksidante"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "z nitritno soljo za razsoljevanje",
+    "description": "Vsebuje nitritno sol za razsoljevanje"
+  },
+  "NITRATE": {
+    "name": "z nitratom",
+    "description": "Vsebuje nitrat (konzervans)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "z nitritno soljo za razsoljevanje in nitratom",
+    "description": "Vsebuje nitritno sol za razsoljevanje in nitrat"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "z ojačevalcem arome",
+    "description": "Vsebuje ojačevalce arome"
+  },
+  "PHOSPHATE": {
+    "name": "s fosfatom",
+    "description": "Vsebuje fosfat"
+  },
+  "SULPHURED": {
+    "name": "žveplano",
+    "description": "Vsebuje žveplov dioksid ali sulfite"
+  },
+  "BLACKENED": {
+    "name": "počrnjeno",
+    "description": "Počrnjeno zaradi videza"
+  },
+  "WAXED": {
+    "name": "povoskano",
+    "description": "Površina povoskana za daljšo obstojnost"
+  },
+  "SWEETENERS": {
+    "name": "s sladili",
+    "description": "Vsebuje sladila"
+  },
+  "PHENYLALANINE": {
+    "name": "vsebuje vir fenilalanina",
+    "description": "Vsebuje vir fenilalanina"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "prekomerno uživanje lahko odvaja",
+    "description": "Prekomerno uživanje lahko odvaja"
+  },
+  "CAFFEINE": {
+    "name": "vsebuje kofein",
+    "description": "Vsebuje kofein"
+  },
+  "QUININE": {
+    "name": "vsebuje kinin",
+    "description": "Vsebuje kinin"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "lahko škodljivo vpliva na dejavnost in pozornost otrok",
+    "description": "Lahko škodljivo vpliva na dejavnost in pozornost otrok"
+  },
+  "MILK_PROTEIN": {
+    "name": "vsebuje mlečne beljakovine",
+    "description": "Vsebuje mlečne beljakovine"
+  },
+  "SURIMI": {
+    "name": "vsebuje surimi",
+    "description": "Vsebuje surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "iz združenih kosov mesa",
+    "description": "Izdelano iz združenih kosov mesa"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "iz združenih kosov rib",
+    "description": "Izdelano iz združenih kosov rib"
+  },
+  "DEFROSTED": {
+    "name": "odmrznjeno",
+    "description": "Odmrznjeno iz zamrznjenega stanja"
+  }
+}

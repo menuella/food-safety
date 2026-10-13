@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Rugiai",
+    "declaration": "Sudėtyje yra javų, kuriuose yra glitimo, ir jų produktų",
+    "description": "Rugiai ir rugių produktai"
+  },
+  "BARLEY": {
+    "name": "Miežiai",
+    "declaration": "Sudėtyje yra javų, kuriuose yra glitimo, ir jų produktų",
+    "description": "Miežiai ir miežių produktai"
+  },
+  "EMMER": {
+    "name": "Dvigrūdžiai kviečiai (emeris)",
+    "declaration": "Sudėtyje yra javų, kuriuose yra glitimo, ir jų produktų",
+    "description": "Dvigrūdžiai kviečiai ir jų produktai"
+  },
+  "EINKORN": {
+    "name": "Vienagrūdžiai kviečiai (einkornas)",
+    "declaration": "Sudėtyje yra javų, kuriuose yra glitimo, ir jų produktų",
+    "description": "Vienagrūdžiai kviečiai ir jų produktai"
+  },
+  "SPELT": {
+    "name": "Spelta",
+    "declaration": "Sudėtyje yra javų, kuriuose yra glitimo, ir jų produktų",
+    "description": "Speltos kviečiai ir jų produktai"
+  },
+  "WHEAT": {
+    "name": "Kviečiai",
+    "declaration": "Sudėtyje yra javų, kuriuose yra glitimo, ir jų produktų",
+    "description": "Kviečiai ir kviečių produktai"
+  },
+  "OATS": {
+    "name": "Avižos",
+    "declaration": "Sudėtyje yra javų, kuriuose yra glitimo, ir jų produktų",
+    "description": "Avižos ir avižų produktai"
+  },
+  "KHORASAN": {
+    "name": "Chorasano kviečiai (Kamut)",
+    "declaration": "Sudėtyje yra javų, kuriuose yra glitimo, ir jų produktų",
+    "description": "Chorasano kviečiai ir jų produktai"
+  },
+  "CRUSTACEANS": {
+    "name": "Vėžiagyviai",
+    "declaration": "Sudėtyje yra vėžiagyvių ir jų produktų",
+    "description": "Vėžiagyviai, pvz., krevetės ir krabai, ir jų produktai"
+  },
+  "EGGS": {
+    "name": "Kiaušiniai",
+    "declaration": "Sudėtyje yra kiaušinių ir jų produktų",
+    "description": "Kiaušiniai ir kiaušinių produktai"
+  },
+  "FISH": {
+    "name": "Žuvys",
+    "declaration": "Sudėtyje yra žuvų ir jų produktų",
+    "description": "Žuvys ir žuvų produktai"
+  },
+  "PEANUTS": {
+    "name": "Žemės riešutai",
+    "declaration": "Sudėtyje yra žemės riešutų ir jų produktų",
+    "description": "Žemės riešutai ir jų produktai"
+  },
+  "SOY": {
+    "name": "Sojų pupelės",
+    "declaration": "Sudėtyje yra sojų pupelių ir jų produktų",
+    "description": "Sojų pupelės ir jų produktai"
+  },
+  "MILK": {
+    "name": "Pienas (įskaitant laktozę)",
+    "declaration": "Sudėtyje yra pieno ir jo produktų (įskaitant laktozę)",
+    "description": "Pienas ir pieno produktai, įskaitant laktozę"
+  },
+  "MACADAMIA": {
+    "name": "Makadamijų riešutai",
+    "declaration": "Sudėtyje yra riešutų ir jų produktų",
+    "description": "Makadamijų riešutai ir jų produktai"
+  },
+  "ALMONDS": {
+    "name": "Migdolai",
+    "declaration": "Sudėtyje yra riešutų ir jų produktų",
+    "description": "Migdolai ir migdolų produktai"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Brazilijos riešutai",
+    "declaration": "Sudėtyje yra riešutų ir jų produktų",
+    "description": "Brazilijos riešutai ir jų produktai"
+  },
+  "PECANS": {
+    "name": "Pekaniniai riešutai",
+    "declaration": "Sudėtyje yra riešutų ir jų produktų",
+    "description": "Pekaniniai riešutai ir jų produktai"
+  },
+  "PISTACHIOS": {
+    "name": "Pistacijos",
+    "declaration": "Sudėtyje yra riešutų ir jų produktų",
+    "description": "Pistacijos ir jų produktai"
+  },
+  "WALNUTS": {
+    "name": "Graikiniai riešutai",
+    "declaration": "Sudėtyje yra riešutų ir jų produktų",
+    "description": "Graikiniai riešutai ir jų produktai"
+  },
+  "CASHEWS": {
+    "name": "Anakardžiai",
+    "declaration": "Sudėtyje yra riešutų ir jų produktų",
+    "description": "Anakardžiai ir jų produktai"
+  },
+  "HAZELNUTS": {
+    "name": "Lazdyno riešutai",
+    "declaration": "Sudėtyje yra riešutų ir jų produktų",
+    "description": "Lazdyno riešutai ir jų produktai"
+  },
+  "CELERY": {
+    "name": "Salierai",
+    "declaration": "Sudėtyje yra salierų ir jų produktų",
+    "description": "Salierai ir salierų produktai"
+  },
+  "MUSTARD": {
+    "name": "Garstyčios",
+    "declaration": "Sudėtyje yra garstyčių ir jų produktų",
+    "description": "Garstyčios ir garstyčių produktai"
+  },
+  "SESAME": {
+    "name": "Sezamo sėklos",
+    "declaration": "Sudėtyje yra sezamo sėklų ir jų produktų",
+    "description": "Sezamo sėklos ir jų produktai"
+  },
+  "SULPHITES": {
+    "name": "Sieros dioksidas ir sulfitai",
+    "declaration": "Sudėtyje yra sieros dioksido ir sulfitų",
+    "description": "Sieros dioksidas ir sulfitai"
+  },
+  "LUPINS": {
+    "name": "Lubinai",
+    "declaration": "Sudėtyje yra lubinų ir jų produktų",
+    "description": "Lubinai ir lubinų produktai"
+  },
+  "MOLLUSCS": {
+    "name": "Moliuskai",
+    "declaration": "Sudėtyje yra moliuskų ir jų produktų",
+    "description": "Moliuskai, pvz., sraigės ir midijos, ir jų produktai"
+  }
+}

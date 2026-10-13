@@ -1,0 +1,415 @@
+{
+  "locale": "fa",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "چاودار",
+      "declaration": "حاوی غلات دارای گلوتن و فرآورده‌های آن‌ها",
+      "description": "چاودار و فرآورده‌های آن"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "جو",
+      "declaration": "حاوی غلات دارای گلوتن و فرآورده‌های آن‌ها",
+      "description": "جو و فرآورده‌های آن"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "گندم امر (emmer)",
+      "declaration": "حاوی غلات دارای گلوتن و فرآورده‌های آن‌ها",
+      "description": "گندم امر و فرآورده‌های آن"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "گندم تک‌دانه (einkorn)",
+      "declaration": "حاوی غلات دارای گلوتن و فرآورده‌های آن‌ها",
+      "description": "گندم تک‌دانه و فرآورده‌های آن"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "گندم اسپلت",
+      "declaration": "حاوی غلات دارای گلوتن و فرآورده‌های آن‌ها",
+      "description": "گندم اسپلت و فرآورده‌های آن"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "گندم",
+      "declaration": "حاوی غلات دارای گلوتن و فرآورده‌های آن‌ها",
+      "description": "گندم و فرآورده‌های آن"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "جو دوسر",
+      "declaration": "حاوی غلات دارای گلوتن و فرآورده‌های آن‌ها",
+      "description": "جو دوسر و فرآورده‌های آن"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "گندم خراسان (Kamut)",
+      "declaration": "حاوی غلات دارای گلوتن و فرآورده‌های آن‌ها",
+      "description": "گندم خراسان و فرآورده‌های آن"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "سخت‌پوستان",
+      "declaration": "حاوی سخت‌پوستان و فرآورده‌های آن‌ها",
+      "description": "سخت‌پوستانی مانند میگو و خرچنگ و فرآورده‌های آن‌ها"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "تخم‌مرغ",
+      "declaration": "حاوی تخم‌مرغ و فرآورده‌های آن",
+      "description": "تخم‌مرغ و فرآورده‌های تخم‌مرغ"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "ماهی",
+      "declaration": "حاوی ماهی و فرآورده‌های آن",
+      "description": "ماهی و فرآورده‌های ماهی"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "بادام‌زمینی",
+      "declaration": "حاوی بادام‌زمینی و فرآورده‌های آن",
+      "description": "بادام‌زمینی و فرآورده‌های آن"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "سویا",
+      "declaration": "حاوی سویا و فرآورده‌های آن",
+      "description": "دانه سویا و فرآورده‌های آن"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "شیر (شامل لاکتوز)",
+      "declaration": "حاوی شیر و فرآورده‌های لبنی (شامل لاکتوز)",
+      "description": "شیر و فرآورده‌های لبنی، شامل لاکتوز"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "ماکادمیا",
+      "declaration": "حاوی مغزهای درختی و فرآورده‌های آن‌ها",
+      "description": "ماکادمیا و فرآورده‌های آن"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "بادام",
+      "declaration": "حاوی مغزهای درختی و فرآورده‌های آن‌ها",
+      "description": "بادام و فرآورده‌های آن"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "آجیل برزیلی",
+      "declaration": "حاوی مغزهای درختی و فرآورده‌های آن‌ها",
+      "description": "آجیل برزیلی و فرآورده‌های آن"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "پکان",
+      "declaration": "حاوی مغزهای درختی و فرآورده‌های آن‌ها",
+      "description": "پکان و فرآورده‌های آن"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "پسته",
+      "declaration": "حاوی مغزهای درختی و فرآورده‌های آن‌ها",
+      "description": "پسته و فرآورده‌های آن"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "گردو",
+      "declaration": "حاوی مغزهای درختی و فرآورده‌های آن‌ها",
+      "description": "گردو و فرآورده‌های آن"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "بادام هندی",
+      "declaration": "حاوی مغزهای درختی و فرآورده‌های آن‌ها",
+      "description": "بادام هندی و فرآورده‌های آن"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "فندق",
+      "declaration": "حاوی مغزهای درختی و فرآورده‌های آن‌ها",
+      "description": "فندق و فرآورده‌های آن"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "کرفس",
+      "declaration": "حاوی کرفس و فرآورده‌های آن",
+      "description": "کرفس و فرآورده‌های آن"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "خردل",
+      "declaration": "حاوی خردل و فرآورده‌های آن",
+      "description": "خردل و فرآورده‌های آن"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "کنجد",
+      "declaration": "حاوی دانه کنجد و فرآورده‌های آن",
+      "description": "دانه کنجد و فرآورده‌های آن"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "دی‌اکسید گوگرد و سولفیت‌ها",
+      "declaration": "حاوی دی‌اکسید گوگرد و سولفیت‌ها",
+      "description": "دی‌اکسید گوگرد و سولفیت‌ها"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "لوپن",
+      "declaration": "حاوی لوپن و فرآورده‌های آن",
+      "description": "لوپن و فرآورده‌های آن"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "نرم‌تنان",
+      "declaration": "حاوی نرم‌تنان و فرآورده‌های آن‌ها",
+      "description": "نرم‌تنانی مانند حلزون و صدف و فرآورده‌های آن‌ها"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "دارای رنگ خوراکی",
+      "description": "حاوی رنگ‌های خوراکی"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "دارای نگهدارنده",
+      "description": "حاوی نگهدارنده"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "دارای آنتی‌اکسیدان",
+      "description": "حاوی آنتی‌اکسیدان"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "دارای نمک نیتریت‌دار عمل‌آوری",
+      "description": "حاوی نمک نیتریت‌دار عمل‌آوری"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "دارای نیترات",
+      "description": "حاوی نیترات (نگهدارنده)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "دارای نمک نیتریت‌دار و نیترات",
+      "description": "حاوی نمک نیتریت‌دار عمل‌آوری و نیترات"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "دارای تشدیدکننده طعم",
+      "description": "حاوی تشدیدکننده‌های طعم"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "دارای فسفات",
+      "description": "حاوی فسفات"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "گوگردزده",
+      "description": "حاوی دی‌اکسید گوگرد یا سولفیت"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "سیاه‌شده",
+      "description": "برای ظاهر سیاه شده است"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "واکس‌خورده",
+      "description": "سطح برای ماندگاری واکس خورده است"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "دارای شیرین‌کننده",
+      "description": "حاوی شیرین‌کننده"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "حاوی منبع فنیل‌آلانین",
+      "description": "حاوی منبع فنیل‌آلانین"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "مصرف زیاد ممکن است اثر ملین داشته باشد",
+      "description": "مصرف زیاد ممکن است اثر ملین داشته باشد"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "حاوی کافئین",
+      "description": "حاوی کافئین"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "حاوی کینین",
+      "description": "حاوی کینین"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "ممکن است بر فعالیت و توجه کودکان اثر بگذارد",
+      "description": "ممکن است بر فعالیت و توجه کودکان اثر نامطلوب بگذارد"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "حاوی پروتئین شیر",
+      "description": "حاوی پروتئین شیر"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "حاوی سوریمی",
+      "description": "حاوی سوریمی"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "از قطعات به‌هم‌پیوسته گوشت",
+      "description": "تهیه‌شده از قطعات به‌هم‌پیوسته گوشت"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "از قطعات به‌هم‌پیوسته ماهی",
+      "description": "تهیه‌شده از قطعات به‌هم‌پیوسته ماهی"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "یخ‌زدایی‌شده",
+      "description": "از حالت منجمد یخ‌زدایی شده است"
+    }
+  ],
+  "fallbacks": []
+}

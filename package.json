@@ -1,7 +1,7 @@
 {
   "name": "@menuella/food-safety",
-  "version": "2.0.0",
-  "description": "Open dataset of restaurant menu disclosures — the 14 EU allergen groups and Menuella Declarations, in 27 languages, keyed by stable semantic keys.",
+  "version": "2.1.0",
+  "description": "Open dataset of restaurant menu disclosures — the 14 EU allergen groups and Menuella Declarations, in 50 languages, keyed by stable semantic keys.",
   "license": "MIT",
   "author": "Menuella",
   "homepage": "https://www.menuella.com/food-safety",

@@ -1,6 +1,6 @@
 # food-safety (Go)
 
-> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and 27 languages.
+> Open dataset of **restaurant menu allergens and declarations** — 28 allergen keys from EU Reg. 1169/2011 Annex II, 22 declarations, footnote codes, 15 icons, and 50 languages.
 
 Semantic keys instead of country-specific numbers. **Store the key, render the code — never the other way round.**
 
@@ -83,10 +83,10 @@ An icon means *"contains wheat"*. Render it **alongside** the declaration text, 
 This is a **nested module**, so its releases carry the directory prefix:
 
 ```
-packages/go/v2.0.0
+packages/go/v2.1.0
 ```
 
-A workflow derives that tag from the repository's plain `v2.0.0` on push, so both always point at the same commit. From 2.0.0 the module path ends in `/v2`, as Go requires for every major version above 1.
+A workflow derives that tag from the repository's plain `v2.1.0` on push, so both always point at the same commit. From 2.0.0 the module path ends in `/v2`, as Go requires for every major version above 1.
 
 ## Same data, other ecosystems
 

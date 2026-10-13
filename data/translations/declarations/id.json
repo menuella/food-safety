@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "dengan pewarna",
+    "description": "Mengandung pewarna makanan"
+  },
+  "PRESERVATIVES": {
+    "name": "dengan pengawet",
+    "description": "Mengandung pengawet"
+  },
+  "ANTIOXIDANTS": {
+    "name": "dengan antioksidan",
+    "description": "Mengandung antioksidan"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "dengan garam curing nitrit",
+    "description": "Mengandung garam curing nitrit"
+  },
+  "NITRATE": {
+    "name": "dengan nitrat",
+    "description": "Mengandung nitrat (pengawet)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "dengan garam curing nitrit dan nitrat",
+    "description": "Mengandung garam curing nitrit dan nitrat"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "dengan penguat rasa",
+    "description": "Mengandung penguat rasa"
+  },
+  "PHOSPHATE": {
+    "name": "dengan fosfat",
+    "description": "Mengandung fosfat"
+  },
+  "SULPHURED": {
+    "name": "disulfurisasi",
+    "description": "Mengandung sulfur dioksida atau sulfit"
+  },
+  "BLACKENED": {
+    "name": "dihitamkan",
+    "description": "Dihitamkan untuk tampilan"
+  },
+  "WAXED": {
+    "name": "dilapisi lilin",
+    "description": "Permukaan dilapisi lilin agar lebih awet"
+  },
+  "SWEETENERS": {
+    "name": "dengan pemanis",
+    "description": "Mengandung pemanis"
+  },
+  "PHENYLALANINE": {
+    "name": "mengandung sumber fenilalanina",
+    "description": "Mengandung sumber fenilalanina"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "konsumsi berlebihan dapat menimbulkan efek laksatif",
+    "description": "Konsumsi berlebihan dapat menimbulkan efek laksatif"
+  },
+  "CAFFEINE": {
+    "name": "mengandung kafein",
+    "description": "Mengandung kafein"
+  },
+  "QUININE": {
+    "name": "mengandung kina",
+    "description": "Mengandung kina (kuinin)"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "dapat memengaruhi aktivitas dan perhatian anak",
+    "description": "Dapat memengaruhi aktivitas dan perhatian anak"
+  },
+  "MILK_PROTEIN": {
+    "name": "mengandung protein susu",
+    "description": "Mengandung protein susu"
+  },
+  "SURIMI": {
+    "name": "mengandung surimi",
+    "description": "Mengandung surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "dari potongan daging yang disatukan",
+    "description": "Dibuat dari potongan daging yang disatukan"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "dari potongan ikan yang disatukan",
+    "description": "Dibuat dari potongan ikan yang disatukan"
+  },
+  "DEFROSTED": {
+    "name": "dicairkan",
+    "description": "Dicairkan dari keadaan beku"
+  }
+}

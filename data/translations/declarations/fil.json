@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "may pangkulay",
+    "description": "May pangkulay ng pagkain"
+  },
+  "PRESERVATIVES": {
+    "name": "may preservative",
+    "description": "May preservative"
+  },
+  "ANTIOXIDANTS": {
+    "name": "may antioxidant",
+    "description": "May antioxidant"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "may nitrite curing salt",
+    "description": "May nitrite curing salt"
+  },
+  "NITRATE": {
+    "name": "may nitrate",
+    "description": "May nitrate (preservative)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "may nitrite curing salt at nitrate",
+    "description": "May nitrite curing salt at nitrate"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "may pampalasa (flavor enhancer)",
+    "description": "May flavor enhancer"
+  },
+  "PHOSPHATE": {
+    "name": "may phosphate",
+    "description": "May phosphate"
+  },
+  "SULPHURED": {
+    "name": "may sulfur",
+    "description": "May sulfur dioxide o sulfite"
+  },
+  "BLACKENED": {
+    "name": "pinaitim",
+    "description": "Pinaitim para sa itsura"
+  },
+  "WAXED": {
+    "name": "may wax",
+    "description": "May wax ang balat para tumagal"
+  },
+  "SWEETENERS": {
+    "name": "may pampatamis",
+    "description": "May artipisyal na pampatamis"
+  },
+  "PHENYLALANINE": {
+    "name": "may pinagmumulan ng phenylalanine",
+    "description": "May pinagmumulan ng phenylalanine"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "maaaring magdulot ng pagtatae kung sobra ang kain",
+    "description": "Maaaring magdulot ng pagtatae kung sobra ang kain"
+  },
+  "CAFFEINE": {
+    "name": "may caffeine",
+    "description": "May caffeine"
+  },
+  "QUININE": {
+    "name": "may quinine",
+    "description": "May quinine"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "maaaring makaapekto sa aktibidad at atensyon ng mga bata",
+    "description": "Maaaring makaapekto sa aktibidad at atensyon ng mga bata"
+  },
+  "MILK_PROTEIN": {
+    "name": "may protina ng gatas",
+    "description": "May protina ng gatas"
+  },
+  "SURIMI": {
+    "name": "may surimi",
+    "description": "May surimi"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "gawa sa pinagdugtong na piraso ng karne",
+    "description": "Gawa sa pinagdugtong na piraso ng karne"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "gawa sa pinagdugtong na piraso ng isda",
+    "description": "Gawa sa pinagdugtong na piraso ng isda"
+  },
+  "DEFROSTED": {
+    "name": "tinunaw mula sa pagkakayelo",
+    "description": "Tinunaw mula sa pagkakayelo"
+  }
+}

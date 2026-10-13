@@ -1,0 +1,415 @@
+{
+  "locale": "hi",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "राई अनाज (Rye)",
+      "declaration": "इसमें ग्लूटेन युक्त अनाज और उनसे बने उत्पाद हैं",
+      "description": "राई अनाज और उससे बने उत्पाद"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "जौ",
+      "declaration": "इसमें ग्लूटेन युक्त अनाज और उनसे बने उत्पाद हैं",
+      "description": "जौ और उससे बने उत्पाद"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "एमर गेहूँ (खपली)",
+      "declaration": "इसमें ग्लूटेन युक्त अनाज और उनसे बने उत्पाद हैं",
+      "description": "एमर गेहूँ और उससे बने उत्पाद"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "आइनकॉर्न गेहूँ",
+      "declaration": "इसमें ग्लूटेन युक्त अनाज और उनसे बने उत्पाद हैं",
+      "description": "आइनकॉर्न गेहूँ और उससे बने उत्पाद"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "स्पेल्ट गेहूँ",
+      "declaration": "इसमें ग्लूटेन युक्त अनाज और उनसे बने उत्पाद हैं",
+      "description": "स्पेल्ट गेहूँ और उससे बने उत्पाद"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "गेहूँ",
+      "declaration": "इसमें ग्लूटेन युक्त अनाज और उनसे बने उत्पाद हैं",
+      "description": "गेहूँ और उससे बने उत्पाद"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "जई",
+      "declaration": "इसमें ग्लूटेन युक्त अनाज और उनसे बने उत्पाद हैं",
+      "description": "जई और उससे बने उत्पाद"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "खुरासानी गेहूँ (Kamut)",
+      "declaration": "इसमें ग्लूटेन युक्त अनाज और उनसे बने उत्पाद हैं",
+      "description": "खुरासानी गेहूँ और उससे बने उत्पाद"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "क्रस्टेशियन",
+      "declaration": "इसमें क्रस्टेशियन और उनसे बने उत्पाद हैं",
+      "description": "झींगा और केकड़ा जैसे क्रस्टेशियन और उनसे बने उत्पाद"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "अंडा",
+      "declaration": "इसमें अंडा और उससे बने उत्पाद हैं",
+      "description": "अंडा और अंडे से बने उत्पाद"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "मछली",
+      "declaration": "इसमें मछली और उससे बने उत्पाद हैं",
+      "description": "मछली और मछली से बने उत्पाद"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "मूंगफली",
+      "declaration": "इसमें मूंगफली और उससे बने उत्पाद हैं",
+      "description": "मूंगफली और उससे बने उत्पाद"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "सोयाबीन",
+      "declaration": "इसमें सोयाबीन और उससे बने उत्पाद हैं",
+      "description": "सोयाबीन और उससे बने उत्पाद"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "दूध (लैक्टोज़ सहित)",
+      "declaration": "इसमें दूध और दूध से बने उत्पाद हैं (लैक्टोज़ सहित)",
+      "description": "दूध और दुग्ध उत्पाद, लैक्टोज़ सहित"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "मैकाडामिया",
+      "declaration": "इसमें ट्री नट्स (मेवे) और उनसे बने उत्पाद हैं",
+      "description": "मैकाडामिया और उससे बने उत्पाद"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "बादाम",
+      "declaration": "इसमें ट्री नट्स (मेवे) और उनसे बने उत्पाद हैं",
+      "description": "बादाम और उससे बने उत्पाद"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "ब्राज़ील नट",
+      "declaration": "इसमें ट्री नट्स (मेवे) और उनसे बने उत्पाद हैं",
+      "description": "ब्राज़ील नट और उससे बने उत्पाद"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "पेकान",
+      "declaration": "इसमें ट्री नट्स (मेवे) और उनसे बने उत्पाद हैं",
+      "description": "पेकान और उससे बने उत्पाद"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "पिस्ता",
+      "declaration": "इसमें ट्री नट्स (मेवे) और उनसे बने उत्पाद हैं",
+      "description": "पिस्ता और उससे बने उत्पाद"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "अखरोट",
+      "declaration": "इसमें ट्री नट्स (मेवे) और उनसे बने उत्पाद हैं",
+      "description": "अखरोट और उससे बने उत्पाद"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "काजू",
+      "declaration": "इसमें ट्री नट्स (मेवे) और उनसे बने उत्पाद हैं",
+      "description": "काजू और उससे बने उत्पाद"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "हेज़लनट",
+      "declaration": "इसमें ट्री नट्स (मेवे) और उनसे बने उत्पाद हैं",
+      "description": "हेज़लनट और उससे बने उत्पाद"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "सेलेरी",
+      "declaration": "इसमें सेलेरी और उससे बने उत्पाद हैं",
+      "description": "सेलेरी और उससे बने उत्पाद"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "सरसों",
+      "declaration": "इसमें सरसों और उससे बने उत्पाद हैं",
+      "description": "सरसों और उससे बने उत्पाद"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "तिल",
+      "declaration": "इसमें तिल और उससे बने उत्पाद हैं",
+      "description": "तिल के बीज और उनसे बने उत्पाद"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "सल्फर डाइऑक्साइड और सल्फाइट",
+      "declaration": "इसमें सल्फर डाइऑक्साइड और सल्फाइट हैं",
+      "description": "सल्फर डाइऑक्साइड और सल्फाइट"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "ल्यूपिन",
+      "declaration": "इसमें ल्यूपिन और उससे बने उत्पाद हैं",
+      "description": "ल्यूपिन और उससे बने उत्पाद"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "मोलस्क",
+      "declaration": "इसमें मोलस्क और उनसे बने उत्पाद हैं",
+      "description": "घोंघे और सीप जैसे मोलस्क और उनसे बने उत्पाद"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "रंग युक्त",
+      "description": "खाद्य रंग शामिल है"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "परिरक्षक युक्त",
+      "description": "परिरक्षक शामिल है"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "एंटीऑक्सीडेंट युक्त",
+      "description": "एंटीऑक्सीडेंट शामिल है"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "नाइट्राइट क्योरिंग नमक युक्त",
+      "description": "नाइट्राइट क्योरिंग नमक शामिल है"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "नाइट्रेट युक्त",
+      "description": "नाइट्रेट शामिल है (परिरक्षक)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "नाइट्राइट क्योरिंग नमक और नाइट्रेट युक्त",
+      "description": "नाइट्राइट क्योरिंग नमक और नाइट्रेट शामिल हैं"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "स्वाद वर्धक युक्त",
+      "description": "स्वाद वर्धक शामिल है"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "फॉस्फेट युक्त",
+      "description": "फॉस्फेट शामिल है"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "गंधकित",
+      "description": "सल्फर डाइऑक्साइड या सल्फाइट शामिल है"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "काला किया गया",
+      "description": "रूप के लिए काला किया गया"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "मोम लेपित",
+      "description": "टिकाऊपन के लिए सतह पर मोम लगाया गया"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "मिठास कारक युक्त",
+      "description": "मिठास कारक शामिल हैं"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "फेनिलएलनिन का स्रोत शामिल है",
+      "description": "फेनिलएलनिन का स्रोत शामिल है"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "अधिक सेवन से रेचक प्रभाव हो सकता है",
+      "description": "अधिक सेवन से रेचक प्रभाव हो सकता है"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "कैफ़ीन शामिल है",
+      "description": "कैफ़ीन शामिल है"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "कुनैन शामिल है",
+      "description": "कुनैन शामिल है"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "बच्चों की सक्रियता और ध्यान पर असर डाल सकता है",
+      "description": "बच्चों की सक्रियता और ध्यान पर प्रतिकूल असर डाल सकता है"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "दूध प्रोटीन शामिल है",
+      "description": "दूध प्रोटीन शामिल है"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "सुरिमी शामिल है",
+      "description": "सुरिमी शामिल है"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "जोड़े गए मांस के टुकड़ों से बना",
+      "description": "जोड़े गए मांस के टुकड़ों से बनाया गया"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "जोड़े गए मछली के टुकड़ों से बना",
+      "description": "जोड़े गए मछली के टुकड़ों से बनाया गया"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "डीफ़्रॉस्ट किया गया",
+      "description": "जमी हुई अवस्था से पिघलाया गया"
+    }
+  ],
+  "fallbacks": []
+}

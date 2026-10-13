@@ -1,0 +1,415 @@
+{
+  "locale": "bn",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "রাই শস্য (Rye)",
+      "declaration": "গ্লুটেনযুক্ত শস্য ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "রাই শস্য ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "যব",
+      "declaration": "গ্লুটেনযুক্ত শস্য ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "যব ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "এমার গম",
+      "declaration": "গ্লুটেনযুক্ত শস্য ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "এমার গম ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "আইনকর্ন গম",
+      "declaration": "গ্লুটেনযুক্ত শস্য ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "আইনকর্ন গম ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "স্পেল্ট গম",
+      "declaration": "গ্লুটেনযুক্ত শস্য ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "স্পেল্ট গম ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "গম",
+      "declaration": "গ্লুটেনযুক্ত শস্য ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "গম ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "ওট",
+      "declaration": "গ্লুটেনযুক্ত শস্য ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "ওট ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "খোরাসান গম (Kamut)",
+      "declaration": "গ্লুটেনযুক্ত শস্য ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "খোরাসান গম ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "ক্রাস্টেশিয়ান",
+      "declaration": "ক্রাস্টেশিয়ান ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "চিংড়ি ও কাঁকড়ার মতো ক্রাস্টেশিয়ান ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "ডিম",
+      "declaration": "ডিম ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "ডিম ও ডিম থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "মাছ",
+      "declaration": "মাছ ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "মাছ ও মাছ থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "চিনাবাদাম",
+      "declaration": "চিনাবাদাম ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "চিনাবাদাম ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "সয়াবিন",
+      "declaration": "সয়াবিন ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "সয়াবিন ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "দুধ (ল্যাকটোজসহ)",
+      "declaration": "দুধ ও দুগ্ধজাত পণ্য রয়েছে (ল্যাকটোজসহ)",
+      "description": "দুধ ও দুগ্ধজাত পণ্য, ল্যাকটোজসহ"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "ম্যাকাডামিয়া",
+      "declaration": "গাছের বাদাম ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "ম্যাকাডামিয়া ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "কাঠবাদাম",
+      "declaration": "গাছের বাদাম ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "কাঠবাদাম ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "ব্রাজিল নাট",
+      "declaration": "গাছের বাদাম ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "ব্রাজিল নাট ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "পেকান",
+      "declaration": "গাছের বাদাম ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "পেকান ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "পেস্তা",
+      "declaration": "গাছের বাদাম ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "পেস্তা ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "আখরোট",
+      "declaration": "গাছের বাদাম ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "আখরোট ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "কাজুবাদাম",
+      "declaration": "গাছের বাদাম ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "কাজুবাদাম ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "হ্যাজেলনাট",
+      "declaration": "গাছের বাদাম ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "হ্যাজেলনাট ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "সেলারি",
+      "declaration": "সেলারি ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "সেলারি ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "সরিষা",
+      "declaration": "সরিষা ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "সরিষা ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "তিল",
+      "declaration": "তিল ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "তিলের বীজ ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "সালফার ডাই-অক্সাইড ও সালফাইট",
+      "declaration": "সালফার ডাই-অক্সাইড ও সালফাইট রয়েছে",
+      "description": "সালফার ডাই-অক্সাইড ও সালফাইট"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "লুপিন",
+      "declaration": "লুপিন ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "লুপিন ও তা থেকে তৈরি পণ্য"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "মোলাস্ক",
+      "declaration": "মোলাস্ক ও তা থেকে তৈরি পণ্য রয়েছে",
+      "description": "শামুক ও ঝিনুকের মতো মোলাস্ক ও তা থেকে তৈরি পণ্য"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "রং মেশানো",
+      "description": "খাদ্য রং রয়েছে"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "প্রিজারভেটিভ মেশানো",
+      "description": "প্রিজারভেটিভ রয়েছে"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "অ্যান্টিঅক্সিডেন্ট মেশানো",
+      "description": "অ্যান্টিঅক্সিডেন্ট রয়েছে"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "নাইট্রাইট কিউরিং লবণ মেশানো",
+      "description": "নাইট্রাইট কিউরিং লবণ রয়েছে"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "নাইট্রেট মেশানো",
+      "description": "নাইট্রেট রয়েছে (প্রিজারভেটিভ)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "নাইট্রাইট কিউরিং লবণ ও নাইট্রেট মেশানো",
+      "description": "নাইট্রাইট কিউরিং লবণ ও নাইট্রেট রয়েছে"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "স্বাদবর্ধক মেশানো",
+      "description": "স্বাদবর্ধক রয়েছে"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ফসফেট মেশানো",
+      "description": "ফসফেট রয়েছে"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "সালফারযুক্ত",
+      "description": "সালফার ডাই-অক্সাইড বা সালফাইট রয়েছে"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "কালো করা",
+      "description": "দেখতে ভালো করার জন্য কালো করা"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "মোম লাগানো",
+      "description": "সংরক্ষণের জন্য উপরিভাগে মোম লাগানো"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "মিষ্টিকারক মেশানো",
+      "description": "মিষ্টিকারক রয়েছে"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ফিনাইলঅ্যালানিনের উৎস রয়েছে",
+      "description": "ফিনাইলঅ্যালানিনের উৎস রয়েছে"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "অতিরিক্ত খেলে জোলাপের প্রভাব হতে পারে",
+      "description": "অতিরিক্ত খেলে জোলাপের প্রভাব হতে পারে"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "ক্যাফেইন রয়েছে",
+      "description": "ক্যাফেইন রয়েছে"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "কুইনাইন রয়েছে",
+      "description": "কুইনাইন রয়েছে"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "শিশুদের সক্রিয়তা ও মনোযোগে প্রভাব ফেলতে পারে",
+      "description": "শিশুদের সক্রিয়তা ও মনোযোগে বিরূপ প্রভাব ফেলতে পারে"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "দুধের প্রোটিন রয়েছে",
+      "description": "দুধের প্রোটিন রয়েছে"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "সুরিমি রয়েছে",
+      "description": "সুরিমি রয়েছে"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "জোড়া লাগানো মাংসের টুকরো দিয়ে তৈরি",
+      "description": "জোড়া লাগানো মাংসের টুকরো দিয়ে তৈরি"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "জোড়া লাগানো মাছের টুকরো দিয়ে তৈরি",
+      "description": "জোড়া লাগানো মাছের টুকরো দিয়ে তৈরি"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "বরফ গলানো",
+      "description": "হিমায়িত অবস্থা থেকে গলানো"
+    }
+  ],
+  "fallbacks": []
+}

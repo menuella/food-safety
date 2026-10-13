@@ -1,0 +1,142 @@
+{
+  "RYE": {
+    "name": "Rai",
+    "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+    "description": "Rai na bidhaa zake"
+  },
+  "BARLEY": {
+    "name": "Shayiri",
+    "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+    "description": "Shayiri na bidhaa zake"
+  },
+  "EMMER": {
+    "name": "Ngano ya emmer",
+    "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+    "description": "Ngano ya emmer na bidhaa zake"
+  },
+  "EINKORN": {
+    "name": "Ngano ya einkorn",
+    "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+    "description": "Ngano ya einkorn na bidhaa zake"
+  },
+  "SPELT": {
+    "name": "Ngano ya spelt",
+    "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+    "description": "Ngano ya spelt na bidhaa zake"
+  },
+  "WHEAT": {
+    "name": "Ngano",
+    "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+    "description": "Ngano na bidhaa zake"
+  },
+  "OATS": {
+    "name": "Oti",
+    "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+    "description": "Oti na bidhaa zake"
+  },
+  "KHORASAN": {
+    "name": "Ngano ya khorasan (Kamut)",
+    "declaration": "Ina nafaka zenye gluteni na bidhaa zake",
+    "description": "Ngano ya khorasan na bidhaa zake"
+  },
+  "CRUSTACEANS": {
+    "name": "Krasteshia",
+    "declaration": "Ina krasteshia na bidhaa zake",
+    "description": "Krasteshia kama kamba na kaa, na bidhaa zake"
+  },
+  "EGGS": {
+    "name": "Mayai",
+    "declaration": "Ina mayai na bidhaa zake",
+    "description": "Mayai na bidhaa za mayai"
+  },
+  "FISH": {
+    "name": "Samaki",
+    "declaration": "Ina samaki na bidhaa zake",
+    "description": "Samaki na bidhaa za samaki"
+  },
+  "PEANUTS": {
+    "name": "Karanga",
+    "declaration": "Ina karanga na bidhaa zake",
+    "description": "Karanga na bidhaa zake"
+  },
+  "SOY": {
+    "name": "Soya",
+    "declaration": "Ina soya na bidhaa zake",
+    "description": "Soya na bidhaa zake"
+  },
+  "MILK": {
+    "name": "Maziwa (pamoja na laktosi)",
+    "declaration": "Ina maziwa na bidhaa zake (pamoja na laktosi)",
+    "description": "Maziwa na bidhaa za maziwa, pamoja na laktosi"
+  },
+  "MACADAMIA": {
+    "name": "Makadamia",
+    "declaration": "Ina njugu za miti na bidhaa zake",
+    "description": "Makadamia na bidhaa zake"
+  },
+  "ALMONDS": {
+    "name": "Lozi",
+    "declaration": "Ina njugu za miti na bidhaa zake",
+    "description": "Lozi na bidhaa zake"
+  },
+  "BRAZIL_NUTS": {
+    "name": "Njugu za Brazili",
+    "declaration": "Ina njugu za miti na bidhaa zake",
+    "description": "Njugu za Brazili na bidhaa zake"
+  },
+  "PECANS": {
+    "name": "Pekani",
+    "declaration": "Ina njugu za miti na bidhaa zake",
+    "description": "Pekani na bidhaa zake"
+  },
+  "PISTACHIOS": {
+    "name": "Pistachio",
+    "declaration": "Ina njugu za miti na bidhaa zake",
+    "description": "Pistachio na bidhaa zake"
+  },
+  "WALNUTS": {
+    "name": "Jozi",
+    "declaration": "Ina njugu za miti na bidhaa zake",
+    "description": "Jozi na bidhaa zake"
+  },
+  "CASHEWS": {
+    "name": "Korosho",
+    "declaration": "Ina njugu za miti na bidhaa zake",
+    "description": "Korosho na bidhaa zake"
+  },
+  "HAZELNUTS": {
+    "name": "Hazelnati",
+    "declaration": "Ina njugu za miti na bidhaa zake",
+    "description": "Hazelnati na bidhaa zake"
+  },
+  "CELERY": {
+    "name": "Seleri",
+    "declaration": "Ina seleri na bidhaa zake",
+    "description": "Seleri na bidhaa zake"
+  },
+  "MUSTARD": {
+    "name": "Haradali",
+    "declaration": "Ina haradali na bidhaa zake",
+    "description": "Haradali na bidhaa zake"
+  },
+  "SESAME": {
+    "name": "Ufuta",
+    "declaration": "Ina ufuta na bidhaa zake",
+    "description": "Mbegu za ufuta na bidhaa zake"
+  },
+  "SULPHITES": {
+    "name": "Dioksidi ya salfa na salfiti",
+    "declaration": "Ina dioksidi ya salfa na salfiti",
+    "description": "Dioksidi ya salfa na salfiti"
+  },
+  "LUPINS": {
+    "name": "Lupini",
+    "declaration": "Ina lupini na bidhaa zake",
+    "description": "Lupini na bidhaa zake"
+  },
+  "MOLLUSCS": {
+    "name": "Moluska",
+    "declaration": "Ina moluska na bidhaa zake",
+    "description": "Moluska kama konokono na kome, na bidhaa zake"
+  }
+}

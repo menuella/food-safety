@@ -1,0 +1,415 @@
+{
+  "locale": "ca",
+  "fallbackLocale": "en",
+  "allergens": [
+    {
+      "key": "RYE",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Sègol",
+      "declaration": "Conté cereals amb gluten i productes derivats",
+      "description": "Sègol i productes de sègol"
+    },
+    {
+      "key": "BARLEY",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Ordi",
+      "declaration": "Conté cereals amb gluten i productes derivats",
+      "description": "Ordi i productes d'ordi"
+    },
+    {
+      "key": "EMMER",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Pisana (emmer)",
+      "declaration": "Conté cereals amb gluten i productes derivats",
+      "description": "Pisana i productes derivats"
+    },
+    {
+      "key": "EINKORN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Espelta petita (einkorn)",
+      "declaration": "Conté cereals amb gluten i productes derivats",
+      "description": "Espelta petita i productes derivats"
+    },
+    {
+      "key": "SPELT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Espelta",
+      "declaration": "Conté cereals amb gluten i productes derivats",
+      "description": "Espelta i productes d'espelta"
+    },
+    {
+      "key": "WHEAT",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Blat",
+      "declaration": "Conté cereals amb gluten i productes derivats",
+      "description": "Blat i productes de blat"
+    },
+    {
+      "key": "OATS",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Civada",
+      "declaration": "Conté cereals amb gluten i productes derivats",
+      "description": "Civada i productes de civada"
+    },
+    {
+      "key": "KHORASAN",
+      "group": "CEREALS",
+      "isMember": true,
+      "icon": "cereals",
+      "name": "Blat de Khorasan (Kamut)",
+      "declaration": "Conté cereals amb gluten i productes derivats",
+      "description": "Blat de Khorasan i productes derivats"
+    },
+    {
+      "key": "CRUSTACEANS",
+      "group": "CRUSTACEANS",
+      "isMember": false,
+      "icon": "crustaceans",
+      "name": "Crustacis",
+      "declaration": "Conté crustacis i productes a base de crustacis",
+      "description": "Crustacis, com ara gambes i crancs, i productes derivats"
+    },
+    {
+      "key": "EGGS",
+      "group": "EGGS",
+      "isMember": false,
+      "icon": "eggs",
+      "name": "Ou",
+      "declaration": "Conté ous i productes a base d'ou",
+      "description": "Ous i productes a base d'ou"
+    },
+    {
+      "key": "FISH",
+      "group": "FISH",
+      "isMember": false,
+      "icon": "fish",
+      "name": "Peix",
+      "declaration": "Conté peix i productes a base de peix",
+      "description": "Peix i productes a base de peix"
+    },
+    {
+      "key": "PEANUTS",
+      "group": "PEANUTS",
+      "isMember": false,
+      "icon": "peanuts",
+      "name": "Cacauets",
+      "declaration": "Conté cacauets i productes a base de cacauets",
+      "description": "Cacauets i productes a base de cacauets"
+    },
+    {
+      "key": "SOY",
+      "group": "SOY",
+      "isMember": false,
+      "icon": "soy",
+      "name": "Soja",
+      "declaration": "Conté soja i productes a base de soja",
+      "description": "Soja i productes a base de soja"
+    },
+    {
+      "key": "MILK",
+      "group": "MILK",
+      "isMember": false,
+      "icon": "milk",
+      "name": "Llet (inclosa la lactosa)",
+      "declaration": "Conté llet i derivats (inclosa la lactosa)",
+      "description": "Llet i derivats, inclosa la lactosa"
+    },
+    {
+      "key": "MACADAMIA",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Nous de macadàmia",
+      "declaration": "Conté fruits de closca i productes derivats",
+      "description": "Nous de macadàmia i productes derivats"
+    },
+    {
+      "key": "ALMONDS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Ametlles",
+      "declaration": "Conté fruits de closca i productes derivats",
+      "description": "Ametlles i productes derivats"
+    },
+    {
+      "key": "BRAZIL_NUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Nous del Brasil",
+      "declaration": "Conté fruits de closca i productes derivats",
+      "description": "Nous del Brasil i productes derivats"
+    },
+    {
+      "key": "PECANS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Nous pacanes",
+      "declaration": "Conté fruits de closca i productes derivats",
+      "description": "Nous pacanes i productes derivats"
+    },
+    {
+      "key": "PISTACHIOS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Festucs",
+      "declaration": "Conté fruits de closca i productes derivats",
+      "description": "Festucs i productes derivats"
+    },
+    {
+      "key": "WALNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Nous",
+      "declaration": "Conté fruits de closca i productes derivats",
+      "description": "Nous i productes derivats"
+    },
+    {
+      "key": "CASHEWS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Anacards",
+      "declaration": "Conté fruits de closca i productes derivats",
+      "description": "Anacards i productes derivats"
+    },
+    {
+      "key": "HAZELNUTS",
+      "group": "TREE_NUTS",
+      "isMember": true,
+      "icon": "tree-nuts",
+      "name": "Avellanes",
+      "declaration": "Conté fruits de closca i productes derivats",
+      "description": "Avellanes i productes derivats"
+    },
+    {
+      "key": "CELERY",
+      "group": "CELERY",
+      "isMember": false,
+      "icon": "celery",
+      "name": "Api",
+      "declaration": "Conté api i productes derivats",
+      "description": "Api i productes derivats"
+    },
+    {
+      "key": "MUSTARD",
+      "group": "MUSTARD",
+      "isMember": false,
+      "icon": "mustard",
+      "name": "Mostassa",
+      "declaration": "Conté mostassa i productes derivats",
+      "description": "Mostassa i productes derivats"
+    },
+    {
+      "key": "SESAME",
+      "group": "SESAME",
+      "isMember": false,
+      "icon": "sesame",
+      "name": "Sèsam",
+      "declaration": "Conté llavors de sèsam i productes derivats",
+      "description": "Llavors de sèsam i productes derivats"
+    },
+    {
+      "key": "SULPHITES",
+      "group": "SULPHITES",
+      "isMember": false,
+      "icon": "sulphites",
+      "name": "Diòxid de sofre i sulfits",
+      "declaration": "Conté diòxid de sofre i sulfits",
+      "description": "Diòxid de sofre i sulfits"
+    },
+    {
+      "key": "LUPINS",
+      "group": "LUPINS",
+      "isMember": false,
+      "icon": "lupins",
+      "name": "Tramussos",
+      "declaration": "Conté tramussos i productes derivats",
+      "description": "Tramussos i productes derivats"
+    },
+    {
+      "key": "MOLLUSCS",
+      "group": "MOLLUSCS",
+      "isMember": false,
+      "icon": "molluscs",
+      "name": "Mol·luscs",
+      "declaration": "Conté mol·luscs i productes derivats",
+      "description": "Mol·luscs, com ara cargols i musclos, i productes derivats"
+    }
+  ],
+  "declarations": [
+    {
+      "key": "COLORING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "amb colorant",
+      "description": "Conté colorants"
+    },
+    {
+      "key": "PRESERVATIVES",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "amb conservant",
+      "description": "Conté conservants"
+    },
+    {
+      "key": "ANTIOXIDANTS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "amb antioxidant",
+      "description": "Conté antioxidants"
+    },
+    {
+      "key": "NITRITE_CURING_SALT",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "amb sal de curació amb nitrit",
+      "description": "Conté sal de curació amb nitrit"
+    },
+    {
+      "key": "NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "amb nitrat",
+      "description": "Conté nitrat (conservant)"
+    },
+    {
+      "key": "NITRITE_CURING_SALT_AND_NITRATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "amb sal de curació amb nitrit i nitrat",
+      "description": "Conté sal de curació amb nitrit i nitrat"
+    },
+    {
+      "key": "FLAVOR_ENHANCERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "amb potenciador del sabor",
+      "description": "Conté potenciadors del sabor"
+    },
+    {
+      "key": "PHOSPHATE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "amb fosfat",
+      "description": "Conté fosfat"
+    },
+    {
+      "key": "SULPHURED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "sulfitat",
+      "description": "Conté diòxid de sofre o sulfits"
+    },
+    {
+      "key": "BLACKENED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "ennegrit",
+      "description": "Ennegrit per a l'aspecte"
+    },
+    {
+      "key": "WAXED",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "encerat",
+      "description": "Superfície encerada per a la conservació"
+    },
+    {
+      "key": "SWEETENERS",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "amb edulcorants",
+      "description": "Conté edulcorants"
+    },
+    {
+      "key": "PHENYLALANINE",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "conté una font de fenilalanina",
+      "description": "Conté una font de fenilalanina"
+    },
+    {
+      "key": "LAXATIVE_WARNING",
+      "category": "ADDITIVE",
+      "icon": "declarations",
+      "name": "un consum excessiu pot tenir efectes laxants",
+      "description": "Un consum excessiu pot tenir efectes laxants"
+    },
+    {
+      "key": "CAFFEINE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "conté cafeïna",
+      "description": "Conté cafeïna"
+    },
+    {
+      "key": "QUININE",
+      "category": "BEVERAGE",
+      "icon": "declarations",
+      "name": "conté quinina",
+      "description": "Conté quinina"
+    },
+    {
+      "key": "CHILD_ATTENTION_WARNING",
+      "category": "WARNING",
+      "icon": "declarations",
+      "name": "pot afectar l'activitat i l'atenció dels infants",
+      "description": "Pot afectar l'activitat i l'atenció dels infants"
+    },
+    {
+      "key": "MILK_PROTEIN",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "conté proteïna de llet",
+      "description": "Conté proteïna de llet"
+    },
+    {
+      "key": "SURIMI",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "conté surimi",
+      "description": "Conté surimi"
+    },
+    {
+      "key": "RECONSTITUTED_MEAT",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "elaborat amb trossos de carn units",
+      "description": "Elaborat amb trossos de carn units"
+    },
+    {
+      "key": "RECONSTITUTED_FISH",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "elaborat amb trossos de peix units",
+      "description": "Elaborat amb trossos de peix units"
+    },
+    {
+      "key": "DEFROSTED",
+      "category": "PRODUCT",
+      "icon": "declarations",
+      "name": "descongelat",
+      "description": "Descongelat després de congelat"
+    }
+  ],
+  "fallbacks": []
+}

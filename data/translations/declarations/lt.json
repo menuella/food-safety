@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "su dažikliu",
+    "description": "Sudėtyje yra maisto dažiklių"
+  },
+  "PRESERVATIVES": {
+    "name": "su konservantu",
+    "description": "Sudėtyje yra konservantų"
+  },
+  "ANTIOXIDANTS": {
+    "name": "su antioksidantu",
+    "description": "Sudėtyje yra antioksidantų"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "su nitritine druska",
+    "description": "Sudėtyje yra nitritinės druskos"
+  },
+  "NITRATE": {
+    "name": "su nitratu",
+    "description": "Sudėtyje yra nitrato (konservantas)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "su nitritine druska ir nitratu",
+    "description": "Sudėtyje yra nitritinės druskos ir nitrato"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "su skonio stiprikliu",
+    "description": "Sudėtyje yra skonio stipriklių"
+  },
+  "PHOSPHATE": {
+    "name": "su fosfatu",
+    "description": "Sudėtyje yra fosfato"
+  },
+  "SULPHURED": {
+    "name": "apdorota siera",
+    "description": "Sudėtyje yra sieros dioksido arba sulfitų"
+  },
+  "BLACKENED": {
+    "name": "pajuodinta",
+    "description": "Pajuodinta dėl išvaizdos"
+  },
+  "WAXED": {
+    "name": "vaškuota",
+    "description": "Paviršius vaškuotas, kad ilgiau išsilaikytų"
+  },
+  "SWEETENERS": {
+    "name": "su saldikliais",
+    "description": "Sudėtyje yra saldiklių"
+  },
+  "PHENYLALANINE": {
+    "name": "yra fenilalanino šaltinis",
+    "description": "Yra fenilalanino šaltinis"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "per didelis kiekis gali turėti laisvinamąjį poveikį",
+    "description": "Per didelis kiekis gali turėti laisvinamąjį poveikį"
+  },
+  "CAFFEINE": {
+    "name": "yra kofeino",
+    "description": "Sudėtyje yra kofeino"
+  },
+  "QUININE": {
+    "name": "yra chinino",
+    "description": "Sudėtyje yra chinino"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "gali turėti nepageidaujamą poveikį vaikų aktyvumui ir dėmesiui",
+    "description": "Gali turėti nepageidaujamą poveikį vaikų aktyvumui ir dėmesiui"
+  },
+  "MILK_PROTEIN": {
+    "name": "yra pieno baltymų",
+    "description": "Sudėtyje yra pieno baltymų"
+  },
+  "SURIMI": {
+    "name": "yra surimio",
+    "description": "Sudėtyje yra surimio"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "iš sujungtų mėsos gabalų",
+    "description": "Pagaminta iš sujungtų mėsos gabalų"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "iš sujungtų žuvies gabalų",
+    "description": "Pagaminta iš sujungtų žuvies gabalų"
+  },
+  "DEFROSTED": {
+    "name": "atšildyta",
+    "description": "Atšildyta iš užšaldyto"
+  }
+}

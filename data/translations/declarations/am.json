@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "ቀለም የተጨመረበት",
+    "description": "የምግብ ቀለም ይዟል"
+  },
+  "PRESERVATIVES": {
+    "name": "ማቆያ የተጨመረበት",
+    "description": "ማቆያ ይዟል"
+  },
+  "ANTIOXIDANTS": {
+    "name": "አንቲኦክሲዳንት የተጨመረበት",
+    "description": "አንቲኦክሲዳንት ይዟል"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "የናይትራይት ጨው የተጨመረበት",
+    "description": "የስጋ ማቆያ የናይትራይት ጨው ይዟል"
+  },
+  "NITRATE": {
+    "name": "ናይትሬት የተጨመረበት",
+    "description": "ናይትሬት ይዟል (ማቆያ)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "የናይትራይት ጨውና ናይትሬት የተጨመረበት",
+    "description": "የናይትራይት ጨውና ናይትሬት ይዟል"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "ጣዕም አጉሊ የተጨመረበት",
+    "description": "ጣዕም አጉሊ ይዟል"
+  },
+  "PHOSPHATE": {
+    "name": "ፎስፌት የተጨመረበት",
+    "description": "ፎስፌት ይዟል"
+  },
+  "SULPHURED": {
+    "name": "በሰልፈር የታከመ",
+    "description": "ሰልፈር ዳይኦክሳይድ ወይም ሰልፋይት ይዟል"
+  },
+  "BLACKENED": {
+    "name": "የጠቆረ",
+    "description": "ለመልክ ሲባል የጠቆረ"
+  },
+  "WAXED": {
+    "name": "ሰም የተቀባ",
+    "description": "ለማቆየት ሲባል ገጹ ሰም የተቀባ"
+  },
+  "SWEETENERS": {
+    "name": "ጣፋጭ ማድረጊያ የተጨመረበት",
+    "description": "ጣፋጭ ማድረጊያዎችን ይዟል"
+  },
+  "PHENYLALANINE": {
+    "name": "የፌኒላላኒን ምንጭ ይዟል",
+    "description": "የፌኒላላኒን ምንጭ ይዟል"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "ከልክ በላይ ሲወሰድ ተቅማጥ ሊያስከትል ይችላል",
+    "description": "ከልክ በላይ ሲወሰድ ተቅማጥ ሊያስከትል ይችላል"
+  },
+  "CAFFEINE": {
+    "name": "ካፌይን ይዟል",
+    "description": "ካፌይን ይዟል"
+  },
+  "QUININE": {
+    "name": "ኪኒን ይዟል",
+    "description": "ኪኒን ይዟል"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "የልጆችን እንቅስቃሴና ትኩረት ሊጎዳ ይችላል",
+    "description": "የልጆችን እንቅስቃሴና ትኩረት ሊጎዳ ይችላል"
+  },
+  "MILK_PROTEIN": {
+    "name": "የወተት ፕሮቲን ይዟል",
+    "description": "የወተት ፕሮቲን ይዟል"
+  },
+  "SURIMI": {
+    "name": "ሱሪሚ ይዟል",
+    "description": "ሱሪሚ ይዟል"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "ከተቀላቀሉ የስጋ ቁርጥራጮች የተሠራ",
+    "description": "ከተቀላቀሉ የስጋ ቁርጥራጮች የተሠራ"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "ከተቀላቀሉ የዓሣ ቁርጥራጮች የተሠራ",
+    "description": "ከተቀላቀሉ የዓሣ ቁርጥራጮች የተሠራ"
+  },
+  "DEFROSTED": {
+    "name": "የቀለጠ",
+    "description": "ከቀዘቀዘ ሁኔታ የቀለጠ"
+  }
+}

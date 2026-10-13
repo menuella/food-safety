@@ -1,0 +1,90 @@
+{
+  "COLORING": {
+    "name": "دارای رنگ خوراکی",
+    "description": "حاوی رنگ‌های خوراکی"
+  },
+  "PRESERVATIVES": {
+    "name": "دارای نگهدارنده",
+    "description": "حاوی نگهدارنده"
+  },
+  "ANTIOXIDANTS": {
+    "name": "دارای آنتی‌اکسیدان",
+    "description": "حاوی آنتی‌اکسیدان"
+  },
+  "NITRITE_CURING_SALT": {
+    "name": "دارای نمک نیتریت‌دار عمل‌آوری",
+    "description": "حاوی نمک نیتریت‌دار عمل‌آوری"
+  },
+  "NITRATE": {
+    "name": "دارای نیترات",
+    "description": "حاوی نیترات (نگهدارنده)"
+  },
+  "NITRITE_CURING_SALT_AND_NITRATE": {
+    "name": "دارای نمک نیتریت‌دار و نیترات",
+    "description": "حاوی نمک نیتریت‌دار عمل‌آوری و نیترات"
+  },
+  "FLAVOR_ENHANCERS": {
+    "name": "دارای تشدیدکننده طعم",
+    "description": "حاوی تشدیدکننده‌های طعم"
+  },
+  "PHOSPHATE": {
+    "name": "دارای فسفات",
+    "description": "حاوی فسفات"
+  },
+  "SULPHURED": {
+    "name": "گوگردزده",
+    "description": "حاوی دی‌اکسید گوگرد یا سولفیت"
+  },
+  "BLACKENED": {
+    "name": "سیاه‌شده",
+    "description": "برای ظاهر سیاه شده است"
+  },
+  "WAXED": {
+    "name": "واکس‌خورده",
+    "description": "سطح برای ماندگاری واکس خورده است"
+  },
+  "SWEETENERS": {
+    "name": "دارای شیرین‌کننده",
+    "description": "حاوی شیرین‌کننده"
+  },
+  "PHENYLALANINE": {
+    "name": "حاوی منبع فنیل‌آلانین",
+    "description": "حاوی منبع فنیل‌آلانین"
+  },
+  "LAXATIVE_WARNING": {
+    "name": "مصرف زیاد ممکن است اثر ملین داشته باشد",
+    "description": "مصرف زیاد ممکن است اثر ملین داشته باشد"
+  },
+  "CAFFEINE": {
+    "name": "حاوی کافئین",
+    "description": "حاوی کافئین"
+  },
+  "QUININE": {
+    "name": "حاوی کینین",
+    "description": "حاوی کینین"
+  },
+  "CHILD_ATTENTION_WARNING": {
+    "name": "ممکن است بر فعالیت و توجه کودکان اثر بگذارد",
+    "description": "ممکن است بر فعالیت و توجه کودکان اثر نامطلوب بگذارد"
+  },
+  "MILK_PROTEIN": {
+    "name": "حاوی پروتئین شیر",
+    "description": "حاوی پروتئین شیر"
+  },
+  "SURIMI": {
+    "name": "حاوی سوریمی",
+    "description": "حاوی سوریمی"
+  },
+  "RECONSTITUTED_MEAT": {
+    "name": "از قطعات به‌هم‌پیوسته گوشت",
+    "description": "تهیه‌شده از قطعات به‌هم‌پیوسته گوشت"
+  },
+  "RECONSTITUTED_FISH": {
+    "name": "از قطعات به‌هم‌پیوسته ماهی",
+    "description": "تهیه‌شده از قطعات به‌هم‌پیوسته ماهی"
+  },
+  "DEFROSTED": {
+    "name": "یخ‌زدایی‌شده",
+    "description": "از حالت منجمد یخ‌زدایی شده است"
+  }
+}

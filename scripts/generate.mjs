@@ -363,8 +363,9 @@ writeFileSync(
   `${HEADER}
 //
 // One dynamic import per locale, each with a literal specifier, so every
-// bundler can see them and split each locale into its own chunk.
-import { LOCALES } from "./index.js"
+// bundler can see them and split each locale into its own chunk. The locale
+// list comes from this table rather than from index.js, so the entry chunk
+// does not carry the whole vocabulary just to word an error message.
 import { unsupportedLocale } from "./internal.js"
 
 const LOADERS = {
@@ -380,7 +381,7 @@ ${LOCALES.map((l) => `  "${l}": () => import("./locales/${l}.js"),`).join("\n")}
  */
 export function loadDisclosures(locale) {
   if (typeof locale !== "string" || !Object.hasOwn(LOADERS, locale)) {
-    return Promise.reject(unsupportedLocale(locale, LOCALES))
+    return Promise.reject(unsupportedLocale(locale, Object.keys(LOADERS)))
   }
   return LOADERS[locale]().then((module) => module.default)
 }
@@ -965,7 +966,7 @@ writeFileSync(
 
 
 console.log(
-  `generated  ${LOCALES.length} bundles (${LOCALES.join(", ")})  ·  index.js + index.d.ts` +
+  `generated  ${LOCALES.length} bundles (${LOCALES.join(", ")})  ·  index, locales/*, load, all` +
     `  ·  data/icons.json  ·  dart  ·  python` +
     `  ·  ${A_KEYS.length} allergens, ${D_KEYS.length} declarations, ${iconNames.length} icons`,
 )
